@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "your title"
-category: dejavu
+category: 工作日记
 description: “short description”
 ---
 
