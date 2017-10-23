@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "your title"
-category: 工作日记
+category: Study
 description: “short description”
 ---
 
