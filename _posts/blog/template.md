@@ -2,7 +2,7 @@
 layout: post
 title: "your title"
 description: "short description"
-category: Write
+category: Blog
 ---
 
 
