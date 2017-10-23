@@ -2,18 +2,18 @@
 layout: home
 ---
 
-<div class="index-content dejavu">
+<div class="index-content 工作日记">
     <div class="section">
         <ul class="artical-cate">
-            <li><a href="/"><span>Blog</span></a></li>
-            <li class="on" style="text-align:center"><a href="/dejavu"><span>Déjà vu</span></a></li>
-            <li style="text-align:right"><a href="/journal"><span>Journal</span></a></li>
+            <li><a href="/"><span>心情</span></a></li>
+            <li class="on" style="text-align:center"><a href="/dejavu"><span>工作日记</span></a></li>
+            <li style="text-align:right"><a href="/旅行"><span>Journal</span></a></li>
         </ul>
 
         <div class="cate-bar"><span id="cateBar"></span></div>
 
         <ul class="artical-list">
-        {% for post in site.categories.dejavu %}
+        {% for post in site.categories.工作日记 %}
             <li>
                 <h2>
                     <a href="{{ post.url }}">{{ post.title }}</a>
