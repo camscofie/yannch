@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "your title"
-category: 旅行
+category: travel
 description: "short description"
 ---
 # [{{ page.title }}][1]
