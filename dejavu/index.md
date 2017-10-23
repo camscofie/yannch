@@ -6,8 +6,8 @@ layout: home
     <div class="section">
         <ul class="artical-cate">
             <li><a href="/"><span>心情</span></a></li>
-            <li class="on" style="text-align:center"><a href="/dejavu"><span>工作日记</span></a></li>
-            <li style="text-align:right"><a href="/旅行"><span>Journal</span></a></li>
+            <li class="on" style="text-align:center"><a href="/工作日记"><span>工作日记</span></a></li>
+            <li style="text-align:right"><a href="/旅行"><span>旅行</span></a></li>
         </ul>
 
         <div class="cate-bar"><span id="cateBar"></span></div>
