@@ -1,8 +1,10 @@
 ---
 layout: post
 title: "your title"
-category: dejavu
+category: Study
 description: “short description”
 ---
 
-[Yannch]:    http://camscofie.github.io  "Yannch"
+[May]:    http://may90.github.io  "May"
+
+

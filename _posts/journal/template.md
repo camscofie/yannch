@@ -1,12 +1,14 @@
 ---
 layout: post
 title: "your title"
-category: journal
+category: travel
 description: "short description"
 ---
 # [{{ page.title }}][1]
 2015-12-12 By {{ site.author_info }}
 
 
-[Yannch]:    http://camscofie.github.io  "Yannch"
+[May]:    http://may90.github.io  "May"
 [1]:    {{ page.url}}  ({{ page.title }})
+
+
