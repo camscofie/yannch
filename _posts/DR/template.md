@@ -8,5 +8,5 @@ description: "short description"
 2015-12-12 By {{ site.author_info }}
 
 
-[Yannch]:    http://camscofie.github.io  "Yannch"
+[Yange]:    http://camscofie.github.io  "Yange"
 [1]:    {{ page.url}}  ({{ page.title }})
