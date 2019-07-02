@@ -7,20 +7,26 @@ category: DV
 
 ## Strucktur of this framework
 
-* _posts 
-the folder of all posts
-* _layouts
-the layouts of different page form
-* css 
-css
-* DR & DV & index.md & 404.html 
-setting of this page
-* js 
-js
-* images & resources 
-resources
-* _config.yml & CNAME
-meta information confituration
+_posts:
+* the folder of all posts
+
+_layouts:
+* the layouts of different page form
+
+css:
+* css
+
+DR & DV & index.md & 404.html:
+* setting of this page
+
+js:
+* js
+
+images & resources:
+* resources
+
+_config.yml & CNAME:
+* meta information confituration
 
 ### Change the name of the List
 
