@@ -52,7 +52,7 @@ define('COOKIEPATH', '');
 define('SITECOOKIEPATH', '');
 ```
 
-### wordpress 安装child theme
+## wordpress 安装child theme
 $ parent-style = mother theme name  
 
 1. 首先进入 wp-content/theme 文件夹
