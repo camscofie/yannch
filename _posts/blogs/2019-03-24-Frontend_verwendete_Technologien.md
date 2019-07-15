@@ -9,7 +9,7 @@ In our frontend developing, we have received very much help from the following t
 
 ## Angular
 
-(1)Angular ist ein von Google entwickeltes JavaScript-Framework für interaktives Webdesign. Es eignet sich besonders für die Entwicklung Single-Page-Applications (SPA) . 
+**Angular ist ein von Google entwickeltes JavaScript-Framework für interaktives Webdesign. Es eignet sich besonders für die Entwicklung Single-Page-Applications (SPA).**
 
 (1.1) Angular basiert auf Komponenten, die zusammen Daten austauschen 
 
