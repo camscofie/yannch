@@ -19,7 +19,7 @@ In our frontend developing, we have received very much help from the following t
 
 
 ## Apache Cordova
-### Apache Cordova ist ein Open-Source-mobile-Entwicklung-Framework. Mit Apache Cordova können Softwareprogrammierer Anwendungen für mobile Geräte mit CSS3, HTML5 und JavaScript erstellen, anstatt mit plattformspezifischen APIs wie Android, iOS oder Windows Phone zu arbeiten. 
+**Apache Cordova ist ein Open-Source-mobile-Entwicklung-Framework. Mit Apache Cordova können Softwareprogrammierer Anwendungen für mobile Geräte mit CSS3, HTML5 und JavaScript erstellen, anstatt mit plattformspezifischen APIs wie Android, iOS oder Windows Phone zu arbeiten. 
 
 (2.1) Webanwendungen können leicht und schnell auf anderen Plattformen bereitgestellt werden. 
 
@@ -28,7 +28,7 @@ In our frontend developing, we have received very much help from the following t
 (2.3) Entwicklung erfolgt mit den oben genannten Sprachen und läuft über allen unterstützten Plattformen.
 
 ## Storybook
-### Storybook ist ein Open Source-Tool für die Entwicklung von UI-Komponenten für React, Vue und Angular. Es macht das Bauen atemberaubender Benutzeroberflächen organisiert und effizient. 
+**Storybook ist ein Open Source-Tool für die Entwicklung von UI-Komponenten für React, Vue und Angular. Es macht das Bauen atemberaubender Benutzeroberflächen organisiert und effizient. 
 
 (3.1) Storybook bietet eine Sandbox, um UI-Komponenten isoliert zu erstellen, sodass man schwer erreichbare Zustände und Randfälle entwickeln kann. Das erhöht die Qualität des lieferbares Produkt, wenn die Komponenten in einer separaten Umgebung entwickelt und getestet werden. 
 
