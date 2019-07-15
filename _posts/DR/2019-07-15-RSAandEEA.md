@@ -26,7 +26,7 @@ m(c) ≡ c^(d) mod N
 **Question**:
 47x + 30y = 1
 
-**Process**:
+**forwards**:
 
 47 = 30 x 1 + 17
 
@@ -37,6 +37,9 @@ m(c) ≡ c^(d) mod N
 13 =  4 x 3 + 1
 
 1 = 13 - 3(4)
+
+
+**rewrite Rest**
 
   = 13 - 3(17-13)
 
