@@ -6,7 +6,6 @@ description: calculation
 ---
 
 ## [RSA Process](https://en.wikipedia.org/wiki/RSA_(cryptosystem))
----------
 ### RSA Key generation
 1. choose P != Q, both prime
 2. N = P x Q, λ(N) = (P-1)(Q-1)
@@ -20,8 +19,8 @@ c(m) ≡ m^(e) mod N
 ### Decryption
 m(c) ≡ c^(d) mod N
 
+-------------------
 ## [Extended Euclidean algorithm](https://en.wikipedia.org/wiki/Extended_Euclidean_algorithm)
-------------
 
 **Question**:
 47x + 30y = 1
