@@ -23,6 +23,19 @@ category: blogs
 ## [ElGamal encryption](https://en.wikipedia.org/wiki/ElGamal_encryption)
 ----------------------------------
 
+### Key generation
+1. Generate prime p and a [generator](https://en.wikipedia.org/wiki/Generating_set_of_a_group) g 
+2. choose an integer x from {1,...,q-1}
+3. compute h=g^x
+4. the public key consists (G,q,g,h); x as secret key.
+
+
+
+### Encryption
+
+
+
+### Decryption
 
 
 [Yange]:    http://camscofie.github.io  "Yange"
