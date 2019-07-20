@@ -1,7 +1,7 @@
 ---
 layout: post
 title: RSA process and EEA
-category: DR
+category: blogs
 description: calculation
 ---
 

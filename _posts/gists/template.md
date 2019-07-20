@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "your title"
-category: DR
+category: gists
 description: "short description"
 ---
 # [{{ page.title }}][1]
