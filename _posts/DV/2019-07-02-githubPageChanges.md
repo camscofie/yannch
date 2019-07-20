@@ -31,6 +31,6 @@ _config.yml & CNAME:
 ### Change the name of the List
 
 * edit /_layouts/post.html, whichs has sidebar configuration when in post
-* edit /index.md and index.md in different post folder (DR, DV), whichs shows what people can see when they are in different page
+* edit /index.md and index.md in different post folder (DR, DV), whichs shows what people can see when they are in different page //3 things
 * edit /css/ default.css, whichs outputs the image it uses
 * change corresponding folder name in all folders in /_post and /, and files too
