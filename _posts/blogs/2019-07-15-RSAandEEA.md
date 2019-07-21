@@ -1,6 +1,6 @@
 ---
 layout: post
-title: RSA process and EEA
+title: RSA Encryption and EEA
 category: blogs
 description: calculation
 ---
