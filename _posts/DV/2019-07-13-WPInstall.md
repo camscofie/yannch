@@ -25,6 +25,7 @@ sudo chown -R www-data:www-data /var/www
 1. 确定wordpress 文件夹在/var/www/html/ 下
 2. 跟随教程 ["Create a Network"](https://codex.wordpress.org/Create_A_Network)
 3. 更改 /etc/apache2/apache.conf 文件里的
+
 ```
 <Directory /var/www/>
 	Options Indexes FollowSymLinks
@@ -58,6 +59,9 @@ $ parent-style = mother theme name
 3. 添加文件style.css
 
 ```
+/*
+ Theme Name:   Twenty Fifteen Child
+ Theme URI:    http://example.com/twenty-fifteen-child/
  Description:  Twenty Fifteen Child Theme
  Author:       John Doe
  Author URI:   http://example.com
@@ -67,6 +71,7 @@ $ parent-style = mother theme name
  License URI:  http://www.gnu.org/licenses/gpl-2.0.html
  Tags:         light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
  Text Domain:  twenty-fifteen-child
+*/
 ```
 并且把 'Template' 的值改为 $parent-style
 
