@@ -59,9 +59,6 @@ $ parent-style = mother theme name
 3. 添加文件style.css
 
 ```
-/*
- Theme Name:   Twenty Fifteen Child
- Theme URI:    http://example.com/twenty-fifteen-child/
  Description:  Twenty Fifteen Child Theme
  Author:       John Doe
  Author URI:   http://example.com
@@ -71,7 +68,6 @@ $ parent-style = mother theme name
  License URI:  http://www.gnu.org/licenses/gpl-2.0.html
  Tags:         light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
  Text Domain:  twenty-fifteen-child
-*/
 ```
 并且把 'Template' 的值改为 $parent-style
 
