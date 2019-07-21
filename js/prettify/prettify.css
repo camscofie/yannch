@@ -6,13 +6,13 @@
  */
 
 .str{color:rgb(255, 123, 0);}
-.kwd{color:rgb(255, 251, 0);}
-.com{color:rgb(0, 166, 255);}
-.typ{color:rgb(3, 242, 250);}
+.kwd{color:rgb(25, 0, 255);}
+.com{color:rgb(0, 185, 46);}
+.typ{color:rgb(3, 110, 250);}
 .lit{color:rgb(208, 255, 0);}
 .pun{color:rgb(216, 8, 216);}
 .pln{color:#000;}
-.tag{color:rgb(98, 255, 0);}
+.tag{color:rgb(73, 190, 0);}
 .atn{color:rgb(255, 0, 0);}
 .atv{color:rgb(255, 129, 2);}
 .dec{color:rgb(221, 0, 221);}
@@ -20,7 +20,7 @@ pre.prettyprint {border:0px solid #888;}
 ol.linenums{margin-top:0;margin-bottom:0;}
 .prettyprint{background: rgb(240, 236, 224);}
 li.L0, li.L1, li.L2, li.L3, li.L4, li.L5, li.L6, li.L7, li.L8, li.L9{color:#555;}
-li.L1, li.L3, li.L5, li.L7, li.L9{background:rgb(240, 236, 224);}
+li.L1, li.L3, li.L5, li.L7, li.L9{background:rgb(211, 211, 211);}
 @media print {
     .str{color:#060;}
     .kwd{color:#006;font-weight:bold;}
