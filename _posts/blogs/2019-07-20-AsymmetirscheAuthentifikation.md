@@ -17,7 +17,7 @@ _kein PPT-Angreifer A wins._
 1. A has pk and access to Sig(sk,*)-Orakel
 2. A gives (M*,σ*)
 3. A wins, when Ver(pk,M*,σ*) = 1 and M* != M.
-
+![alt text](/resources/postImage/asymmetirscheAuthentifikation/EUF-CMA.png)
 ## ElGamal-Signaturen
 ------------------------------------------
 
