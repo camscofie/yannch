@@ -7,12 +7,12 @@
 
 .str{color:rgb(255, 123, 0);}
 .kwd{color:rgb(25, 0, 255);}
-.com{color:rgb(0, 185, 46);}
+.com{color:rgb(23, 196, 95);}
 .typ{color:rgb(67, 105, 148);}
-.lit{color:rgb(177, 224, 6);}
+.lit{color:rgb(84, 116, 93);}
 .pun{color:rgb(216, 8, 216);}
 .pln{color:#000;}
-.tag{color:rgb(73, 190, 0);}
+.tag{color:rgb(53, 104, 21);}
 .atn{color:rgb(255, 0, 0);}
 .atv{color:rgb(255, 129, 2);}
 .dec{color:rgb(221, 0, 66);}
