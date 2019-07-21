@@ -5,14 +5,14 @@
  * http://CodeTunnel.com/blog/post/71/google-code-prettify-obsidian-theme
  */
 
-.str{color: #EC7600;}
-.kwd{color:#93C763;}
-.com{color:#66747B;}
-.typ{color:#678CB1;}
+.str{color: rgb(255, 123, 0);}
+.kwd{color:rgb(111, 218, 11);}
+.com{color:rgb(56, 67, 73);}
+.typ{color:rgb(3, 127, 250);}
 .lit{color:#FACD22;}
 .pun{color:#404;}
 .pln{color:#000;}
-.tag{color:#8AC763;}
+.tag{color:rgb(98, 255, 0);}
 .atn{color:#600;}
 .atv{color:#EC7600;}
 .dec{color:purple;}
