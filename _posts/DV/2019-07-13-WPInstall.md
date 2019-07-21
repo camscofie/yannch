@@ -25,7 +25,6 @@ sudo chown -R www-data:www-data /var/www
 1. 确定wordpress 文件夹在/var/www/html/ 下
 2. 跟随教程 ["Create a Network"](https://codex.wordpress.org/Create_A_Network)
 3. 更改 /etc/apache2/apache.conf 文件里的
-
 ```
 <Directory /var/www/>
 	Options Indexes FollowSymLinks
