@@ -19,13 +19,53 @@ _kein PPT-Angreifer A wins._
 3. A wins, when Ver(pk,M*,σ*) = 1 and M* != M.
 ![alt text](/resources/postImage/asymmetirscheAuthentifikation/EUF-CMA.png)
 
+## RSA als Signaturschema
+-------------------------------------------
+sig(sk,M) = M^d mod N
+
+Ver(pk,M,σ)=1 :<=> M=σ^e mod N
+
+### Problem bei RSA:
+* _Unsinnige Nachrichten können signiert werden._
+1. Wähle zuerst Signatur σ ∈ ZN beliebig
+2. Setze dann M := σ^e mod N
+3. Damit ist σ gültige RSA-Signatur für M
+   
+* _Homomorphie von RSA_
+
+### Repair: 
+(RSA-)PSS: _Probabilistic Signature Scheme_
+
+* _Vorverarbeitung(Padding) der Nachricht_:
+
+Sig(sk,M) = (pad(M))^d mod N
+
+
 ## ElGamal-Signaturen
 ------------------------------------------
 
 Es sei **G einen endliche zyklische Gruppe** und **g ein Erzeuger von G**:
 
-+ **Gen**(1^k): Zieht ein x zufällig und gibt als geheimen Schluessel sk = (G,g,x) und als öffentlichen Schluessel: pk = (G,g,g^x) aus
-+ **Sig**(sk,M): Wähle ein e zufällig und setze a :=g^e. Berechne b als Lösung von a*x + e *b = M mod G. Die Signatur ist dann σ  = (a,b).
++ **Gen**(1^k): Zieht ein x zufällig und gibt als geheimen Schlüssel sk = (G,g,x) und als öffentlichen Schlüssel: pk = (G,g,g^x) aus
++ **Sig**(sk,M): Wähle ein e zufällig und setze a :=g^e. Berechne b als Lösung von a*x + e *b = M mod |G|. Die Signatur ist dann σ  = (a,b).
 + **Ver**(pk,M,σ=(a,b)): Gebe 1 aus, wenn (g^x)^a * a^b = g^M, sonst gebe 0 aus.
+
+### Problem:
+a = g^e wird sowohl als G-Element als auch als Exponent interpretiert
+
+* _Randomisierung ⇒ Signaturen für unsinnige Nachrichten_
+1. Wähle c zufällig
+2. Setze a := (g^c)(g^x) = g^c+x und b := −a mod |G| 
+3. Damit ist (a, b) gültige Signatur für die Nachricht
+
+### Repair:
+_Hash-Then-Sign-Paradigma_
+Sei (Gen, Sig, Ver) EUF-CMA-sicher und H eine kollisionsresistente Hashfunktion.
+Dann ist das durch:
++ Gen'(1^k) = Gen(1^k)
++ Sig'(sk,M) = Sig(sk, H(M))
++ Ver'(pk,M, σ) = Ver(pk, H(M), σ)
+
+erklärte Signaturverfahren EUF-CMA-sicher.
 
 [Yange]:    http://camscofie.github.io  "Yange"
