@@ -26,7 +26,6 @@ sudo chown -R www-data:www-data /var/www
 2. 跟随教程 ["Create a Network"](https://codex.wordpress.org/Create_A_Network)
 3. 更改 /etc/apache2/apache.conf 文件里的
 
-
 ```
 <Directory /var/www/>
 	Options Indexes FollowSymLinks
@@ -59,7 +58,6 @@ $ parent-style = mother theme name
 2. 创建 '$parent-style + "-child"' 文件夹
 3. 添加文件style.css
 
-
 ```
 /*
  Theme Name:   Twenty Fifteen Child
@@ -79,7 +77,6 @@ $ parent-style = mother theme name
 
 4. 添加文件 functions.php
 
-
 ```
 <?php
 function my\_theme\_enqueue_styles() {
@@ -96,5 +93,4 @@ function my\_theme\_enqueue_styles() {
 add\_action( 'wp\_enqueue\_scripts', 'my\_theme\_enqueue\_styles' );
 ?>
 ```
-
 5. ok重新登陆
