@@ -26,12 +26,12 @@ sig(sk,M) = M^d mod N
 Ver(pk,M,σ)=1 :<=> M=σ^e mod N
 
 ### Problem bei RSA:
-* _Unsinnige Nachrichten können signiert werden._
-1. Wähle zuerst Signatur σ ∈ ZN beliebig
-2. Setze dann M := σ^e mod N
-3. Damit ist σ gültige RSA-Signatur für M
+1. _Unsinnige Nachrichten können signiert werden._
+* Wähle zuerst Signatur σ ∈ ZN beliebig
+* Setze dann M := σ^e mod N
+* Damit ist σ gültige RSA-Signatur für M
    
-* _Homomorphie von RSA_
+2. _Homomorphie von RSA_
 + Φ: G -> H
 + Φ(g * h) = Φ(g) ★ Φ(h)
 
