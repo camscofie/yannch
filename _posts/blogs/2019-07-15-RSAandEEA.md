@@ -22,9 +22,10 @@ c(m) ≡ m^(e) mod N
 m(c) ≡ c^(d) mod N
 
 ------------------------------
-### Tricks zum Rechnen:
-1. 51^2 mod 59 = (59-8)^2 mod 59 = (-8)^2 mod 59
-2. 3^60 mod 59 = 3^(60 mod 58) mod 59 = 3^2 mod 59.    ## ord(G) ist 58, da 59 Prim
+
+#### Tricks zum Rechnen:
++ 51^2 mod 59 = (59-8)^2 mod 59 = (-8)^2 mod 59
++ 3^60 mod 59 = 3^(60 mod 58) mod 59 = 3^2 mod 59.    ## ord(G) ist 58, da 59 Prim
 
 ## [Extended Euclidean algorithm](https://en.wikipedia.org/wiki/Extended_Euclidean_algorithm)
 ----------------------------------------------
