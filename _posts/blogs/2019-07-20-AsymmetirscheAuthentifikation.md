@@ -32,6 +32,10 @@ Ver(pk,M,σ)=1 :<=> M=σ^e mod N
 3. Damit ist σ gültige RSA-Signatur für M
    
 * _Homomorphie von RSA_
++ Φ: G -> H
++ Φ(g * h) = Φ(g) ★ Φ(h)
+
+let's say pk = (N,e), two Signatures σ1 and σ2 for two Message M1 != M2, so we get the Signature of Message (M1*M2) mod N, by calculating σ1 *σ2 mod N.
 
 ### Repair: 
 (RSA-)PSS: _Probabilistic Signature Scheme_
