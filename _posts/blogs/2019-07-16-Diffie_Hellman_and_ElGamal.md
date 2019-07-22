@@ -11,10 +11,10 @@ category: blogs
 **Process**
 1. Alice and Bob choose a pair (p,g).    //p is prime, and g is [primitive root modulo p](https://en.wikipedia.org/wiki/Primitive_root_modulo_n)
 2. Alice and Bob choose their secret integer, a and b.
-3. Alice sends Bob her A = g^a mod p.
-4. Bob sends Alice his B = g^b mod p.
-5. Alice computes s = B^a
-6. Bob computes s = A^b
+3. Alice sends Bob her Xa = g^a mod p.
+4. Bob sends Alice his Xb = g^b mod p.
+5. Alice computes s = Xb^a mod p.
+6. Bob computes s = Xa^b mod p.
 
 **now they share the same secret s.**
 
