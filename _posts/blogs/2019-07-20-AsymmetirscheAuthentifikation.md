@@ -59,7 +59,7 @@ a = g^e wird sowohl als G-Element als auch als Exponent interpretiert
 
 * _Randomisierung ⇒ Signaturen für unsinnige Nachrichten_
 1. Wähle c zufällig
-2. Setze a := (g^c)(g^x) = g^c+x und b := −a mod ord(G) 
+2. Setze a := (g^c)(g^x) = g^c+x und b := −a mod |G| 
 3. Damit ist (a, b) gültige Signatur für die Nachricht
 
 ### Repair:
