@@ -51,7 +51,7 @@ Sig(sk,M) = (pad(M))^d mod N
 Es sei **G einen endliche zyklische Gruppe** und **g ein Erzeuger von G**:
 
 + **Gen**(1^k): Zieht ein x zufällig und gibt als geheimen Schlüssel sk = (G,g,x) und als öffentlichen Schlüssel: pk = (G,g,g^x) aus
-+ **Sig**(sk,M): Wähle ein e zufällig und setze a :=g^e. Berechne b als Lösung von a*x + e *b = M mod |G|. Die Signatur ist dann σ  = (a,b).
++ **Sig**(sk,M): Wähle ein e zufällig und setze a :=g^e. Berechne b als Lösung von a*x + e *b = M mod ord(G). Die Signatur ist dann σ  = (a,b).
 + **Ver**(pk,M,σ=(a,b)): Gebe 1 aus, wenn (g^x)^a * a^b = g^M, sonst gebe 0 aus.
 
 ### Problem:
@@ -59,7 +59,7 @@ a = g^e wird sowohl als G-Element als auch als Exponent interpretiert
 
 * _Randomisierung ⇒ Signaturen für unsinnige Nachrichten_
 1. Wähle c zufällig
-2. Setze a := (g^c)(g^x) = g^c+x und b := −a mod |G| 
+2. Setze a := (g^c)(g^x) = g^c+x und b := −a mod ord(G) 
 3. Damit ist (a, b) gültige Signatur für die Nachricht
 
 ### Repair:
