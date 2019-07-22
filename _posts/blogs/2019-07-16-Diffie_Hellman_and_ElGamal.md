@@ -20,6 +20,15 @@ category: blogs
 
 ![alter text](../../resources/postImage/DiffieHellman/800px-Diffie-Hellman_Key_Exchange.svg.png)
 
+### Man-in-the-middle-Attack
++ Attack starts at: Alice sends Bob g^a, attack blocks the g^a and g^b
++ attacker chooses a' and send Bob g^a', then send Alice g^b'
++ Alice think the sk is g^ab' and Bob think is g^a'b
++ Attacker knows a'; b'; g^a; g^b, then he can calculate g^ab' and g^a'b
++ Attacker blocks messages from Alice, Decrypt with g^ab' then Encrypt with g^a'b send to Bob, vice versa from Bob.
++ Protocol works all normal, _Alice and Bob never know the attacker's existence._
+
+
 ## [ElGamal encryption](https://en.wikipedia.org/wiki/ElGamal_encryption)
 ----------------------------------
 
