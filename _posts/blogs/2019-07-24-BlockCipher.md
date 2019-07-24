@@ -10,10 +10,10 @@ category: blogs
 + M: Message; C: Ciphertext; IP: Initial Vector 
 
 **1. Encryption:**
-+ M = M1 | M2 | ... | Mn
++ M = M1 + M2 + ... + Mn
 + C1 = E(M1 Xor IV)
 + C2 = E(M2 Xor C1)
-+ C = C1 | C2 | ... | Cn
++ C = C1 + C2 + ... + Cn
 
 **2. Decryption:**
 *go backwards*
