@@ -12,7 +12,7 @@ category: blogs
 + Signieren: σ <- Sig(sk,M)
 + Verifizieren: Ver(pk,M,σ) = {0,1}
 
-### Schema EUF-CMA-sicher:
+### EUF-CMA (Existential Unforgeability under Chosen Message Attack):
 _kein PPT-Angreifer A wins._
 1. A has pk and access to Sig(sk,*)-Orakel
 2. A gives (M*,σ*)
