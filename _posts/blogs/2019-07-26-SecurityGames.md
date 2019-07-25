@@ -16,7 +16,7 @@ category: blogs
 
 ## EUF-CMA (Existential Unforgeability under Chosen Message Attack):
 **言辞**：攻击者有pk 和 Sig(sk,M) Oracle 的权限，攻击者生成伪造的信息和签名；攻击者获胜，如果伪造的签名解锁后等于被伪造的信息。
-**Schema IND-CPA-sicher ⇔ kein PPT-Angreifer A wins.**
+__Schema IND-CPA-sicher ⇔ kein PPT-Angreifer A wins.__
 1. A has pk and access to Sig(sk,*)-Orakel
 2. A gives (M*,σ*)
 3. A wins, when Ver(pk,M*,σ*) = 1 and M* != M.
