@@ -9,8 +9,12 @@ category: blogs
 
 **Merkle–Damgård Construction is a method to build collision-resistant cryptographic hash functions from collision-resistant one-way compression functions.**
 
+![alt text](/resources/postImage/Merkle–DamgardConstruction/2880px-Merkle-Damgard_hash_big.svg.png)
+
 ## Process
-+ M* = M1 || M2 || M3
++ M* = M1 + M2 + M3 + ... + Mn
++ Hi := f(Hi-1 + Mi);  1<i<n
+![alt text](/resources/postImage/Merkle–DamgardConstruction/2880px-MerkleDamgard.svg.png)
 
 ## MD-compliant padding
 
@@ -18,6 +22,5 @@ category: blogs
 + length(M) = length(M') => len(Pad(M))=len(Pad(M'))
 + len(M) != len(M') => the last block of Pad(M) != last block of Pad(M')
 
-![alt text](/resources/postImage/Merkle–DamgardConstruction/2880px-Merkle-Damgard_hash_big.svg.png)
 
 [Yange]:    http://camscofie.github.io  "Yange"
