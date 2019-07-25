@@ -5,13 +5,13 @@ description: EUF-CMA IND-CPA
 category: blogs
 ---
 ## IND-CPA (Indistinguishability under Chosen Plaintext Attack)
+**言辞**：对手生成两条等长的消息。挑战者随机决定加密其中的一个。攻击者试图猜测哪些消息是加密的。
 **Schema IND-CPA-sicher ⇔ kein eﬃzienter Angreifer A kann Chiﬀrate von selbstgewählten Klartexten unterscheiden**
 1. A erhält im Folgenden Zugriﬀ auf Enc(K, ·)-Orakel
 2. A wählt zwei Nachrichten M (1) , M (2) gleicher Länge 
-3. A erhält C ∗ := Enc(K, M (b) ) für gleichverteiltes b ∈ {1, 2} 
+3. A erhält C∗ := Enc(K, M (b) ) für gleichverteiltes b ∈ {1, 2} 
 4. A gewinnt, wenn er b richtig rät
 
-**言辞**：对手生成两条等长的消息。挑战者随机决定加密其中的一个。攻击者试图猜测哪些消息是加密的。
 
 ![alt text](/resources/postImage/SecurityGames/Screenshot&#32;2019-07-26&#32;at&#32;00.49.53.png)
 
