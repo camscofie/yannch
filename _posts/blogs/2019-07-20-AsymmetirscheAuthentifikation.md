@@ -13,7 +13,7 @@ category: blogs
 + Verifizieren: Ver(pk,M,σ) = {0,1}
 
 ### EUF-CMA (Existential Unforgeability under Chosen Message Attack):
-_kein PPT-Angreifer A wins._
+**Schema IND-CPA-sicher ⇔ kein PPT-Angreifer A wins.**
 1. A has pk and access to Sig(sk,*)-Orakel
 2. A gives (M*,σ*)
 3. A wins, when Ver(pk,M*,σ*) = 1 and M* != M.
