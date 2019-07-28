@@ -2,7 +2,7 @@
 layout: post
 title: Wordpress 安装及常见错误
 category: DV
-description: 难点汇总
+description: HOW to...
 ---
 
 ## Wordpress 安装
