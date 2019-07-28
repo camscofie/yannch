@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Wordpress 安装及运用时的难点
+title: Wordpress 安装及常见错误
 category: DV
 description: 难点汇总
 ---
@@ -94,3 +94,14 @@ add\_action( 'wp\_enqueue\_scripts', 'my\_theme\_enqueue\_styles' );
 ?>
 ```
 + ok重新登陆
+
+## wordpress update password
+1. encryt your Password to Hash through MD5 et cetera.
+2. login to your server
+3. login to mysql      // %mysql -r root -p
+4. // %show databases;
+5. use the WP database; // % use "xxx";
+6. // %show tables;
+7. // %select id, user_login, user_pass from "the table that you have";
+8. // %update "the table that you have" set user_pass="your hash" where id = "your user id";
+9. repeat 7 to confirm.
