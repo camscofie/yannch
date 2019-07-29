@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Encryption Methods for Kids
-description: Cäser, Vigenère, One-Time-Pad, 
+description: Cäser, Vigenère, One-Time-Pad, Stream cipher
 category: blogs
 ---
 
@@ -46,7 +46,7 @@ Hacking tips:
 + ~~Steal their pad during transfer~~
 + none
   
-## Stream cipher with Pseudo random number
+## Stromchiﬀren mit Pseudozufallszahlen
 ![alter text](/resources/postImage/KidsCipher/Xnip2019-07-30_00-30-26.jpg)
 
 
