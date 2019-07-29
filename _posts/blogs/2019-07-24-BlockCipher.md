@@ -1,9 +1,15 @@
 ---
 layout: post
 title: Block Cipher
-description: CBC mode
+description: ECB, CBC, CTR
 category: blogs
 ---
+
+## Electronic Codebook Mode (ECB-Modus)
+1. Teile M in l Bit Blöcke M1, M2 . . . Mn ∈ {0, 1}^l auf
+2. Setze C := (C1 , . . . ) mit Ci := E(K, Mi) ∈ {0, 1}^l
+3. Entschlüsselung funktioniert genauso, nur mit D
+
 
 ## Cipher Block Chaining Mode (CBC)
 ![alt text](/resources/postImage/BlockCipher/CBC_encryption.svg.png)
@@ -19,5 +25,7 @@ category: blogs
 **2. Decryption:**
 *go backwards*
 
+## Counter (CTR) Mode
+![alter text](../../resources/postImage/BlockCipher/Xnip2019-07-30_00-40-09.jpg)
 
 [Yange]:    http://camscofie.github.io  "Yange"
