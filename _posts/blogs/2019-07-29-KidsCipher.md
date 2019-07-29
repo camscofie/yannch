@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Encryption Methods for Kids
-description: Cäser, Vige
+description: Cäser, Vigenère, One-Time-Pad, 
 category: blogs
 ---
 
@@ -30,19 +30,25 @@ Hacking tips:
 Ci = Pi + Ki (mod 26)
 
 Hacking Tips:
-+ Guess the length of the Key, then it's a Cäser, see [Kasiski examination](https://en.wikipedia.org/wiki/Kasiski_examination).
++ Guess the length of the Key, then it's a Cäser loop, see [Kasiski examination](https://en.wikipedia.org/wiki/Kasiski_examination).
 
 ## One-Time-Pad
-**a Vigenère which the Key is as length as the Message**
+**a Vigenère which the Key has the same length as the Message**
 
 One time pad has the **informationstheoretische Sicherheitseigenschaften**, which means 
 * Adversary not get any information from M, even if they have C
 * can be formalisiert
 
+Problem:
++ Key too long
+
 Hacking tips:
 + ~~Steal their pad during transfer~~
 + none
-## Kerckhoﬀs’ Prinzip
+  
+## Stream cipher with Pseudo random number
+![alter text](/resources/postImage/KidsCipher/Xnip2019-07-30_00-30-26.jpg)
+
 
 
 [Yange]:    http://camscofie.github.io  "Yange"
