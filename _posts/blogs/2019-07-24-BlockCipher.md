@@ -26,6 +26,10 @@ category: blogs
 *go backwards*
 
 ## Counter (CTR) Mode
-![alter text](../../resources/postImage/BlockCipher/Xnip2019-07-30_00-40-09.jpg)
+![alter text](/resources/postImage/BlockCipher/Xnip2019-07-30_00-40-09.jpg)
+
+
+
+![alter text](/resources/postImage/BlockCipher/Xnip2019-07-30_00-46-51.jpg)
 
 [Yange]:    http://camscofie.github.io  "Yange"
