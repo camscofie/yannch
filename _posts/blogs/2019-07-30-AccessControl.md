@@ -24,17 +24,17 @@ category: blogs
 ![alter text](/resources/postImage/AccessControl/Xnip2019-07-30_17-20-32.jpg)
 
 ### Discretionary-Security/ds-Eigenschaft
-**user's action is what it predefined**
++ user's action is what it predefined
 
 ∀(s, o, a) ∈ B : a ∈ m(s,o) 
 
 ### Simple-Security/ss-Eigenschaft
-**No Read-up**
++ No Read-up
 
 ∀(s, o, read) ∈ B : f s (s) ≥ f o (o)
 
-### Star Property/star-Eigenschaft
-**No Write-down**
+### Star Property
++ No Write-down
 
 ∀ (s, o, {write, append}) ∈ B : f o (o) ≥ f c (s)
 
@@ -43,5 +43,31 @@ category: blogs
 * Subjekte dürfen auf Objekte höheren Sicherheitslevels schreibend zugreifen 
 
 ## Chinese-Wall-Modell (Brewer-Nash-Modell)
+-----------------------
+
+### Definition
++ eine Menge C von Firmen
++ eine Menge S von Beratern
++ eine Menge O von Objekten
++ eine Menge A = {read, write} von Zugriﬀsoperationen
++ eine Funktion y: O → C, die jedem Objekt seine eindeutige Firma zuweist
++ eine Funktion x: O → P(C), die jedem Objekt die Menge an Firmen zuweist, mit denen es in Konﬂikt steht
+  
+### Simple-Security/ss-Eigenschaft
+
+**all Anfrage** to object o:
++ the berater hasn't done anything with an object o', which is from another Firma
++ or the Berater has not **read/write** any o', which has conflicts with o
+  
+y(o)=y(o') ∨ y(o)!∈ x(o')
+
+### Star Property
+
+a **write Anfrage** to oject o: 
++ the berater hasn't **read** any object o', which is from another Firma
++ or all the o' the berater has **read** any o', but o' has no conflicts with anything
+
+y(o)=y(o') ∨ x(o')=∅ 
+
 
 [Yange]:    http://camscofie.github.io  "Yange"
