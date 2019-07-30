@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Asymmetirsche Authentifikation
+title: Asymmetrische Authentifikation
 description: RSA and ElGamal Signaturen 
 category: blogs
 ---
