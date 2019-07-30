@@ -2,7 +2,7 @@
 layout: post
 title: RSA Encryption and EEA
 category: blogs
-description: calculation
+description: RSA and some calculation
 ---
 
 ## [RSA Process](https://en.wikipedia.org/wiki/RSA_(cryptosystem))

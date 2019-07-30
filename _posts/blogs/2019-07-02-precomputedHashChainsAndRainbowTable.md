@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Precomputed hash chains and Rainbow table
-description: hash attack
+description: Attack to hash functions
 category: blogs
 ---
 

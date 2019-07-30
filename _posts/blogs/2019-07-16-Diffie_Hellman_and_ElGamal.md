@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Diffie-Hellman and ElGamal Encryption
-description: good stuff
+description: the art of mixing things
 category: blogs
 ---
 

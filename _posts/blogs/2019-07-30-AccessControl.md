@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Access Control
-description: Bell-LaPadula model and Chinese-Wall-Modell (Brewer-Nash-Modell)
+description: Bell-LaPadula-Modell and Chinese-Wall-Modell
 category: blogs
 ---
 
@@ -39,7 +39,9 @@ category: blogs
 ∀ (s, o, {write, append}) ∈ B : f o (o) ≥ f c (s)
 
 ### Nachteile des Bell-LaPadula-Modells
-* Eie aktuellen Sicherheitslevel nie herabgesetzt werden
+* Eie aktuellen Sicherheitslevel werden nie herabgesetzt
 * Subjekte dürfen auf Objekte höheren Sicherheitslevels schreibend zugreifen 
+
+## Chinese-Wall-Modell (Brewer-Nash-Modell)
 
 [Yange]:    http://camscofie.github.io  "Yange"
