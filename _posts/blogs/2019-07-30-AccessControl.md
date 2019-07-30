@@ -24,7 +24,7 @@ category: blogs
 ![alter text](/resources/postImage/AccessControl/Xnip2019-07-30_17-20-32.jpg)
 
 ### Discretionary-Security/ds-Eigenschaft
-+ user's action is what it predefined
++ user's action is what it has predefined
 
 ∀(s, o, a) ∈ B : a ∈ m(s,o) 
 
@@ -56,16 +56,16 @@ category: blogs
 ### Simple-Security/ss-Eigenschaft
 
 **all Anfrage** to object o:
-+ the berater hasn't done anything with an object o', which is from another Firma
-+ or the Berater has not **read/write** any o', which has conflicts with o
++ the berater hasn't done anything with any object o', which is not from another Firma or
++ the Berater has not **read/write** any o', which has conflicts with o
   
 y(o)=y(o') ∨ y(o)!∈ x(o')
 
 ### Star Property
 
 a **write Anfrage** to oject o: 
-+ the berater hasn't **read** any object o', which is from another Firma
-+ or all the o' the berater has **read** any o', but o' has no conflicts with anything
++ the berater hasn't **read** any object o', which is not from another Firma or
++ all the o' the berater has **read** any o', but o' has no conflicts with anything
 
 y(o)=y(o') ∨ x(o')=∅ 
 
