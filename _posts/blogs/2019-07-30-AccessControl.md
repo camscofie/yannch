@@ -6,9 +6,10 @@ category: blogs
 ---
 
 ## Bell LaPadula 
+------------------
 **A state machine model used for enforcing access control in government and military applications.**
 
-
+### Definition
 + eine Menge S von Subjekten
 + eine Menge O von Objekten
 + eine Menge A = {read, write, append, excute} von Zugriﬀsoperation
@@ -22,6 +23,23 @@ category: blogs
 
 ![alter text](/resources/postImage/AccessControl/Xnip2019-07-30_17-20-32.jpg)
 
+### Discretionary-Security/ds-Eigenschaft
+**user's action is what it predefined**
 
+∀(s, o, a) ∈ B : a ∈ m(s,o) 
+
+### Simple-Security/ss-Eigenschaft
+**No Read-up**
+
+∀(s, o, read) ∈ B : f s (s) ≥ f o (o)
+
+### Star Property/star-Eigenschaft
+**No Write-down**
+
+∀ (s, o, {write, append}) ∈ B : f o (o) ≥ f c (s)
+
+### Nachteile des Bell-LaPadula-Modells
+* Eie aktuellen Sicherheitslevel nie herabgesetzt werden
+* Subjekte dürfen auf Objekte höheren Sicherheitslevels schreibend zugreifen 
 
 [Yange]:    http://camscofie.github.io  "Yange"
