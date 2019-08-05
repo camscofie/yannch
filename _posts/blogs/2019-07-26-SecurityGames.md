@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 安全游戏
+title: Security Games
 description: EUF-CMA IND-CPA
 category: blogs
 ---
