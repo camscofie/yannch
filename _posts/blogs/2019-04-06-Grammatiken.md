@@ -27,19 +27,15 @@ R = {S → (S) + (S), S → (S) ∗ (S), S → a, S → a + a, S → a ∗ a}
 2. Grammatiken, bei denen alle Ableitungsregeln die unten gestellte Form haben, heißen **kontextsensitiv** oder **Grammatiken vom Typ 1**
   * u → v mit u ∈ V^+ , v ∈ ((V ∪ Σ)\{S})^+ und │u│ ≤ │v│, oder
   * S→ε
-
 3. Grammatiken, bei denen alle Ableitungsregeln die Form A → v mit A ∈ V und v ∈ (V∪Σ)^∗ haben, heißen **kontextfrei** oder **Grammatiken vom Typ 2**
-
-**言辞**： production 等式左边只有一个 non-terminal 变量
-
++ **言辞**： production 等式左边只有一个 non-terminal 变量
 4. Grammatiken, bei denen alle Ableitungsregeln die Form A → v mit A ∈ V und v = ε oder v = aB für a ∈ Σ, B ∈ V haben, heißen **rechtslinear( regular languages)** oder **Grammatiken vom Typ 3**.
-
-**言辞**：左边如上，右边 （可以为空值││单个terminal 变量││单个terminal 变量 + non-terminal 变量）
-
++ **言辞**：左边如上，右边 （可以为空值││单个terminal 变量││单个terminal 变量 + non-terminal 变量）
 
 
 
-### CYK algorithm
+
+## CYK algorithm
 
 CYK algorithm is a parsing algorithm for context-free grammars, it can calculate if giving string can be represented in the giving context-free grammers in O(n^3).
 
