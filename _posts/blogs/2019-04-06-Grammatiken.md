@@ -23,10 +23,14 @@ R = {S → (S) + (S), S → (S) ∗ (S), S → a, S → a + a, S → a ∗ a}
 
 ## Chomsky-Hierarchie
 ---------------------
+Two important types are context-free grammars (Type 2) and regular grammars (Type 3). The languages that can be described with such a grammar are called context-free languages and regular languages, respectively. Although much less powerful than unrestricted grammars (Type 0), which can in fact express any language that can be accepted by a Turing machine, these two restricted types of grammars are most often used because parsers for them can be efficiently implemented.[8] For example, all regular languages can be recognized by a finite state machine, and for useful subsets of context-free grammars there are well-known algorithms to generate efficient LL parsers and LR parsers to recognize the corresponding languages those grammars generate.
+
 1. Grammatiken ohne weitere Einschränkungen heißen **Grammatiken vom Typ 0**.
+  + **言辞**：区别与grammar sensetive：{xAz -> xyz│A∈ N; x,z ∈ (N∪Σ)^*; and γ ∈ (N∪Σ)^+}，y 可以为空值
 2. Grammatiken, bei denen alle Ableitungsregeln die unten gestellte Form haben, heißen **kontextsensitiv** oder **Grammatiken vom Typ 1**
   * u → v mit u ∈ V^+ , v ∈ ((V ∪ Σ)\{S})^+ und │u│ ≤ │v│, oder
   * S→ε
++ **言辞**：与grammar free的区别：{xAz -> xyz│A∈ N; x,z ∈ (N∪Σ)^*; and γ ∈ (N∪Σ)^+}。 变量A变成string y，只在input 前后有string x 和 z 的情况下。
 3. Grammatiken, bei denen alle Ableitungsregeln die Form A → v mit A ∈ V und v ∈ (V∪Σ)^∗ haben, heißen **kontextfrei** oder **Grammatiken vom Typ 2**
 + **言辞**： production 等式左边只有一个 non-terminal 变量
 4. Grammatiken, bei denen alle Ableitungsregeln die Form A → v mit A ∈ V und v = ε oder v = aB für a ∈ Σ, B ∈ V haben, heißen **rechtslinear( regular languages)** oder **Grammatiken vom Typ 3**.
