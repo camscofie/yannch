@@ -5,8 +5,8 @@ description: Formale Sprachen
 category: blogs
 ---
 
-## Formale Sprachen
 ------------------
+## Formale Sprachen
 
 ### Definition
 1. Ein endliches **Alphabet Σ** ist eine endliche Menge von Symbolen.
@@ -27,8 +27,8 @@ Seien L, L1 , L2 ⊂ Σ∗ Sprachen
 5. Positiver Abschluss: L+ := U(i>0)L^i
 6. Komplementsprache: L^c := Σ∗ \L
 
-## Reguläre Sprachen
 --------------------------
+## Reguläre Sprachen
 Eine Sprache L ⊆ Σ ∗ heißt regulär, wenn für sie einer der folgenden Punkte gilt: (induktive Deﬁnition)
 + Verankerung
   + L = {a} mit a ∈ Σ oder
@@ -39,8 +39,8 @@ Eine Sprache L ⊆ Σ ∗ heißt regulär, wenn für sie einer der folgenden Pun
   + L = L1 ∪ L2 oder
   + L = L1^*
 
-## Pumping-Lemma
 -----------------------
+## Pumping-Lemma
 
 ### Pumping-Lemma für reguläre Sprache
 Für jede reguläre Sprache L gibt es eine natürliche Zahl n, sodass gilt: Jedes Wort **w ∈ L mit │w│ >= n hat eine Zerlegung w = uvx** mit den folgenden drei Eigenschaften:
@@ -55,8 +55,8 @@ Für jede reguläre Sprache L gibt es eine natürliche Zahl n, sodass gilt: Jede
 + │vxy│ < n
 + u(v^i)x(y^i)z ∈ L für alle i ∈ N
 
-## Deterministische endliche Automaten(DEA)
 -----------------------
+## Deterministische endliche Automaten(DEA)
 
 Ein DEA (Q, Σ, δ, s, F) besteht aus:
 + Q, einer endlichen Menge von Zuständen
@@ -65,8 +65,8 @@ Ein DEA (Q, Σ, δ, s, F) besteht aus:
 + s ∈ Q, einem Startzustand
 + F ⊆ Q, einer Menge von Endzuständen
 
-## Nichtdetermistische endliche Automaten(NEA)
 -----------------------
+## Nichtdetermistische endliche Automaten(NEA)
 
 Ein nichtdeterministischer endlicher Automat (NEA) besteht aus:
 + Q, einer endlichen Menge von Zuständen
