@@ -27,6 +27,18 @@ Seien L, L1 , L2 ⊂ Σ∗ Sprachen
 5. Positiver Abschluss: L+ := U(i>0)L^i
 6. Komplementsprache: L^c := Σ∗ \L
 
+## Reguläre Sprachen
+--------------------------
+Eine Sprache L ⊆ Σ ∗ heißt regulär, wenn für sie einer der folgenden Punkte gilt: (induktive Deﬁnition)
++ Verankerung
+  + L = {a} mit a ∈ Σ oder
+  + L = ∅ oder
+  + L = {ε}
++ Induktion: Seien L1 , L2 reguläre Sprachen
+  + L = L1 · L2 oder
+  + L = L1 ∪ L2 oder
+  + L = L1^*
+
 
 ## Deterministische endliche Automaten(DEA)
 -----------------------
