@@ -39,6 +39,21 @@ Eine Sprache L ⊆ Σ ∗ heißt regulär, wenn für sie einer der folgenden Pun
   + L = L1 ∪ L2 oder
   + L = L1^*
 
+## Pumping-Lemma
+-----------------------
+
+### Pumping-Lemma für reguläre Sprache
+Für jede reguläre Sprache L gibt es eine natürliche Zahl n, sodass gilt: Jedes Wort **w ∈ L mit │w│ >= n hat eine Zerlegung w = uvx** mit den folgenden drei Eigenschaften:
+
++ │uv│ <= n 
++ │v│ >= 1 
++ u(v^i)x ∈ L für alle i ∈ N
+
+### Pumping-Lemma für kontextfreie Sprache
+**w = uvxyz, mit │w│ >= n**
++ │vy│ > 0
++ │vxy│ < n
++ u(v^i)x(y^i)z ∈ L für alle i ∈ N
 
 ## Deterministische endliche Automaten(DEA)
 -----------------------
@@ -60,11 +75,3 @@ Ein nichtdeterministischer endlicher Automat (NEA) besteht aus:
 + s ∈ Q, einem Startzustand
 + F ⊆ Q, einer Menge von Endzuständen
 
-## Pumping-Lemma
------------------------
-
-Für jede reguläre Sprache L gibt es eine natürliche Zahl n, sodass gilt: Jedes Wort w ∈ L mit Mindestlänge n hat eine Zerlegung w = uvx mit den folgenden drei Eigenschaften:
-
-+ Die beiden W¨orter u und v haben zusammen h¨ochstens die Länge n.
-+ Das Wort v ist nicht leer
-+ Für jede natürliche Zahl (mit 0) i ist das Wort u(v^i)x in der Sprache L, d.h. die Wörter ux, uvx, uvvx, uvvvx usw. sind alle in der Sprache L.
