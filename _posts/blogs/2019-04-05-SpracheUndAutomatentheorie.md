@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Automatentheorie
+title: Sprache und Automatentheorie
 description: Formale Sprachen
 category: blogs
 ---
