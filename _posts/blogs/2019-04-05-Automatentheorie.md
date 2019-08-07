@@ -7,6 +7,7 @@ category: blogs
 
 ------------------
 ## Formale Sprachen
+-----------------------
 
 ### Definition
 1. Ein endliches **Alphabet Σ** ist eine endliche Menge von Symbolen.
@@ -29,6 +30,7 @@ Seien L, L1 , L2 ⊂ Σ∗ Sprachen
 
 --------------------------
 ## Reguläre Sprachen
+-----------------------
 Eine Sprache L ⊆ Σ ∗ heißt regulär, wenn für sie einer der folgenden Punkte gilt: (induktive Deﬁnition)
 + Verankerung
   + L = {a} mit a ∈ Σ oder
@@ -41,6 +43,7 @@ Eine Sprache L ⊆ Σ ∗ heißt regulär, wenn für sie einer der folgenden Pun
 
 -----------------------
 ## Pumping-Lemma
+-----------------------
 
 ### Pumping-Lemma für reguläre Sprache
 Für jede reguläre Sprache L gibt es eine natürliche Zahl n, sodass gilt: Jedes Wort **w ∈ L mit │w│ >= n hat eine Zerlegung w = uvx** mit den folgenden drei Eigenschaften:
@@ -57,6 +60,7 @@ Für jede reguläre Sprache L gibt es eine natürliche Zahl n, sodass gilt: Jede
 
 -----------------------
 ## Deterministische endliche Automaten(DEA)
+-----------------------
 
 Ein DEA (Q, Σ, δ, s, F) besteht aus:
 + Q, einer endlichen Menge von Zuständen
@@ -67,6 +71,7 @@ Ein DEA (Q, Σ, δ, s, F) besteht aus:
 
 -----------------------
 ## Nichtdetermistische endliche Automaten(NEA)
+-----------------------
 
 Ein nichtdeterministischer endlicher Automat (NEA) besteht aus:
 + Q, einer endlichen Menge von Zuständen
