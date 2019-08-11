@@ -6,6 +6,7 @@ category: blogs
 ---
 
 ## Wörter
+--------------------
 1. Ein endliches **Alphabet Σ** ist eine endliche Menge von Symbolen.
 2. Eine endliche Folge von Symbolen aus Σ heißt **Wort** (über Σ). In der Regel ist die Variable für ein Wort w.
 3. Die Menge aller Wörter über Σ heißt **Σ∗** . Das heißt w ∈ Σ∗.
@@ -15,6 +16,7 @@ category: blogs
 7. Eine (nicht! die) beliebige Menge L von Wörtern über einem Alphabet Σ, also L ⊂ Σ∗ heißt (formale) Sprache über Σ. (Eine Sprache beinhaltet nicht immer automatisch ε!)
 
 ## Formale Sprachen
+--------------------
 **Eine formale Sprache L über einem Alphabet Σ ist eine Teilmenge L ⊆ Σ∗ .**
 Seien L, L1 , L2 ⊂ Σ∗ Sprachen
 1. Produktsprache: L1 · L2 := {w1 · w2 │ w1 ∈ L1, w2 ∈ L2}
@@ -25,6 +27,7 @@ Seien L, L1 , L2 ⊂ Σ∗ Sprachen
 6. Komplementsprache: L^c := Σ∗ \L
 
 ## Reguläre Sprachen
+--------------------
 + **Jede Sprache, die von einem endlichen Automaten erkannt wird, ist reguläre
 
 Eine Sprache L ⊆ Σ ∗ heißt regulär, wenn für sie einer der folgenden Punkte gilt: (induktive Deﬁnition)
@@ -69,7 +72,6 @@ R = {S → (S) + (S), S → (S) ∗ (S), S → a, S → a + a, S → a ∗ a}
 ```
 
 ### Chomsky-Hierarchie
----------------------
 Two important types are context-free grammars (Type 2) and regular grammars (Type 3). The languages that can be described with such a grammar are called context-free languages and regular languages, respectively. Although much less powerful than unrestricted grammars (Type 0), which can in fact express any language that can be accepted by a Turing machine, these two restricted types of grammars are most often used because parsers for them can be efficiently implemented.[8] For example, all regular languages can be recognized by a finite state machine, and for useful subsets of context-free grammars there are well-known algorithms to generate efficient LL parsers and LR parsers to recognize the corresponding languages those grammars generate.
 
 1. Grammatiken ohne weitere Einschränkungen heißen **Grammatiken vom Typ 0**.
@@ -84,6 +86,7 @@ Two important types are context-free grammars (Type 2) and regular grammars (Typ
 + **言辞**：左边如上，右边 （可以为空值││单个terminal 变量││单个terminal 变量 + non-terminal 变量）
 
 ## Deterministische endliche Automaten(DEA)
+--------------------
 Ein DEA (Q, Σ, δ, s, F) besteht aus:
 + Q, einer endlichen Menge von Zuständen
 + Σ, einer endlichen Menge von Eingabesymbolen, dem Eingabealphabet
@@ -92,6 +95,7 @@ Ein DEA (Q, Σ, δ, s, F) besteht aus:
 + F ⊆ Q, einer Menge von Endzuständen
 
 ## Nichtdetermistische endliche Automaten(NEA)
+--------------------
 Ein nichtdeterministischer endlicher Automat (NEA) besteht aus:
 + Q, einer endlichen Menge von Zuständen
 + Σ, einem endlichen Alphabet
