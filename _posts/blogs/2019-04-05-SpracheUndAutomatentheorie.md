@@ -25,6 +25,8 @@ Seien L, L1 , L2 ⊂ Σ∗ Sprachen
 6. Komplementsprache: L^c := Σ∗ \L
 
 ## Reguläre Sprachen
++ **Jede Sprache, die von einem endlichen Automaten erkannt wird, ist regulär**
+
 Eine Sprache L ⊆ Σ ∗ heißt regulär, wenn für sie einer der folgenden Punkte gilt: (induktive Deﬁnition)
 + Verankerung
   + L = {a} mit a ∈ Σ oder

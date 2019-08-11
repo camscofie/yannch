@@ -5,7 +5,7 @@ description: Informationstheorie - Einführung
 category: blogs
 ---
 
-## Deﬁnition von Information
+## Deﬁnition von Information(信息量)
 Information I: des Auftretens eines Zeichens k
 + Information soll nie negativ sein: I ≥ 0
 + Ein sicheres Ereignis soll keine Information liefern: Pr[(Pi = 1)] ⇒ I = 0
@@ -41,3 +41,15 @@ h(x) = -log2 p(x)
 + 最后，我们用熵来评价整个随机变量 x 平均的信息量，而平均最好的量度就是随机变量的期望，即熵的定义如下：
 
 **H(x) = -sum(p(x)*log2(p(x)))**
+
+## Kodierungen
+### Quellencodierungstheorem
+Für jeden präﬁxfreien Code mit einem Codealphabet aus D Zeichen und minimaler mittlerer Codewortlänge ñ gilt:
+
++ H(X)/log2(D) <= ñ <= H(x)/log2(D)+1
+
+### Huﬀman-Codierung
+1. Initialisierung: Füge alle Elemente aus Σ als Blätter in T ein, merke dir die jeweilige Wahrscheinlichkeit p i . Füge sie außerdem in eine Menge (zum Beispiel als Priority-Queue implementiert) Q ein.
+2. Solange Q noch mehr als ein Element enthält: Nimm die zwei Elemente aus Q mit den geringsten Wahrscheinlichkeiten (bei Gleichheit wähle beliebig) und füge einen neuen Knoten v in den Baum T ein, der ein Elternknoten dieser zwei Elemente wird (Die Kantenbeschriftung mit 0 und 1 ist beliebig. Füge v in Q ein und entferne die zwei Elemente aus Q. v bekommt als Wahrscheinlichkeit die Summe der Wahrscheinlichkeiten seiner zwei Kinder zugewiesen.
+3. Gib die Wurzel r zurück.
+
