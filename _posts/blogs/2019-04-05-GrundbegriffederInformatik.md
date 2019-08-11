@@ -28,7 +28,7 @@ Seien L, L1 , L2 ⊂ Σ∗ Sprachen
 
 ## Reguläre Sprachen
 --------------------
-+ **Jede Sprache, die von einem endlichen Automaten erkannt wird, ist reguläre
+**Jede Sprache, die von einem endlichen Automaten erkannt wird, ist reguläre**
 
 Eine Sprache L ⊆ Σ ∗ heißt regulär, wenn für sie einer der folgenden Punkte gilt: (induktive Deﬁnition)
 + Verankerung
@@ -85,8 +85,10 @@ Two important types are context-free grammars (Type 2) and regular grammars (Typ
 4. Grammatiken, bei denen alle Ableitungsregeln die Form A → v mit A ∈ V und v = ε oder v = aB für a ∈ Σ, B ∈ V haben, heißen **rechtslinear( regular languages)** oder **Grammatiken vom Typ 3**.
 + **言辞**：左边如上，右边 （可以为空值││单个terminal 变量││单个terminal 变量 + non-terminal 变量）
 
-## Deterministische endliche Automaten(DEA)
+## Automathen
 --------------------
+
+### Deterministische endliche Automaten(DEA)
 Ein DEA (Q, Σ, δ, s, F) besteht aus:
 + Q, einer endlichen Menge von Zuständen
 + Σ, einer endlichen Menge von Eingabesymbolen, dem Eingabealphabet
@@ -94,8 +96,7 @@ Ein DEA (Q, Σ, δ, s, F) besteht aus:
 + s ∈ Q, einem Startzustand
 + F ⊆ Q, einer Menge von Endzuständen
 
-## Nichtdetermistische endliche Automaten(NEA)
---------------------
+### Nichtdetermistische endliche Automaten(NEA)
 Ein nichtdeterministischer endlicher Automat (NEA) besteht aus:
 + Q, einer endlichen Menge von Zuständen
 + Σ, einem endlichen Alphabet
@@ -103,3 +104,18 @@ Ein nichtdeterministischer endlicher Automat (NEA) besteht aus:
 + s ∈ Q, einem Startzustand
 + F ⊆ Q, einer Menge von Endzuständen
 
+### Äquivalenz von NEA’s und DEA’s
++ Zwei endliche Automaten, die dieselbe Sprache akzeptieren, heißen äquivalent.
++ Zu jedem nichtdeterministischen endlichen Automaten gibt es einen äquivalenten deterministischen endlichen Automaten.
+
+### Minimierung von Automaten
++ Zustände eines (deterministischen) endlichen Automatens, die vom Anfangszustand aus nicht erreichbar sind, heißen **überﬂüssig**.
++ Die Menge aller überﬂüssigen Zustände eines (deterministischen) endlichen Automaten kann in der Zeit O(│Q│·│Σ│) berechnet werden. (DFS)
++ Der Äquivalenzklassenautomat A≡ zu einem deterministischen endlichen Automaten A ohne überﬂüssige Zustände ist minimal.
+
+### Rechtsinvarianz und Index
++ Eine Äquivalenzrelation R über Σ∗ heißt rechtsinvariant, wenn für alle x , y ∈ Σ ∗ gilt: falls x R y so gilt auch xz R yz für alle z ∈ Σ∗
++ Den Index von R bezeichnen wir mit ind(R); er ist die Anzahl der Äquivalenzklassen von Σ∗ bezüglich R.
+  
+#### Nerode–Relation Rl
++ Für eine Sprache L ⊆ Σ∗ ist die Nerode–Relation Rl deﬁniert durch: für x , y ∈ Σ ∗ ist x R L y genau dann wenn (xz ∈ L ⇔ yz ∈ L) für alle z ∈ Σ∗ gilt.
