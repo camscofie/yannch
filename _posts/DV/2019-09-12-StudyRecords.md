@@ -23,7 +23,6 @@ Stammmodul, 6分
 + 学习态度懒散，老想打游戏
 + TGI 必须要通过才可以考Programmierparadigmen，索性这次交白卷，下次考试再不过强制口试
 
-
 ### 12.09.2019 Abmeldung der Höhere Mathematik  
 今天是 12.09.2019，HM考试前5天，我又不得不ab 掉这门考试。
 
