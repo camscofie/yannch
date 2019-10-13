@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Yange Zheng</title>
-    <link>https://www.yzheng.me/</link>
-    <description>Recent content on Yange Zheng</description>
+    <title>test on Yange Zheng</title>
+    <link>https://www.yzheng.me/tags/test/</link>
+    <description>Recent content in test on Yange Zheng</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Sun, 13 Oct 2019 22:43:40 +0200</lastBuildDate>
     
-	<atom:link href="https://www.yzheng.me/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://www.yzheng.me/tags/test/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
