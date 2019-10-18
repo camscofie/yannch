@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>test on Yange Zheng</title>
-    <link>yzheng.me/tags/test/</link>
-    <description>Recent content in test on Yange Zheng</description>
+    <title>test on My New Hugo Site</title>
+    <link>http://example.org/tags/test/</link>
+    <description>Recent content in test on My New Hugo Site</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en</language>
+    <language>en-us</language>
     <lastBuildDate>Sun, 13 Oct 2019 22:43:40 +0200</lastBuildDate>
     
-	<atom:link href="yzheng.me/tags/test/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://example.org/tags/test/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title> look at this</title>
-      <link>yzheng.me/posts/what-about-this/</link>
+      <link>http://example.org/posts/what-about-this/</link>
       <pubDate>Sun, 13 Oct 2019 22:43:40 +0200</pubDate>
       
-      <guid>yzheng.me/posts/what-about-this/</guid>
+      <guid>http://example.org/posts/what-about-this/</guid>
       <description> here is second post </description>
     </item>
     

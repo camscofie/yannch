@@ -3,32 +3,32 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>yzheng.me/posts/what-about-this/</loc>
+    <loc>http://example.org/posts/what-about-this/</loc>
     <lastmod>2019-10-13T22:43:40+02:00</lastmod>
   </url>
   
   <url>
-    <loc>yzheng.me/posts/</loc>
+    <loc>http://example.org/</loc>
     <lastmod>2019-10-13T22:43:40+02:00</lastmod>
   </url>
   
   <url>
-    <loc>yzheng.me/tags/</loc>
+    <loc>http://example.org/posts/</loc>
     <lastmod>2019-10-13T22:43:40+02:00</lastmod>
   </url>
   
   <url>
-    <loc>yzheng.me/tags/test/</loc>
+    <loc>http://example.org/tags/</loc>
     <lastmod>2019-10-13T22:43:40+02:00</lastmod>
   </url>
   
   <url>
-    <loc>yzheng.me/</loc>
+    <loc>http://example.org/tags/test/</loc>
     <lastmod>2019-10-13T22:43:40+02:00</lastmod>
   </url>
   
   <url>
-    <loc>yzheng.me/categories/</loc>
+    <loc>http://example.org/categories/</loc>
   </url>
   
 </urlset>
