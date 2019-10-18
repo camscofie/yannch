@@ -3,37 +3,37 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>http://example.org/posts/what-about-this/</loc>
+    <loc>https://yzheng.me/posts/what-about-this/</loc>
     <lastmod>2019-10-13T22:43:40+02:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/</loc>
+    <loc>https://yzheng.me/</loc>
     <lastmod>2019-10-13T22:43:40+02:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/posts/</loc>
+    <loc>https://yzheng.me/posts/</loc>
     <lastmod>2019-10-13T22:43:40+02:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/tags/</loc>
+    <loc>https://yzheng.me/tags/</loc>
     <lastmod>2019-10-13T22:43:40+02:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/tags/test/</loc>
+    <loc>https://yzheng.me/tags/test/</loc>
     <lastmod>2019-10-13T22:43:40+02:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/posts/my-first-post/</loc>
+    <loc>https://yzheng.me/posts/my-first-post/</loc>
     <lastmod>2019-10-13T22:41:21+02:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/categories/</loc>
+    <loc>https://yzheng.me/categories/</loc>
   </url>
   
 </urlset>
