@@ -20,5 +20,14 @@
       <description> here is second post </description>
     </item>
     
+    <item>
+      <title>this is the title</title>
+      <link>http://example.org/posts/my-first-post/</link>
+      <pubDate>Sun, 13 Oct 2019 22:41:21 +0200</pubDate>
+      
+      <guid>http://example.org/posts/my-first-post/</guid>
+      <description> Am I coool to try this? this is  and this  like this or not like this  more this is for |  what about now     more </description>
+    </item>
+    
   </channel>
 </rss>
