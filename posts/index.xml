@@ -1,0 +1,126 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Posts on Yange Zheng</title>
+        <link>https://yzheng.me/posts/</link>
+        <description>Recent content in Posts on Yange Zheng</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en-us</language>
+        <lastBuildDate>Sun, 13 Oct 2019 22:43:40 +0200</lastBuildDate>
+        <atom:link href="https://yzheng.me/posts/index.xml" rel="self" type="application/rss+xml" />
+        
+        <item>
+            <title> look at this</title>
+            <link>https://yzheng.me/posts/what-about-this/</link>
+            <pubDate>Sun, 13 Oct 2019 22:43:40 +0200</pubDate>
+            
+            <guid>https://yzheng.me/posts/what-about-this/</guid>
+            <description> here is second post Class class = new Class; class.print(); Myclass my = new Myclass();  </description>
+            <content type="html"><![CDATA[
+
+<h1 id="here-is-second-post">here is second post</h1>
+
+<pre><code class="language-java">    Class class = new Class;
+    class.print();
+    Myclass my = new Myclass();
+</code></pre>
+]]></content>
+        </item>
+        
+        <item>
+            <title>Encryption Methods for Kids</title>
+            <link>https://yzheng.me/posts/2019-07-29-kidscipher/</link>
+            <pubDate>Sun, 13 Oct 2019 22:41:21 +0200</pubDate>
+            
+            <guid>https://yzheng.me/posts/2019-07-29-kidscipher/</guid>
+            <description>Cäser Cipher Enc(K, M) = (Mi + K mod 26)
+Bijective Projection * Plain: ABCDEFGHIJKLMNOPQRSTUVWXYZ * Cipher: XYZABCDEFGHIJKLMNOPQRSTUVW
+Example: + Plaintext: THE QUICK BROWN FOX JUMPS OVER THE LAZY DOG + Ciphertext: QEB NRFZH YOLTK CLU GRJMP LSBO QEB IXWV ALD
+Problem: + no Schlüsselraum, (K ∈ {0, &amp;hellip; , 25}) + means: if M make sense, just try around then you find K
+Hacking tips: + Get the most frequent letter out, guessing it&amp;rsquo;s &amp;lsquo;E&amp;rsquo; (if English).</description>
+            <content type="html"><![CDATA[
+
+<h2 id="cäser-cipher">Cäser Cipher</h2>
+
+<p><strong>Enc(K, M) = (Mi + K mod 26)</strong></p>
+
+<p><strong>Bijective Projection</strong>
+* Plain:    ABCDEFGHIJKLMNOPQRSTUVWXYZ
+* Cipher:   XYZABCDEFGHIJKLMNOPQRSTUVW</p>
+
+<p>Example:
++ Plaintext:  THE QUICK BROWN FOX JUMPS OVER THE LAZY DOG
++ Ciphertext: QEB NRFZH YOLTK CLU GRJMP LSBO QEB IXWV ALD</p>
+
+<p>Problem:
++ no Schlüsselraum, (K ∈ {0, &hellip; , 25})
++ means: if M make sense, just try around then you find K</p>
+
+<p>Hacking tips:
++ Get the most frequent letter out, guessing it&rsquo;s &lsquo;E&rsquo; (if English).</p>
+
+<h2 id="vigenère-cipher">Vigenère cipher</h2>
+
+<p><strong>Cäser with K1, K2, K3&hellip;.Km</strong>
+Ci = Pi + Ki (mod 26)</p>
+
+<p>Hacking Tips:
++ Guess the length of the Key, then it&rsquo;s a Cäser loop, see <a href="https://en.wikipedia.org/wiki/Kasiski_examination">Kasiski examination</a>.</p>
+
+<h2 id="one-time-pad">One-Time-Pad</h2>
+
+<p><strong>a Vigenère which the Key has the same length as the Message</strong></p>
+
+<p>One time pad has the <strong>informationstheoretische Sicherheitseigenschaften</strong>, which means
+* Adversary not get any information from M, even if they have C
+* can be formalisiert</p>
+
+<p>Problem:
++ Key too long</p>
+
+<p>Hacking tips:
++ <del>Steal their pad during transfer</del>
++ none</p>
+
+<h2 id="stromchiﬀren-mit-pseudozufallszahlen">Stromchiﬀren mit Pseudozufallszahlen</h2>
+
+<p><img src="/postImage/KidsCipher/Xnip2019-07-30_00-30-26.jpg" alt="alter text" /></p>
+]]></content>
+        </item>
+        
+        <item>
+            <title>this is the title</title>
+            <link>https://yzheng.me/posts/my-first-post/</link>
+            <pubDate>Sun, 13 Oct 2019 22:41:21 +0200</pubDate>
+            
+            <guid>https://yzheng.me/posts/my-first-post/</guid>
+            <description> Am I coool to try this? this is  and this  like this or not like this  more this is for |  what about now     more </description>
+            <content type="html"><![CDATA[
+
+<h1 id="am-i-coool-to-try-this">Am I coool to try this?</h1>
+
+<h2 id="this-is">this is</h2>
+
+<ul>
+<li>and this
+
+<ul>
+<li>like this</li>
+<li>or not like this
+
+<ul>
+<li>more</li>
+<li>this is for |
+
+<ul>
+<li>what about now</li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul>
+
+<h3 id="more">more</h3>
+]]></content>
+        </item>
+        
+    </channel>
+</rss>
