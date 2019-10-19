@@ -1,24 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Projects on &gt; $ cd home</title>
-    <link>https://yzheng.me/projects/</link>
-    <description>Recent content in Projects on &gt; $ cd home</description>
+    <title>Projects on Yange Zheng</title>
+    <link>https://example.com/projects/</link>
+    <description>Recent content in Projects on Yange Zheng</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en</language>
-    <lastBuildDate>Sat, 19 Oct 2019 02:17:51 +0200</lastBuildDate>
+    <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
     
-	<atom:link href="https://yzheng.me/projects/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://example.com/projects/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>Someproject</title>
-      <link>https://yzheng.me/projects/someproject/</link>
-      <pubDate>Sat, 19 Oct 2019 02:17:51 +0200</pubDate>
-      
-      <guid>https://yzheng.me/projects/someproject/</guid>
-      <description> this is an example as you can see, secondary title </description>
-    </item>
     
   </channel>
 </rss>
