@@ -3,6 +3,21 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://yzheng.me/about/about/</loc>
+    <lastmod>2019-10-14T00:28:49+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://yzheng.me/about/</loc>
+    <lastmod>2019-10-14T00:28:49+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://yzheng.me/</loc>
+    <lastmod>2019-10-14T00:28:49+02:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://yzheng.me/posts/what-about-this/</loc>
     <lastmod>2019-10-13T22:43:40+02:00</lastmod>
   </url>
@@ -19,11 +34,6 @@
   
   <url>
     <loc>https://yzheng.me/tags/test/</loc>
-    <lastmod>2019-10-13T22:43:40+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://yzheng.me/</loc>
     <lastmod>2019-10-13T22:43:40+02:00</lastmod>
   </url>
   
