@@ -3,44 +3,44 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://example.com/about/</loc>
+    <loc>https://yzheng.me/about/</loc>
     <lastmod>2019-10-14T00:28:49+02:00</lastmod>
   </url>
   
   <url>
-    <loc>https://example.com/</loc>
+    <loc>https://yzheng.me/</loc>
     <lastmod>2019-10-14T00:28:49+02:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="https://example.com/fr/"
+                href="https://yzheng.me/fr/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://example.com/"
+                href="https://yzheng.me/"
                 />
   </url>
   
   <url>
-    <loc>https://example.com/posts/1/01/posts/</loc>
+    <loc>https://yzheng.me/posts/1/01/posts/</loc>
   </url>
   
   <url>
-    <loc>https://example.com/projects/</loc>
+    <loc>https://yzheng.me/projects/</loc>
   </url>
   
   <url>
-    <loc>https://example.com/tags/</loc>
+    <loc>https://yzheng.me/tags/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="https://example.com/fr/tags/"
+                href="https://yzheng.me/fr/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://example.com/tags/"
+                href="https://yzheng.me/tags/"
                 />
   </url>
   
