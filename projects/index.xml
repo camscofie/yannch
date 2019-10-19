@@ -20,5 +20,23 @@
       <description> this is an example as you can see, secondary title </description>
     </item>
     
+    <item>
+      <title>365 Administration in powershell</title>
+      <link>https://yzheng.me/projects/2019-07-20-365modi/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://yzheng.me/projects/2019-07-20-365modi/</guid>
+      <description>#╭──────────────────────────────╮ #│ ◎ ○ ○ ░░░░ 365 E-mails ░░░░░░│ #├──────────────────────────────┤ #│ │ #│ │ #│ this is for automation of │ #│ configure E-mails in 365. │ #│ │ #│ │ #└──────────────────────────────┘ $MSOCred = Get-Credential $global:Users = @() #users with their original E-mail address $global:old_Users = @() #users with their UserPrincipalName changed to old_xxxx@xxx $global:confirmation = $false # path to the excel file $excelPath = &amp;quot;C:\Script\Faculty.xlsx&amp;quot; # connect to MsolService function logInMsolService { # connect to MsolService Write-Host &amp;quot;`nConnecting to MsolService.</description>
+    </item>
+    
+    <item>
+      <title>Rocket Chat Files download</title>
+      <link>https://yzheng.me/projects/2019-06-20-rocketchatfiles/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://yzheng.me/projects/2019-06-20-rocketchatfiles/</guid>
+      <description>import json import requests from pathlib import Path &amp;quot;&amp;quot;&amp;quot; ╭──────────────────────────────────────────────╮ │ ◎ ○ ○ ░░░░░░░░░░░░ Usage ░░░░░░░░░░░░░░░░░░│ ├──────────────────────────────────────────────┤ │ │ │ This gist is to download all the files from │ │ the Rocket Chat chat-history. │ │ │ │ Only modify the following when needed: │ │ │ │ │ │ baseUrl; │ │desPath(where you want to download files to); │ │ chatPath(where are the chat files); │ │ X-Auth-Token; │ │ X-User-Id.</description>
+    </item>
+    
   </channel>
 </rss>

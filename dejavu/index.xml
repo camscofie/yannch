@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Dejavus on Yange Zheng</title>
+    <link>https://yzheng.me/dejavu/</link>
+    <description>Recent content in Dejavus on Yange Zheng</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="https://yzheng.me/dejavu/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Burn windows USB in MacOS</title>
+      <link>https://yzheng.me/dejavu/2019-07-13-macosburnwindows/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://yzheng.me/dejavu/2019-07-13-macosburnwindows/</guid>
+      <description>diskutil list
+sudo diskutil eraseDisk FAT32 &amp;lsquo;name&amp;rsquo; MBRFormat &amp;lsquo;place(/dev/disk2)&amp;rsquo;
+unetbootin
+//FAT32 对文件大小有限制，如果 .ios 文件超过4GB，安装时可能出现错误。</description>
+    </item>
+    
+    <item>
+      <title>Github Page layout changes</title>
+      <link>https://yzheng.me/dejavu/2019-07-02-githubpagechanges/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://yzheng.me/dejavu/2019-07-02-githubpagechanges/</guid>
+      <description>Strucktur of this framework _posts: * the folder of all posts
+_layouts: * the layouts of different page form
+css: * css
+DR &amp;amp; DV &amp;amp; index.md &amp;amp; 404.html: * setting of this page
+js: * js
+images &amp;amp; resources: * resources
+_config.yml &amp;amp; CNAME: * meta information confituration
+Change the name of the List  edit /_layouts/post.html, whichs has sidebar configuration when in post edit /index.md and index.md in different post folder (DR, DV), whichs shows what people can see when they are in different page //3 things edit /css/ default.</description>
+    </item>
+    
+    <item>
+      <title>Nginx site enable</title>
+      <link>https://yzheng.me/dejavu/2019-06-30-nginxsiteenable/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://yzheng.me/dejavu/2019-06-30-nginxsiteenable/</guid>
+      <description> go to /etc/nginx/sites-avaliable/ copy the conf file to ../sites-enabled/ run
+foo@bar:~$ sudo systemctl restart nginx   done  </description>
+    </item>
+    
+    <item>
+      <title>Wordpress 安装及常见错误</title>
+      <link>https://yzheng.me/dejavu/2019-04-13-wpinstall/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://yzheng.me/dejavu/2019-04-13-wpinstall/</guid>
+      <description>Wordpress 安装 跟随教程
+安装wordpress 后需要fpt 连接或安装不成功 在 wp-config.php 里添加：
+define( &#39;FS_METHOD&#39;, &#39;direct&#39; ); sudo chown -R www-data:www-data /var/www  安装wordpress multisite  确定wordpress 文件夹在/var/www/html/ 下 跟随教程 &amp;ldquo;Create a Network&amp;rdquo; 更改 /etc/apache2/apache.conf 文件里的
+&amp;lt;Directory /var/www/&amp;gt; Options Indexes FollowSymLinks AllowOverride None Require all granted &amp;lt;/Directory&amp;gt; sudo /etc/init.d/apache2 restart   把AllowOverride 值改为 &amp;lsquo;All&amp;rsquo;
+ 如果不成功，就删库再来一次。  无法登入(cookie or potential sessions issue) 在 wp-config.php 里添加：
+define(&#39;ADMIN\_COOKIE\_PATH&#39;, &#39;/&#39;); define(&#39;COOKIE_DOMAIN&#39;, &#39;&#39;); define(&#39;COOKIEPATH&#39;, &#39;&#39;); define(&#39;SITECOOKIEPATH&#39;, &#39;&#39;);  wordpress 安装child theme $ parent-style = mother theme name</description>
+    </item>
+    
+    <item>
+      <title>学习错误集</title>
+      <link>https://yzheng.me/dejavu/2019-09-12-studyrecords/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://yzheng.me/dejavu/2019-09-12-studyrecords/</guid>
+      <description>考试季记录 02.08.2019 Bestehen der Sicherheit Stammmodul, 6分
+总结： + 学习周期长，考试复习&amp;gt;=3周，学习&amp;gt;=两周，共计&amp;gt;=5周 + blog 记录知识点 + 对题型有总结
+27.08.2019 Durchfall der Theoretische Grundlagen der Informatik 为了快速通过TGI，不惜交了一次白卷
+原因： + 时间安排不够，一共计划了3周，实际学习不超过两周 + TGI 难，挂科率高，怕学不会，想口试简单点 + 学习态度懒散，老想打游戏 + TGI 必须要通过才可以考Programmierparadigmen，索性这次交白卷，下次考试再不过强制口试
+12.09.2019 Abmeldung der Höhere Mathematik 今天是 12.09.2019，HM考试前5天，我又不得不ab 掉这门考试。
+原因： + 时间安排完全不够，从头到现在只学习了不到两周 + HM 考试后10天有 LA2，LA2 复习时间很短 + HM 知识断层多，难题花太多时间往回补，心态老崩 + 学习态度懒散，老想打游戏 + Lisann 家新买的家具还需要安装 + 9月底需要搬走，这几天还需约人来家里看房</description>
+    </item>
+    
+  </channel>
+</rss>

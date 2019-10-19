@@ -1,22 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-	<meta name="generator" content="Hugo 0.58.3" />
         <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="author"
     content="">
 <meta name="description"
-    content="currently a Student" />
+    content="Reversing Cryptographic Hash Functions  What to do if you have a hashed Message H(msg), and you want to have &amp;lsquo;msg&amp;rsquo;?
+ Because the hash function is always one way, the way to get the message from the hashed code is to try a lot with different word, and see if you end up have same hashed code as H(msg).
+Precomputed Hash Chains We trade time with space. What do we do is, we compute the H(*) before everything happened." />
 <meta name="keywords" content="" />
 <meta name="robots" content="noodp" />
-<link rel="canonical" href="https://yzheng.me/" />
+<link rel="canonical" href="https://yzheng.me/blogs/2019-07-02-precomputedhashchainsandrainbowtable/" />
 
 
 <title>
     
-    Yange Zheng  — Yange&#39;s personal website 
+    Precomputed hash chains and Rainbow table :: Yange Zheng  — Yange&#39;s personal website
     
 </title>
 
@@ -37,21 +38,27 @@
 <link rel="manifest" href="/site.webmanifest">
 <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#252627">
 <link rel="shortcut icon" href="/favicon.ico">
-<meta name="theme-color" content="#252627"><meta itemprop="name" content="Yange Zheng">
-<meta itemprop="description" content="Yange&#39;s personal website">
+<meta name="theme-color" content="#252627"><meta itemprop="name" content="Precomputed hash chains and Rainbow table">
+<meta itemprop="description" content="Attack to hash functions">
 
+
+
+<meta itemprop="wordCount" content="235">
+
+
+
+<meta itemprop="keywords" content="" />
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://yzheng.me"/>
 
-<meta name="twitter:title" content="Yange Zheng"/>
-<meta name="twitter:description" content="Yange&#39;s personal website"/>
+<meta name="twitter:title" content="Precomputed hash chains and Rainbow table"/>
+<meta name="twitter:description" content="Attack to hash functions"/>
 
 
 
 
 
 
-<link rel="alternate" type="application/rss+xml" href="https://yzheng.me/index.xml" title="Yange Zheng" />
 
 
 
@@ -102,14 +109,54 @@
 
             <div class="content">
                 
-    <main aria-role="main">
-        <div>
-            <h1>Yange Zheng</h1>
-                <p>currently a Student</p>
-                <div>
-                    &nbsp; <a href="mailto:posterscofield@gmail.com" target="_blank" rel="noopener" title="Email"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-mail"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg></a> &nbsp;&nbsp; <a href="https://github.com/camscofie/" target="_blank" rel="noopener" title="Github"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-github"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg></a> &nbsp;
-                </div>
+    <main class="post">
+
+        <div class="post-info">
+            
+            </p>
         </div>
+
+        <article>
+            <h2 class="post-title"><a href="https://yzheng.me/blogs/2019-07-02-precomputedhashchainsandrainbowtable/">Precomputed hash chains and Rainbow table</a></h2>
+
+            
+
+            <div class="post-content">
+                
+
+<h2 id="reversing-cryptographic-hash-functions">Reversing Cryptographic Hash Functions</h2>
+
+<blockquote>
+<p>What to do if you have a hashed Message H(msg), and you want to have &lsquo;msg&rsquo;?</p>
+</blockquote>
+
+<p>Because the hash function is always one way, the way to get the message from the hashed code is to try a lot with different word, and see if you end up have same hashed code as H(msg).</p>
+
+<h2 id="precomputed-hash-chains">Precomputed Hash Chains</h2>
+
+<p>We trade time with space. What do we do is, we compute the H(*) before everything happened. But save all the discrete msg-hash pair in not effecient. Better approch is to create a reverse function R (invert of definion and value space from H function) and we do <img src="/resources/postImage/rainbowTable/equation.svg" alt="alt text" /></p>
+
+<p>Later if we get our H(msg) as &lsquo;0CAFC376&rsquo; , we do R(0CAFC376) and we get &lsquo;crepa&rsquo;, because we have already saved the &lsquo;crepa&rsquo; as later word started from &lsquo;zhihu&rsquo;, so we can only recalculate from &lsquo;zhihu&rsquo;, then we know the &lsquo;vfkkd&rsquo; is the msg.</p>
+
+<h2 id="rainbow-table">Rainbow Table</h2>
+
+<p>One big problem of precomputed hash chains has two problems:
+1. it&rsquo;s really hard to find a good R, so in reality we end up have a lot of R(*) is out of the defination space from H,
+2. R has hash collision.</p>
+
+<p>What rainbow table is doing, is that we use number of R (R1&hellip;Rk), we do such <img src="/resources/postImage/rainbowTable/Rainbow_table1.svg" alt="alt text" /></p>
+
+<p>the only way to collide two chains is by hitting same value at same iteration. So we solve the second question.</p>
+
+            </div>
+        </article>
+
+        <hr />
+
+        <div class="post-info">
+  			</div>
+
+        
     </main>
 
             </div>

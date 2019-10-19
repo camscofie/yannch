@@ -1,33 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Yange Zheng</title>
-    <link>https://yzheng.me/</link>
-    <description>Recent content on Yange Zheng</description>
+    <title>Blogs on Yange Zheng</title>
+    <link>https://yzheng.me/blogs/</link>
+    <description>Recent content in Blogs on Yange Zheng</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 19 Oct 2019 02:17:51 +0200</lastBuildDate>
+    <lastBuildDate>Sun, 13 Oct 2019 22:43:40 +0200</lastBuildDate>
     
-	<atom:link href="https://yzheng.me/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://yzheng.me/blogs/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>Someproject</title>
-      <link>https://yzheng.me/projects/someproject/</link>
-      <pubDate>Sat, 19 Oct 2019 02:17:51 +0200</pubDate>
-      
-      <guid>https://yzheng.me/projects/someproject/</guid>
-      <description> this is an example as you can see, secondary title </description>
-    </item>
-    
-    <item>
-      <title>About</title>
-      <link>https://yzheng.me/about/</link>
-      <pubDate>Mon, 14 Oct 2019 00:28:49 +0200</pubDate>
-      
-      <guid>https://yzheng.me/about/</guid>
-      <description>this is about about.</description>
-    </item>
     
     <item>
       <title> look at this</title>
@@ -55,15 +37,6 @@
       <guid>https://yzheng.me/blogs/2019-09-22-la_summary/</guid>
       <description> Jordan Normalform 计算Jordansche Normalform  CPΦ(X) := det(X*IdV - Φ) Eig(Φ,λ) := Kern(Φ - λ*IdV) 对于某个Eigenwert λ，关于λ 的Jordanblocks 的长度 = dim(Hauptraum zu λ), 也就是λ 的algebraischen Vielfachheit 对于某个Eigenwert λ，关于λ 的Jordankästchen 是dim(Eig(Φ,λ)),也就是geometrische Vielfachheit 对于某个Eigenwert λ，长度大于k 的Kästchen = dim Kk(λ) - dimK(k-1)(λ)  计算Jordanbasis (S: J = S^(-1)AS) 设：我们有两个eigenwert λ和ɲ，其中ɲ 的 algebraischen Vielfacheit = geometrische Vielfachheit. λ的不相等。
  Eig(Φ,ɲ) 的向量直接可以放进S 算出Hauptraum(Φ,λ) 的向量，选随机的的一个 H(λ)/Eig(λ)向量作为b1。 算出 (A-λIdV)*b1 = b2 重复步骤3， H 和Eig 的向量相差次 最后从Eig(λ) 补充不够的向量加入S，保证linear unabhängig 位置排序依照JNF  Skalarprodukte  s heißt symmetrisch, falls s(v,w) = s(w,v) für alle v,w ∈ V s heißt positiv definit, falls s(v,v) &amp;gt;= 0, und s(v,v) = 0 genau dann, wenn v = 0 s heißt Skalarprodukt auf V, falls s symmetrisch und V reell, so heißt das Paar (V,s) euklidischer Vektorraum  </description>
-    </item>
-    
-    <item>
-      <title>365 Administration in powershell</title>
-      <link>https://yzheng.me/projects/2019-07-20-365modi/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://yzheng.me/projects/2019-07-20-365modi/</guid>
-      <description>#╭──────────────────────────────╮ #│ ◎ ○ ○ ░░░░ 365 E-mails ░░░░░░│ #├──────────────────────────────┤ #│ │ #│ │ #│ this is for automation of │ #│ configure E-mails in 365. │ #│ │ #│ │ #└──────────────────────────────┘ $MSOCred = Get-Credential $global:Users = @() #users with their original E-mail address $global:old_Users = @() #users with their UserPrincipalName changed to old_xxxx@xxx $global:confirmation = $false # path to the excel file $excelPath = &amp;quot;C:\Script\Faculty.xlsx&amp;quot; # connect to MsolService function logInMsolService { # connect to MsolService Write-Host &amp;quot;`nConnecting to MsolService.</description>
     </item>
     
     <item>
@@ -109,18 +82,6 @@ Tricks zum Rechnen:  51^2 mod 59 = (59-8)^2 mod 59 = (-8)^2 mod 59 3^60 mod 59 =
     </item>
     
     <item>
-      <title>Burn windows USB in MacOS</title>
-      <link>https://yzheng.me/dejavu/2019-07-13-macosburnwindows/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://yzheng.me/dejavu/2019-07-13-macosburnwindows/</guid>
-      <description>diskutil list
-sudo diskutil eraseDisk FAT32 &amp;lsquo;name&amp;rsquo; MBRFormat &amp;lsquo;place(/dev/disk2)&amp;rsquo;
-unetbootin
-//FAT32 对文件大小有限制，如果 .ios 文件超过4GB，安装时可能出现错误。</description>
-    </item>
-    
-    <item>
       <title>Encryption Methods for Kids</title>
       <link>https://yzheng.me/blogs/2019-07-29-kidscipher/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -144,22 +105,6 @@ Angular Angular ist ein von Google entwickeltes JavaScript-Framework für intera
 (1.1) Angular basiert auf Komponenten, die zusammen Daten austauschen
 (1.2) Angular ist mit TypeScript geschrieben. (eine JavaScript Erweiterung ab der Versi-on ES6)
 (1.3) Design, Template, Test und Datenverarbeitung sind für jede Komponente in verschiedenen Dateien getrennt.</description>
-    </item>
-    
-    <item>
-      <title>Github Page layout changes</title>
-      <link>https://yzheng.me/dejavu/2019-07-02-githubpagechanges/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://yzheng.me/dejavu/2019-07-02-githubpagechanges/</guid>
-      <description>Strucktur of this framework _posts: * the folder of all posts
-_layouts: * the layouts of different page form
-css: * css
-DR &amp;amp; DV &amp;amp; index.md &amp;amp; 404.html: * setting of this page
-js: * js
-images &amp;amp; resources: * resources
-_config.yml &amp;amp; CNAME: * meta information confituration
-Change the name of the List  edit /_layouts/post.html, whichs has sidebar configuration when in post edit /index.md and index.md in different post folder (DR, DV), whichs shows what people can see when they are in different page //3 things edit /css/ default.</description>
     </item>
     
     <item>
@@ -223,16 +168,6 @@ Process  M* = M1 + M2 + M3 + &amp;hellip; + Mn Hi := f(Hi-1 + Mi); 1&amp;lt;i&am
     </item>
     
     <item>
-      <title>Nginx site enable</title>
-      <link>https://yzheng.me/dejavu/2019-06-30-nginxsiteenable/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://yzheng.me/dejavu/2019-06-30-nginxsiteenable/</guid>
-      <description> go to /etc/nginx/sites-avaliable/ copy the conf file to ../sites-enabled/ run
-foo@bar:~$ sudo systemctl restart nginx   done  </description>
-    </item>
-    
-    <item>
       <title>NP-completeness</title>
       <link>https://yzheng.me/blogs/2019-08-05-npcompleteness/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -251,15 +186,6 @@ Wir schreiben dann L1 ∝ L2 (L1 ist polynomial transformierbar in L2 ). Intuiti
       <description>Reversing Cryptographic Hash Functions  What to do if you have a hashed Message H(msg), and you want to have &amp;lsquo;msg&amp;rsquo;?
  Because the hash function is always one way, the way to get the message from the hashed code is to try a lot with different word, and see if you end up have same hashed code as H(msg).
 Precomputed Hash Chains We trade time with space. What do we do is, we compute the H(*) before everything happened.</description>
-    </item>
-    
-    <item>
-      <title>Rocket Chat Files download</title>
-      <link>https://yzheng.me/projects/2019-06-20-rocketchatfiles/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://yzheng.me/projects/2019-06-20-rocketchatfiles/</guid>
-      <description>import json import requests from pathlib import Path &amp;quot;&amp;quot;&amp;quot; ╭──────────────────────────────────────────────╮ │ ◎ ○ ○ ░░░░░░░░░░░░ Usage ░░░░░░░░░░░░░░░░░░│ ├──────────────────────────────────────────────┤ │ │ │ This gist is to download all the files from │ │ the Rocket Chat chat-history. │ │ │ │ Only modify the following when needed: │ │ │ │ │ │ baseUrl; │ │desPath(where you want to download files to); │ │ chatPath(where are the chat files); │ │ X-Auth-Token; │ │ X-User-Id.</description>
     </item>
     
     <item>
@@ -282,40 +208,12 @@ Schema IND-CPA-sicher ⇔ kein eﬃzienter Angreifer A kann Chiﬀrate von selbs
     </item>
     
     <item>
-      <title>Wordpress 安装及常见错误</title>
-      <link>https://yzheng.me/dejavu/2019-04-13-wpinstall/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://yzheng.me/dejavu/2019-04-13-wpinstall/</guid>
-      <description>Wordpress 安装 跟随教程
-安装wordpress 后需要fpt 连接或安装不成功 在 wp-config.php 里添加：
-define( &#39;FS_METHOD&#39;, &#39;direct&#39; ); sudo chown -R www-data:www-data /var/www  安装wordpress multisite  确定wordpress 文件夹在/var/www/html/ 下 跟随教程 &amp;ldquo;Create a Network&amp;rdquo; 更改 /etc/apache2/apache.conf 文件里的
-&amp;lt;Directory /var/www/&amp;gt; Options Indexes FollowSymLinks AllowOverride None Require all granted &amp;lt;/Directory&amp;gt; sudo /etc/init.d/apache2 restart   把AllowOverride 值改为 &amp;lsquo;All&amp;rsquo;
- 如果不成功，就删库再来一次。  无法登入(cookie or potential sessions issue) 在 wp-config.php 里添加：
-define(&#39;ADMIN\_COOKIE\_PATH&#39;, &#39;/&#39;); define(&#39;COOKIE_DOMAIN&#39;, &#39;&#39;); define(&#39;COOKIEPATH&#39;, &#39;&#39;); define(&#39;SITECOOKIEPATH&#39;, &#39;&#39;);  wordpress 安装child theme $ parent-style = mother theme name</description>
-    </item>
-    
-    <item>
       <title>your title</title>
       <link>https://yzheng.me/blogs/template/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://yzheng.me/blogs/template/</guid>
       <description></description>
-    </item>
-    
-    <item>
-      <title>学习错误集</title>
-      <link>https://yzheng.me/dejavu/2019-09-12-studyrecords/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://yzheng.me/dejavu/2019-09-12-studyrecords/</guid>
-      <description>考试季记录 02.08.2019 Bestehen der Sicherheit Stammmodul, 6分
-总结： + 学习周期长，考试复习&amp;gt;=3周，学习&amp;gt;=两周，共计&amp;gt;=5周 + blog 记录知识点 + 对题型有总结
-27.08.2019 Durchfall der Theoretische Grundlagen der Informatik 为了快速通过TGI，不惜交了一次白卷
-原因： + 时间安排不够，一共计划了3周，实际学习不超过两周 + TGI 难，挂科率高，怕学不会，想口试简单点 + 学习态度懒散，老想打游戏 + TGI 必须要通过才可以考Programmierparadigmen，索性这次交白卷，下次考试再不过强制口试
-12.09.2019 Abmeldung der Höhere Mathematik 今天是 12.09.2019，HM考试前5天，我又不得不ab 掉这门考试。
-原因： + 时间安排完全不够，从头到现在只学习了不到两周 + HM 考试后10天有 LA2，LA2 复习时间很短 + HM 知识断层多，难题花太多时间往回补，心态老崩 + 学习态度懒散，老想打游戏 + Lisann 家新买的家具还需要安装 + 9月底需要搬走，这几天还需约人来家里看房</description>
     </item>
     
   </channel>

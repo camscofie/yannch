@@ -1,22 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-	<meta name="generator" content="Hugo 0.58.3" />
         <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="author"
     content="">
 <meta name="description"
-    content="currently a Student" />
+    content="Electronic Codebook Mode (ECB-Modus)  Teile M in l Bit Blöcke M1, M2 &amp;hellip; Mn ∈ {0, 1}^l auf Setze C := (C1 , &amp;hellip; ) mit Ci := E(K, Mi) ∈ {0, 1}^l Entschlüsselung funktioniert genauso, nur mit D  Cipher Block Chaining Mode (CBC) &#43; M: Message; C: Ciphertext; IP: Initial Vector; E: Encryption Algorithm; K: key
+1. Encryption: &#43; M = M1 &#43; M2 &#43; &amp;hellip; &#43; Mn &#43; C0 = IV &#43; C1 = E(K, M1 Xor C0) &#43; C2 = E(K, M2 Xor C1) &#43; C = C1 &#43; C2 &#43; &amp;hellip; &#43; Cn" />
 <meta name="keywords" content="" />
 <meta name="robots" content="noodp" />
-<link rel="canonical" href="https://yzheng.me/" />
+<link rel="canonical" href="https://yzheng.me/blogs/2019-07-24-blockcipher/" />
 
 
 <title>
     
-    Yange Zheng  — Yange&#39;s personal website 
+    Block Cipher :: Yange Zheng  — Yange&#39;s personal website
     
 </title>
 
@@ -37,21 +37,27 @@
 <link rel="manifest" href="/site.webmanifest">
 <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#252627">
 <link rel="shortcut icon" href="/favicon.ico">
-<meta name="theme-color" content="#252627"><meta itemprop="name" content="Yange Zheng">
-<meta itemprop="description" content="Yange&#39;s personal website">
+<meta name="theme-color" content="#252627"><meta itemprop="name" content="Block Cipher">
+<meta itemprop="description" content="ECB, CBC, CTR">
 
+
+
+<meta itemprop="wordCount" content="104">
+
+
+
+<meta itemprop="keywords" content="" />
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://yzheng.me"/>
 
-<meta name="twitter:title" content="Yange Zheng"/>
-<meta name="twitter:description" content="Yange&#39;s personal website"/>
+<meta name="twitter:title" content="Block Cipher"/>
+<meta name="twitter:description" content="ECB, CBC, CTR"/>
 
 
 
 
 
 
-<link rel="alternate" type="application/rss+xml" href="https://yzheng.me/index.xml" title="Yange Zheng" />
 
 
 
@@ -102,14 +108,59 @@
 
             <div class="content">
                 
-    <main aria-role="main">
-        <div>
-            <h1>Yange Zheng</h1>
-                <p>currently a Student</p>
-                <div>
-                    &nbsp; <a href="mailto:posterscofield@gmail.com" target="_blank" rel="noopener" title="Email"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-mail"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg></a> &nbsp;&nbsp; <a href="https://github.com/camscofie/" target="_blank" rel="noopener" title="Github"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-github"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg></a> &nbsp;
-                </div>
+    <main class="post">
+
+        <div class="post-info">
+            
+            </p>
         </div>
+
+        <article>
+            <h2 class="post-title"><a href="https://yzheng.me/blogs/2019-07-24-blockcipher/">Block Cipher</a></h2>
+
+            
+
+            <div class="post-content">
+                
+
+<h2 id="electronic-codebook-mode-ecb-modus">Electronic Codebook Mode (ECB-Modus)</h2>
+
+<ol>
+<li>Teile M in l Bit Blöcke M1, M2 &hellip; Mn ∈ {0, 1}^l auf</li>
+<li>Setze C := (C1 , &hellip; ) mit Ci := E(K, Mi) ∈ {0, 1}^l</li>
+<li>Entschlüsselung funktioniert genauso, nur mit D</li>
+</ol>
+
+<h2 id="cipher-block-chaining-mode-cbc">Cipher Block Chaining Mode (CBC)</h2>
+
+<p><img src="/resources/postImage/BlockCipher/CBC_encryption.svg.png" alt="alt text" />
++ M: Message; C: Ciphertext; IP: Initial Vector; E: Encryption Algorithm; K: key</p>
+
+<p><strong>1. Encryption:</strong>
++ M = M1 + M2 + &hellip; + Mn
++ C0 = IV
++ C1 = E(K, M1 Xor C0)
++ C2 = E(K, M2 Xor C1)
++ C = C1 + C2 + &hellip; + Cn</p>
+
+<p><strong>2. Decryption:</strong>
+<em>go backwards</em></p>
+
+<h2 id="counter-ctr-mode">Counter (CTR) Mode</h2>
+
+<p><img src="/resources/postImage/BlockCipher/Xnip2019-07-30_00-40-09.jpg" alt="alter text" /></p>
+
+<p><img src="/resources/postImage/BlockCipher/Xnip2019-07-30_00-46-51.jpg" alt="alter text" /></p>
+
+            </div>
+        </article>
+
+        <hr />
+
+        <div class="post-info">
+  			</div>
+
+        
     </main>
 
             </div>

@@ -1,22 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-	<meta name="generator" content="Hugo 0.58.3" />
         <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="author"
     content="">
 <meta name="description"
-    content="currently a Student" />
+    content="IND-CPA (Indistinguishability under Chosen Plaintext Attack) 言辞：攻击者生成两条等长的消息{a,b}，挑战者随机决定加密其中的一条消息，攻击者试图猜测被加密的是哪条消息。
+Schema IND-CPA-sicher ⇔ kein eﬃzienter Angreifer A kann Chiﬀrate von selbstgewählten Klartexten unterscheiden 1. A erhält im Folgenden Zugriﬀ auf Enc(K, ·)-Orakel 2. A wählt zwei Nachrichten M (1) , M (2) gleicher Länge 3. A erhält C∗ := Enc(K, M (b) ) für gleichverteiltes b ∈ {1, 2} 4. A gewinnt, wenn er b richtig rät EUF-CMA (Existential Unforgeability under Chosen Message Attack): 言辞：攻击者有pk 和 Sig(sk,M) Oracle 的权限，攻击者生成伪造的信息和签名；攻击者获胜，如果伪造的签名解锁后等于被伪造的信息。" />
 <meta name="keywords" content="" />
 <meta name="robots" content="noodp" />
-<link rel="canonical" href="https://yzheng.me/" />
+<link rel="canonical" href="https://yzheng.me/blogs/2019-07-26-securitygames/" />
 
 
 <title>
     
-    Yange Zheng  — Yange&#39;s personal website 
+    Security Games :: Yange Zheng  — Yange&#39;s personal website
     
 </title>
 
@@ -37,21 +37,27 @@
 <link rel="manifest" href="/site.webmanifest">
 <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#252627">
 <link rel="shortcut icon" href="/favicon.ico">
-<meta name="theme-color" content="#252627"><meta itemprop="name" content="Yange Zheng">
-<meta itemprop="description" content="Yange&#39;s personal website">
+<meta name="theme-color" content="#252627"><meta itemprop="name" content="Security Games">
+<meta itemprop="description" content="EUF-CMA IND-CPA">
 
+
+
+<meta itemprop="wordCount" content="106">
+
+
+
+<meta itemprop="keywords" content="" />
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://yzheng.me"/>
 
-<meta name="twitter:title" content="Yange Zheng"/>
-<meta name="twitter:description" content="Yange&#39;s personal website"/>
+<meta name="twitter:title" content="Security Games"/>
+<meta name="twitter:description" content="EUF-CMA IND-CPA"/>
 
 
 
 
 
 
-<link rel="alternate" type="application/rss+xml" href="https://yzheng.me/index.xml" title="Yange Zheng" />
 
 
 
@@ -102,14 +108,51 @@
 
             <div class="content">
                 
-    <main aria-role="main">
-        <div>
-            <h1>Yange Zheng</h1>
-                <p>currently a Student</p>
-                <div>
-                    &nbsp; <a href="mailto:posterscofield@gmail.com" target="_blank" rel="noopener" title="Email"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-mail"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg></a> &nbsp;&nbsp; <a href="https://github.com/camscofie/" target="_blank" rel="noopener" title="Github"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-github"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg></a> &nbsp;
-                </div>
+    <main class="post">
+
+        <div class="post-info">
+            
+            </p>
         </div>
+
+        <article>
+            <h2 class="post-title"><a href="https://yzheng.me/blogs/2019-07-26-securitygames/">Security Games</a></h2>
+
+            
+
+            <div class="post-content">
+                
+
+<h2 id="ind-cpa-indistinguishability-under-chosen-plaintext-attack">IND-CPA (Indistinguishability under Chosen Plaintext Attack)</h2>
+
+<p><strong>言辞</strong>：攻击者生成两条等长的消息{a,b}，挑战者随机决定加密其中的一条消息，攻击者试图猜测被加密的是哪条消息。</p>
+
+<p><strong>Schema IND-CPA-sicher ⇔ kein eﬃzienter Angreifer A kann Chiﬀrate von selbstgewählten Klartexten unterscheiden</strong>
+1. A erhält im Folgenden Zugriﬀ auf Enc(K, ·)-Orakel
+2. A wählt zwei Nachrichten M (1) , M (2) gleicher Länge
+3. A erhält C∗ := Enc(K, M (b) ) für gleichverteiltes b ∈ {1, 2}
+4. A gewinnt, wenn er b richtig rät
+<img src="/resources/postImage/SecurityGames/Screenshot&amp;#32;2019-07-26&amp;#32;at&amp;#32;00.49.53.png" alt="alt text" /></p>
+
+<h2 id="euf-cma-existential-unforgeability-under-chosen-message-attack">EUF-CMA (Existential Unforgeability under Chosen Message Attack):</h2>
+
+<p><strong>言辞</strong>：攻击者有pk 和 Sig(sk,M) Oracle 的权限，攻击者生成伪造的信息和签名；攻击者获胜，如果伪造的签名解锁后等于被伪造的信息。</p>
+
+<p><strong>Schema IND-CPA-sicher ⇔ kein PPT-Angreifer A wins.</strong>
+1. A has pk and access to Sig(sk,<em>)-Orakel
+2. A gives (M</em>,σ<em>)
+3. A wins, when Ver(pk,M</em>,σ<em>) = 1 and M</em> != M.
+<img src="/resources/postImage/SecurityGames/EUF-CMA.png" alt="alt text" /></p>
+
+            </div>
+        </article>
+
+        <hr />
+
+        <div class="post-info">
+  			</div>
+
+        
     </main>
 
             </div>
