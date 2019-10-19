@@ -2,30 +2,30 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on Cupper</title>
-    <link>https://example.com/posts/</link>
+    <link>https://yzheng.me/posts/</link>
     <description>Recent content in Posts on Cupper</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 13 Oct 2019 22:43:40 +0200</lastBuildDate>
     
-	<atom:link href="https://example.com/posts/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://yzheng.me/posts/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title> look at this</title>
-      <link>https://example.com/posts/what-about-this/</link>
+      <link>https://yzheng.me/posts/what-about-this/</link>
       <pubDate>Sun, 13 Oct 2019 22:43:40 +0200</pubDate>
       
-      <guid>https://example.com/posts/what-about-this/</guid>
+      <guid>https://yzheng.me/posts/what-about-this/</guid>
       <description> here is second post </description>
     </item>
     
     <item>
       <title>this is the title</title>
-      <link>https://example.com/posts/my-first-post/</link>
+      <link>https://yzheng.me/posts/my-first-post/</link>
       <pubDate>Sun, 13 Oct 2019 22:41:21 +0200</pubDate>
       
-      <guid>https://example.com/posts/my-first-post/</guid>
+      <guid>https://yzheng.me/posts/my-first-post/</guid>
       <description> Am I coool to try this? this is  and this  like this or not like this  more this is for |  what about now     more </description>
     </item>
     
