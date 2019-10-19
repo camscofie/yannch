@@ -3,17 +3,27 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://yzheng.me/projects/</loc>
+    <lastmod>2019-10-19T02:17:51+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://yzheng.me/projects/someproject/</loc>
+    <lastmod>2019-10-19T02:17:51+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://yzheng.me/</loc>
+    <lastmod>2019-10-19T02:17:51+02:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://yzheng.me/about/about/</loc>
     <lastmod>2019-10-14T00:28:49+02:00</lastmod>
   </url>
   
   <url>
     <loc>https://yzheng.me/about/</loc>
-    <lastmod>2019-10-14T00:28:49+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://yzheng.me/</loc>
     <lastmod>2019-10-14T00:28:49+02:00</lastmod>
   </url>
   

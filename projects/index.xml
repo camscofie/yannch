@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Projects on Yange</title>
+    <link>https://yzheng.me/projects/</link>
+    <description>Recent content in Projects on Yange</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 19 Oct 2019 02:17:51 +0200</lastBuildDate>
+    
+	<atom:link href="https://yzheng.me/projects/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Someproject</title>
+      <link>https://yzheng.me/projects/someproject/</link>
+      <pubDate>Sat, 19 Oct 2019 02:17:51 +0200</pubDate>
+      
+      <guid>https://yzheng.me/projects/someproject/</guid>
+      <description> this is an example as you can see, secondary title </description>
+    </item>
+    
+  </channel>
+</rss>
