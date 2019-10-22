@@ -6,37 +6,30 @@
     <description>Recent content in Blogs on Yange Zheng</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 13 Oct 2019 22:43:40 +0200</lastBuildDate>
+    <lastBuildDate>Fri, 20 Sep 2019 22:41:21 +0200</lastBuildDate>
     
 	<atom:link href="https://yzheng.me/blogs/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title> look at this</title>
-      <link>https://yzheng.me/blogs/what-about-this/</link>
-      <pubDate>Sun, 13 Oct 2019 22:43:40 +0200</pubDate>
+      <title>LA Sätze Interpretation</title>
+      <link>https://yzheng.me/blogs/la_satz/</link>
+      <pubDate>Fri, 20 Sep 2019 22:41:21 +0200</pubDate>
       
-      <guid>https://yzheng.me/blogs/what-about-this/</guid>
-      <description> here is second post Class class = new Class; class.print(); Myclass my = new Myclass();  </description>
+      <guid>https://yzheng.me/blogs/la_satz/</guid>
+      <description>III.Vektorräume 7 Basis und Dimension von Vektorräumen Eine Teilmenge B eines Vektorraumes V heißt Basis von V , wenn sie erzeugend und linear unabhängig ist.
+解读： 所谓一个线性空间的basis，就是一组vektor。这组vektor 满足erzeugend 和linear unabhängigkeit 的关系。
+7.3 Basisdarstellung und Basiswechsel Sei V ein n-dimensionaler -Vektorraum und B = {b1,..,bn} eine Basis von V. Nach der Deﬁnition einer Basis als linear unabhängiges Erzeugendensystem hat jeder Vektor v ∈ V eine Basisdarstellung
+ v = sum(vi*bi,i=1→n)  言辞： Basisdarstellung 就是用basis 来表示一个vektor。vi 是 bi 的Koeffizienten, 即需要多少个bi。</description>
     </item>
     
     <item>
-      <title>this is the title</title>
-      <link>https://yzheng.me/blogs/my-first-post/</link>
-      <pubDate>Sun, 13 Oct 2019 22:41:21 +0200</pubDate>
+      <title>HM Sätze Interpretation</title>
+      <link>https://yzheng.me/blogs/hm_satz/</link>
+      <pubDate>Thu, 29 Aug 2019 22:41:21 +0200</pubDate>
       
-      <guid>https://yzheng.me/blogs/my-first-post/</guid>
-      <description> Am I coool to try this? this is  and this  like this or not like this  more this is for |  what about now     more </description>
-    </item>
-    
-    <item>
-      <title>LA 2 总结</title>
-      <link>https://yzheng.me/blogs/2019-09-22-la_summary/</link>
-      <pubDate>Sun, 22 Sep 2019 22:41:21 +0200</pubDate>
-      
-      <guid>https://yzheng.me/blogs/2019-09-22-la_summary/</guid>
-      <description> Jordan Normalform 计算Jordansche Normalform  CPΦ(X) := det(X*IdV - Φ) Eig(Φ,λ) := Kern(Φ - λ*IdV) 对于某个Eigenwert λ，关于λ 的Jordanblocks 的长度 = dim(Hauptraum zu λ), 也就是λ 的algebraischen Vielfachheit 对于某个Eigenwert λ，关于λ 的Jordankästchen 是dim(Eig(Φ,λ)),也就是geometrische Vielfachheit 对于某个Eigenwert λ，长度大于k 的Kästchen = dim Kk(λ) - dimK(k-1)(λ)  计算Jordanbasis (S: J = S^(-1)AS) 设：我们有两个eigenwert λ和ɲ，其中ɲ 的 algebraischen Vielfacheit = geometrische Vielfachheit. λ的不相等。
- Eig(Φ,ɲ) 的向量直接可以放进S 算出Hauptraum(Φ,λ) 的向量，选随机的的一个 H(λ)/Eig(λ)向量作为b1。 算出 (A-λIdV)*b1 = b2 重复步骤3， H 和Eig 的向量相差次 最后从Eig(λ) 补充不够的向量加入S，保证linear unabhängig 位置排序依照JNF  Skalarprodukte  s heißt symmetrisch, falls s(v,w) = s(w,v) für alle v,w ∈ V s heißt positiv definit, falls s(v,v) &amp;gt;= 0, und s(v,v) = 0 genau dann, wenn v = 0 s heißt Skalarprodukt auf V, falls s symmetrisch und V reell, so heißt das Paar (V,s) euklidischer Vektorraum  </description>
+      <guid>https://yzheng.me/blogs/hm_satz/</guid>
+      <description>Eindimensionale Analysis 1. Zahlen Axiome der reellen Zahlen  Sei M ⊂ R, M ≠ ∅: M heißt nach oben beschränkt: ⇔ ∃γ∈R, ∀x∈M, x≤γ. In diesem Fall heißt γ obere Schranke(untere Schranke analog) von M. Ist γ eine obere Schranke von M und gilt für jede weitere obere Schranke ñ von M : γ ≤ ñ, (d.h. γ ist kleinste obere Schranke von M), so heißt γ das Supremum(Inﬁmum analog) von M.</description>
     </item>
     
     <item>
@@ -117,15 +110,6 @@ Angular Angular ist ein von Google entwickeltes JavaScript-Framework für intera
     </item>
     
     <item>
-      <title>HM Sätze Interpretation</title>
-      <link>https://yzheng.me/blogs/2019-08-29-hm_satz/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://yzheng.me/blogs/2019-08-29-hm_satz/</guid>
-      <description>Eindimensionale Analysis 1. Zahlen Axiome der reellen Zahlen  Sei M ⊂ R, M ≠ ∅: M heißt nach oben beschränkt: ⇔ ∃γ∈R, ∀x∈M, x≤γ. In diesem Fall heißt γ obere Schranke(untere Schranke analog) von M. Ist γ eine obere Schranke von M und gilt für jede weitere obere Schranke ñ von M : γ ≤ ñ, (d.h. γ ist kleinste obere Schranke von M), so heißt γ das Supremum(Inﬁmum analog) von M.</description>
-    </item>
-    
-    <item>
       <title>Informationstheorie</title>
       <link>https://yzheng.me/blogs/2019-08-06-informationstheorie/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -143,18 +127,6 @@ Sei p eine Wahrscheinlichkeit, die Information von p zur Basis b ist deﬁniert 
       <guid>https://yzheng.me/blogs/2019-08-11-komplexit%C3%A4tstheorie/</guid>
       <description>Deﬁnition: Problem Ein Problem Π ist gegeben durch: + eine allgemeine Beschreibung aller vorkommenden Parameter + eine genaue Beschreibung der Eigenschaften, die die Lösung haben soll Ein Problembeispiel /(Instanz) von Π erhalten wir, indem wir die Parameter von Π festlegen.
 Deﬁnition: Kodierungsschema  Ein Kodierungsschema s ordnet jedem Problembeispiel eines Problems eine Zeichenkette oder Kodierung über einem Alphabet Σ zu. Die Inputlänge eines Problembeispiels ist die Anzahl des Symbole seiner Kodierung.</description>
-    </item>
-    
-    <item>
-      <title>LA Sätze Interpretation</title>
-      <link>https://yzheng.me/blogs/2019-09-14-la_satz/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://yzheng.me/blogs/2019-09-14-la_satz/</guid>
-      <description>III.Vektorräume 7 Basis und Dimension von Vektorräumen Eine Teilmenge B eines Vektorraumes V heißt Basis von V , wenn sie erzeugend und linear unabhängig ist.
-解读： 所谓一个线性空间的basis，就是一组vektor。这组vektor 满足erzeugend 和linear unabhängigkeit 的关系。
-7.3 Basisdarstellung und Basiswechsel Sei V ein n-dimensionaler -Vektorraum und B = {b1,..,bn} eine Basis von V. Nach der Deﬁnition einer Basis als linear unabhängiges Erzeugendensystem hat jeder Vektor v ∈ V eine Basisdarstellung
- v = sum(vi*bi,i=1→n)  言辞： Basisdarstellung 就是用basis 来表示一个vektor。vi 是 bi 的Koeffizienten, 即需要多少个bi。</description>
     </item>
     
     <item>
@@ -205,15 +177,6 @@ Schema IND-CPA-sicher ⇔ kein eﬃzienter Angreifer A kann Chiﬀrate von selbs
       
       <guid>https://yzheng.me/blogs/2019-08-11-turing-maschinen/</guid>
       <description>Die Registermaschine (RAM) Die RAM besteht aus: + Ein Programm besteht aus einer Folge von Befehlen. + Programmzeilen sind durchnummeriert. + Der Befehlszähler b startet bei 1 und enthält jeweils die Nummer des nächsten auszuführenden Befehls.  In den ersten Registern steht zu Beginn der Berechnung die Eingabe. In den übrigen Registern steht 0. Am Ende der Berechnung stehen die Ausgabedaten in vorher festgelegten Registern. Den Inhalt des Registers i bezeichnen wir mit c(i).</description>
-    </item>
-    
-    <item>
-      <title>your title</title>
-      <link>https://yzheng.me/blogs/template/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://yzheng.me/blogs/template/</guid>
-      <description></description>
     </item>
     
   </channel>

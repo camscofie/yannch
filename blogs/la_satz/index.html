@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="author"
+    content="">
+<meta name="description"
+    content="III.Vektorräume 7 Basis und Dimension von Vektorräumen Eine Teilmenge B eines Vektorraumes V heißt Basis von V , wenn sie erzeugend und linear unabhängig ist.
+解读： 所谓一个线性空间的basis，就是一组vektor。这组vektor 满足erzeugend 和linear unabhängigkeit 的关系。
+7.3 Basisdarstellung und Basiswechsel Sei V ein n-dimensionaler -Vektorraum und B = {b1,..,bn} eine Basis von V. Nach der Deﬁnition einer Basis als linear unabhängiges Erzeugendensystem hat jeder Vektor v ∈ V eine Basisdarstellung
+ v = sum(vi*bi,i=1→n)  言辞： Basisdarstellung 就是用basis 来表示一个vektor。vi 是 bi 的Koeffizienten, 即需要多少个bi。" />
+<meta name="keywords" content="" />
+<meta name="robots" content="noodp" />
+<link rel="canonical" href="https://yzheng.me/blogs/la_satz/" />
+
+
+<title>
+    
+    LA Sätze Interpretation :: Yange Zheng  — Yange&#39;s personal website
+    
+</title>
+
+
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.2.1/css/flag-icon.min.css" rel="stylesheet"
+    type="text/css">
+
+
+
+<link rel="stylesheet" href="/main.min.2f0d18b84270567c723bff340b09ab08db3a7634237cd9667d052eb6b14669b8.css">
+
+
+
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#252627">
+<link rel="shortcut icon" href="/favicon.ico">
+<meta name="theme-color" content="#252627"><meta itemprop="name" content="LA Sätze Interpretation">
+<meta itemprop="description" content="Linearen Algebra">
+
+
+<meta itemprop="datePublished" content="2019-09-20T22:41:21&#43;02:00" />
+<meta itemprop="dateModified" content="2019-09-20T22:41:21&#43;02:00" />
+<meta itemprop="wordCount" content="1661">
+
+
+
+<meta itemprop="keywords" content="math,linear algebra," />
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://yzheng.me"/>
+
+<meta name="twitter:title" content="LA Sätze Interpretation"/>
+<meta name="twitter:description" content="Linearen Algebra"/>
+
+
+
+
+<meta property="article:published_time" content="2019-09-20 22:41:21 &#43;0200 CEST" />
+
+
+
+
+
+
+
+    </head>
+
+    <body class="">
+        <div class="container">
+            <header class="header">
+    <span class="header__inner">
+        <a href="/" style="text-decoration: none;">
+    <div class="logo">
+        
+            <span class="logo__mark">></span>
+            <span class="logo__text">cd /home</span>
+            <span class="logo__cursor" style=""></span>
+        
+    </div>
+</a>
+
+
+        <span class="header__right">
+            
+                <nav class="menu">
+    <ul class="menu__inner"><li><a href="https://yzheng.me/blogs">Blog</a></li><li><a href="https://yzheng.me/dejavu">Déjà vu</a></li><li><a href="https://yzheng.me/projects">Project</a></li><li><a href="https://yzheng.me/about">About</a></li>
+    </ul>
+</nav>
+
+                <span class="menu-trigger">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+                    </svg>
+                </span>
+            
+
+            <span class="theme-toggle unselectable"><svg class="theme-toggler" width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M22 41C32.4934 41 41 32.4934 41 22C41 11.5066 32.4934 3 22
+  3C11.5066 3 3 11.5066 3 22C3 32.4934 11.5066 41 22 41ZM7 22C7
+  13.7157 13.7157 7 22 7V37C13.7157 37 7 30.2843 7 22Z"/>
+</svg>
+</span>
+        </span>
+    </span>
+
+    
+</header>
+
+
+            <div class="content">
+                
+    <main class="post">
+
+        <div class="post-info">
+            
+            </p>
+        </div>
+
+        <article>
+            <h2 class="post-title"><a href="https://yzheng.me/blogs/la_satz/">LA Sätze Interpretation</a></h2>
+
+            
+
+            <div class="post-content">
+                
+
+<h2 id="iii-vektorräume">III.Vektorräume</h2>
+
+<hr />
+
+<h3 id="7-basis-und-dimension-von-vektorräumen">7 Basis und Dimension von Vektorräumen</h3>
+
+<hr />
+
+<p>Eine Teilmenge B eines Vektorraumes V heißt Basis von V , wenn sie erzeugend und linear unabhängig ist.</p>
+
+<p><strong>解读</strong>： 所谓一个线性空间的basis，就是一组vektor。这组vektor 满足erzeugend 和linear unabhängigkeit 的关系。</p>
+
+<h4 id="7-3-basisdarstellung-und-basiswechsel">7.3 Basisdarstellung und Basiswechsel</h4>
+
+<p>Sei V ein n-dimensionaler -Vektorraum und B = {b1,..,bn} eine Basis von V. Nach der Deﬁnition einer Basis als linear unabhängiges Erzeugendensystem hat jeder Vektor v ∈ V eine Basisdarstellung</p>
+
+<ul>
+<li>v = sum(vi*bi,i=1→n)</li>
+</ul>
+
+<p><strong>言辞</strong>： Basisdarstellung 就是用basis 来表示一个vektor。vi 是 bi 的Koeffizienten, 即需要多少个bi。</p>
+
+<p>Die Koeffizienten v1,&hellip;,vn ∈ K heißt <strong>Komponenten</strong> von v in der Basis B. Der <strong>Komponentenvektor</strong> von v bezüglich B ist das n-Tupel ΘB(v) := (v1,..,vn)∈K^n</p>
+
+<h3 id="8-1-untervektorräume">8.1 Untervektorräume</h3>
+
+<hr />
+
+<h3 id="faktorräume-商空间">Faktorräume (商空间)</h3>
+
+<hr />
+
+<p>Sei U ein UVR eines Vektorraumes V. Die Menge der Aquiv¨ lenzklassen von V bez¨uglich der durch U definierten Aquiv¨alenzrelation ~ heisst <strong>Faktorraum</strong> oder <strong>Quotientenraum</strong> und wird mit V/U bezeichnet. Die Elemente ˜x ∈ V/U haben die folgende Form:
++ ~x = {x+u, u∈U} =: x+U</p>
+
+<p>Sei V ein K-Vektorraum U ⊂ V ein Untervektorraum. Dann ist der Faktorraum V/U ein K-Vektorraum mit der folgenden Addition und skalaren Multiplikation
++ ~x + ~y := ~(x+y)
++ λ * ~x = ~(λx)
+fuer x,y ∈ V, K∈K</p>
+
+<p><strong>解读</strong>：所谓商空间，即 K域 上的一个线性空间V 坍塌与其下的一个子空间U。我们在 V 上定义一个等价类~
++ 如果x-y∈U，则x~y</p>
+
+<h2 id="iv-lineare-abbildungen-und-matrizen-线性变换">IV. Lineare Abbildungen und Matrizen（线性变换）</h2>
+
+<hr />
+
+<h3 id="lineare-abbildungen">Lineare Abbildungen</h3>
+
+<p>V und W seien K-Vektorräume. Eine Abbildung Φ: V→W heißt <strong>linear</strong>, wenn für alle x,y ∈ V und alle λ ∈ K gilt:
++ Φ(x+y) = Φ(x) + Φ(y)
++ Φ(λx) = λΦ(x)</p>
+
+<p><strong>解读</strong>：
+所谓一个在向量空间的的映射是线性的，是指这个映射满足Homomorphismus 的关系。</p>
+
+<h4 id="lineare-fortsetzung">lineare Fortsetzung</h4>
+
+<p>Sei V ein K-Vektorraum und {v1,&hellip;,vn} eine Basis von V. Weiter seien w1,&hellip;,wn beliebig vorgegebene Vektoren eines K-Vektorraumes W. Dann gibt es genau eine lineare Abbildung Φ: V→W mit
++ Φ(vi) = wi, i =1,2,&hellip;,n</p>
+
+<p><strong>言辞</strong>：对一组给定的V 空间里的basis {v1,&hellip;,vn} 和任意的一组W 空间里的向量 w,&hellip;,wn。都有且只有一种线性变换满足Φ(vi)=wi 的映射关系。</p>
+
+<p><strong>Hilfsatz</strong>:
+1. 在 Φ: V→W 中，如果{v1,..,vk} 是线性相关，那么 {Φ(vi)} 必然线性相关。
+2. 如果 Φ: V→W 是injektiv, 那么如果{vi} 线性无关，那么{Φ(vi)}也线性无关。</p>
+
+<h3 id="kern-und-bild-einer-linearen-abbildung">Kern und Bild einer linearen Abbildung</h3>
+
+<hr />
+
+<ul>
+<li><strong>KernΦ: = {v∈V,phi(x) = 0}</strong></li>
+<li>der Kern einer Linearen Abbildung phi: V-&gt;W ist ein Untervektorraum von V</li>
+<li>Eine lineare Abbildung phi: V-&gt;W ist genau dann <strong>injektiv</strong>, wenn Kern phi = {0} ∈ V</li>
+<li><strong>Bildraum</strong>: Bild phi = phi(V)</li>
+<li><strong>Menge aller Urbilder</strong>: phi^(-1) (w) := {x∈V,phi(x)=W}</li>
+</ul>
+
+<p><strong>Hilfsatz</strong>:
+1. Zwei Vektoren x,y ∈ V haben genau dann dasselbe Bild unter phi, wenn x-y ∈ Kern phi
+2. die Menge aller Urbilder von w ∈ Bild phi ist eine Nebenklasse im Faktorraum V/Kern phi:
+    + Φ^(−1)({w}) = x + KernΦ für ein x ∈ V, f¨ur das gilt Φ(x) = w.</p>
+
+<p><strong>解读</strong>：所有Urbild 元素组成的集合，是 W/kern Φ 的一个商空间。根据商空间的定理，所有不同urbild元素相加，都会是商空间里的另一个元素。而所有相加等于0 的不同元素，都崩塌在了Kern phi 里了。</p>
+
+<p>Sei Φ : V →W eine lineare Abbildung. Als <strong>kanonische Projektion</strong> (zu Φ) bezeichnet man die Abbildung
++ π : V → V/KernΦ, x → ~x,
+  die jedem Vektor v seine Aequivalenzklasse in V/kern phi zuordnet.</p>
+
+<p><strong>Homomorphiesatz</strong>: Es sei phi: V-&gt;W eine lineare Abbildung. Dann ist
++ ~phi: V/Kern Φ -&gt;W, ~x -&gt; Φ(x)
+eine injektive lineare Abbildung und es gilt phi = ~Φ * π</p>
+
+<p><strong>言辞</strong>：Homomorphiesatz 意指，一个linear Abbildung 其实可以分解为两部，首先是一个kanonische Projektion 让V 崩塌成为一个商空间，在以injektiv 的模式把商空间映射到 线性空间W 上去。</p>
+
+<h5 id="rang-einer-linearen-abbildung">Rang einer linearen Abbildung</h5>
+
+<p>der <strong>Rang</strong> einer linearen Abbildung phi: V-&gt;W ist die Dimension des Bildraumes von phi, also
++ Rang Φ := dim Φ(V) = dim Bild(Φ)
++ Rang Φ = dim V - dim Kern Φ
++ Eine lineare Abbildung Φ: V-&gt;W ist genau danninjektiv, wenn Rang Φ = dim V
++ Eine lineare Abbildung Φ: V-&gt;W ist genau dann surjektiv, wenn Rang Φ = dim W</p>
+
+<h4 id="der-vektorraum-hom-v-w">Der Vektorraum Hom(V,W)</h4>
+
+<p>Es seien Φ, Ψ ∈ Hom(V,W) und λ ∈ K. Die <strong>Summe</strong> von Φ und Ψ ist die Abbildung
++ Φ + Ψ:= V -&gt; W; v-&gt; (Φ + Ψ)(v) := Φ(v) + Ψ(v)
++ λΦ = V -&gt; W; v -&gt; (λΦ)(v) := λΦ(v)
++ dim Hom(V,W) = dimV*dimW</p>
+
+<h3 id="10-darstellungen-von-linearen-abbildungen-durch-matrizen">10.Darstellungen von linearen Abbildungen durch Matrizen</h3>
+
+<hr />
+
+<h4 id="10-1-abbildungsmatrizen">10.1 Abbildungsmatrizen</h4>
+
+<p>A =(a mn) eine m x n-Matrix, die man als Abbildungsmatrix von Φ bezüglich der Basen B,C bezeichnet.
++ In der k-ten Spalte von A stehen die Komponenten von Φ(bk) bezüglich der Basis C gemäß</p>
+
+<p><strong>解读</strong>：现在在V 空间有basis B = {b1,b2,..,bn},想要得到W 空间的basis C = {c1,&hellip;,cn}。有Φ(bk)=sum(aik*ci,i=1 -&gt;m),之后我们在做线性变换时。就可以用matrix A 来从一个basis B表示的vektor 换成basis C 表示的vektor。ΘC(y) = A *ΘB(x); Φ:K^n → K^m,x→Ax。我们把A 叫做Φ 的Darstellungsmatrix</p>
+
+<p>In einem -Vektorraum V der Dimension n sei eine geordnete Basis B und in einem -Vektorraum W der Dimension m sei eine geordnete Basis C gewählt. Weiter sei
++ M(BC) : Hom(V,W) → K^(mxn), Φ → A=M(BC)(Φ)</p>
+
+<p>die Abbildung die jedem Homomorphismus Φ: V →W die Abbildungsmatrix A ∈K^(mxn) bzgl. B,C gemäß zuordnet. Dann ist M(BC) bijektiv.</p>
+
+<p><strong>解读</strong>：M(BC) 是一个把任何在Hom(V,W) 空间里的元素投影到一个Abbildungsmatrix 的 映射，这个映射是bijektiv 的。</p>
+
+<h4 id="10-2-basiswechsel-für-homomorphismen">10.2 Basiswechsel für Homomorphismen</h4>
+
+<p><strong>意义</strong>：已有 Φ:V→W; B ={b1,..,bn}; C = {c1,..,cn} 和一个Abbildungsmatrix  A := M(BC)(Φ)。现在找了一组新的basen ~B 和~C， 如果找一个新 ~A？</p>
+
+<ul>
+<li>M(~B~C)(Φ) = M(c~c)(idW) * M(BC)(Φ) * M(~BB)(idv)</li>
+</ul>
+
+<p>叫做Basiswechselformel。</p>
+
+<ul>
+<li>Zwei Matrizen A,~A ∈ K^(mxn) heißen <strong>äquivalent</strong>, wenn es invertierbare Matrizen S ∈ K^(nxn) und T ∈ K^(mxm) gibt mit ~A = TAS</li>
+<li>Zwei Matrizen A,~A ∈ K^(nxn) heißen <strong>ähnlich</strong>, wenn es eine invertierbare Matrix T ∈ K^(nxn) gibt mit ~A = TAT^(-1)</li>
+</ul>
+
+<h2 id="v-endomorphismen-自同态">V. Endomorphismen (自同态)</h2>
+
+<hr />
+
+<h3 id="determinanten">Determinanten</h3>
+
+<hr />
+
+<p>Es sei σ ∈ S n eine Permutation der Zahlen 1,2,..,n mit Fehlstandszahl F(σ). Das Signum von σ ist dann deﬁniert durch
++ sign σ :=(-1)^(F(σ))</p>
+
+<p><strong>解释</strong>：σ 为置换的奇偶性，偶数个反向对则定义为正1。</p>
+
+<ul>
+<li>A ist regulär ⇐⇒ det A != 0</li>
+</ul>
+
+<h3 id="eigenwerte-und-eigenvektoren">Eigenwerte und Eigenvektoren</h3>
+
+<hr />
+
+<p>Es seien V ein K-Vektorraum und Φ: V → V ein Endomorphismus. Der Skalar λ heißt <strong>Eigenwert</strong> von Φ, falls ein Vektor x∈V mit x != 0 existiert, so dass:
++ Φ(x) = λx oder, äquivalent, (Φ-λidv)(x) = 0</p>
+
+<p>gilt. Der Vektor x heißt <strong>Eigenvektor</strong> von Φ zum <strong>Eigenwert</strong> λ.</p>
+
+<p>Die Menge aller Eigenvektoren von Φ zu einem festen Eigenwert λ bildet zusammen mit dem Nullvektor einen Untervektorraum von V. Er heißt der zu λ gehörige <strong>Eigenraum</strong> von Φ und wird mit Eλ bezeichnet. Die Menge aller Eigenwerte von Φ heißt <strong>Spektrum</strong> von Φ.</p>
+
+<p><strong>解读</strong>：
+Φ 是一个线性变换，实际上就是一个矩阵A。这个变换呢，在某些vector 的时候，它并不改变vector 空间方向，只是其Skalar。</p>
+
+<p>对于每个给定的Skalar ，都和其所有的特征向量和null vector 组成一个线性子空间，称作<strong>特征空间</strong>，所有特征向量的集合，称作<strong>谱</strong></p>
+
+<ul>
+<li>Φ(v) = λv ⇐⇒ Φ(v) - λv = 0 ⇐⇒ (Φ - λ*IdV)(v) = 0 ⇐⇒ v ∈ Kern(Φ- λIdV)</li>
+<li>Eig(Φ,λ) := Kern(Φ - λ*IdV)</li>
+</ul>
+
+<h4 id="berechnung-der-eigenwerte-charakteristischess-polynom-特征多项式">Berechnung der Eigenwerte: charakteristischess Polynom (特征多项式)</h4>
+
+<p>Das charakteristische Polynom Xa einer quadratischen nxn-Matrix A mit Einträgen aus einem Körper K wird definiert durch:
++ Xa(λ) := det(λEn - A)</p>
+
+<p>Hierbei bezeichnet En die n-dimensionale Einheitsmatrix und det die Determinante. Die Unbestimmte λ steht ebenfalls für ein Element von K.</p>
+
+<p><strong>解读</strong>：CP 是用来计算特征值的，因为特征值刚好是CP 的Nullstellen。</p>
+
+<p>以下的几点相等：
++ λ ist ein Eigenwert von A
++ Es gibt ein x ∈ K^n, x!=0 mit Ax=λx
++ (λE - A)x = 0
++ λE - A ist nicht invertierbar
++ det(λE - A) = 0
++ λ ist Nullstelle des charakteristischen Polynoms von A</p>
+
+<p>CP 有以下性质：
++ Die charakteristischen Polynome zweier ähnlicher Matrizen sind gleich. Die Umkehrung ist jedoch im Allgemeinen nicht richtig
++ Die Matrix A und ihre Transponierte besitzen das gleiche charakteristische Polynom</p>
+
+<h3 id="14-diagonalisierbare-endomorphismen-可对角化">14. Diagonalisierbare Endomorphismen (可对角化)</h3>
+
+<hr />
+
+<p>Eine quadratische Matrix A ∈ K^(nxn) heißt <strong>diagonalisierbar</strong>, wenn sie zu einer Diagonalmatrix <strong>ähnlich</strong> ist. Ein Endomorphismus Φ heißt <strong>diagonalisierbar</strong>, wenn es eine Abbildungsmatrix von Φ gibt, die Diagonalgestalt hat.</p>
+
+<p><strong>解释</strong>：一个矩阵 A 被称作可对角化矩阵，当存在一个可逆矩阵P 使得P^(-1)AP 是对角矩阵。</p>
+
+<p>可对角化矩阵和映射有重要价值，因为对角矩阵特别容易处理：它们的特征值和特征向量是已知的，且其次方可通过计算对角元素同样的次方来获得。</p>
+
+<h4 id="1-kriterium-für-diagonalisierbarkeit-eines-endomorphismus">1. Kriterium für Diagonalisierbarkeit eines Endomorphismus</h4>
+
+<p>Für einen Endomorphismus Φ eines n-dimensionalen K-Vektorraumes V sind folgende Aussagen äquivalent:</p>
+
+<ol>
+<li>Φ ist diagonalisierbar</li>
+<li>In V gibt es eine Basis aus Eigenvektoren von Φ</li>
+<li>V ist die direkte Summe der Eigenräume von Φ</li>
+<li>Die Summe der Dimensionen der Eigenräume von Φ ist n</li>
+</ol>
+
+<h4 id="2-kriterium-für-diagonalisierbarkeit-eines-endomorphismus">2. Kriterium für Diagonalisierbarkeit eines Endomorphismus</h4>
+
+<p>Φ ist genau dann diagonalisierbar, wenn sein CP pΦ in der Form
++ PΦ = (-1)^n(X-λ1)^r1 <em>&hellip;</em>(X-λk)^rk  (*)
++ dim Bild(Φ-λi*idV) = n-ri
+darstellbar ist.</p>
+
+<p><strong>Bemerkung</strong>
++ dim Bild(Φ - λi * idV) = n-ri ⇐⇒ dimEλi = dim Kern(Φ - λi * idV) = ri</p>
+
+<p>Besitzt ein Polynom p die Darstellung (*), so sagt man, dass p in <strong>Linearfatoren zerfällt</strong>. Die Zahl ri in der Darstellung ( *) nennt man <strong>algebraische Vielfachheit</strong> des Eigenwertes λi. Die Dimension des Eigenraumes Eλi heißt <strong>geometrische Vielfachheit</strong> des Eigenwertes λi.</p>
+
+<p><strong>解读</strong>：一个Endomorphismus Φ 是刚好可对角化的，当CP 可以被Linearfaktoren 分解，并且所有的特征值的geometrische 和 algebraische Vielfachheit 都相等。</p>
+
+<h3 id="trigonalisierbare-endomorphismen-可三角化">Trigonalisierbare Endomorphismen (可三角化)</h3>
+
+<hr />
+
+<p>Ein Endomorphismus Φ: V→V eines endlich dimensionalen K-Vektorraumes V heißt <strong>trigonalisierbar</strong>, wenn eine Basis von V existiert bezüglich der Φ durch eine (obere) Dreiecksmatrix dargestellt wird.</p>
+
+<ul>
+<li>Ein Endomorphismus Φ ∈ Hom(V,V) ist genau dann trigonalisierbar, wenn das charakteristische Polynom pΦ in Linearfaktoren zerfällt.</li>
+</ul>
+
+<p><strong>解读</strong>：相比于Diagonalisierbarkeit，只要CP 能被Linearfaktoren 分解就可以三角化。→ 任何在复数空间里的有限Endomorphismus 都可以被三角化。</p>
+
+<h3 id="16-der-satz-von-cayley-hamilton">16. Der Satz von Cayley-Hamilton</h3>
+
+<hr />
+
+<p>Es sei V ein K-Vektorraum, Φ ein Endomorphismus von V sowie
++ p = a0 + a1X + a2X^2 +&hellip;+anX^n ∈K[X]
+ein Polynom. Dann sei p(Φ) der Endomorphismus
++ p(Φ):= a0idV + a1Φ + a2Φ^2 +&hellip;+anΦ^n ∈ Hom(V,V)
+wobei Φ^k = Φ◦Φ◦&hellip;◦Φ (k Faktoren) gilt.</p>
+
+<h4 id="cayley-hamilton">Cayley-Hamilton</h4>
+
+<p>Es seien V ein n-dimensionaler K-Vektorraum, Φ ein Endomorphismus von V und pΦ das charakteristische Polynom von Φ. Dann gilt pΦ(Φ) = 0 (=Nullabbildung)</p>
+
+<h3 id="die-jordansche-normalform-若尔当标准型">Die Jordansche Normalform(若尔当标准型)</h3>
+
+<hr />
+
+<p><strong>解读</strong>： 若尔当矩阵，这种矩阵接近对角矩阵：除了主对角线上方元素之外，其余都是零且主对角线上方的对角线的系数若不为零只能为1，且这1左方和下方的系数都有相同的值。</p>
+
+<p>若尔当标准型的目标就是将更多的矩阵简化到一类只比对角矩阵稍微复杂的矩阵。</p>
+
+<p>Ein Endomorphismus Φ eines K-Vektorraumes heißt <strong>nilpotent</strong>, falls ein k∈N existiert, so dass Φ^k = 0 ist.</p>
+
+<p>Es seien V ein n-dimensionaler komplexer Vekttorraum und Φ ein Endomorphismus von V. Für einen Eigenwert λ ∈ C von Φ und k∈N0 definieren wir
++ Kk := Kern(Φ-λid)^k</p>
+
+<p>Für die Kerne Kk (k=0,1,2&hellip;) zum Eigenwert λ gilt:
+1. Alle Kk sind Φ-invariant, d.h. Φ(Kk) ⊆ Kk
+2. Es ist K0 ⊂ K1 ⊆ K2 ⊆ &hellip;</p>
+
+<h4 id="hauptraum">Hauptraum</h4>
+
+<p>Ein Vektor v ∈ V mit v != 0 heißt <strong>Hauptvektor</strong> (oder <strong>verallgemeinerter Eigenvektor</strong>) von Φ zum Eigenwert λ, wenn es eine Zahl k ∈ N gibt mit
++ (Φ -λid)^k(v) = 0</p>
+
+<p>Für q ∈ N heißt Nq = Kern (Φ-λid)^q der zum Eigenwert λ gehörige <strong>Hauptraum</strong> (oder <strong>verallgemeinerte Eigenraum</strong>) Hλ von Φ. Diese Zahl q heißt <strong>Index</strong> von Hλ.</p>
+
+<p><strong>解释</strong>： 广义特征向量相比于特征向量，就是利用广义特征向量的重数加起来整好是空间的维数来替代特征向量。</p>
+
+<h4 id="die-hauptraum-zerlegung">Die Hauptraum-Zerlegung</h4>
+
+<p>Sei Hλ ein Hauptraum von Φ mit dem Index q. Der Bildraum Bλ := Bild(Φ-λid)^q ist ein Vektorraum-Komplement von Hλ = Kern(Φ-λid)^q, d.h. es gilt
++ V = Hλ ⊕ Bλ
+Außerdem ist Bλ invariant unter Φ</p>
+
+<p><strong>Hauptraumzerlegung</strong>: Sei Φ ein Endomorphismus eines komplexen Vektorraums V mit charakteristischem Polynom
++ pΦ = (-1)^n * (X-λ1)^r1 &hellip; (X-λk)^rk</p>
+
+<p>Dann ist V die direkte Summe der zugehörigen Haupträume von Φ:
++ V = Hλ1 ⊕ Hλ2 Φ&hellip;.⊕ Hλk</p>
+
+<p>Außerdem gilt für 1&lt;=i&lt;=k, dass dim Hλi = ri</p>
+
+            </div>
+        </article>
+
+        <hr />
+
+        <div class="post-info">
+  				<p>
+  					<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag meta-icon"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7" y2="7"></line></svg><span class="tag"><a href="https://yzheng.me/tags/math">math</a></span><span class="tag"><a href="https://yzheng.me/tags/linear-algebra">linear algebra</a></span>
+  				</p>
+  			</div>
+
+        
+    </main>
+
+            </div>
+
+            
+                <html>
+<footer class="footer">
+    <div class="footer__inner">
+        <div class="footer__content">
+            <span>&copy; 2019</span>
+        </div>
+    </div>
+    <div class="footer__inner">
+        <div class="footer__content">
+
+        </div>
+    </div>
+    <div class="footer__inner">
+        <div class="footer__content">
+            <span>Made with &#10084; by <a href="https://github.com/camscofie">Yange</a></span>
+        </div>
+    </div>
+</footer>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css" integrity="sha384-zB1R0rpPzHqg7Kpt0Aljp8JPLqbXI3bhnPWROx27a9N0Ll6ZP/+DiW/UqRcLbRjq" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.js" integrity="sha384-y23I5Q6l+B6vatafAwxRu/0oK/79VlbSz7Q9aiSZUvyWYIYsd+qj+o24G5ZU2zJz" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/auto-render.min.js" integrity="sha384-kWPLUVMOks5AQFrykwIup5lo0m3iMkkHrD0uJ4H5cjeGihAutqP0yW0J6dpFiVkI" crossorigin="anonymous"
+    onload="renderMathInElement(document.body);"></script>
+</html>
+
+            
+        </div>
+
+        
+
+
+
+
+<script type="text/javascript" src="/bundle.min.4c3fb12a087ceed4a52cb5d57068a9795c7069617a01ca70f788052ad66e1791779e6c72686e1dc0ca13dc03b0203204b6566bb0dd1ee80de2b7ff4d8fe53db2.js" integrity="sha512-TD&#43;xKgh87tSlLLXVcGipeVxwaWF6Acpw94gFKtZuF5F3nmxyaG4dwMoT3AOwIDIEtlZrsN0e6A3it/9Nj&#43;U9sg=="></script>
+
+
+
+    </body>
+</html>

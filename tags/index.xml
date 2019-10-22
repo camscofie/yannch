@@ -6,17 +6,35 @@
     <description>Recent content in Tags on Yange Zheng</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 13 Oct 2019 22:43:40 +0200</lastBuildDate>
+    <lastBuildDate>Fri, 20 Sep 2019 22:41:21 +0200</lastBuildDate>
     
 	<atom:link href="https://yzheng.me/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>test</title>
-      <link>https://yzheng.me/tags/test/</link>
-      <pubDate>Sun, 13 Oct 2019 22:43:40 +0200</pubDate>
+      <title>linear algebra</title>
+      <link>https://yzheng.me/tags/linear-algebra/</link>
+      <pubDate>Fri, 20 Sep 2019 22:41:21 +0200</pubDate>
       
-      <guid>https://yzheng.me/tags/test/</guid>
+      <guid>https://yzheng.me/tags/linear-algebra/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>math</title>
+      <link>https://yzheng.me/tags/math/</link>
+      <pubDate>Fri, 20 Sep 2019 22:41:21 +0200</pubDate>
+      
+      <guid>https://yzheng.me/tags/math/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>further mathematics</title>
+      <link>https://yzheng.me/tags/further-mathematics/</link>
+      <pubDate>Thu, 29 Aug 2019 22:41:21 +0200</pubDate>
+      
+      <guid>https://yzheng.me/tags/further-mathematics/</guid>
       <description></description>
     </item>
     

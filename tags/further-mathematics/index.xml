@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>further mathematics on Yange Zheng</title>
+    <link>https://yzheng.me/tags/further-mathematics/</link>
+    <description>Recent content in further mathematics on Yange Zheng</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 29 Aug 2019 22:41:21 +0200</lastBuildDate>
+    
+	<atom:link href="https://yzheng.me/tags/further-mathematics/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>HM Sätze Interpretation</title>
+      <link>https://yzheng.me/blogs/hm_satz/</link>
+      <pubDate>Thu, 29 Aug 2019 22:41:21 +0200</pubDate>
+      
+      <guid>https://yzheng.me/blogs/hm_satz/</guid>
+      <description>Eindimensionale Analysis 1. Zahlen Axiome der reellen Zahlen  Sei M ⊂ R, M ≠ ∅: M heißt nach oben beschränkt: ⇔ ∃γ∈R, ∀x∈M, x≤γ. In diesem Fall heißt γ obere Schranke(untere Schranke analog) von M. Ist γ eine obere Schranke von M und gilt für jede weitere obere Schranke ñ von M : γ ≤ ñ, (d.h. γ ist kleinste obere Schranke von M), so heißt γ das Supremum(Inﬁmum analog) von M.</description>
+    </item>
+    
+  </channel>
+</rss>

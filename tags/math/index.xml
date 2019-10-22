@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>math on Yange Zheng</title>
+    <link>https://yzheng.me/tags/math/</link>
+    <description>Recent content in math on Yange Zheng</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 20 Sep 2019 22:41:21 +0200</lastBuildDate>
+    
+	<atom:link href="https://yzheng.me/tags/math/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>LA Sätze Interpretation</title>
+      <link>https://yzheng.me/blogs/la_satz/</link>
+      <pubDate>Fri, 20 Sep 2019 22:41:21 +0200</pubDate>
+      
+      <guid>https://yzheng.me/blogs/la_satz/</guid>
+      <description>III.Vektorräume 7 Basis und Dimension von Vektorräumen Eine Teilmenge B eines Vektorraumes V heißt Basis von V , wenn sie erzeugend und linear unabhängig ist.
+解读： 所谓一个线性空间的basis，就是一组vektor。这组vektor 满足erzeugend 和linear unabhängigkeit 的关系。
+7.3 Basisdarstellung und Basiswechsel Sei V ein n-dimensionaler -Vektorraum und B = {b1,..,bn} eine Basis von V. Nach der Deﬁnition einer Basis als linear unabhängiges Erzeugendensystem hat jeder Vektor v ∈ V eine Basisdarstellung
+ v = sum(vi*bi,i=1→n)  言辞： Basisdarstellung 就是用basis 来表示一个vektor。vi 是 bi 的Koeffizienten, 即需要多少个bi。</description>
+    </item>
+    
+    <item>
+      <title>HM Sätze Interpretation</title>
+      <link>https://yzheng.me/blogs/hm_satz/</link>
+      <pubDate>Thu, 29 Aug 2019 22:41:21 +0200</pubDate>
+      
+      <guid>https://yzheng.me/blogs/hm_satz/</guid>
+      <description>Eindimensionale Analysis 1. Zahlen Axiome der reellen Zahlen  Sei M ⊂ R, M ≠ ∅: M heißt nach oben beschränkt: ⇔ ∃γ∈R, ∀x∈M, x≤γ. In diesem Fall heißt γ obere Schranke(untere Schranke analog) von M. Ist γ eine obere Schranke von M und gilt für jede weitere obere Schranke ñ von M : γ ≤ ñ, (d.h. γ ist kleinste obere Schranke von M), so heißt γ das Supremum(Inﬁmum analog) von M.</description>
+    </item>
+    
+  </channel>
+</rss>

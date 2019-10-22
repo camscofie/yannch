@@ -3,53 +3,48 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://yzheng.me/projects/</loc>
-    <lastmod>2019-10-19T02:17:51+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://yzheng.me/projects/someproject/</loc>
-    <lastmod>2019-10-19T02:17:51+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://yzheng.me/</loc>
-    <lastmod>2019-10-19T02:17:51+02:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://yzheng.me/about/</loc>
     <lastmod>2019-10-14T00:28:49+02:00</lastmod>
   </url>
   
   <url>
-    <loc>https://yzheng.me/blogs/what-about-this/</loc>
-    <lastmod>2019-10-13T22:43:40+02:00</lastmod>
+    <loc>https://yzheng.me/</loc>
+    <lastmod>2019-10-14T00:28:49+02:00</lastmod>
   </url>
   
   <url>
     <loc>https://yzheng.me/blogs/</loc>
-    <lastmod>2019-10-13T22:43:40+02:00</lastmod>
+    <lastmod>2019-09-20T22:41:21+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://yzheng.me/blogs/la_satz/</loc>
+    <lastmod>2019-09-20T22:41:21+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://yzheng.me/tags/linear-algebra/</loc>
+    <lastmod>2019-09-20T22:41:21+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://yzheng.me/tags/math/</loc>
+    <lastmod>2019-09-20T22:41:21+02:00</lastmod>
   </url>
   
   <url>
     <loc>https://yzheng.me/tags/</loc>
-    <lastmod>2019-10-13T22:43:40+02:00</lastmod>
+    <lastmod>2019-09-20T22:41:21+02:00</lastmod>
   </url>
   
   <url>
-    <loc>https://yzheng.me/tags/test/</loc>
-    <lastmod>2019-10-13T22:43:40+02:00</lastmod>
+    <loc>https://yzheng.me/tags/further-mathematics/</loc>
+    <lastmod>2019-08-29T22:41:21+02:00</lastmod>
   </url>
   
   <url>
-    <loc>https://yzheng.me/blogs/my-first-post/</loc>
-    <lastmod>2019-10-13T22:41:21+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://yzheng.me/blogs/2019-09-22-la_summary/</loc>
-    <lastmod>2019-09-22T22:41:21+02:00</lastmod>
+    <loc>https://yzheng.me/blogs/hm_satz/</loc>
+    <lastmod>2019-08-29T22:41:21+02:00</lastmod>
   </url>
   
   <url>
@@ -101,19 +96,11 @@
   </url>
   
   <url>
-    <loc>https://yzheng.me/blogs/2019-08-29-hm_satz/</loc>
-  </url>
-  
-  <url>
     <loc>https://yzheng.me/blogs/2019-08-06-informationstheorie/</loc>
   </url>
   
   <url>
     <loc>https://yzheng.me/blogs/2019-08-11-komplexit%C3%A4tstheorie/</loc>
-  </url>
-  
-  <url>
-    <loc>https://yzheng.me/blogs/2019-09-14-la_satz/</loc>
   </url>
   
   <url>
@@ -133,6 +120,10 @@
   </url>
   
   <url>
+    <loc>https://yzheng.me/projects/</loc>
+  </url>
+  
+  <url>
     <loc>https://yzheng.me/projects/2019-06-20-rocketchatfiles/</loc>
   </url>
   
@@ -146,10 +137,6 @@
   
   <url>
     <loc>https://yzheng.me/dejavu/2019-04-13-wpinstall/</loc>
-  </url>
-  
-  <url>
-    <loc>https://yzheng.me/blogs/template/</loc>
   </url>
   
   <url>
