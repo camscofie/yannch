@@ -7,15 +7,16 @@
 <meta name="author"
     content="Yange Zheng ">
 <meta name="description"
-    content="" />
+    content="Electronic Codebook Mode (ECB-Modus)  Teile M in l Bit Blöcke M1, M2 &amp;hellip; Mn ∈ {0, 1}^l auf Setze C := (C1 , &amp;hellip; ) mit Ci := E(K, Mi) ∈ {0, 1}^l Entschlüsselung funktioniert genauso, nur mit D  Cipher Block Chaining Mode (CBC) &#43; M: Message; C: Ciphertext; IP: Initial Vector; E: Encryption Algorithm; K: key
+1. Encryption: &#43; M = M1 &#43; M2 &#43; &amp;hellip; &#43; Mn &#43; C0 = IV &#43; C1 = E(K, M1 Xor C0) &#43; C2 = E(K, M2 Xor C1) &#43; C = C1 &#43; C2 &#43; &amp;hellip; &#43; Cn" />
 <meta name="keywords" content="" />
 <meta name="robots" content="noodp" />
-<link rel="canonical" href="https://yzheng.me/projects/" />
+<link rel="canonical" href="https://yzheng.me/blogs/blockcipher/" />
 
 
 <title>
     
-    Projects :: Yange Zheng  — Yange&#39;s personal website
+    Block Cipher :: Yange Zheng  — Yange&#39;s personal website
     
 </title>
 
@@ -36,21 +37,29 @@
 <link rel="manifest" href="/site.webmanifest">
 <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#252627">
 <link rel="shortcut icon" href="/favicon.ico">
-<meta name="theme-color" content="#252627"><meta itemprop="name" content="Projects">
-<meta itemprop="description" content="Yange&#39;s personal website">
+<meta name="theme-color" content="#252627"><meta itemprop="name" content="Block Cipher">
+<meta itemprop="description" content="ECB, CBC, CTR">
 
+
+<meta itemprop="datePublished" content="2019-07-24T22:41:21&#43;02:00" />
+<meta itemprop="dateModified" content="2019-07-24T22:41:21&#43;02:00" />
+<meta itemprop="wordCount" content="104">
+
+
+
+<meta itemprop="keywords" content="sicherheit," />
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://yzheng.me"/>
 
-<meta name="twitter:title" content="Projects"/>
-<meta name="twitter:description" content="Yange&#39;s personal website"/>
+<meta name="twitter:title" content="Block Cipher"/>
+<meta name="twitter:description" content="ECB, CBC, CTR"/>
 
 
 
 
+<meta property="article:published_time" content="2019-07-24 22:41:21 &#43;0200 CEST" />
 
 
-<link rel="alternate" type="application/rss+xml" href="https://yzheng.me/projects/index.xml" title="Yange Zheng" />
 
 
 
@@ -101,26 +110,62 @@
 
             <div class="content">
                 
-    <main class="posts">
-        <h1>Projects</h1>
-            <div class="posts-group">
-                <div class="post-year">2019</div>
+    <main class="post">
 
-                <ul class="posts-list">
-                        <li class="post-item">
-                            <a href="https://yzheng.me/projects/365modi/">
-                                <span class="post-title">365 Administration in powershell</span>
-                                <span class="post-day">Jul 20</span>
-                            </a>
-                        </li>
-                        <li class="post-item">
-                            <a href="https://yzheng.me/projects/rocketchatfiles/">
-                                <span class="post-title">Rocket Chat Files download</span>
-                                <span class="post-day">Jun 20</span>
-                            </a>
-                        </li>
-                </ul>
+        <div class="post-info">
+            
+            </p>
+        </div>
+
+        <article>
+            <h2 class="post-title"><a href="https://yzheng.me/blogs/blockcipher/">Block Cipher</a></h2>
+
+            
+
+            <div class="post-content">
+                
+
+<h2 id="electronic-codebook-mode-ecb-modus">Electronic Codebook Mode (ECB-Modus)</h2>
+
+<ol>
+<li>Teile M in l Bit Blöcke M1, M2 &hellip; Mn ∈ {0, 1}^l auf</li>
+<li>Setze C := (C1 , &hellip; ) mit Ci := E(K, Mi) ∈ {0, 1}^l</li>
+<li>Entschlüsselung funktioniert genauso, nur mit D</li>
+</ol>
+
+<h2 id="cipher-block-chaining-mode-cbc">Cipher Block Chaining Mode (CBC)</h2>
+
+<p><img src="/postImage/BlockCipher/CBC_encryption.svg.png" alt="alt text" />
++ M: Message; C: Ciphertext; IP: Initial Vector; E: Encryption Algorithm; K: key</p>
+
+<p><strong>1. Encryption:</strong>
++ M = M1 + M2 + &hellip; + Mn
++ C0 = IV
++ C1 = E(K, M1 Xor C0)
++ C2 = E(K, M2 Xor C1)
++ C = C1 + C2 + &hellip; + Cn</p>
+
+<p><strong>2. Decryption:</strong>
+<em>go backwards</em></p>
+
+<h2 id="counter-ctr-mode">Counter (CTR) Mode</h2>
+
+<p><img src="/postImage/BlockCipher/Xnip2019-07-30_00-40-09.jpg" alt="alter text" /></p>
+
+<p><img src="/postImage/BlockCipher/Xnip2019-07-30_00-46-51.jpg" alt="alter text" /></p>
+
             </div>
+        </article>
+
+        <hr />
+
+        <div class="post-info">
+  				<p>
+  					<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag meta-icon"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7" y2="7"></line></svg><span class="tag"><a href="https://yzheng.me/tags/sicherheit">sicherheit</a></span>
+  				</p>
+  			</div>
+
+        
     </main>
 
             </div>

@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="author"
+    content="Yange Zheng ">
+<meta name="description"
+    content="Deﬁnition von Information(信息量) Information I: des Auftretens eines Zeichens k &#43; Information soll nie negativ sein: I ≥ 0 &#43; Ein sicheres Ereignis soll keine Information liefern: Pr[(Pi = 1)] ⇒ I = 0 &#43; Information soll stetig sein &#43; Die Information einer Zeichenkette soll gleich der Summe der Einzelinformationen sein: I(pi·pj) = I(pi) &#43; I(pj)
+Sei p eine Wahrscheinlichkeit, die Information von p zur Basis b ist deﬁniert als:" />
+<meta name="keywords" content="" />
+<meta name="robots" content="noodp" />
+<link rel="canonical" href="https://yzheng.me/blogs/informationstheorie/" />
+
+
+<title>
+    
+    Informationstheorie :: Yange Zheng  — Yange&#39;s personal website
+    
+</title>
+
+
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.2.1/css/flag-icon.min.css" rel="stylesheet"
+    type="text/css">
+
+
+
+<link rel="stylesheet" href="/main.min.2f0d18b84270567c723bff340b09ab08db3a7634237cd9667d052eb6b14669b8.css">
+
+
+
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#252627">
+<link rel="shortcut icon" href="/favicon.ico">
+<meta name="theme-color" content="#252627"><meta itemprop="name" content="Informationstheorie">
+<meta itemprop="description" content="Informationstheorie - Einführung">
+
+
+<meta itemprop="datePublished" content="2019-08-06T22:41:21&#43;02:00" />
+<meta itemprop="dateModified" content="2019-08-06T22:41:21&#43;02:00" />
+<meta itemprop="wordCount" content="252">
+
+
+
+<meta itemprop="keywords" content="TGI," />
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://yzheng.me"/>
+
+<meta name="twitter:title" content="Informationstheorie"/>
+<meta name="twitter:description" content="Informationstheorie - Einführung"/>
+
+
+
+
+<meta property="article:published_time" content="2019-08-06 22:41:21 &#43;0200 CEST" />
+
+
+
+
+
+
+
+    </head>
+
+    <body class="">
+        <div class="container">
+            <header class="header">
+    <span class="header__inner">
+        <a href="/" style="text-decoration: none;">
+    <div class="logo">
+        
+            <span class="logo__mark">></span>
+            <span class="logo__text">cd /home</span>
+            <span class="logo__cursor" style=""></span>
+        
+    </div>
+</a>
+
+
+        <span class="header__right">
+            
+                <nav class="menu">
+    <ul class="menu__inner"><li><a href="https://yzheng.me/blogs">Blog</a></li><li><a href="https://yzheng.me/dejavu">Déjà vu</a></li><li><a href="https://yzheng.me/projects">Project</a></li><li><a href="https://yzheng.me/about">About</a></li>
+    </ul>
+</nav>
+
+                <span class="menu-trigger">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+                    </svg>
+                </span>
+            
+
+            <span class="theme-toggle unselectable"><svg class="theme-toggler" width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M22 41C32.4934 41 41 32.4934 41 22C41 11.5066 32.4934 3 22
+  3C11.5066 3 3 11.5066 3 22C3 32.4934 11.5066 41 22 41ZM7 22C7
+  13.7157 13.7157 7 22 7V37C13.7157 37 7 30.2843 7 22Z"/>
+</svg>
+</span>
+        </span>
+    </span>
+</header>
+
+
+            <div class="content">
+                
+    <main class="post">
+
+        <div class="post-info">
+            
+            </p>
+        </div>
+
+        <article>
+            <h2 class="post-title"><a href="https://yzheng.me/blogs/informationstheorie/">Informationstheorie</a></h2>
+
+            
+
+            <div class="post-content">
+                
+
+<h2 id="deﬁnition-von-information-信息量">Deﬁnition von Information(信息量)</h2>
+
+<p>Information I: des Auftretens eines Zeichens k
++ Information soll nie negativ sein: I ≥ 0
++ Ein sicheres Ereignis soll keine Information liefern: Pr[(Pi = 1)] ⇒ I = 0
++ Information soll stetig sein
++ Die Information einer Zeichenkette soll gleich der Summe der Einzelinformationen sein: I(pi·pj) = I(pi) + I(pj)</p>
+
+<p>Sei p eine Wahrscheinlichkeit, die Information von p zur Basis b ist deﬁniert als:</p>
+
+<p>I(p) = − log b (p).</p>
+
+<p>In TGI verwenden wir immer b = 2</p>
+
+<ul>
+<li>为什么有一个负号
+其中，负号是为了确保信息一定是正数或者是0，总不能为负数吧！</li>
+<li>为什么底数为2
+是因为，我们只需要信息量满足低概率事件x对应于高的信息量。那么对数的选择是任意的。我们只是遵循信息论的普遍传统，使用2作为对数的底！</li>
+</ul>
+
+<h2 id="entropie-entropy-熵">Entropie (entropy, 熵)</h2>
+
+<ul>
+<li><p>假设存在一个随机变量 x, 当我们被告知一个极不可能发生的事情发生了，那我们就接收到了更多的信息；而当我们观测到一个非常常见的事情发生了，那么我们就接收到了相对较少的信息量。因此信息的量度应该依赖于概率分布 p(x), <strong>所以说熵 h(x) 的定义应该是概率的单调函数</strong></p></li>
+
+<li><p>如果我们有俩个不相关的事件x和y，那么我们观察到的俩个事件同时发生时获得的信息应该等于观察到的事件各自发生时获得的信息之和，即：</p></li>
+</ul>
+
+<p>h(x,y) = h(x) + h(y)</p>
+
+<ul>
+<li>由于x，y是俩个不相关的事件，那么满足</li>
+</ul>
+
+<p>p(x,y) = p(x)*p(y).</p>
+
+<ul>
+<li>我们很容易看出h(x)一定与p(x)的对数有关（因为只有对数形式的真数相乘之后，能够对应对数的相加形式）。因此我们有信息量公式如下：</li>
+</ul>
+
+<p>h(x) = -log2 p(x)</p>
+
+<ul>
+<li>最后，我们用熵来评价整个随机变量 x 平均的信息量，而平均最好的量度就是随机变量的期望，即熵的定义如下：</li>
+</ul>
+
+<p><strong>H(x) = -sum(p(x)*log2(p(x)))</strong></p>
+
+<h2 id="kodierungen">Kodierungen</h2>
+
+<h3 id="quellencodierungstheorem">Quellencodierungstheorem</h3>
+
+<p>Für jeden präﬁxfreien Code mit einem Codealphabet aus D Zeichen und minimaler mittlerer Codewortlänge ñ gilt:</p>
+
+<ul>
+<li>H(X)/log2(D) &lt;= ñ &lt;= H(x)/log2(D)+1</li>
+</ul>
+
+<h3 id="huﬀman-codierung">Huﬀman-Codierung</h3>
+
+<ol>
+<li>Initialisierung: Füge alle Elemente aus Σ als Blätter in T ein, merke dir die jeweilige Wahrscheinlichkeit p i . Füge sie außerdem in eine Menge (zum Beispiel als Priority-Queue implementiert) Q ein.</li>
+<li>Solange Q noch mehr als ein Element enthält: Nimm die zwei Elemente aus Q mit den geringsten Wahrscheinlichkeiten (bei Gleichheit wähle beliebig) und füge einen neuen Knoten v in den Baum T ein, der ein Elternknoten dieser zwei Elemente wird (Die Kantenbeschriftung mit 0 und 1 ist beliebig. Füge v in Q ein und entferne die zwei Elemente aus Q. v bekommt als Wahrscheinlichkeit die Summe der Wahrscheinlichkeiten seiner zwei Kinder zugewiesen.</li>
+<li>Gib die Wurzel r zurück.</li>
+</ol>
+
+            </div>
+        </article>
+
+        <hr />
+
+        <div class="post-info">
+  				<p>
+  					<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag meta-icon"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7" y2="7"></line></svg><span class="tag"><a href="https://yzheng.me/tags/tgi">TGI</a></span>
+  				</p>
+  			</div>
+
+        
+    </main>
+
+            </div>
+
+            
+                <footer class="footer">
+    <div class="footer__inner">
+        <div class="footer__content">
+            <span>&copy; 2019</span>
+        </div>
+    </div>
+    <div class="footer__inner">
+        <div class="footer__content">
+
+        </div>
+    </div>
+    <div class="footer__inner">
+        <div class="footer__content">
+            <span>It's nice to learn more.</a></span>
+        </div>
+    </div>
+</footer>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css" integrity="sha384-zB1R0rpPzHqg7Kpt0Aljp8JPLqbXI3bhnPWROx27a9N0Ll6ZP/+DiW/UqRcLbRjq" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.js" integrity="sha384-y23I5Q6l+B6vatafAwxRu/0oK/79VlbSz7Q9aiSZUvyWYIYsd+qj+o24G5ZU2zJz" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/auto-render.min.js" integrity="sha384-kWPLUVMOks5AQFrykwIup5lo0m3iMkkHrD0uJ4H5cjeGihAutqP0yW0J6dpFiVkI" crossorigin="anonymous"
+    onload="renderMathInElement(document.body);"></script>
+
+            
+        </div>
+
+        
+
+
+
+
+<script type="text/javascript" src="/bundle.min.4c3fb12a087ceed4a52cb5d57068a9795c7069617a01ca70f788052ad66e1791779e6c72686e1dc0ca13dc03b0203204b6566bb0dd1ee80de2b7ff4d8fe53db2.js" integrity="sha512-TD&#43;xKgh87tSlLLXVcGipeVxwaWF6Acpw94gFKtZuF5F3nmxyaG4dwMoT3AOwIDIEtlZrsN0e6A3it/9Nj&#43;U9sg=="></script>
+
+
+
+    </body>
+</html>

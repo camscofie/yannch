@@ -1,84 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Blogs on Yange Zheng</title>
-    <link>https://yzheng.me/blogs/</link>
-    <description>Recent content in Blogs on Yange Zheng</description>
+    <title>sicherheit on Yange Zheng</title>
+    <link>https://yzheng.me/tags/sicherheit/</link>
+    <description>Recent content in sicherheit on Yange Zheng</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 20 Sep 2019 22:41:21 +0200</lastBuildDate>
+    <lastBuildDate>Tue, 30 Jul 2019 22:41:21 +0200</lastBuildDate>
     
-	<atom:link href="https://yzheng.me/blogs/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://yzheng.me/tags/sicherheit/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>LA Sätze Interpretation</title>
-      <link>https://yzheng.me/blogs/la_satz/</link>
-      <pubDate>Fri, 20 Sep 2019 22:41:21 +0200</pubDate>
-      
-      <guid>https://yzheng.me/blogs/la_satz/</guid>
-      <description>III.Vektorräume 7 Basis und Dimension von Vektorräumen Eine Teilmenge B eines Vektorraumes V heißt Basis von V , wenn sie erzeugend und linear unabhängig ist.
-解读： 所谓一个线性空间的basis，就是一组vektor。这组vektor 满足erzeugend 和linear unabhängigkeit 的关系。
-7.3 Basisdarstellung und Basiswechsel Sei V ein n-dimensionaler -Vektorraum und B = {b1,..,bn} eine Basis von V. Nach der Deﬁnition einer Basis als linear unabhängiges Erzeugendensystem hat jeder Vektor v ∈ V eine Basisdarstellung
- v = sum(vi*bi,i=1→n)  言辞： Basisdarstellung 就是用basis 来表示一个vektor。vi 是 bi 的Koeffizienten, 即需要多少个bi。</description>
-    </item>
-    
-    <item>
-      <title>HM Sätze Interpretation</title>
-      <link>https://yzheng.me/blogs/hm_satz/</link>
-      <pubDate>Thu, 29 Aug 2019 22:41:21 +0200</pubDate>
-      
-      <guid>https://yzheng.me/blogs/hm_satz/</guid>
-      <description>Eindimensionale Analysis 1. Zahlen Axiome der reellen Zahlen  Sei M ⊂ R, M ≠ ∅: M heißt nach oben beschränkt: ⇔ ∃γ∈R, ∀x∈M, x≤γ. In diesem Fall heißt γ obere Schranke(untere Schranke analog) von M. Ist γ eine obere Schranke von M und gilt für jede weitere obere Schranke ñ von M : γ ≤ ñ, (d.h. γ ist kleinste obere Schranke von M), so heißt γ das Supremum(Inﬁmum analog) von M.</description>
-    </item>
-    
-    <item>
-      <title>Komplexitätstheorie</title>
-      <link>https://yzheng.me/blogs/komplexit%C3%A4tstheorie/</link>
-      <pubDate>Sun, 11 Aug 2019 22:41:21 +0200</pubDate>
-      
-      <guid>https://yzheng.me/blogs/komplexit%C3%A4tstheorie/</guid>
-      <description>Deﬁnition: Problem Ein Problem Π ist gegeben durch: + eine allgemeine Beschreibung aller vorkommenden Parameter + eine genaue Beschreibung der Eigenschaften, die die Lösung haben soll Ein Problembeispiel /(Instanz) von Π erhalten wir, indem wir die Parameter von Π festlegen.
-Deﬁnition: Kodierungsschema  Ein Kodierungsschema s ordnet jedem Problembeispiel eines Problems eine Zeichenkette oder Kodierung über einem Alphabet Σ zu. Die Inputlänge eines Problembeispiels ist die Anzahl des Symbole seiner Kodierung.</description>
-    </item>
-    
-    <item>
-      <title>Turing-Maschinen</title>
-      <link>https://yzheng.me/blogs/turing_maschinen/</link>
-      <pubDate>Sun, 11 Aug 2019 22:41:21 +0200</pubDate>
-      
-      <guid>https://yzheng.me/blogs/turing_maschinen/</guid>
-      <description>Die Registermaschine (RAM) Die RAM besteht aus: + Ein Programm besteht aus einer Folge von Befehlen. + Programmzeilen sind durchnummeriert. + Der Befehlszähler b startet bei 1 und enthält jeweils die Nummer des nächsten auszuführenden Befehls.  In den ersten Registern steht zu Beginn der Berechnung die Eingabe. In den übrigen Registern steht 0. Am Ende der Berechnung stehen die Ausgabedaten in vorher festgelegten Registern. Den Inhalt des Registers i bezeichnen wir mit c(i).</description>
-    </item>
-    
-    <item>
-      <title>Informationstheorie</title>
-      <link>https://yzheng.me/blogs/informationstheorie/</link>
-      <pubDate>Tue, 06 Aug 2019 22:41:21 +0200</pubDate>
-      
-      <guid>https://yzheng.me/blogs/informationstheorie/</guid>
-      <description>Deﬁnition von Information(信息量) Information I: des Auftretens eines Zeichens k + Information soll nie negativ sein: I ≥ 0 + Ein sicheres Ereignis soll keine Information liefern: Pr[(Pi = 1)] ⇒ I = 0 + Information soll stetig sein + Die Information einer Zeichenkette soll gleich der Summe der Einzelinformationen sein: I(pi·pj) = I(pi) + I(pj)
-Sei p eine Wahrscheinlichkeit, die Information von p zur Basis b ist deﬁniert als:</description>
-    </item>
-    
-    <item>
-      <title>Grundbegriffe der Informatik</title>
-      <link>https://yzheng.me/blogs/grundbegriffederinformatik/</link>
-      <pubDate>Mon, 05 Aug 2019 22:41:21 +0200</pubDate>
-      
-      <guid>https://yzheng.me/blogs/grundbegriffederinformatik/</guid>
-      <description>Wörter  Ein endliches Alphabet Σ ist eine endliche Menge von Symbolen. Eine endliche Folge von Symbolen aus Σ heißt Wort (über Σ). In der Regel ist die Variable für ein Wort w. Die Menge aller Wörter über Σ heißt Σ∗ . Das heißt w ∈ Σ∗. Die Länge von w ist │w│. Das leere Wort ε mit │ε│ = 0 ist ∈ Σ∗ (∀Σ) Der Operator · bezeichne die Konkatenation, also Hintereinanderreihung, von Wörtern w1 &amp;hellip; wn.</description>
-    </item>
-    
-    <item>
-      <title>NP-completeness</title>
-      <link>https://yzheng.me/blogs/npcompleteness/</link>
-      <pubDate>Mon, 05 Aug 2019 22:41:21 +0200</pubDate>
-      
-      <guid>https://yzheng.me/blogs/npcompleteness/</guid>
-      <description>Deﬁnition Eine polynomiale Transformation einer Sprache L1 ⊆ Σ1∗ in eine Sprache L2 ⊆ Σ2∗ ist eine Funktion f : Σ1∗ → Σ2∗ mit den folgenden Eigenschaften: 1. Es existiert eine polynomiale deterministische Turing-Maschine, die f berechnet. 2. Für alle x ∈ Σ1^∗ gilt: x ∈ L1 ⇔ f(x) ∈ L2.
-Wir schreiben dann L1 ∝ L2 (L1 ist polynomial transformierbar in L2 ). Intuitiv bedeutet L1 ∝ L2 , dass L2 gleich schwierig oder schwieriger als L 1 ist.</description>
-    </item>
     
     <item>
       <title>Access Control</title>
@@ -164,19 +95,6 @@ Tricks zum Rechnen:  51^2 mod 59 = (59-8)^2 mod 59 = (-8)^2 mod 59 3^60 mod 59 =
       <description>Reversing Cryptographic Hash Functions  What to do if you have a hashed Message H(msg), and you want to have &amp;lsquo;msg&amp;rsquo;?
  Because the hash function is always one way, the way to get the message from the hashed code is to try a lot with different word, and see if you end up have same hashed code as H(msg).
 Precomputed Hash Chains We trade time with space. What do we do is, we compute the H(*) before everything happened.</description>
-    </item>
-    
-    <item>
-      <title>Frontend-verwendete Technologien</title>
-      <link>https://yzheng.me/blogs/frontend_verwendete_technologien/</link>
-      <pubDate>Sun, 24 Mar 2019 22:41:21 +0200</pubDate>
-      
-      <guid>https://yzheng.me/blogs/frontend_verwendete_technologien/</guid>
-      <description>In our frontend developing, we have received very much help from the following three Technologies.
-Angular Angular ist ein von Google entwickeltes JavaScript-Framework für interaktives Webdesign. Es eignet sich besonders für die Entwicklung Single-Page-Applications (SPA).
-(1.1) Angular basiert auf Komponenten, die zusammen Daten austauschen
-(1.2) Angular ist mit TypeScript geschrieben. (eine JavaScript Erweiterung ab der Versi-on ES6)
-(1.3) Design, Template, Test und Datenverarbeitung sind für jede Komponente in verschiedenen Dateien getrennt.</description>
     </item>
     
   </channel>

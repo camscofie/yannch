@@ -7,15 +7,16 @@
 <meta name="author"
     content="Yange Zheng ">
 <meta name="description"
-    content="" />
+    content=" Merkle–Damgård construction is a method to build collision-resistant cryptographic hash functions from collision-resistant one-way compression functions.
+Process  M* = M1 &#43; M2 &#43; M3 &#43; &amp;hellip; &#43; Mn Hi := f(Hi-1 &#43; Mi); 1&amp;lt;i&amp;lt;n   MD-compliant padding  M is a prefix of Pad(M) length(M) = length(M&amp;rsquo;) =&amp;gt; len(Pad(M))=len(Pad(M&amp;rsquo;)) len(M) != len(M&amp;rsquo;) =&amp;gt; the last block of Pad(M) != last block of Pad(M&amp;rsquo;)  " />
 <meta name="keywords" content="" />
 <meta name="robots" content="noodp" />
-<link rel="canonical" href="https://yzheng.me/projects/" />
+<link rel="canonical" href="https://yzheng.me/blogs/damgardconstruction/" />
 
 
 <title>
     
-    Projects :: Yange Zheng  — Yange&#39;s personal website
+    Merkle–Damgård construction :: Yange Zheng  — Yange&#39;s personal website
     
 </title>
 
@@ -36,21 +37,29 @@
 <link rel="manifest" href="/site.webmanifest">
 <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#252627">
 <link rel="shortcut icon" href="/favicon.ico">
-<meta name="theme-color" content="#252627"><meta itemprop="name" content="Projects">
-<meta itemprop="description" content="Yange&#39;s personal website">
+<meta name="theme-color" content="#252627"><meta itemprop="name" content="Merkle–Damgård construction">
+<meta itemprop="description" content="Hash algorithms such as MD5, SHA1 and SHA2">
 
+
+<meta itemprop="datePublished" content="2019-07-25T22:41:21&#43;02:00" />
+<meta itemprop="dateModified" content="2019-07-25T22:41:21&#43;02:00" />
+<meta itemprop="wordCount" content="61">
+
+
+
+<meta itemprop="keywords" content="sicherheit," />
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://yzheng.me"/>
 
-<meta name="twitter:title" content="Projects"/>
-<meta name="twitter:description" content="Yange&#39;s personal website"/>
+<meta name="twitter:title" content="Merkle–Damgård construction"/>
+<meta name="twitter:description" content="Hash algorithms such as MD5, SHA1 and SHA2"/>
 
 
 
 
+<meta property="article:published_time" content="2019-07-25 22:41:21 &#43;0200 CEST" />
 
 
-<link rel="alternate" type="application/rss+xml" href="https://yzheng.me/projects/index.xml" title="Yange Zheng" />
 
 
 
@@ -101,26 +110,53 @@
 
             <div class="content">
                 
-    <main class="posts">
-        <h1>Projects</h1>
-            <div class="posts-group">
-                <div class="post-year">2019</div>
+    <main class="post">
 
-                <ul class="posts-list">
-                        <li class="post-item">
-                            <a href="https://yzheng.me/projects/365modi/">
-                                <span class="post-title">365 Administration in powershell</span>
-                                <span class="post-day">Jul 20</span>
-                            </a>
-                        </li>
-                        <li class="post-item">
-                            <a href="https://yzheng.me/projects/rocketchatfiles/">
-                                <span class="post-title">Rocket Chat Files download</span>
-                                <span class="post-day">Jun 20</span>
-                            </a>
-                        </li>
-                </ul>
+        <div class="post-info">
+            
+            </p>
+        </div>
+
+        <article>
+            <h2 class="post-title"><a href="https://yzheng.me/blogs/damgardconstruction/">Merkle–Damgård construction</a></h2>
+
+            
+
+            <div class="post-content">
+                
+
+<p><strong><a href="https://en.wikipedia.org/wiki/Merkle%E2%80%93Damg%C3%A5rd_construction">Merkle–Damgård construction</a> is a method to build collision-resistant cryptographic hash functions from collision-resistant one-way compression functions.</strong></p>
+
+<p><img src="/postImage/Merkle–DamgardConstruction/2880px-Merkle-Damgard_hash_big.svg.png" alt="alt text" /></p>
+
+<h2 id="process">Process</h2>
+
+<ul>
+<li>M* = M1 + M2 + M3 + &hellip; + Mn</li>
+<li>Hi := f(Hi-1 + Mi);  1&lt;i&lt;n
+<img src="/postImage/Merkle–DamgardConstruction/2880px-MerkleDamgard.svg.png" alt="alt text" /></li>
+</ul>
+
+<h2 id="md-compliant-padding">MD-compliant padding</h2>
+
+<ul>
+<li>M is a prefix of Pad(M)</li>
+<li>length(M) = length(M&rsquo;) =&gt; len(Pad(M))=len(Pad(M&rsquo;))</li>
+<li>len(M) != len(M&rsquo;) =&gt; the last block of Pad(M) != last block of Pad(M&rsquo;)</li>
+</ul>
+
             </div>
+        </article>
+
+        <hr />
+
+        <div class="post-info">
+  				<p>
+  					<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag meta-icon"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7" y2="7"></line></svg><span class="tag"><a href="https://yzheng.me/tags/sicherheit">sicherheit</a></span>
+  				</p>
+  			</div>
+
+        
     </main>
 
             </div>

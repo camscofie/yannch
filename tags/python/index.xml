@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>python on Yange Zheng</title>
+    <link>https://yzheng.me/tags/python/</link>
+    <description>Recent content in python on Yange Zheng</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 20 Jun 2019 22:41:21 +0200</lastBuildDate>
+    
+	<atom:link href="https://yzheng.me/tags/python/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Rocket Chat Files download</title>
+      <link>https://yzheng.me/projects/rocketchatfiles/</link>
+      <pubDate>Thu, 20 Jun 2019 22:41:21 +0200</pubDate>
+      
+      <guid>https://yzheng.me/projects/rocketchatfiles/</guid>
+      <description>import json import requests from pathlib import Path &amp;quot;&amp;quot;&amp;quot; ╭──────────────────────────────────────────────╮ │ ◎ ○ ○ ░░░░░░░░░░░░ Usage ░░░░░░░░░░░░░░░░░░│ ├──────────────────────────────────────────────┤ │ │ │ This gist is to download all the files from │ │ the Rocket Chat chat-history. │ │ │ │ Only modify the following when needed: │ │ │ │ │ │ baseUrl; │ │desPath(where you want to download files to); │ │ chatPath(where are the chat files); │ │ X-Auth-Token; │ │ X-User-Id.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -7,15 +7,17 @@
 <meta name="author"
     content="Yange Zheng ">
 <meta name="description"
-    content="" />
+    content="Reversing Cryptographic Hash Functions  What to do if you have a hashed Message H(msg), and you want to have &amp;lsquo;msg&amp;rsquo;?
+ Because the hash function is always one way, the way to get the message from the hashed code is to try a lot with different word, and see if you end up have same hashed code as H(msg).
+Precomputed Hash Chains We trade time with space. What do we do is, we compute the H(*) before everything happened." />
 <meta name="keywords" content="" />
 <meta name="robots" content="noodp" />
-<link rel="canonical" href="https://yzheng.me/projects/" />
+<link rel="canonical" href="https://yzheng.me/blogs/precomputedhashchainsandrainbowtable/" />
 
 
 <title>
     
-    Projects :: Yange Zheng  — Yange&#39;s personal website
+    Precomputed hash chains and Rainbow table :: Yange Zheng  — Yange&#39;s personal website
     
 </title>
 
@@ -36,21 +38,29 @@
 <link rel="manifest" href="/site.webmanifest">
 <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#252627">
 <link rel="shortcut icon" href="/favicon.ico">
-<meta name="theme-color" content="#252627"><meta itemprop="name" content="Projects">
-<meta itemprop="description" content="Yange&#39;s personal website">
+<meta name="theme-color" content="#252627"><meta itemprop="name" content="Precomputed hash chains and Rainbow table">
+<meta itemprop="description" content="Attack to hash functions">
 
+
+<meta itemprop="datePublished" content="2019-07-02T22:41:21&#43;02:00" />
+<meta itemprop="dateModified" content="2019-07-02T22:41:21&#43;02:00" />
+<meta itemprop="wordCount" content="235">
+
+
+
+<meta itemprop="keywords" content="sicherheit," />
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://yzheng.me"/>
 
-<meta name="twitter:title" content="Projects"/>
-<meta name="twitter:description" content="Yange&#39;s personal website"/>
+<meta name="twitter:title" content="Precomputed hash chains and Rainbow table"/>
+<meta name="twitter:description" content="Attack to hash functions"/>
 
 
 
 
+<meta property="article:published_time" content="2019-07-02 22:41:21 &#43;0200 CEST" />
 
 
-<link rel="alternate" type="application/rss+xml" href="https://yzheng.me/projects/index.xml" title="Yange Zheng" />
 
 
 
@@ -101,26 +111,57 @@
 
             <div class="content">
                 
-    <main class="posts">
-        <h1>Projects</h1>
-            <div class="posts-group">
-                <div class="post-year">2019</div>
+    <main class="post">
 
-                <ul class="posts-list">
-                        <li class="post-item">
-                            <a href="https://yzheng.me/projects/365modi/">
-                                <span class="post-title">365 Administration in powershell</span>
-                                <span class="post-day">Jul 20</span>
-                            </a>
-                        </li>
-                        <li class="post-item">
-                            <a href="https://yzheng.me/projects/rocketchatfiles/">
-                                <span class="post-title">Rocket Chat Files download</span>
-                                <span class="post-day">Jun 20</span>
-                            </a>
-                        </li>
-                </ul>
+        <div class="post-info">
+            
+            </p>
+        </div>
+
+        <article>
+            <h2 class="post-title"><a href="https://yzheng.me/blogs/precomputedhashchainsandrainbowtable/">Precomputed hash chains and Rainbow table</a></h2>
+
+            
+
+            <div class="post-content">
+                
+
+<h2 id="reversing-cryptographic-hash-functions">Reversing Cryptographic Hash Functions</h2>
+
+<blockquote>
+<p>What to do if you have a hashed Message H(msg), and you want to have &lsquo;msg&rsquo;?</p>
+</blockquote>
+
+<p>Because the hash function is always one way, the way to get the message from the hashed code is to try a lot with different word, and see if you end up have same hashed code as H(msg).</p>
+
+<h2 id="precomputed-hash-chains">Precomputed Hash Chains</h2>
+
+<p>We trade time with space. What do we do is, we compute the H(*) before everything happened. But save all the discrete msg-hash pair in not effecient. Better approch is to create a reverse function R (invert of definion and value space from H function) and we do <img src="/resources/postImage/rainbowTable/equation.svg" alt="alt text" /></p>
+
+<p>Later if we get our H(msg) as &lsquo;0CAFC376&rsquo; , we do R(0CAFC376) and we get &lsquo;crepa&rsquo;, because we have already saved the &lsquo;crepa&rsquo; as later word started from &lsquo;zhihu&rsquo;, so we can only recalculate from &lsquo;zhihu&rsquo;, then we know the &lsquo;vfkkd&rsquo; is the msg.</p>
+
+<h2 id="rainbow-table">Rainbow Table</h2>
+
+<p>One big problem of precomputed hash chains has two problems:
+1. it&rsquo;s really hard to find a good R, so in reality we end up have a lot of R(*) is out of the defination space from H,
+2. R has hash collision.</p>
+
+<p>What rainbow table is doing, is that we use number of R (R1&hellip;Rk), we do such <img src="/postImage/rainbowTable/Rainbow_table1.svg" alt="alt text" /></p>
+
+<p>the only way to collide two chains is by hitting same value at same iteration. So we solve the second question.</p>
+
             </div>
+        </article>
+
+        <hr />
+
+        <div class="post-info">
+  				<p>
+  					<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag meta-icon"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7" y2="7"></line></svg><span class="tag"><a href="https://yzheng.me/tags/sicherheit">sicherheit</a></span>
+  				</p>
+  			</div>
+
+        
     </main>
 
             </div>

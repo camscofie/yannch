@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>frontend on Yange Zheng</title>
+    <link>https://yzheng.me/tags/frontend/</link>
+    <description>Recent content in frontend on Yange Zheng</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 24 Mar 2019 22:41:21 +0200</lastBuildDate>
+    
+	<atom:link href="https://yzheng.me/tags/frontend/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Frontend-verwendete Technologien</title>
+      <link>https://yzheng.me/blogs/frontend_verwendete_technologien/</link>
+      <pubDate>Sun, 24 Mar 2019 22:41:21 +0200</pubDate>
+      
+      <guid>https://yzheng.me/blogs/frontend_verwendete_technologien/</guid>
+      <description>In our frontend developing, we have received very much help from the following three Technologies.
+Angular Angular ist ein von Google entwickeltes JavaScript-Framework für interaktives Webdesign. Es eignet sich besonders für die Entwicklung Single-Page-Applications (SPA).
+(1.1) Angular basiert auf Komponenten, die zusammen Daten austauschen
+(1.2) Angular ist mit TypeScript geschrieben. (eine JavaScript Erweiterung ab der Versi-on ES6)
+(1.3) Design, Template, Test und Datenverarbeitung sind für jede Komponente in verschiedenen Dateien getrennt.</description>
+    </item>
+    
+  </channel>
+</rss>

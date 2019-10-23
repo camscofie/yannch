@@ -33,6 +33,20 @@
     </item>
     
     <item>
+      <title>学习错误集</title>
+      <link>https://yzheng.me/dejavu/studyrecords/</link>
+      <pubDate>Thu, 12 Sep 2019 22:41:21 +0200</pubDate>
+      
+      <guid>https://yzheng.me/dejavu/studyrecords/</guid>
+      <description>考试季记录 02.08.2019 Bestehen der Sicherheit Stammmodul, 6分
+总结： + 学习周期长，考试复习&amp;gt;=3周，学习&amp;gt;=两周，共计&amp;gt;=5周 + blog 记录知识点 + 对题型有总结
+27.08.2019 Durchfall der Theoretische Grundlagen der Informatik 为了快速通过TGI，不惜交了一次白卷
+原因： + 时间安排不够，一共计划了3周，实际学习不超过两周 + TGI 难，挂科率高，怕学不会，想口试简单点 + 学习态度懒散，老想打游戏 + TGI 必须要通过才可以考Programmierparadigmen，索性这次交白卷，下次考试再不过强制口试
+12.09.2019 Abmeldung der Höhere Mathematik 今天是 12.09.2019，HM考试前5天，我又不得不ab 掉这门考试。
+原因： + 时间安排完全不够，从头到现在只学习了不到两周 + HM 考试后10天有 LA2，LA2 复习时间很短 + HM 知识断层多，难题花太多时间往回补，心态老崩 + 学习态度懒散，老想打游戏 + Lisann 家新买的家具还需要安装 + 9月底需要搬走，这几天还需约人来家里看房</description>
+    </item>
+    
+    <item>
       <title>HM Sätze Interpretation</title>
       <link>https://yzheng.me/blogs/hm_satz/</link>
       <pubDate>Thu, 29 Aug 2019 22:41:21 +0200</pubDate>
@@ -42,74 +56,69 @@
     </item>
     
     <item>
-      <title>365 Administration in powershell</title>
-      <link>https://yzheng.me/projects/2019-07-20-365modi/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <title>Komplexitätstheorie</title>
+      <link>https://yzheng.me/blogs/komplexit%C3%A4tstheorie/</link>
+      <pubDate>Sun, 11 Aug 2019 22:41:21 +0200</pubDate>
       
-      <guid>https://yzheng.me/projects/2019-07-20-365modi/</guid>
-      <description>#╭──────────────────────────────╮ #│ ◎ ○ ○ ░░░░ 365 E-mails ░░░░░░│ #├──────────────────────────────┤ #│ │ #│ │ #│ this is for automation of │ #│ configure E-mails in 365. │ #│ │ #│ │ #└──────────────────────────────┘ $MSOCred = Get-Credential $global:Users = @() #users with their original E-mail address $global:old_Users = @() #users with their UserPrincipalName changed to old_xxxx@xxx $global:confirmation = $false # path to the excel file $excelPath = &amp;quot;C:\Script\Faculty.xlsx&amp;quot; # connect to MsolService function logInMsolService { # connect to MsolService Write-Host &amp;quot;`nConnecting to MsolService.</description>
+      <guid>https://yzheng.me/blogs/komplexit%C3%A4tstheorie/</guid>
+      <description>Deﬁnition: Problem Ein Problem Π ist gegeben durch: + eine allgemeine Beschreibung aller vorkommenden Parameter + eine genaue Beschreibung der Eigenschaften, die die Lösung haben soll Ein Problembeispiel /(Instanz) von Π erhalten wir, indem wir die Parameter von Π festlegen.
+Deﬁnition: Kodierungsschema  Ein Kodierungsschema s ordnet jedem Problembeispiel eines Problems eine Zeichenkette oder Kodierung über einem Alphabet Σ zu. Die Inputlänge eines Problembeispiels ist die Anzahl des Symbole seiner Kodierung.</description>
+    </item>
+    
+    <item>
+      <title>Turing-Maschinen</title>
+      <link>https://yzheng.me/blogs/turing_maschinen/</link>
+      <pubDate>Sun, 11 Aug 2019 22:41:21 +0200</pubDate>
+      
+      <guid>https://yzheng.me/blogs/turing_maschinen/</guid>
+      <description>Die Registermaschine (RAM) Die RAM besteht aus: + Ein Programm besteht aus einer Folge von Befehlen. + Programmzeilen sind durchnummeriert. + Der Befehlszähler b startet bei 1 und enthält jeweils die Nummer des nächsten auszuführenden Befehls.  In den ersten Registern steht zu Beginn der Berechnung die Eingabe. In den übrigen Registern steht 0. Am Ende der Berechnung stehen die Ausgabedaten in vorher festgelegten Registern. Den Inhalt des Registers i bezeichnen wir mit c(i).</description>
+    </item>
+    
+    <item>
+      <title>Informationstheorie</title>
+      <link>https://yzheng.me/blogs/informationstheorie/</link>
+      <pubDate>Tue, 06 Aug 2019 22:41:21 +0200</pubDate>
+      
+      <guid>https://yzheng.me/blogs/informationstheorie/</guid>
+      <description>Deﬁnition von Information(信息量) Information I: des Auftretens eines Zeichens k + Information soll nie negativ sein: I ≥ 0 + Ein sicheres Ereignis soll keine Information liefern: Pr[(Pi = 1)] ⇒ I = 0 + Information soll stetig sein + Die Information einer Zeichenkette soll gleich der Summe der Einzelinformationen sein: I(pi·pj) = I(pi) + I(pj)
+Sei p eine Wahrscheinlichkeit, die Information von p zur Basis b ist deﬁniert als:</description>
+    </item>
+    
+    <item>
+      <title>Grundbegriffe der Informatik</title>
+      <link>https://yzheng.me/blogs/grundbegriffederinformatik/</link>
+      <pubDate>Mon, 05 Aug 2019 22:41:21 +0200</pubDate>
+      
+      <guid>https://yzheng.me/blogs/grundbegriffederinformatik/</guid>
+      <description>Wörter  Ein endliches Alphabet Σ ist eine endliche Menge von Symbolen. Eine endliche Folge von Symbolen aus Σ heißt Wort (über Σ). In der Regel ist die Variable für ein Wort w. Die Menge aller Wörter über Σ heißt Σ∗ . Das heißt w ∈ Σ∗. Die Länge von w ist │w│. Das leere Wort ε mit │ε│ = 0 ist ∈ Σ∗ (∀Σ) Der Operator · bezeichne die Konkatenation, also Hintereinanderreihung, von Wörtern w1 &amp;hellip; wn.</description>
+    </item>
+    
+    <item>
+      <title>NP-completeness</title>
+      <link>https://yzheng.me/blogs/npcompleteness/</link>
+      <pubDate>Mon, 05 Aug 2019 22:41:21 +0200</pubDate>
+      
+      <guid>https://yzheng.me/blogs/npcompleteness/</guid>
+      <description>Deﬁnition Eine polynomiale Transformation einer Sprache L1 ⊆ Σ1∗ in eine Sprache L2 ⊆ Σ2∗ ist eine Funktion f : Σ1∗ → Σ2∗ mit den folgenden Eigenschaften: 1. Es existiert eine polynomiale deterministische Turing-Maschine, die f berechnet. 2. Für alle x ∈ Σ1^∗ gilt: x ∈ L1 ⇔ f(x) ∈ L2.
+Wir schreiben dann L1 ∝ L2 (L1 ist polynomial transformierbar in L2 ). Intuitiv bedeutet L1 ∝ L2 , dass L2 gleich schwierig oder schwieriger als L 1 ist.</description>
     </item>
     
     <item>
       <title>Access Control</title>
-      <link>https://yzheng.me/blogs/2019-07-30-accesscontrol/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <link>https://yzheng.me/blogs/accesscontrol/</link>
+      <pubDate>Tue, 30 Jul 2019 22:41:21 +0200</pubDate>
       
-      <guid>https://yzheng.me/blogs/2019-07-30-accesscontrol/</guid>
+      <guid>https://yzheng.me/blogs/accesscontrol/</guid>
       <description>Bell LaPadula A state machine model used for enforcing access control in government and military applications.
 Definition  eine Menge S von Subjekten eine Menge O von Objekten eine Menge A = {read, write, append, excute} von Zugriﬀsoperation eine halbgeordnete Menge L von Sicherheitsleveln, auf der ein eindeutiges Maximum deﬁniert ist B ⊆ S × O × A die Menge aller aktuellen Zugriﬀe ist M = m(i,j)(i=..,j=&amp;hellip;),die Zugriﬀskontrollmatrix ist, deren Eintrag m(i,j) ⊆ A die erlaubten Zugriﬀe des Subjektes i auf das Objekt j beschreibt F = (f s , f c , f o ) ein Funktionstripel:  f s : S → L weist jedem Subjekt ein maximales Sicherheitslevel zu f c : S → L weist jedem Subjekt sein aktuelles Sicherheitslevel zu f o : O → L weist jedem Objekt ein Sicherheitslevel zu   Discretionary-Security/ds-Eigenschaft  user&amp;rsquo;s action is what it has predefined  ∀(s, o, a) ∈ B : a ∈ m(s,o)</description>
     </item>
     
     <item>
-      <title>Asymmetrische Authentifikation</title>
-      <link>https://yzheng.me/blogs/2019-07-20-asymmetirscheauthentifikation/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://yzheng.me/blogs/2019-07-20-asymmetirscheauthentifikation/</guid>
-      <description>Digitale Sinaturschemata  (pk,sk) &amp;lt;- Gen(1^k) wie bei Public-Key-Verschlüsselung. Signieren: σ &amp;lt;- Sig(sk,M) Verifizieren: Ver(pk,M,σ) = {0,1}  EUF-CMA (Existential Unforgeability under Chosen Message Attack): Schema IND-CPA-sicher ⇔ kein PPT-Angreifer A wins. 1. A has pk and access to Sig(sk,)-Orakel 2. A gives (M,σ) 3. A wins, when Ver(pk,M,σ) = 1 and M != M. RSA als Signaturschema sig(sk,M) = M^d mod N
-Ver(pk,M,σ)=1 :&amp;lt;=&amp;gt; M=σ^e mod N
-Problem bei RSA:  Unsinnige Nachrichten können signiert werden.</description>
-    </item>
-    
-    <item>
-      <title>Asymmetrische Encryption</title>
-      <link>https://yzheng.me/blogs/2019-07-16-asymmetrischeencryption/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://yzheng.me/blogs/2019-07-16-asymmetrischeencryption/</guid>
-      <description>RSA Process RSA Key generation  choose P != Q, both prime N = P x Q, λ(N) = (P-1)(Q-1) pick e from (3,&amp;hellip;,λ(N)-1), ggt(e,λ(N)) = 1 calculate d ≡ e^(−1) (mod λ(N)). //d⋅e ≡ 1 (mod λ(n)) pk = (N,e); sk = (N,d)  Encryption c(m) ≡ m^(e) mod N
-Decryption m&amp;copy; ≡ c^(d) mod N
-Tricks zum Rechnen:  51^2 mod 59 = (59-8)^2 mod 59 = (-8)^2 mod 59 3^60 mod 59 = 3^(60 mod 58) mod 59 = 3^2 mod 59.</description>
-    </item>
-    
-    <item>
-      <title>Block Cipher</title>
-      <link>https://yzheng.me/blogs/2019-07-24-blockcipher/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://yzheng.me/blogs/2019-07-24-blockcipher/</guid>
-      <description>Electronic Codebook Mode (ECB-Modus)  Teile M in l Bit Blöcke M1, M2 &amp;hellip; Mn ∈ {0, 1}^l auf Setze C := (C1 , &amp;hellip; ) mit Ci := E(K, Mi) ∈ {0, 1}^l Entschlüsselung funktioniert genauso, nur mit D  Cipher Block Chaining Mode (CBC) + M: Message; C: Ciphertext; IP: Initial Vector; E: Encryption Algorithm; K: key
-1. Encryption: + M = M1 + M2 + &amp;hellip; + Mn + C0 = IV + C1 = E(K, M1 Xor C0) + C2 = E(K, M2 Xor C1) + C = C1 + C2 + &amp;hellip; + Cn</description>
-    </item>
-    
-    <item>
-      <title>Burn windows USB in MacOS</title>
-      <link>https://yzheng.me/dejavu/2019-07-13-macosburnwindows/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://yzheng.me/dejavu/2019-07-13-macosburnwindows/</guid>
-      <description>diskutil list
-sudo diskutil eraseDisk FAT32 &amp;lsquo;name&amp;rsquo; MBRFormat &amp;lsquo;place(/dev/disk2)&amp;rsquo;
-unetbootin
-//FAT32 对文件大小有限制，如果 .ios 文件超过4GB，安装时可能出现错误。</description>
-    </item>
-    
-    <item>
       <title>Encryption Methods for Kids</title>
-      <link>https://yzheng.me/blogs/2019-07-29-kidscipher/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <link>https://yzheng.me/blogs/kidscipher/</link>
+      <pubDate>Mon, 29 Jul 2019 22:41:21 +0200</pubDate>
       
-      <guid>https://yzheng.me/blogs/2019-07-29-kidscipher/</guid>
+      <guid>https://yzheng.me/blogs/kidscipher/</guid>
       <description>Cäser Cipher Enc(K, M) = (Mi + K mod 26)
 Bijective Projection * Plain: ABCDEFGHIJKLMNOPQRSTUVWXYZ * Cipher: XYZABCDEFGHIJKLMNOPQRSTUVW
 Example: + Plaintext: THE QUICK BROWN FOX JUMPS OVER THE LAZY DOG + Ciphertext: QEB NRFZH YOLTK CLU GRJMP LSBO QEB IXWV ALD
@@ -118,24 +127,84 @@ Hacking tips: + Get the most frequent letter out, guessing it&amp;rsquo;s &amp;l
     </item>
     
     <item>
-      <title>Frontend-verwendete Technologien</title>
-      <link>https://yzheng.me/blogs/2019-03-24-frontend_verwendete_technologien/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <title>Security Games</title>
+      <link>https://yzheng.me/blogs/securitygames/</link>
+      <pubDate>Fri, 26 Jul 2019 22:41:21 +0200</pubDate>
       
-      <guid>https://yzheng.me/blogs/2019-03-24-frontend_verwendete_technologien/</guid>
-      <description>In our frontend developing, we have received very much help from the following three Technologies.
-Angular Angular ist ein von Google entwickeltes JavaScript-Framework für interaktives Webdesign. Es eignet sich besonders für die Entwicklung Single-Page-Applications (SPA).
-(1.1) Angular basiert auf Komponenten, die zusammen Daten austauschen
-(1.2) Angular ist mit TypeScript geschrieben. (eine JavaScript Erweiterung ab der Versi-on ES6)
-(1.3) Design, Template, Test und Datenverarbeitung sind für jede Komponente in verschiedenen Dateien getrennt.</description>
+      <guid>https://yzheng.me/blogs/securitygames/</guid>
+      <description>IND-CPA (Indistinguishability under Chosen Plaintext Attack) 言辞：攻击者生成两条等长的消息{a,b}，挑战者随机决定加密其中的一条消息，攻击者试图猜测被加密的是哪条消息。
+Schema IND-CPA-sicher ⇔ kein eﬃzienter Angreifer A kann Chiﬀrate von selbstgewählten Klartexten unterscheiden 1. A erhält im Folgenden Zugriﬀ auf Enc(K, ·)-Orakel 2. A wählt zwei Nachrichten M (1) , M (2) gleicher Länge 3. A erhält C∗ := Enc(K, M (b) ) für gleichverteiltes b ∈ {1, 2} 4. A gewinnt, wenn er b richtig rät EUF-CMA (Existential Unforgeability under Chosen Message Attack): 言辞：攻击者有pk 和 Sig(sk,M) Oracle 的权限，攻击者生成伪造的信息和签名；攻击者获胜，如果伪造的签名解锁后等于被伪造的信息。</description>
+    </item>
+    
+    <item>
+      <title>Merkle–Damgård construction</title>
+      <link>https://yzheng.me/blogs/damgardconstruction/</link>
+      <pubDate>Thu, 25 Jul 2019 22:41:21 +0200</pubDate>
+      
+      <guid>https://yzheng.me/blogs/damgardconstruction/</guid>
+      <description> Merkle–Damgård construction is a method to build collision-resistant cryptographic hash functions from collision-resistant one-way compression functions.
+Process  M* = M1 + M2 + M3 + &amp;hellip; + Mn Hi := f(Hi-1 + Mi); 1&amp;lt;i&amp;lt;n   MD-compliant padding  M is a prefix of Pad(M) length(M) = length(M&amp;rsquo;) =&amp;gt; len(Pad(M))=len(Pad(M&amp;rsquo;)) len(M) != len(M&amp;rsquo;) =&amp;gt; the last block of Pad(M) != last block of Pad(M&amp;rsquo;)  </description>
+    </item>
+    
+    <item>
+      <title>Block Cipher</title>
+      <link>https://yzheng.me/blogs/blockcipher/</link>
+      <pubDate>Wed, 24 Jul 2019 22:41:21 +0200</pubDate>
+      
+      <guid>https://yzheng.me/blogs/blockcipher/</guid>
+      <description>Electronic Codebook Mode (ECB-Modus)  Teile M in l Bit Blöcke M1, M2 &amp;hellip; Mn ∈ {0, 1}^l auf Setze C := (C1 , &amp;hellip; ) mit Ci := E(K, Mi) ∈ {0, 1}^l Entschlüsselung funktioniert genauso, nur mit D  Cipher Block Chaining Mode (CBC) + M: Message; C: Ciphertext; IP: Initial Vector; E: Encryption Algorithm; K: key
+1. Encryption: + M = M1 + M2 + &amp;hellip; + Mn + C0 = IV + C1 = E(K, M1 Xor C0) + C2 = E(K, M2 Xor C1) + C = C1 + C2 + &amp;hellip; + Cn</description>
+    </item>
+    
+    <item>
+      <title>365 Administration in powershell</title>
+      <link>https://yzheng.me/projects/365modi/</link>
+      <pubDate>Sat, 20 Jul 2019 22:41:21 +0200</pubDate>
+      
+      <guid>https://yzheng.me/projects/365modi/</guid>
+      <description>#╭──────────────────────────────╮ #│ ◎ ○ ○ ░░░░ 365 E-mails ░░░░░░│ #├──────────────────────────────┤ #│ │ #│ │ #│ this is for automation of │ #│ configure E-mails in 365. │ #│ │ #│ │ #└──────────────────────────────┘ $MSOCred = Get-Credential $global:Users = @() #users with their original E-mail address $global:old_Users = @() #users with their UserPrincipalName changed to old_xxxx@xxx $global:confirmation = $false # path to the excel file $excelPath = &amp;quot;C:\Script\Faculty.xlsx&amp;quot; # connect to MsolService function logInMsolService { # connect to MsolService Write-Host &amp;quot;`nConnecting to MsolService.</description>
+    </item>
+    
+    <item>
+      <title>Asymmetrische Authentifikation</title>
+      <link>https://yzheng.me/blogs/asymmetirscheauthentifikation/</link>
+      <pubDate>Sat, 20 Jul 2019 22:41:21 +0200</pubDate>
+      
+      <guid>https://yzheng.me/blogs/asymmetirscheauthentifikation/</guid>
+      <description>Digitale Sinaturschemata  (pk,sk) &amp;lt;- Gen(1^k) wie bei Public-Key-Verschlüsselung. Signieren: σ &amp;lt;- Sig(sk,M) Verifizieren: Ver(pk,M,σ) = {0,1}  EUF-CMA (Existential Unforgeability under Chosen Message Attack): Schema IND-CPA-sicher ⇔ kein PPT-Angreifer A wins. 1. A has pk and access to Sig(sk,)-Orakel 2. A gives (M,σ) 3. A wins, when Ver(pk,M,σ) = 1 and M != M. RSA als Signaturschema sig(sk,M) = M^d mod N
+Ver(pk,M,σ)=1 :&amp;lt;=&amp;gt; M=σ^e mod N
+Problem bei RSA:  Unsinnige Nachrichten können signiert werden.</description>
+    </item>
+    
+    <item>
+      <title>Asymmetrische Encryption</title>
+      <link>https://yzheng.me/blogs/asymmetrischeencryption/</link>
+      <pubDate>Tue, 16 Jul 2019 22:41:21 +0200</pubDate>
+      
+      <guid>https://yzheng.me/blogs/asymmetrischeencryption/</guid>
+      <description>RSA Process RSA Key generation  choose P != Q, both prime N = P x Q, λ(N) = (P-1)(Q-1) pick e from (3,&amp;hellip;,λ(N)-1), ggt(e,λ(N)) = 1 calculate d ≡ e^(−1) (mod λ(N)). //d⋅e ≡ 1 (mod λ(n)) pk = (N,e); sk = (N,d)  Encryption c(m) ≡ m^(e) mod N
+Decryption m&amp;copy; ≡ c^(d) mod N
+Tricks zum Rechnen:  51^2 mod 59 = (59-8)^2 mod 59 = (-8)^2 mod 59 3^60 mod 59 = 3^(60 mod 58) mod 59 = 3^2 mod 59.</description>
+    </item>
+    
+    <item>
+      <title>Burn windows USB in MacOS</title>
+      <link>https://yzheng.me/dejavu/macosburnwindows/</link>
+      <pubDate>Sat, 13 Jul 2019 22:41:21 +0200</pubDate>
+      
+      <guid>https://yzheng.me/dejavu/macosburnwindows/</guid>
+      <description>diskutil list
+sudo diskutil eraseDisk FAT32 &amp;lsquo;name&amp;rsquo; MBRFormat &amp;lsquo;place(/dev/disk2)&amp;rsquo;
+unetbootin
+//FAT32 对文件大小有限制，如果 .ios 文件超过4GB，安装时可能出现错误。</description>
     </item>
     
     <item>
       <title>Github Page layout changes</title>
-      <link>https://yzheng.me/dejavu/2019-07-02-githubpagechanges/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <link>https://yzheng.me/dejavu/githubpagechanges/</link>
+      <pubDate>Tue, 02 Jul 2019 22:41:21 +0200</pubDate>
       
-      <guid>https://yzheng.me/dejavu/2019-07-02-githubpagechanges/</guid>
+      <guid>https://yzheng.me/dejavu/githubpagechanges/</guid>
       <description>Strucktur of this framework _posts: * the folder of all posts
 _layouts: * the layouts of different page form
 css: * css
@@ -147,109 +216,41 @@ Change the name of the List  edit /_layouts/post.html, whichs has sidebar config
     </item>
     
     <item>
-      <title>Grundbegriffe der Informatik</title>
-      <link>https://yzheng.me/blogs/2019-08-05-grundbegriffederinformatik/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://yzheng.me/blogs/2019-08-05-grundbegriffederinformatik/</guid>
-      <description>Wörter  Ein endliches Alphabet Σ ist eine endliche Menge von Symbolen. Eine endliche Folge von Symbolen aus Σ heißt Wort (über Σ). In der Regel ist die Variable für ein Wort w. Die Menge aller Wörter über Σ heißt Σ∗ . Das heißt w ∈ Σ∗. Die Länge von w ist │w│. Das leere Wort ε mit │ε│ = 0 ist ∈ Σ∗ (∀Σ) Der Operator · bezeichne die Konkatenation, also Hintereinanderreihung, von Wörtern w1 &amp;hellip; wn.</description>
-    </item>
-    
-    <item>
-      <title>Informationstheorie</title>
-      <link>https://yzheng.me/blogs/2019-08-06-informationstheorie/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://yzheng.me/blogs/2019-08-06-informationstheorie/</guid>
-      <description>Deﬁnition von Information(信息量) Information I: des Auftretens eines Zeichens k + Information soll nie negativ sein: I ≥ 0 + Ein sicheres Ereignis soll keine Information liefern: Pr[(Pi = 1)] ⇒ I = 0 + Information soll stetig sein + Die Information einer Zeichenkette soll gleich der Summe der Einzelinformationen sein: I(pi·pj) = I(pi) + I(pj)
-Sei p eine Wahrscheinlichkeit, die Information von p zur Basis b ist deﬁniert als:</description>
-    </item>
-    
-    <item>
-      <title>Komplexitätstheorie</title>
-      <link>https://yzheng.me/blogs/2019-08-11-komplexit%C3%A4tstheorie/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://yzheng.me/blogs/2019-08-11-komplexit%C3%A4tstheorie/</guid>
-      <description>Deﬁnition: Problem Ein Problem Π ist gegeben durch: + eine allgemeine Beschreibung aller vorkommenden Parameter + eine genaue Beschreibung der Eigenschaften, die die Lösung haben soll Ein Problembeispiel /(Instanz) von Π erhalten wir, indem wir die Parameter von Π festlegen.
-Deﬁnition: Kodierungsschema  Ein Kodierungsschema s ordnet jedem Problembeispiel eines Problems eine Zeichenkette oder Kodierung über einem Alphabet Σ zu. Die Inputlänge eines Problembeispiels ist die Anzahl des Symbole seiner Kodierung.</description>
-    </item>
-    
-    <item>
-      <title>Merkle–Damgård construction</title>
-      <link>https://yzheng.me/blogs/2019-07-25-merkledamgardconstruction/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://yzheng.me/blogs/2019-07-25-merkledamgardconstruction/</guid>
-      <description> Merkle–Damgård construction is a method to build collision-resistant cryptographic hash functions from collision-resistant one-way compression functions.
-Process  M* = M1 + M2 + M3 + &amp;hellip; + Mn Hi := f(Hi-1 + Mi); 1&amp;lt;i&amp;lt;n   MD-compliant padding  M is a prefix of Pad(M) length(M) = length(M&amp;rsquo;) =&amp;gt; len(Pad(M))=len(Pad(M&amp;rsquo;)) len(M) != len(M&amp;rsquo;) =&amp;gt; the last block of Pad(M) != last block of Pad(M&amp;rsquo;)  </description>
-    </item>
-    
-    <item>
-      <title>Nginx site enable</title>
-      <link>https://yzheng.me/dejavu/2019-06-30-nginxsiteenable/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://yzheng.me/dejavu/2019-06-30-nginxsiteenable/</guid>
-      <description> go to /etc/nginx/sites-avaliable/ copy the conf file to ../sites-enabled/ run
-foo@bar:~$ sudo systemctl restart nginx   done  </description>
-    </item>
-    
-    <item>
-      <title>NP-completeness</title>
-      <link>https://yzheng.me/blogs/2019-08-05-npcompleteness/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://yzheng.me/blogs/2019-08-05-npcompleteness/</guid>
-      <description>Deﬁnition Eine polynomiale Transformation einer Sprache L1 ⊆ Σ1∗ in eine Sprache L2 ⊆ Σ2∗ ist eine Funktion f : Σ1∗ → Σ2∗ mit den folgenden Eigenschaften: 1. Es existiert eine polynomiale deterministische Turing-Maschine, die f berechnet. 2. Für alle x ∈ Σ1^∗ gilt: x ∈ L1 ⇔ f(x) ∈ L2.
-Wir schreiben dann L1 ∝ L2 (L1 ist polynomial transformierbar in L2 ). Intuitiv bedeutet L1 ∝ L2 , dass L2 gleich schwierig oder schwieriger als L 1 ist.</description>
-    </item>
-    
-    <item>
       <title>Precomputed hash chains and Rainbow table</title>
-      <link>https://yzheng.me/blogs/2019-07-02-precomputedhashchainsandrainbowtable/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <link>https://yzheng.me/blogs/precomputedhashchainsandrainbowtable/</link>
+      <pubDate>Tue, 02 Jul 2019 22:41:21 +0200</pubDate>
       
-      <guid>https://yzheng.me/blogs/2019-07-02-precomputedhashchainsandrainbowtable/</guid>
+      <guid>https://yzheng.me/blogs/precomputedhashchainsandrainbowtable/</guid>
       <description>Reversing Cryptographic Hash Functions  What to do if you have a hashed Message H(msg), and you want to have &amp;lsquo;msg&amp;rsquo;?
  Because the hash function is always one way, the way to get the message from the hashed code is to try a lot with different word, and see if you end up have same hashed code as H(msg).
 Precomputed Hash Chains We trade time with space. What do we do is, we compute the H(*) before everything happened.</description>
     </item>
     
     <item>
-      <title>Rocket Chat Files download</title>
-      <link>https://yzheng.me/projects/2019-06-20-rocketchatfiles/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <title>Nginx site enable</title>
+      <link>https://yzheng.me/dejavu/nginxsiteenable/</link>
+      <pubDate>Sun, 30 Jun 2019 22:41:21 +0200</pubDate>
       
-      <guid>https://yzheng.me/projects/2019-06-20-rocketchatfiles/</guid>
+      <guid>https://yzheng.me/dejavu/nginxsiteenable/</guid>
+      <description> go to /etc/nginx/sites-avaliable/ copy the conf file to ../sites-enabled/ run
+foo@bar:~$ sudo systemctl restart nginx   done  </description>
+    </item>
+    
+    <item>
+      <title>Rocket Chat Files download</title>
+      <link>https://yzheng.me/projects/rocketchatfiles/</link>
+      <pubDate>Thu, 20 Jun 2019 22:41:21 +0200</pubDate>
+      
+      <guid>https://yzheng.me/projects/rocketchatfiles/</guid>
       <description>import json import requests from pathlib import Path &amp;quot;&amp;quot;&amp;quot; ╭──────────────────────────────────────────────╮ │ ◎ ○ ○ ░░░░░░░░░░░░ Usage ░░░░░░░░░░░░░░░░░░│ ├──────────────────────────────────────────────┤ │ │ │ This gist is to download all the files from │ │ the Rocket Chat chat-history. │ │ │ │ Only modify the following when needed: │ │ │ │ │ │ baseUrl; │ │desPath(where you want to download files to); │ │ chatPath(where are the chat files); │ │ X-Auth-Token; │ │ X-User-Id.</description>
     </item>
     
     <item>
-      <title>Security Games</title>
-      <link>https://yzheng.me/blogs/2019-07-26-securitygames/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://yzheng.me/blogs/2019-07-26-securitygames/</guid>
-      <description>IND-CPA (Indistinguishability under Chosen Plaintext Attack) 言辞：攻击者生成两条等长的消息{a,b}，挑战者随机决定加密其中的一条消息，攻击者试图猜测被加密的是哪条消息。
-Schema IND-CPA-sicher ⇔ kein eﬃzienter Angreifer A kann Chiﬀrate von selbstgewählten Klartexten unterscheiden 1. A erhält im Folgenden Zugriﬀ auf Enc(K, ·)-Orakel 2. A wählt zwei Nachrichten M (1) , M (2) gleicher Länge 3. A erhält C∗ := Enc(K, M (b) ) für gleichverteiltes b ∈ {1, 2} 4. A gewinnt, wenn er b richtig rät EUF-CMA (Existential Unforgeability under Chosen Message Attack): 言辞：攻击者有pk 和 Sig(sk,M) Oracle 的权限，攻击者生成伪造的信息和签名；攻击者获胜，如果伪造的签名解锁后等于被伪造的信息。</description>
-    </item>
-    
-    <item>
-      <title>Turing-Maschinen</title>
-      <link>https://yzheng.me/blogs/2019-08-11-turing-maschinen/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://yzheng.me/blogs/2019-08-11-turing-maschinen/</guid>
-      <description>Die Registermaschine (RAM) Die RAM besteht aus: + Ein Programm besteht aus einer Folge von Befehlen. + Programmzeilen sind durchnummeriert. + Der Befehlszähler b startet bei 1 und enthält jeweils die Nummer des nächsten auszuführenden Befehls.  In den ersten Registern steht zu Beginn der Berechnung die Eingabe. In den übrigen Registern steht 0. Am Ende der Berechnung stehen die Ausgabedaten in vorher festgelegten Registern. Den Inhalt des Registers i bezeichnen wir mit c(i).</description>
-    </item>
-    
-    <item>
       <title>Wordpress 安装及常见错误</title>
-      <link>https://yzheng.me/dejavu/2019-04-13-wpinstall/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <link>https://yzheng.me/dejavu/wpinstall/</link>
+      <pubDate>Sat, 13 Apr 2019 22:41:21 +0200</pubDate>
       
-      <guid>https://yzheng.me/dejavu/2019-04-13-wpinstall/</guid>
+      <guid>https://yzheng.me/dejavu/wpinstall/</guid>
       <description>Wordpress 安装 跟随教程
 安装wordpress 后需要fpt 连接或安装不成功 在 wp-config.php 里添加：
 define( &#39;FS_METHOD&#39;, &#39;direct&#39; ); sudo chown -R www-data:www-data /var/www  安装wordpress multisite  确定wordpress 文件夹在/var/www/html/ 下 跟随教程 &amp;ldquo;Create a Network&amp;rdquo; 更改 /etc/apache2/apache.conf 文件里的
@@ -259,17 +260,16 @@ define(&#39;ADMIN\_COOKIE\_PATH&#39;, &#39;/&#39;); define(&#39;COOKIE_DOMAIN&#3
     </item>
     
     <item>
-      <title>学习错误集</title>
-      <link>https://yzheng.me/dejavu/2019-09-12-studyrecords/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <title>Frontend-verwendete Technologien</title>
+      <link>https://yzheng.me/blogs/frontend_verwendete_technologien/</link>
+      <pubDate>Sun, 24 Mar 2019 22:41:21 +0200</pubDate>
       
-      <guid>https://yzheng.me/dejavu/2019-09-12-studyrecords/</guid>
-      <description>考试季记录 02.08.2019 Bestehen der Sicherheit Stammmodul, 6分
-总结： + 学习周期长，考试复习&amp;gt;=3周，学习&amp;gt;=两周，共计&amp;gt;=5周 + blog 记录知识点 + 对题型有总结
-27.08.2019 Durchfall der Theoretische Grundlagen der Informatik 为了快速通过TGI，不惜交了一次白卷
-原因： + 时间安排不够，一共计划了3周，实际学习不超过两周 + TGI 难，挂科率高，怕学不会，想口试简单点 + 学习态度懒散，老想打游戏 + TGI 必须要通过才可以考Programmierparadigmen，索性这次交白卷，下次考试再不过强制口试
-12.09.2019 Abmeldung der Höhere Mathematik 今天是 12.09.2019，HM考试前5天，我又不得不ab 掉这门考试。
-原因： + 时间安排完全不够，从头到现在只学习了不到两周 + HM 考试后10天有 LA2，LA2 复习时间很短 + HM 知识断层多，难题花太多时间往回补，心态老崩 + 学习态度懒散，老想打游戏 + Lisann 家新买的家具还需要安装 + 9月底需要搬走，这几天还需约人来家里看房</description>
+      <guid>https://yzheng.me/blogs/frontend_verwendete_technologien/</guid>
+      <description>In our frontend developing, we have received very much help from the following three Technologies.
+Angular Angular ist ein von Google entwickeltes JavaScript-Framework für interaktives Webdesign. Es eignet sich besonders für die Entwicklung Single-Page-Applications (SPA).
+(1.1) Angular basiert auf Komponenten, die zusammen Daten austauschen
+(1.2) Angular ist mit TypeScript geschrieben. (eine JavaScript Erweiterung ab der Versi-on ES6)
+(1.3) Design, Template, Test und Datenverarbeitung sind für jede Komponente in verschiedenen Dateien getrennt.</description>
     </item>
     
   </channel>
