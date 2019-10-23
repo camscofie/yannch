@@ -137,7 +137,7 @@ define(&#39;ADMIN\_COOKIE\_PATH&#39;, &#39;/&#39;); define(&#39;COOKIE_DOMAIN&#3
 
 <p>在 wp-config.php 里添加：</p>
 
-<pre><code>define( 'FS_METHOD', 'direct' );
+<pre><code class="language-php">define( 'FS_METHOD', 'direct' );
 
 sudo chown -R www-data:www-data /var/www
 </code></pre>
@@ -150,7 +150,7 @@ sudo chown -R www-data:www-data /var/www
 
 <li><p>更改 /etc/apache2/apache.conf 文件里的</p>
 
-<pre><code>&lt;Directory /var/www/&gt;
+<pre><code class="language-shell">&lt;Directory /var/www/&gt;
 	Options Indexes FollowSymLinks
 	AllowOverride None
 	Require all granted
@@ -170,7 +170,7 @@ sudo /etc/init.d/apache2 restart
 
 <p>在 wp-config.php 里添加：</p>
 
-<pre><code>define('ADMIN\_COOKIE\_PATH', '/'); 
+<pre><code class="language-php">define('ADMIN\_COOKIE\_PATH', '/'); 
 define('COOKIE_DOMAIN', ''); 
 define('COOKIEPATH', ''); 
 define('SITECOOKIEPATH', '');
@@ -186,7 +186,7 @@ define('SITECOOKIEPATH', '');
 
 <li><p>添加文件style.css</p>
 
-<pre><code>/*
+<pre><code class="language-css">/*
 Theme Name:   Twenty Fifteen Child
 Theme URI:    http://example.com/twenty-fifteen-child/
 Description:  Twenty Fifteen Child Theme
@@ -207,7 +207,7 @@ Text Domain:  twenty-fifteen-child
 <ul>
 <li><p>添加文件 functions.php</p>
 
-<pre><code>&lt;?php
+<pre><code class="language-php">&lt;?php
 function my\_theme\_enqueue_styles() {
 
 $parent_style = 'parent-style'; // 这里改值
