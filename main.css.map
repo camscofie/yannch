@@ -1,7 +1,7 @@
 {
 	"version": 3,
 	"file": "main.css",
-	"sourceRoot": "/Users/yzheng/Dropbox/Projects/blog",
+	"sourceRoot": "/mnt/c/Users/yzheng/Desktop/Projects/blog",
 	"sources": [
 		"themes/hello-friend-ng/assets/scss/main.scss",
 		"themes/hello-friend-ng/assets/scss/_normalize.scss",
