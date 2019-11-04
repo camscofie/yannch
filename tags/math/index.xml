@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>math on Yange Zheng</title>
@@ -6,10 +6,21 @@
     <description>Recent content in math on Yange Zheng</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 20 Sep 2019 22:41:21 +0200</lastBuildDate>
+    <lastBuildDate>Sun, 03 Nov 2019 20:21:59 +0100</lastBuildDate>
     
 	<atom:link href="https://yzheng.me/tags/math/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>若尔当标准型</title>
+      <link>https://yzheng.me/blogs/jornansche_normalform/</link>
+      <pubDate>Sun, 03 Nov 2019 20:21:59 +0100</pubDate>
+      
+      <guid>https://yzheng.me/blogs/jornansche_normalform/</guid>
+      <description>把矩阵转化成对角矩阵非常方便我们进行大次方的矩阵运算，但并非所有的矩阵都能对角化。这里我们把不能对角化的矩阵转化为若尔当标准型。
+例子 已知矩阵 $B \in \mathbb{C}^6$:
+$$ B= \begin{pmatrix} 0 &amp;amp; -1 &amp;amp; 0 &amp;amp; 0 &amp;amp; 0 &amp;amp; 0 \newline 9 &amp;amp; 6 &amp;amp; 0 &amp;amp; 0 &amp;amp; 0 &amp;amp; 0 \newline -5 &amp;amp; -2 &amp;amp; -96 &amp;amp; -88 &amp;amp; -77 &amp;amp; 0 \newline 10 &amp;amp; 4 &amp;amp; 135 &amp;amp; 123 &amp;amp; 105 &amp;amp; 0 \newline -5 &amp;amp; -2 &amp;amp; -27 &amp;amp; -24 &amp;amp; -18 &amp;amp; 0 \newline 0 &amp;amp; 0 &amp;amp; 0 &amp;amp; 0 &amp;amp; 0 &amp;amp; 3 \end{pmatrix} $$</description>
+    </item>
     
     <item>
       <title>LA Sätze Interpretation</title>
