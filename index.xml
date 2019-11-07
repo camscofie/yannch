@@ -12,14 +12,15 @@
     
     
     <item>
-      <title>若尔当标准型</title>
+      <title>Jordan Normalform</title>
       <link>https://yzheng.me/blogs/jornansche_normalform/</link>
       <pubDate>Sun, 03 Nov 2019 20:21:59 +0100</pubDate>
       
       <guid>https://yzheng.me/blogs/jornansche_normalform/</guid>
       <description>把矩阵转化成对角矩阵非常方便我们进行大次方的矩阵运算，但并非所有的矩阵都能对角化。这里我们把不能对角化的矩阵转化为若尔当标准型。
-例子 已知矩阵 $B \in \mathbb{C}^6$:
-$$ B= \begin{pmatrix} 0 &amp;amp; -1 &amp;amp; 0 &amp;amp; 0 &amp;amp; 0 &amp;amp; 0 \newline 9 &amp;amp; 6 &amp;amp; 0 &amp;amp; 0 &amp;amp; 0 &amp;amp; 0 \newline -5 &amp;amp; -2 &amp;amp; -96 &amp;amp; -88 &amp;amp; -77 &amp;amp; 0 \newline 10 &amp;amp; 4 &amp;amp; 135 &amp;amp; 123 &amp;amp; 105 &amp;amp; 0 \newline -5 &amp;amp; -2 &amp;amp; -27 &amp;amp; -24 &amp;amp; -18 &amp;amp; 0 \newline 0 &amp;amp; 0 &amp;amp; 0 &amp;amp; 0 &amp;amp; 0 &amp;amp; 3 \end{pmatrix} $$</description>
+In order to calculate Matrix with high power, it would be ideal to have them in diagonalization. But matrix, which doesn&amp;rsquo;t have their geometrische Vielfachheit equals to its algebraische Vielfachheit, can be only transfered to Jordan Normalform.
+Theorie Definition  Für einen Eigenwert $\lambda$ von $\Phi$ und $j\in \Bbb{N}_0$ ist der $j-te$ Kern $K_j(\lambda)$ definiert durch $$K_j(\lambda):= ker((\Phi-\lambda id_V)^j)$$
+ $v \in V\setminus{0}$ heißt Hauptvektor (oder verallgemeinerter Eigenwektor) von $\Phi$ zum Eigenwert $\lambda$, falls $j \in \Bbb{N}$ existiert mit $(\Phi - \lambda id_V)^j(v)$</description>
     </item>
     
     <item>
@@ -154,7 +155,7 @@ Process  M* = M1 + M2 + M3 + &amp;hellip; + Mn Hi := f(Hi-1 + Mi); 1&amp;lt;i&am
     </item>
     
     <item>
-      <title>365 Administration [powershell]</title>
+      <title>365 Administration powershell</title>
       <link>https://yzheng.me/projects/365modi/</link>
       <pubDate>Sat, 20 Jul 2019 22:41:21 +0200</pubDate>
       

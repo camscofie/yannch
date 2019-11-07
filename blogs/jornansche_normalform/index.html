@@ -8,8 +8,9 @@
     content="Yange Zheng ">
 <meta name="description"
     content="把矩阵转化成对角矩阵非常方便我们进行大次方的矩阵运算，但并非所有的矩阵都能对角化。这里我们把不能对角化的矩阵转化为若尔当标准型。
-例子 已知矩阵 $B \in \mathbb{C}^6$:
-$$ B= \begin{pmatrix} 0 &amp;amp; -1 &amp;amp; 0 &amp;amp; 0 &amp;amp; 0 &amp;amp; 0 \newline 9 &amp;amp; 6 &amp;amp; 0 &amp;amp; 0 &amp;amp; 0 &amp;amp; 0 \newline -5 &amp;amp; -2 &amp;amp; -96 &amp;amp; -88 &amp;amp; -77 &amp;amp; 0 \newline 10 &amp;amp; 4 &amp;amp; 135 &amp;amp; 123 &amp;amp; 105 &amp;amp; 0 \newline -5 &amp;amp; -2 &amp;amp; -27 &amp;amp; -24 &amp;amp; -18 &amp;amp; 0 \newline 0 &amp;amp; 0 &amp;amp; 0 &amp;amp; 0 &amp;amp; 0 &amp;amp; 3 \end{pmatrix} $$" />
+In order to calculate Matrix with high power, it would be ideal to have them in diagonalization. But matrix, which doesn&amp;rsquo;t have their geometrische Vielfachheit equals to its algebraische Vielfachheit, can be only transfered to Jordan Normalform.
+Theorie Definition  Für einen Eigenwert $\lambda$ von $\Phi$ und $j\in \Bbb{N}_0$ ist der $j-te$ Kern $K_j(\lambda)$ definiert durch $$K_j(\lambda):= ker((\Phi-\lambda id_V)^j)$$
+ $v \in V\setminus{0}$ heißt Hauptvektor (oder verallgemeinerter Eigenwektor) von $\Phi$ zum Eigenwert $\lambda$, falls $j \in \Bbb{N}$ existiert mit $(\Phi - \lambda id_V)^j(v)$" />
 <meta name="keywords" content="" />
 <meta name="robots" content="noodp" />
 <link rel="canonical" href="https://yzheng.me/blogs/jornansche_normalform/" />
@@ -17,7 +18,7 @@ $$ B= \begin{pmatrix} 0 &amp;amp; -1 &amp;amp; 0 &amp;amp; 0 &amp;amp; 0 &amp;am
 
 <title>
     
-    若尔当标准型 :: Yange Zheng  — Yange&#39;s personal website
+    Jordan Normalform :: Yange Zheng  — Yange&#39;s personal website
     
 </title>
 
@@ -38,15 +39,16 @@ $$ B= \begin{pmatrix} 0 &amp;amp; -1 &amp;amp; 0 &amp;amp; 0 &amp;amp; 0 &amp;am
 <link rel="manifest" href="/site.webmanifest">
 <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#252627">
 <link rel="shortcut icon" href="/favicon.ico">
-<meta name="theme-color" content="#252627"><meta itemprop="name" content="若尔当标准型">
+<meta name="theme-color" content="#252627"><meta itemprop="name" content="Jordan Normalform">
 <meta itemprop="description" content="把矩阵转化成对角矩阵非常方便我们进行大次方的矩阵运算，但并非所有的矩阵都能对角化。这里我们把不能对角化的矩阵转化为若尔当标准型。
-例子 已知矩阵 $B \in \mathbb{C}^6$:
-$$ B= \begin{pmatrix} 0 &amp; -1 &amp; 0 &amp; 0 &amp; 0 &amp; 0 \newline 9 &amp; 6 &amp; 0 &amp; 0 &amp; 0 &amp; 0 \newline -5 &amp; -2 &amp; -96 &amp; -88 &amp; -77 &amp; 0 \newline 10 &amp; 4 &amp; 135 &amp; 123 &amp; 105 &amp; 0 \newline -5 &amp; -2 &amp; -27 &amp; -24 &amp; -18 &amp; 0 \newline 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 3 \end{pmatrix} $$">
+In order to calculate Matrix with high power, it would be ideal to have them in diagonalization. But matrix, which doesn&rsquo;t have their geometrische Vielfachheit equals to its algebraische Vielfachheit, can be only transfered to Jordan Normalform.
+Theorie Definition  Für einen Eigenwert $\lambda$ von $\Phi$ und $j\in \Bbb{N}_0$ ist der $j-te$ Kern $K_j(\lambda)$ definiert durch $$K_j(\lambda):= ker((\Phi-\lambda id_V)^j)$$
+ $v \in V\setminus{0}$ heißt Hauptvektor (oder verallgemeinerter Eigenwektor) von $\Phi$ zum Eigenwert $\lambda$, falls $j \in \Bbb{N}$ existiert mit $(\Phi - \lambda id_V)^j(v)$">
 
 
 <meta itemprop="datePublished" content="2019-11-03T20:21:59&#43;01:00" />
 <meta itemprop="dateModified" content="2019-11-03T20:21:59&#43;01:00" />
-<meta itemprop="wordCount" content="814">
+<meta itemprop="wordCount" content="1259">
 
 
 
@@ -54,10 +56,11 @@ $$ B= \begin{pmatrix} 0 &amp; -1 &amp; 0 &amp; 0 &amp; 0 &amp; 0 \newline 9 &amp
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://yzheng.me"/>
 
-<meta name="twitter:title" content="若尔当标准型"/>
+<meta name="twitter:title" content="Jordan Normalform"/>
 <meta name="twitter:description" content="把矩阵转化成对角矩阵非常方便我们进行大次方的矩阵运算，但并非所有的矩阵都能对角化。这里我们把不能对角化的矩阵转化为若尔当标准型。
-例子 已知矩阵 $B \in \mathbb{C}^6$:
-$$ B= \begin{pmatrix} 0 &amp; -1 &amp; 0 &amp; 0 &amp; 0 &amp; 0 \newline 9 &amp; 6 &amp; 0 &amp; 0 &amp; 0 &amp; 0 \newline -5 &amp; -2 &amp; -96 &amp; -88 &amp; -77 &amp; 0 \newline 10 &amp; 4 &amp; 135 &amp; 123 &amp; 105 &amp; 0 \newline -5 &amp; -2 &amp; -27 &amp; -24 &amp; -18 &amp; 0 \newline 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 3 \end{pmatrix} $$"/>
+In order to calculate Matrix with high power, it would be ideal to have them in diagonalization. But matrix, which doesn&rsquo;t have their geometrische Vielfachheit equals to its algebraische Vielfachheit, can be only transfered to Jordan Normalform.
+Theorie Definition  Für einen Eigenwert $\lambda$ von $\Phi$ und $j\in \Bbb{N}_0$ ist der $j-te$ Kern $K_j(\lambda)$ definiert durch $$K_j(\lambda):= ker((\Phi-\lambda id_V)^j)$$
+ $v \in V\setminus{0}$ heißt Hauptvektor (oder verallgemeinerter Eigenwektor) von $\Phi$ zum Eigenwert $\lambda$, falls $j \in \Bbb{N}$ existiert mit $(\Phi - \lambda id_V)^j(v)$"/>
 
 
 
@@ -123,7 +126,7 @@ $$ B= \begin{pmatrix} 0 &amp; -1 &amp; 0 &amp; 0 &amp; 0 &amp; 0 \newline 9 &amp
         </div>
 
         <article>
-            <h2 class="post-title"><a href="https://yzheng.me/blogs/jornansche_normalform/">若尔当标准型</a></h2>
+            <h2 class="post-title"><a href="https://yzheng.me/blogs/jornansche_normalform/">Jordan Normalform</a></h2>
 
             
 
@@ -132,9 +135,63 @@ $$ B= \begin{pmatrix} 0 &amp; -1 &amp; 0 &amp; 0 &amp; 0 &amp; 0 \newline 9 &amp
 
 <p>把矩阵转化成对角矩阵非常方便我们进行大次方的矩阵运算，但并非所有的矩阵都能对角化。这里我们把不能对角化的矩阵转化为若尔当标准型。</p>
 
-<h2 id="例子">例子</h2>
+<p>In order to calculate Matrix with high power, it would be ideal to have them in diagonalization. But matrix, which doesn&rsquo;t have their geometrische Vielfachheit equals to its algebraische Vielfachheit, can be only transfered to Jordan Normalform.</p>
 
-<p>已知矩阵 $B \in \mathbb{C}^6$:</p>
+<h2 id="theorie">Theorie</h2>
+
+<h3 id="definition">Definition</h3>
+
+<ul>
+<li><p>Für einen Eigenwert $\lambda$ von $\Phi$ und $j\in \Bbb{N}_0$ ist der $j-te$ <strong>Kern</strong> $K_j(\lambda)$ definiert durch $$K_j(\lambda):= ker((\Phi-\lambda id_V)^j)$$</p></li>
+
+<li><p>$v \in V\setminus{0}$ heißt  <strong>Hauptvektor</strong> (oder <strong>verallgemeinerter Eigenwektor</strong>) von $\Phi$ zum Eigenwert $\lambda$, falls $j \in \Bbb{N}$ existiert mit $(\Phi - \lambda id_V)^j(v)$</p></li>
+
+<li><p>Ist $q \le n$ die kleinste natürliche Zahl mit $K_q = K_{q+1}$ heißt $$H_\lambda := K_q = ker((\Phi - \lambda id_V)^q)$$ <strong>Hauptraum</strong> (oder <strong>verallgemeinerter Eigenraum</strong>) von $\Phi$ zum Eigenwert $\lambda$; $q$ heißt <strong>Index</strong> von $H_\lambda$.</p></li>
+
+<li><p>Für den Untervektorraum $H_\lambda$ von $V$ ist der EndomorphismusX $$g : H_\lambda \to H_\lambda, v \mapsto (f - \lambda id_V)(v)$$ <strong>nilpotent</strong>, das heißt es gibt $m \in \Bbb{N}$ mit $g^m = 0$.</p></li>
+
+<li><p>Ist $H_\lambda$ ein Hauptraum von $\Phi$ mit Index $q$, so ist $$B_\lambda := Bild(\Phi - \lambda id_V)^q$$ ein $\Phi-invariantes$ Komplement von $H_\lambda$, das heißt $$V = H_\lambda \oplus B_\lambda, \Phi(B_\lambda) \subset B_\lambda$$</p></li>
+
+<li><p>Sind $\lambda_1,\lambda_2,\ldots,\lambda_k$ die verschiedenen Eigenwerte von $\Phi$ und $q_1,q_2,\ldots,q_k$ die Indizes der Haupträumme $H_{\lambda_1},H_{\lambda_2},\ldots,H_{\lambda_k}$ so heißt das Polynom $$m_\Phi = (X-\lambda_1)^{q_1}(X-\lambda_1)^{q_2}\ldots(X-\lambda_1)^{q_k}$$ <strong>Minimalpolynom</strong> von $\Phi$.</p></li>
+</ul>
+
+<h3 id="satz-ohne-beweis">Satz (ohne Beweis)</h3>
+
+<h4 id="hauptraumzerlegung">Hauptraumzerlegung</h4>
+
+<p>Sind $\lambda_1, \lambda_2, \ldots,\lambda_k$ die paarweise verschiedenen Eigenwerte von $\Phi$, und ist $p_\Phi=(-1)^n(X-\lambda_1)^{r_1}(X-\lambda_2)^{r_2} \ldots (X-\lambda_k)^{r_k}$ das charakteristische Polynom von $\Phi$, so gilt $$V = H_{\lambda_1} \oplus H_{\lambda_2} \oplus \ldots \oplus H_{\lambda_k}$$ und $dim H_{\lambda_i} = r_i$ für $i \in {1,2,\ldots,k}$.</p>
+
+<h4 id="folgerung">Folgerung</h4>
+
+<p>Wählt man entsprechend der Zerlegung $V = H_{\lambda_1} \oplus H_{\lambda_2} \oplus \ldots \oplus H_{\lambda_k}$ eine geordnete Basis $B$ von $V$, so gilt</p>
+
+<p>$$
+D_{BB}(\Phi) = \begin{pmatrix}
+A_{\lambda_1} &amp; &amp; &amp;&amp; 0 \newline
+&amp; A_{\lambda_2} &amp;&amp;&amp; \newline<br />
+&amp;&amp; \ldots &amp;&amp; \newline
+&amp;&amp;&amp; \ldots &amp; \newline
+0 &amp;&amp;&amp;&amp; A_{\lambda_k}
+\end{pmatrix}, A_{\lambda_i} \in \Bbb{C}^{r_i \times r_i}
+$$</p>
+
+<ul>
+<li>Die Matrix $A_\lambda$ heißt <strong>Jordanblock</strong> zum Eigenwert $\lambda$.</li>
+<li>Die Blockmatrizen innerhalb der Matrix $A_\lambda$ heißen <strong>Jordankästchen</strong>.</li>
+<li>Die Abbildungsmatrix von $\Phi$, die man erhält, wenn man in der Blockmatrix für jeden Eigenwert $\lambda_i$ den entsprechenden Jordanblock $A_{\lambda_i}$ einsetzt, heißt <strong>Jordansche Normalform</strong> von $\Phi$. Die zugehörige Basis von $V$ heißt <strong>Jordanbasis</strong>.</li>
+</ul>
+
+<h4 id="jordansche-normalform">Jordansche Normalform</h4>
+
+<p>Ist V ein endlich dimensionaler Vektorraums über $\Bbb{C}$, und $\Phi \in End(V)$, so gibt es eine Basis von V bezuuglich der die darstellende Matrix von $\Phi$ die Jordansche Normalform von $\Phi$ ist. <em>Die Jordansche Normalform ist bis auf die Reihenfolge der Jordanblöcke eindeutig bestiemmt</em>.</p>
+
+<h4 id="folgerung-1">Folgerung</h4>
+
+<p>Jede Matrix $A \in \Bbb{C}^{n \times n}$ ist ähnlich zu einer Matrix in Jordanscher Normalform. Die Ähnlichkeitsklasse von $A$ ist durch die Jordansche Normalform von $A$ eindeutig festgelegt.</p>
+
+<h2 id="praxis">Praxis</h2>
+
+<p>ein Matrix $B \in \mathbb{C}^6$:</p>
 
 <p>$$
 B= \begin{pmatrix}
@@ -147,19 +204,19 @@ B= \begin{pmatrix}
 \end{pmatrix}
 $$</p>
 
-<h3 id="步骤">步骤：</h3>
+<h3 id="steps">Steps：</h3>
 
 <hr />
 
-<h4 id="第一步">第一步</h4>
+<h4 id="1-eigenwerte-bestimmen">1. Eigenwerte bestimmen</h4>
 
 <ul>
-<li>算出 Eigenwerte ， 这里我们用charakteristische Polynom $ p = det(B - X \cdot E)$</li>
+<li>Eigenwerte bestimmen ， we use charakteristische Polynom $ p = det(B - X \cdot E)$</li>
 </ul>
 
 <p>得到 $ p = (3 - X)^6$ , 所以得到 $\lambda=3$ 是唯一的Eigenwert。根据Satz(17.8 Enrico Leuzinger) 我们只有一个 Hauptraum $H_\lambda$ ，并且只有一个Jordan-Block $A_3$ 出现</p>
 
-<h4 id="第二步">第二步</h4>
+<h4 id="2-bestimmen-index-of-hauptraum">2. bestimmen Index of Hauptraum</h4>
 
 <ul>
 <li>为了确认$A_3$，先算出 Hauptraum $H_3$ 的 Index $q$</li>
@@ -191,7 +248,7 @@ $$</p>
 
 <p>所以得出 $H_3$ 的 Index 是 $q=3$</p>
 
-<h4 id="第三步">第三步</h4>
+<h4 id="3-untervektorräume-k-k">3. Untervektorräume $K_k$</h4>
 
 <ul>
 <li>现在我们计算 Untervektorräume $K_k = Kern(\Phi -3 id)^k, k = 1,2,3$</li>
@@ -246,7 +303,7 @@ K_2 = \left[
 $$</p>
 
 <p>$$
-K_2 = \left[
+K_1 = \left[
     \begin{pmatrix}
     0 \newline
     0 \newline
@@ -274,13 +331,13 @@ K_2 = \left[
     \right]
 $$</p>
 
-<h4 id="第四步">第四步</h4>
+<h4 id="4-kette-verschachtelter-untervektorräume">4. Kette verschachtelter Untervektorräume</h4>
 
 <ul>
 <li>找到各个 $K_k$ 的 Kette verschachtelter Untervektorräume $ K_1 \subset K_2 \subset K_3 = H_3$</li>
 </ul>
 
-<h5 id="第一小步">第一小步</h5>
+<h5 id="4-1">4.1</h5>
 
 <ul>
 <li>Hauptraum Zerlegung</li>
@@ -310,7 +367,7 @@ U_2 = \left[
     \right]
 $$</p>
 
-<h5 id="第二小步">第二小步</h5>
+<h5 id="4-2">4.2</h5>
 
 <ul>
 <li>接着在 $K_2$ 下寻找下一个 Zerlegung，因为 $K_2 = U_1 \oplus K_1$
@@ -356,7 +413,7 @@ U_1 = \left[
 \right]
 $$</p>
 
-<h5 id="第三小步">第三小步</h5>
+<h5 id="4-3">4.3</h5>
 
 <ul>
 <li>从 $(\Phi-3id)(U_1) \subset K_1$确定 $K_1$ 的Basis</li>
@@ -405,9 +462,9 @@ $$</p>
 $$
 \begin{matrix}
    (\Phi-3id)(b_1) = (\Phi-3id)^3(b_2^1) = 0 \qquad \Rightarrow \Phi(b_1) = 3 \cdot b_1 \newline
-   (\Phi-3id)(b_2) = (\Phi-3id)^2(b_2^1) = b_1 \qquad  \Rightarrow \Phi(b_2) =b_1 + 3 \cdot b_1 \newline
-   (\Phi-3id)(b_3) = (\Phi-3id)(b_2^1) = b_2 \qquad \Rightarrow \Phi(b_3) =b_2+ 3 \cdot b_1 \newline
-   (\Phi-3id)(b_4) = (\Phi-3id)^2(b_1^1) = 0 \qquad \Rightarrow \Phi(b_4) = 3 \cdot b_1 \newline
+   (\Phi-3id)(b_2) = (\Phi-3id)^2(b_2^1) = b_1 \qquad  \Rightarrow \Phi(b_2) =b_1 + 3 \cdot b_2 \newline
+   (\Phi-3id)(b_3) = (\Phi-3id)(b_2^1) = b_2 \qquad \Rightarrow \Phi(b_3) =b_2+ 3 \cdot b_3 \newline
+   (\Phi-3id)(b_4) = (\Phi-3id)^2(b_1^1) = 0 \qquad \Rightarrow \Phi(b_4) = 3 \cdot b_4 \newline
    (\Phi-3id)(b_5) = (\Phi-3id)(b_1^1) = b_4 \qquad
     \Rightarrow \Phi(b_5) =b_4+ 3 \cdot b_5 \newline
    (\Phi-3id)(b_6) = (\Phi-3id)(b_1^1) = 0 \qquad  \Rightarrow \Phi(b_6) = 3 \cdot b_6
@@ -426,6 +483,8 @@ A = \begin{pmatrix}
    &amp;0&amp;&amp;&amp;&amp;3
 \end{pmatrix}
 $$</p>
+
+<h2 id="inverse-matrix-p-bestimmen">Inverse Matrix P bestimmen</h2>
 
             </div>
         </article>
