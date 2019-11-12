@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="author"
+    content="Yange Zheng ">
+<meta name="description"
+    content="Gegeben sei ein Vektorraum $V$ mit Skalarprodukt, eine Orthonormalbasis $B=\{e_1,\ldots,e_n\}$ von $V$ und eine Matrix $A=(a_{ij})\in GL(n,\Bbb{C})$. Wir definieren eine lineare Abbildung $\Phi_A:V\to V$ durch $$ \Phi_A(e_j):=\sum^n_{k=1}a_{kj}e_k,\ \ \ \ 1\le j\le n $$ Dann ist $\{e^\prime_j := \Phi_A(e_j)\ |\ 1\le j\le n\}$ auch eine basis von $V$.
+Frage: Wann ist $B^\prime = \{e_1^\prime,\ldots,e_n^\prime\}$ auch wieder eine ONB?
+Dazu rechnen wir $$ \langle e_j^\prime,e_k^\prime\rangle=\langle\sum^n_{r=1}a_{rj}e_r\ ,\ sum^n_{s=1}a_{sk}e_s\rangle=\sum^n_{r,s=1}a_{rj}\overline{a}_{sk}\delta_{rs}=\sum^n_{r=1}a_{rj}\overline{a}_{rk} $$
+Also ist $B^\prime$ genau dann auch eine Orthonormalbasis, wenn gilt: $$ \begin{aligned} \sum^n_{r=1}a_{rj}a_{rk}=\delta_{jk}\ ,\ \ j,k=1,\ldots,n \ \ \ \Leftrightarrow\ \ \ A^\top A = E_n &amp;amp; \ \ \ \ \text{Für einen euklidischen Vektorraum } V \newline \sum^n_{r=1}a_{rj}\overline{a}_{rk}=\delta_{jk}\ ,\ \ j,k=1,\ldots,n \ \ \ \Leftrightarrow\ \ \ A^\top \overline{A} = E_n &amp;amp; \ \ \ \ \text{Für einen unitären Vektorraum } V \end{aligned} $$" />
+<meta name="keywords" content="" />
+<meta name="robots" content="noodp" />
+<link rel="canonical" href="https://yzheng.me/blogs/orthogonal-und-unitaere-matrizen/" />
+
+
+<title>
+    
+    Orthogonal und unitäre Matrizen :: Yange Zheng  — Yange&#39;s personal website
+    
+</title>
+
+
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.2.1/css/flag-icon.min.css" rel="stylesheet"
+    type="text/css">
+
+
+
+<link rel="stylesheet" href="/main.min.2f0d18b84270567c723bff340b09ab08db3a7634237cd9667d052eb6b14669b8.css">
+
+
+
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#252627">
+<link rel="shortcut icon" href="/favicon.ico">
+<meta name="theme-color" content="#252627"><meta itemprop="name" content="Orthogonal und unitäre Matrizen">
+<meta itemprop="description" content="Gegeben sei ein Vektorraum $V$ mit Skalarprodukt, eine Orthonormalbasis $B=\{e_1,\ldots,e_n\}$ von $V$ und eine Matrix $A=(a_{ij})\in GL(n,\Bbb{C})$. Wir definieren eine lineare Abbildung $\Phi_A:V\to V$ durch $$ \Phi_A(e_j):=\sum^n_{k=1}a_{kj}e_k,\ \ \ \ 1\le j\le n $$ Dann ist $\{e^\prime_j := \Phi_A(e_j)\ |\ 1\le j\le n\}$ auch eine basis von $V$.
+Frage: Wann ist $B^\prime = \{e_1^\prime,\ldots,e_n^\prime\}$ auch wieder eine ONB?
+Dazu rechnen wir $$ \langle e_j^\prime,e_k^\prime\rangle=\langle\sum^n_{r=1}a_{rj}e_r\ ,\ sum^n_{s=1}a_{sk}e_s\rangle=\sum^n_{r,s=1}a_{rj}\overline{a}_{sk}\delta_{rs}=\sum^n_{r=1}a_{rj}\overline{a}_{rk} $$
+Also ist $B^\prime$ genau dann auch eine Orthonormalbasis, wenn gilt: $$ \begin{aligned} \sum^n_{r=1}a_{rj}a_{rk}=\delta_{jk}\ ,\ \ j,k=1,\ldots,n \ \ \ \Leftrightarrow\ \ \ A^\top A = E_n &amp; \ \ \ \ \text{Für einen euklidischen Vektorraum } V \newline \sum^n_{r=1}a_{rj}\overline{a}_{rk}=\delta_{jk}\ ,\ \ j,k=1,\ldots,n \ \ \ \Leftrightarrow\ \ \ A^\top \overline{A} = E_n &amp; \ \ \ \ \text{Für einen unitären Vektorraum } V \end{aligned} $$">
+
+
+<meta itemprop="datePublished" content="2019-11-12T22:07:03&#43;01:00" />
+<meta itemprop="dateModified" content="2019-11-12T22:07:03&#43;01:00" />
+<meta itemprop="wordCount" content="520">
+
+
+
+<meta itemprop="keywords" content="" />
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://yzheng.me"/>
+
+<meta name="twitter:title" content="Orthogonal und unitäre Matrizen"/>
+<meta name="twitter:description" content="Gegeben sei ein Vektorraum $V$ mit Skalarprodukt, eine Orthonormalbasis $B=\{e_1,\ldots,e_n\}$ von $V$ und eine Matrix $A=(a_{ij})\in GL(n,\Bbb{C})$. Wir definieren eine lineare Abbildung $\Phi_A:V\to V$ durch $$ \Phi_A(e_j):=\sum^n_{k=1}a_{kj}e_k,\ \ \ \ 1\le j\le n $$ Dann ist $\{e^\prime_j := \Phi_A(e_j)\ |\ 1\le j\le n\}$ auch eine basis von $V$.
+Frage: Wann ist $B^\prime = \{e_1^\prime,\ldots,e_n^\prime\}$ auch wieder eine ONB?
+Dazu rechnen wir $$ \langle e_j^\prime,e_k^\prime\rangle=\langle\sum^n_{r=1}a_{rj}e_r\ ,\ sum^n_{s=1}a_{sk}e_s\rangle=\sum^n_{r,s=1}a_{rj}\overline{a}_{sk}\delta_{rs}=\sum^n_{r=1}a_{rj}\overline{a}_{rk} $$
+Also ist $B^\prime$ genau dann auch eine Orthonormalbasis, wenn gilt: $$ \begin{aligned} \sum^n_{r=1}a_{rj}a_{rk}=\delta_{jk}\ ,\ \ j,k=1,\ldots,n \ \ \ \Leftrightarrow\ \ \ A^\top A = E_n &amp; \ \ \ \ \text{Für einen euklidischen Vektorraum } V \newline \sum^n_{r=1}a_{rj}\overline{a}_{rk}=\delta_{jk}\ ,\ \ j,k=1,\ldots,n \ \ \ \Leftrightarrow\ \ \ A^\top \overline{A} = E_n &amp; \ \ \ \ \text{Für einen unitären Vektorraum } V \end{aligned} $$"/>
+
+
+
+
+<meta property="article:published_time" content="2019-11-12 22:07:03 &#43;0100 CET" />
+
+
+
+
+
+
+
+    </head>
+
+    <body class="">
+        <div class="container">
+            <header class="header">
+    <span class="header__inner">
+        <a href="/" style="text-decoration: none;">
+    <div class="logo">
+        
+            <span class="logo__mark">></span>
+            <span class="logo__text">cd /home</span>
+            <span class="logo__cursor" style=""></span>
+        
+    </div>
+</a>
+
+
+        <span class="header__right">
+            
+                <nav class="menu">
+    <ul class="menu__inner"><li><a href="https://yzheng.me/blogs">Blog</a></li><li><a href="https://yzheng.me/dejavu">Déjà vu</a></li><li><a href="https://yzheng.me/projects">Project</a></li><li><a href="https://yzheng.me/about">About</a></li>
+    </ul>
+</nav>
+
+                <span class="menu-trigger">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+                    </svg>
+                </span>
+            
+
+            <span class="theme-toggle unselectable"><svg class="theme-toggler" width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M22 41C32.4934 41 41 32.4934 41 22C41 11.5066 32.4934 3 22
+  3C11.5066 3 3 11.5066 3 22C3 32.4934 11.5066 41 22 41ZM7 22C7
+  13.7157 13.7157 7 22 7V37C13.7157 37 7 30.2843 7 22Z"/>
+</svg>
+</span>
+        </span>
+    </span>
+</header>
+
+
+            <div class="content">
+                
+    <main class="post">
+
+        <div class="post-info">
+            
+            </p>
+        </div>
+
+        <article>
+            <h2 class="post-title"><a href="https://yzheng.me/blogs/orthogonal-und-unitaere-matrizen/">Orthogonal und unitäre Matrizen</a></h2>
+
+            
+
+            <div class="post-content">
+                
+
+<p>Gegeben sei ein Vektorraum $V$ mit Skalarprodukt, eine Orthonormalbasis $B=\{e_1,\ldots,e_n\}$ von $V$ und eine Matrix $A=(a_{ij})\in GL(n,\Bbb{C})$. Wir definieren eine lineare Abbildung $\Phi_A:V\to V$ durch
+$$
+\Phi_A(e_j):=\sum^n_{k=1}a_{kj}e_k,\ \ \ \ 1\le j\le n
+$$
+Dann ist $\{e^\prime_j := \Phi_A(e_j)\ |\ 1\le j\le n\}$ auch eine basis von $V$.</p>
+
+<p><strong>Frage</strong>: Wann ist $B^\prime = \{e_1^\prime,\ldots,e_n^\prime\}$ auch wieder eine ONB?</p>
+
+<p>Dazu rechnen wir
+$$
+\langle e_j^\prime,e_k^\prime\rangle=\langle\sum^n_{r=1}a_{rj}e_r\ ,\ sum^n_{s=1}a_{sk}e_s\rangle=\sum^n_{r,s=1}a_{rj}\overline{a}_{sk}\delta_{rs}=\sum^n_{r=1}a_{rj}\overline{a}_{rk}
+$$</p>
+
+<p>Also ist $B^\prime$ genau dann auch eine Orthonormalbasis, wenn gilt:
+$$
+\begin{aligned}
+\sum^n_{r=1}a_{rj}a_{rk}=\delta_{jk}\ ,\ \ j,k=1,\ldots,n \ \ \ \Leftrightarrow\ \ \ A^\top A = E_n &amp; \ \ \ \ \text{Für einen euklidischen Vektorraum } V \newline
+\sum^n_{r=1}a_{rj}\overline{a}_{rk}=\delta_{jk}\ ,\ \ j,k=1,\ldots,n \ \ \ \Leftrightarrow\ \ \ A^\top \overline{A} = E_n &amp; \ \ \ \ \text{Für einen unitären Vektorraum } V
+\end{aligned}
+$$</p>
+
+<h2 id="theorie">Theorie</h2>
+
+<h3 id="definition">Definition</h3>
+
+<p>Eine reelle bzw. komplexe $n\times n$-Matrix $A$ heißt <strong>orthogonal</strong> bzw. <strong>unitär Matrix</strong>, falls gilt
+$$
+A^\top A=E_n\ \ \ \ \text{bzw.}\ \ \ \ A^\top\overline{A}=E_n
+$$</p>
+
+<h3 id="satz-ohne-beweis">Satz(ohne Beweis)</h3>
+
+<p>Sind $B$ und $B^\prime$ zwei Orthonormalbasen eines euklidischen (bzw. unitären) Vektorraumes $V$, so ist die Matrix des Basiswechsels orthogonal (bzw. unitär). Ist umgekehrt $B=\{e_1,\ldots,e_n\}$ eine Orthonormalbasis von $V$ und $A$ eine orthogonale (bzw. unitäre) $n\times n$-Matrix, so ist auch $B^\prime := \{\Phi_A(e_1),\ldots,\Phi_A(e_n)\}$ eine Orthonormalbasis von $V$.</p>
+
+<hr />
+
+<h4 id="charakterisierung-von-orthogonalen-matrizen">Charakterisierung von orthogonalen Matrizen</h4>
+
+<p>Sei $A\in \Bbb{R}^n\times n$. Folgende Aussagen sind äquivalent:</p>
+
+<ol>
+<li><p>$A$ ist orthogonale Matrix.</p></li>
+
+<li><p>$A$ ist regulär und $A^{-1}=A^\top$.</p></li>
+
+<li><p>Die Spaltenvektoren (bzw. die Zeilenvektoren) von $A$ bilden eine Orthonormalbasis von $\Bbb{R}^n$ bzgl. des Standardskalarproduktes.</p></li>
+</ol>
+
+<p>Analog gitl für unitäre Matrizen.</p>
+
+<hr />
+
+<h4 id="charakterisierung-von-unitären-matrizen">Charakterisierung von unitären Matrizen</h4>
+
+<p>Sei $A\in \Bbb{C}^n\times n$. Folgende Aussagen sind äquivalent:</p>
+
+<ol>
+<li><p>$A$ ist unitäre Matrix.</p></li>
+
+<li><p>$A$ ist regulär und $A^{-1}=\overline{A}^\top$.</p></li>
+
+<li><p>Die Spaltenvektoren (bzw. die Zeilenvektoren) von $A$ bilden eine Orthonormalbasis von $\Bbb{C}^n$ bzgl. des Standardskalarproduktes.</p></li>
+</ol>
+
+<h5 id="folgerung">Folgerung</h5>
+
+<ol>
+<li><p>Für eine orthogonale Matrix gilt: $\det A = \pm 1$.</p></li>
+
+<li><p>Für eine unitäre Matrix gilt: $| \det A|=1$.</p></li>
+</ol>
+
+<hr />
+
+<h4 id="matrizen-gruppen">Matrizen-Gruppen</h4>
+
+<p>Für jedes $n \in \Bbb{N}$ bilden die orthogonalen (bzw. unitären) $n \times n$-Matrizen bezüglich der Matrizen-Multiplikation eine Gruppe:</p>
+
+<p>Die <strong>orthogonale Gruppe</strong>
+$$
+O(n):=\{A\in GL(n,\Bbb{R})\ |\ A^\top A =E_n\}
+$$
+bzw. die <strong>unitäre Gruppe</strong>
+$$
+U(n):=\{A\in GL(n,\Bbb{C})\ |\ \overline{A}^\top A=E_n\}
+$$</p>
+
+<h5 id="bemerkung">Bemerkung</h5>
+
+<p>Wir erinnern an die Definition der komplexen bzw. reellen speziellen linearen Gruppe:
+$$
+SL(n,\Bbb{C})=\{A\in \Bbb{C}^{n\times n}\ |\ det(A)=1\},\ \ \ \ SL(n,\Bbb{R}):=SL(n,\Bbb{C})\cap GL(n,\Bbb{R})
+$$
+Die Gruppe
+$$
+SO(n):= O(n)\cap SL(n,\Bbb{R})\ \ \ \text{bzw. } SU(n)=U(n)\cap SL(n,\Bbb{C})
+$$
+heißt <strong>spezielle orthogonale</strong> bzw. <strong>spezielle unitäre Gruppe</strong>.</p>
+
+<p>$\ast$: Die Untergruppe $SO(n):=\{A\in O(n)\ |\ det(A)=1\}\subset SL(n,\Bbb{R})$ heißt <strong>spezielle orthogonale Gruppe</strong>. (bzw. $SU(n)\subset SL(n,\Bbb{C})$ :<strong>spezielle unitäre Gruppe</strong>)</p>
+
+<p>$\ast\ast$: Die Menge $GL(n,\Bbb{K})$ aller invertierbaren $n\times n$-Matrizen über dem Körper ist bezüglich der Matrizen-Multiplikation eine Gruppe.</p>
+
+<hr />
+
+<h4 id="iwasawa-zerlegung">Iwasawa Zerlegung</h4>
+
+<p>Wir führen noch drei weitere Untergruppen von $GL(n,\Bbb{R})$ ein. Es sei</p>
+
+<ul>
+<li><p>$B(n)\subset GL(n,\Bbb{R})$ die Gruppe der oberen Dreiecksmatrizen mit positiven Diagonalelementen</p></li>
+
+<li><p>$A(n)\subset GL(n,\Bbb{R})$ bezeichne die (abelsche) Gruppe der Diagonalmatrizen mit positiven Diagonaleinträgen und Determinante $1$</p></li>
+
+<li><p>$N(n)\subset GL(n,\Bbb{R})$ die Gruppe der oberen Dreieckmatrizen mit Einsen auf der Diagonalen.</p></li>
+</ul>
+
+<p>Es ist
+$$
+GL(n,\Bbb{R})=O(n)B(n)\ \ \text{und}\ \ SL(n,\Bbb{R})=SO(n)A(n)N(n)
+$$
+Genauer gilt: Jede Matrix $A\in GL(n,\Bbb{R})$ kann eindeutig geschrieben werden als Produkt $A=TB$ mit $T\in O(n)$ und $B\in B(n)$. Jede Matrix $A\in SL(n,\Bbb{R})$ kann geschrieben werden als Produkt $A=TDN$ wobei $T\in SO(n), D\in A(n)$ und $N\in N(n)$.</p>
+
+            </div>
+        </article>
+
+        <hr />
+
+        <div class="post-info">
+  			</div>
+
+        
+    </main>
+
+            </div>
+
+            
+                <footer class="footer">
+    <div class="footer__inner">
+        <div class="footer__content">
+            <span>&copy; 2019</span>
+        </div>
+    </div>
+    <div class="footer__inner">
+        <div class="footer__content">
+
+        </div>
+    </div>
+    <div class="footer__inner">
+        <div class="footer__content">
+            <span>It's nice to learn more.</a></span>
+        </div>
+    </div>
+</footer>
+
+<script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    displayMath: [['$$','$$'], ['\[','\]']],
+    processEscapes: true,
+    processEnvironments: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre','code'],
+    TeX: { equationNumbers: { autoNumber: "AMS" },
+         extensions: ["AMSmath.js", "AMSsymbols.js"] }
+  }
+});
+</script>
+
+            
+        </div>
+
+        
+
+
+
+
+<script type="text/javascript" src="/bundle.min.4c3fb12a087ceed4a52cb5d57068a9795c7069617a01ca70f788052ad66e1791779e6c72686e1dc0ca13dc03b0203204b6566bb0dd1ee80de2b7ff4d8fe53db2.js" integrity="sha512-TD&#43;xKgh87tSlLLXVcGipeVxwaWF6Acpw94gFKtZuF5F3nmxyaG4dwMoT3AOwIDIEtlZrsN0e6A3it/9Nj&#43;U9sg=="></script>
+
+
+
+    </body>
+</html>

@@ -6,17 +6,39 @@
     <description>Recent content in Blogs on Yange Zheng</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 10 Nov 2019 18:51:29 +0100</lastBuildDate>
+    <lastBuildDate>Tue, 12 Nov 2019 22:07:03 +0100</lastBuildDate>
     
 	<atom:link href="https://yzheng.me/blogs/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
+      <title>Orthogonal und unitäre Matrizen</title>
+      <link>https://yzheng.me/blogs/orthogonal-und-unitaere-matrizen/</link>
+      <pubDate>Tue, 12 Nov 2019 22:07:03 +0100</pubDate>
+      
+      <guid>https://yzheng.me/blogs/orthogonal-und-unitaere-matrizen/</guid>
+      <description>Gegeben sei ein Vektorraum $V$ mit Skalarprodukt, eine Orthonormalbasis $B=\{e_1,\ldots,e_n\}$ von $V$ und eine Matrix $A=(a_{ij})\in GL(n,\Bbb{C})$. Wir definieren eine lineare Abbildung $\Phi_A:V\to V$ durch $$ \Phi_A(e_j):=\sum^n_{k=1}a_{kj}e_k,\ \ \ \ 1\le j\le n $$ Dann ist $\{e^\prime_j := \Phi_A(e_j)\ |\ 1\le j\le n\}$ auch eine basis von $V$.
+Frage: Wann ist $B^\prime = \{e_1^\prime,\ldots,e_n^\prime\}$ auch wieder eine ONB?
+Dazu rechnen wir $$ \langle e_j^\prime,e_k^\prime\rangle=\langle\sum^n_{r=1}a_{rj}e_r\ ,\ sum^n_{s=1}a_{sk}e_s\rangle=\sum^n_{r,s=1}a_{rj}\overline{a}_{sk}\delta_{rs}=\sum^n_{r=1}a_{rj}\overline{a}_{rk} $$
+Also ist $B^\prime$ genau dann auch eine Orthonormalbasis, wenn gilt: $$ \begin{aligned} \sum^n_{r=1}a_{rj}a_{rk}=\delta_{jk}\ ,\ \ j,k=1,\ldots,n \ \ \ \Leftrightarrow\ \ \ A^\top A = E_n &amp;amp; \ \ \ \ \text{Für einen euklidischen Vektorraum } V \newline \sum^n_{r=1}a_{rj}\overline{a}_{rk}=\delta_{jk}\ ,\ \ j,k=1,\ldots,n \ \ \ \Leftrightarrow\ \ \ A^\top \overline{A} = E_n &amp;amp; \ \ \ \ \text{Für einen unitären Vektorraum } V \end{aligned} $$</description>
+    </item>
+    
+    <item>
+      <title>Orthogonal Komplemente und Orthogonal-Projektionen</title>
+      <link>https://yzheng.me/blogs/orthogonal-komplemente-und-orthogonal-komplemente/</link>
+      <pubDate>Tue, 12 Nov 2019 17:42:21 +0100</pubDate>
+      
+      <guid>https://yzheng.me/blogs/orthogonal-komplemente-und-orthogonal-komplemente/</guid>
+      <description>Ist $V$ ein Vektorraum und $U \subset V$ ein Untervektorraum, so hat $U$ im Allgemeinen viele Komplementärräume. Ist hingegen $(V, \langle,\rangle)$ ein euklidischer oder unitärer Vektorraum, so gibt es ein “kanonisches” Komplement.
+Theorie Definition  Die Menge $$ U^\bot := \{x\in V\ |\ \langle x,u\rangle = 0\ \ \ \forall u\in U\} $$ heißt Orthogonal-Komplement von $U$ in $V$.   Ist $M\subset V$ eine Teilmenge von Vektoren in $V$, so heißt $$ M^\bot := \{x\in V\ |\ x\bot M\} = \{x\in V\ |\ \langle x,y\rangle=0\ \ \ \ \forall y\in M\} $$ das orthogonale Komplement von $M$ in $V$.</description>
+    </item>
+    
+    <item>
       <title>Orthogonalität</title>
-      <link>https://yzheng.me/blogs/orthogonalita%CC%88t/</link>
+      <link>https://yzheng.me/blogs/orthogonalitaet/</link>
       <pubDate>Sun, 10 Nov 2019 18:51:29 +0100</pubDate>
       
-      <guid>https://yzheng.me/blogs/orthogonalita%CC%88t/</guid>
+      <guid>https://yzheng.me/blogs/orthogonalitaet/</guid>
       <description>在线性空间里定义 “正交”
 Theorie Definition  Zwei Vektoren $x,y\in V$ heißen orthogonal (oder senkrecht), falls $$ \langle x,y\rangle = 0 $$ gilt; in diesem Fall schreiben wir $x \bot y$.
  Zwei Teilmengen $N,M \subset V$ heißen orthogonal, falls $x\bot y$ für alle $x\in N$ und alle $y\in M$; man schreibt dann $N\bot M$.Besteht $N$ nur aus einem Element $x$, so schreiben wir auch $x\bot M$ anstelle von $\{x\}\bot M$.</description>

@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="author"
+    content="Yange Zheng ">
+<meta name="description"
+    content="Ist $V$ ein Vektorraum und $U \subset V$ ein Untervektorraum, so hat $U$ im Allgemeinen viele Komplementärräume. Ist hingegen $(V, \langle,\rangle)$ ein euklidischer oder unitärer Vektorraum, so gibt es ein “kanonisches” Komplement.
+Theorie Definition  Die Menge $$ U^\bot := \{x\in V\ |\ \langle x,u\rangle = 0\ \ \ \forall u\in U\} $$ heißt Orthogonal-Komplement von $U$ in $V$.   Ist $M\subset V$ eine Teilmenge von Vektoren in $V$, so heißt $$ M^\bot := \{x\in V\ |\ x\bot M\} = \{x\in V\ |\ \langle x,y\rangle=0\ \ \ \ \forall y\in M\} $$ das orthogonale Komplement von $M$ in $V$." />
+<meta name="keywords" content="" />
+<meta name="robots" content="noodp" />
+<link rel="canonical" href="https://yzheng.me/blogs/orthogonal-komplemente-und-orthogonal-komplemente/" />
+
+
+<title>
+    
+    Orthogonal Komplemente und Orthogonal-Projektionen :: Yange Zheng  — Yange&#39;s personal website
+    
+</title>
+
+
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.2.1/css/flag-icon.min.css" rel="stylesheet"
+    type="text/css">
+
+
+
+<link rel="stylesheet" href="/main.min.2f0d18b84270567c723bff340b09ab08db3a7634237cd9667d052eb6b14669b8.css">
+
+
+
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#252627">
+<link rel="shortcut icon" href="/favicon.ico">
+<meta name="theme-color" content="#252627"><meta itemprop="name" content="Orthogonal Komplemente und Orthogonal-Projektionen">
+<meta itemprop="description" content="Ist $V$ ein Vektorraum und $U \subset V$ ein Untervektorraum, so hat $U$ im Allgemeinen viele Komplementärräume. Ist hingegen $(V, \langle,\rangle)$ ein euklidischer oder unitärer Vektorraum, so gibt es ein “kanonisches” Komplement.
+Theorie Definition  Die Menge $$ U^\bot := \{x\in V\ |\ \langle x,u\rangle = 0\ \ \ \forall u\in U\} $$ heißt Orthogonal-Komplement von $U$ in $V$.   Ist $M\subset V$ eine Teilmenge von Vektoren in $V$, so heißt $$ M^\bot := \{x\in V\ |\ x\bot M\} = \{x\in V\ |\ \langle x,y\rangle=0\ \ \ \ \forall y\in M\} $$ das orthogonale Komplement von $M$ in $V$.">
+
+
+<meta itemprop="datePublished" content="2019-11-12T17:42:21&#43;01:00" />
+<meta itemprop="dateModified" content="2019-11-12T17:42:21&#43;01:00" />
+<meta itemprop="wordCount" content="437">
+
+
+
+<meta itemprop="keywords" content="" />
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://yzheng.me"/>
+
+<meta name="twitter:title" content="Orthogonal Komplemente und Orthogonal-Projektionen"/>
+<meta name="twitter:description" content="Ist $V$ ein Vektorraum und $U \subset V$ ein Untervektorraum, so hat $U$ im Allgemeinen viele Komplementärräume. Ist hingegen $(V, \langle,\rangle)$ ein euklidischer oder unitärer Vektorraum, so gibt es ein “kanonisches” Komplement.
+Theorie Definition  Die Menge $$ U^\bot := \{x\in V\ |\ \langle x,u\rangle = 0\ \ \ \forall u\in U\} $$ heißt Orthogonal-Komplement von $U$ in $V$.   Ist $M\subset V$ eine Teilmenge von Vektoren in $V$, so heißt $$ M^\bot := \{x\in V\ |\ x\bot M\} = \{x\in V\ |\ \langle x,y\rangle=0\ \ \ \ \forall y\in M\} $$ das orthogonale Komplement von $M$ in $V$."/>
+
+
+
+
+<meta property="article:published_time" content="2019-11-12 17:42:21 &#43;0100 CET" />
+
+
+
+
+
+
+
+    </head>
+
+    <body class="">
+        <div class="container">
+            <header class="header">
+    <span class="header__inner">
+        <a href="/" style="text-decoration: none;">
+    <div class="logo">
+        
+            <span class="logo__mark">></span>
+            <span class="logo__text">cd /home</span>
+            <span class="logo__cursor" style=""></span>
+        
+    </div>
+</a>
+
+
+        <span class="header__right">
+            
+                <nav class="menu">
+    <ul class="menu__inner"><li><a href="https://yzheng.me/blogs">Blog</a></li><li><a href="https://yzheng.me/dejavu">Déjà vu</a></li><li><a href="https://yzheng.me/projects">Project</a></li><li><a href="https://yzheng.me/about">About</a></li>
+    </ul>
+</nav>
+
+                <span class="menu-trigger">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+                    </svg>
+                </span>
+            
+
+            <span class="theme-toggle unselectable"><svg class="theme-toggler" width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M22 41C32.4934 41 41 32.4934 41 22C41 11.5066 32.4934 3 22
+  3C11.5066 3 3 11.5066 3 22C3 32.4934 11.5066 41 22 41ZM7 22C7
+  13.7157 13.7157 7 22 7V37C13.7157 37 7 30.2843 7 22Z"/>
+</svg>
+</span>
+        </span>
+    </span>
+</header>
+
+
+            <div class="content">
+                
+    <main class="post">
+
+        <div class="post-info">
+            
+            </p>
+        </div>
+
+        <article>
+            <h2 class="post-title"><a href="https://yzheng.me/blogs/orthogonal-komplemente-und-orthogonal-komplemente/">Orthogonal Komplemente und Orthogonal-Projektionen</a></h2>
+
+            
+
+            <div class="post-content">
+                
+
+<p>Ist $V$ ein Vektorraum und $U \subset V$ ein Untervektorraum, so hat $U$ im Allgemeinen viele Komplementärräume. Ist hingegen $(V, \langle,\rangle)$ ein euklidischer oder unitärer Vektorraum, so gibt es ein “kanonisches” Komplement.</p>
+
+<h2 id="theorie">Theorie</h2>
+
+<h3 id="definition">Definition</h3>
+
+<ul>
+<li>Die Menge
+$$
+U^\bot := \{x\in V\ |\ \langle x,u\rangle = 0\ \ \ \forall u\in U\}
+$$
+heißt <strong>Orthogonal-Komplement</strong> von $U$ in $V$.</li>
+</ul>
+
+<hr />
+
+<ul>
+<li>Ist $M\subset V$ eine Teilmenge von Vektoren in $V$, so heißt
+$$
+M^\bot := \{x\in V\ |\ x\bot M\} = \{x\in V\ |\ \langle x,y\rangle=0\ \ \ \ \forall y\in M\}
+$$
+das <strong>orthogonale Komplement</strong> von $M$ in $V$.</li>
+</ul>
+
+<hr />
+
+<ul>
+<li>Die <strong>Orthogonalprojektion</strong> von $V$ auf $U$ (in Richtung $U^\bot$) ist die Abbildung:
+$$
+\pi_U:V\to U\subset V,\ v=u+u^\bot\mapsto u
+$$
+<img src="/postImage/Orthogonal_Komplemente/Orthogonalprojektion.png" alt="Orthogonalprojektion" width="500" class="center" /></li>
+</ul>
+
+<hr />
+
+<ul>
+<li>$V$ Vektorraum mit Skalarprodukt, $U \subset V$ endlich dimensionaler Untervektorraum.
+Für $v\in V$ heißt $\pi_U(v)$ <strong>Lotfußpunkt</strong> von $v$ auf $U$, und $v-\pi_U(v)\in U^\bot$ das <strong>Lot</strong> (oder der <strong>Lotvektor</strong>) von $v$ auf $U$.
+<img src="/postImage/Orthogonal_Komplemente/Lotvektor.png" alt="lotvektor" width="500" class="center" /></li>
+</ul>
+
+<hr />
+
+<h4 id="abstand-eines-vektors-zu-einem-untervektorraum">Abstand eines Vektors zu einem Untervektorraum</h4>
+
+<ul>
+<li>Seien $(M,d)$ ein metrischer Raum und $A,B \subset M$ zwei Teilmengen. Der <strong>Abstand</strong> von $A$ und $B$ ist definiert durch
+$$
+d(A,B):= \inf\{d(a,b)\ |\ a\in A,b\in B\}
+$$
+Ist jetzt $V$ ein Vektorraum mit Skalarprodukt, so ist $V$ ein normierter und damit ein metrischer Raum mit Metrik $d(v,w)=\parallel v-w\parallel$. Für $v\in V$ und einen Untervektorraum $U$ wollen wir den Abstand von $v$ und $U$ bestimmen, also
+$$
+d(\{v\},U)=\inf\{\parallel v-u\parallel\ |\ u\in U\}
+$$
+Man beachte, dass die Menge der reellen Zahlen $\parallel v-u$ mit $u\in U$ nach unten durch $0$ beschränkt ist; das Infimum existiert also (das gilt ganz allgemein, da eine Metrik positiv ist).</li>
+</ul>
+
+<h3 id="satz-ohne-beweis">Satz(ohne Beweis)</h3>
+
+<p>Sind $N,M \subset V$ Teilmengen mit $\emptyset\neq N\subset M$, so gilt</p>
+
+<ol>
+<li><p>$M^\bot \subset N^\bot$</p></li>
+
+<li><p>$M^\bot$ ist ein Untervektorraum von $V$</p></li>
+
+<li><p>$\langle M\rangle^\bot = M^\bot$</p></li>
+
+<li><p>$\langle M \rangle \subset (M^\bot)^\bot$</p></li>
+</ol>
+
+<hr />
+
+<p>Das Orthogonal-Komplement $U^\bot$ eines Untervektorraumes $U$ eines euklidischen oder unitären Vektorraumes $V$ hat folgende Eigenschaften:</p>
+
+<ol>
+<li><p>$U^\bot$ ist Untervektorraum von $V$</p></li>
+
+<li><p>$U \cap U^\bot = \{0\}$</p></li>
+
+<li><p>$U \subset (U^\bot)^\bot$</p></li>
+
+<li><p>Ist $V$ endlich-dimensional, so gilt $U \oplus U^\bot = V$ und $(U^\bot)^\bot = U$</p></li>
+</ol>
+
+<p>Für <strong>unendlich dimensionale</strong> Untervektorräume $U\subset V$ ist im Allgemeinen $U \oplus U^\bot \subsetneq V$ und $U\subsetneq (U^\bot)^\bot$.</p>
+
+<hr />
+
+<h4 id="eigenschaften-der-orthogonalprojektoin">Eigenschaften der Orthogonalprojektoin</h4>
+
+<p>Für die Orthogonalprojektion $\pi_U$ eines Vektorraumes $V$ auf einen Untervektorraum $U$ gilt:</p>
+
+<ol>
+<li><p>$\pi_U$ ist linear und $\pi_U^2 = \pi_U \circ \pi_U = \pi_U$.</p></li>
+
+<li><p>Bild $\pi_U=U$, Kern $\pi_U=U^\bot$.</p></li>
+
+<li><p>$\pi_U$ verkürzt Abstände: Für alle $v,w\in V$ ist
+$$
+d(\pi_U(v),\pi_U(w))=\parallel\pi_U(v)-\pi_U(w)\parallel\le\parallel v-w\parallel=d(v,w)
+$$</p></li>
+
+<li><p>$\parallel\pi_U(v)\parallel\le\parallel v\parallel$ für alle $v\in V$.</p></li>
+</ol>
+
+<hr />
+
+<h4 id="kürzester-abstand">Kürzester Abstand</h4>
+
+<p>Es seien $V$ ein endlich-dimensionaler euklidischer oder unitärer Vektorraum und $U$ ein Untervektorraum. Weiter sei $V$ zerlegt als $V=U\oplus U^\bot$. Dann gilt für $v=u+u^\bot \in V$ die Gleichung:
+$$
+d(\{v\},U)=\min\{\parallel v-u^{\ast}\parallel\ |\ u^\ast \in U\}= \parallel u^\bot\parallel=\parallel\pi_{U^\bot}(v)\parallel
+$$
+<img src="/postImage/Orthogonal_Komplemente/Abstand.png" alt="abstand" width="600" class="center" /></p>
+
+            </div>
+        </article>
+
+        <hr />
+
+        <div class="post-info">
+  			</div>
+
+        
+    </main>
+
+            </div>
+
+            
+                <footer class="footer">
+    <div class="footer__inner">
+        <div class="footer__content">
+            <span>&copy; 2019</span>
+        </div>
+    </div>
+    <div class="footer__inner">
+        <div class="footer__content">
+
+        </div>
+    </div>
+    <div class="footer__inner">
+        <div class="footer__content">
+            <span>It's nice to learn more.</a></span>
+        </div>
+    </div>
+</footer>
+
+<script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    displayMath: [['$$','$$'], ['\[','\]']],
+    processEscapes: true,
+    processEnvironments: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre','code'],
+    TeX: { equationNumbers: { autoNumber: "AMS" },
+         extensions: ["AMSmath.js", "AMSsymbols.js"] }
+  }
+});
+</script>
+
+            
+        </div>
+
+        
+
+
+
+
+<script type="text/javascript" src="/bundle.min.4c3fb12a087ceed4a52cb5d57068a9795c7069617a01ca70f788052ad66e1791779e6c72686e1dc0ca13dc03b0203204b6566bb0dd1ee80de2b7ff4d8fe53db2.js" integrity="sha512-TD&#43;xKgh87tSlLLXVcGipeVxwaWF6Acpw94gFKtZuF5F3nmxyaG4dwMoT3AOwIDIEtlZrsN0e6A3it/9Nj&#43;U9sg=="></script>
+
+
+
+    </body>
+</html>
