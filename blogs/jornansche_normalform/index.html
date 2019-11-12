@@ -48,7 +48,7 @@ Theorie Definition  Für einen Eigenwert $\lambda$ von $\Phi$ und $j\in \Bbb{N}_
 
 <meta itemprop="datePublished" content="2019-11-03T20:21:59&#43;01:00" />
 <meta itemprop="dateModified" content="2019-11-03T20:21:59&#43;01:00" />
-<meta itemprop="wordCount" content="1259">
+<meta itemprop="wordCount" content="1377">
 
 
 
@@ -161,6 +161,10 @@ Theorie Definition  Für einen Eigenwert $\lambda$ von $\Phi$ und $j\in \Bbb{N}_
 
 <p>Sind $\lambda_1, \lambda_2, \ldots,\lambda_k$ die paarweise verschiedenen Eigenwerte von $\Phi$, und ist $p_\Phi=(-1)^n(X-\lambda_1)^{r_1}(X-\lambda_2)^{r_2} \ldots (X-\lambda_k)^{r_k}$ das charakteristische Polynom von $\Phi$, so gilt $$V = H_{\lambda_1} \oplus H_{\lambda_2} \oplus \ldots \oplus H_{\lambda_k}$$ und $dim H_{\lambda_i} = r_i$ für $i \in {1,2,\ldots,k}$.</p>
 
+<h4 id="jordanbasis">Jordanbasis</h4>
+
+<p>Bestimme eine passende Basis für jeden Hauptraum $H_\lambda \subset V$. Sei $q \le r := dimH_\lambda$ der Index von $H_\lambda$, $g = \Phi - \lambda id_V \in End(H_\lambda)$. Es gilt $$H_\lambda = U^{(q-1)} \oplus \ldots \oplus U^{(1)} \oplus U^{(0)}$$, wobei $U^{(j-1)}$ jeweils ein Komplement von $K_{j-1}$ in $K_j$ bezeichnet und aus Vektoren der Stufe $j$ bezüglich des nilpotenten Endomorphismus $g = \Phi - \lambda id_V$ von $H_\lambda$ besteht.</p>
+
 <h4 id="folgerung">Folgerung</h4>
 
 <p>Wählt man entsprechend der Zerlegung $V = H_{\lambda_1} \oplus H_{\lambda_2} \oplus \ldots \oplus H_{\lambda_k}$ eine geordnete Basis $B$ von $V$, so gilt</p>
@@ -181,7 +185,14 @@ $$</p>
 <li>Die Abbildungsmatrix von $\Phi$, die man erhält, wenn man in der Blockmatrix für jeden Eigenwert $\lambda_i$ den entsprechenden Jordanblock $A_{\lambda_i}$ einsetzt, heißt <strong>Jordansche Normalform</strong> von $\Phi$. Die zugehörige Basis von $V$ heißt <strong>Jordanbasis</strong>.</li>
 </ul>
 
-<h4 id="jordansche-normalform">Jordansche Normalform</h4>
+<h4 id="weitere-eigenschaften-der-jordanschen-normalform">Weitere Eigenschaften der Jordanschen Normalform</h4>
+
+<ul>
+<li>Die Anzahl der Kästechen in einem zum Eigenwert $\lambda_j$ gehörigen Jordanblock ist die Dimension des Eigenraums $K_1^j = Kern(\Phi-\lambda_jid_V)$.</li>
+<li>Die Anzahl $\sigma_h^j$ der $(h \times h)$-Kästchen in einem zum Eigenwert $\lambda_j$ gehörigen Jordan-Block ist gegeben durch $$\sigma_h^j = \tau^j_{h-1} - 2\tau^j_h + \tau^j_{h+1}$$, wobei $j=1,2,\ldots,k$; $h=1,2,\ldots,q_j$.</li>
+
+<li><h4 id="jordansche-normalform">Jordansche Normalform</h4></li>
+</ul>
 
 <p>Ist V ein endlich dimensionaler Vektorraums über $\Bbb{C}$, und $\Phi \in End(V)$, so gibt es eine Basis von V bezuuglich der die darstellende Matrix von $\Phi$ die Jordansche Normalform von $\Phi$ ist. <em>Die Jordansche Normalform ist bis auf die Reihenfolge der Jordanblöcke eindeutig bestiemmt</em>.</p>
 
@@ -214,12 +225,12 @@ $$</p>
 <li>Eigenwerte bestimmen ， we use charakteristische Polynom $ p = det(B - X \cdot E)$</li>
 </ul>
 
-<p>得到 $ p = (3 - X)^6$ , 所以得到 $\lambda=3$ 是唯一的Eigenwert。根据Satz(17.8 Enrico Leuzinger) 我们只有一个 Hauptraum $H_\lambda$ ，并且只有一个Jordan-Block $A_3$ 出现</p>
+<p>得到 $ p = (3 - X)^6$ , 所以得到 $\lambda=3$ 是唯一的Eigenwert。根据Satz(17.8 Enrico Leuzinger) 我们只有一个 Hauptraum $H_3$。</p>
 
 <h4 id="2-bestimmen-index-of-hauptraum">2. bestimmen Index of Hauptraum</h4>
 
 <ul>
-<li>为了确认$A_3$，先算出 Hauptraum $H_3$ 的 Index $q$</li>
+<li>先算出 Hauptraum $H_3$ 的 Index $q$</li>
 </ul>
 
 <p>$$
@@ -419,7 +430,7 @@ $$</p>
 <li>从 $(\Phi-3id)(U_1) \subset K_1$确定 $K_1$ 的Basis</li>
 </ul>
 
-<p>因为两个Basis 可以直接从 $(\Phi-3id)^2(b_2^1)$ 和 $(\Phi-3id)(b_1^1)$ 中找到。所以三个维度的 $K_1$ 有一个Basisvector $b_0^1$ 可选：</p>
+<p>因为两个Basis 可以直接从 $(\Phi-3id)^2(b_2^1)$ 和 $(\Phi-3id)(b_1^1)$ 中找到。所以三个维度的 $U_0$ 有一个Basisvector $b_0^1$ 可选：</p>
 
 <p>$$
 (\Phi-3id)^2(b_2^1)=\begin{pmatrix}
@@ -471,7 +482,7 @@ $$
 \end{matrix}
 $$</p>
 
-<p>最后我们按照 Basis $(b_1, \ldots ,b_6 )$ 这样排练，我们就能得到Jordanscher Normalform：</p>
+<p>最后我们按照 Basis $(b_1, \ldots ,b_6 )$ 这样排列，我们就能得到Jordanscher Normalform：</p>
 
 <p>$$
 A = \begin{pmatrix}
@@ -485,6 +496,8 @@ A = \begin{pmatrix}
 $$</p>
 
 <h2 id="inverse-matrix-p-bestimmen">Inverse Matrix P bestimmen</h2>
+
+<p>待补充</p>
 
             </div>
         </article>

@@ -6,10 +6,21 @@
     <description>Recent content in math on Yange Zheng</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 03 Nov 2019 20:21:59 +0100</lastBuildDate>
+    <lastBuildDate>Fri, 08 Nov 2019 16:06:25 +0100</lastBuildDate>
     
 	<atom:link href="https://yzheng.me/tags/math/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Skalarprodukte</title>
+      <link>https://yzheng.me/blogs/skalarprodukte/</link>
+      <pubDate>Fri, 08 Nov 2019 16:06:25 +0100</pubDate>
+      
+      <guid>https://yzheng.me/blogs/skalarprodukte/</guid>
+      <description>这章节的目的，是在实数和复数的向量空间里定义一些几何的概念譬如：长度，角度，垂直。 这里我们需要一种全新的结构，叫做 &amp;ldquo;Skalarprodukt&amp;rdquo;.
+Theorie 在这里我们将在实数和复数空间里理解这种 Skalarprodukt 的结构， Skalarprodukt 在实数和复数空间里的处理方式是不同的。
+Euklidischer Vektorraum  Es sei $V$ ein reeller Vektorraum. Eine Bilinearform auf $V$ ist eine Abbildung $$F:V \times V \to \Bbb{R}\ \ \ \ \ \ (a,b)\mapsto F(a,b)$$ die in jedem Argument linear ist; d.h. $\forall x,y,z \in V \text{ und alle }\lambda\ \in \Bbb{K}$ gilt: $$ \begin{aligned} F(x+y,z)= F(x,z)+F(y,z) \newline F(x,y+z)=F(x,z)+F(y,z) \newline F(\lambda x,y) = \lambda F(x,y) \newline F(x,\lambda y) = \lambda F(x,y) \end{aligned} $$ Die Menge aller Bilinearformen auf $V$ bezeichnen wir mit $Bil(V)$.</description>
+    </item>
     
     <item>
       <title>Jordan Normalform</title>

@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="author"
+    content="Yange Zheng ">
+<meta name="description"
+    content="这章节的目的，是在实数和复数的向量空间里定义一些几何的概念譬如：长度，角度，垂直。 这里我们需要一种全新的结构，叫做 &amp;ldquo;Skalarprodukt&amp;rdquo;.
+Theorie 在这里我们将在实数和复数空间里理解这种 Skalarprodukt 的结构， Skalarprodukt 在实数和复数空间里的处理方式是不同的。
+Euklidischer Vektorraum  Es sei $V$ ein reeller Vektorraum. Eine Bilinearform auf $V$ ist eine Abbildung $$F:V \times V \to \Bbb{R}\ \ \ \ \ \ (a,b)\mapsto F(a,b)$$ die in jedem Argument linear ist; d.h. $\forall x,y,z \in V \text{ und alle }\lambda\ \in \Bbb{K}$ gilt: $$ \begin{aligned} F(x&#43;y,z)= F(x,z)&#43;F(y,z) \newline F(x,y&#43;z)=F(x,z)&#43;F(y,z) \newline F(\lambda x,y) = \lambda F(x,y) \newline F(x,\lambda y) = \lambda F(x,y) \end{aligned} $$ Die Menge aller Bilinearformen auf $V$ bezeichnen wir mit $Bil(V)$." />
+<meta name="keywords" content="" />
+<meta name="robots" content="noodp" />
+<link rel="canonical" href="https://yzheng.me/blogs/skalarprodukte/" />
+
+
+<title>
+    
+    Skalarprodukte :: Yange Zheng  — Yange&#39;s personal website
+    
+</title>
+
+
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.2.1/css/flag-icon.min.css" rel="stylesheet"
+    type="text/css">
+
+
+
+<link rel="stylesheet" href="/main.min.2f0d18b84270567c723bff340b09ab08db3a7634237cd9667d052eb6b14669b8.css">
+
+
+
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#252627">
+<link rel="shortcut icon" href="/favicon.ico">
+<meta name="theme-color" content="#252627"><meta itemprop="name" content="Skalarprodukte">
+<meta itemprop="description" content="这章节的目的，是在实数和复数的向量空间里定义一些几何的概念譬如：长度，角度，垂直。 这里我们需要一种全新的结构，叫做 &ldquo;Skalarprodukt&rdquo;.
+Theorie 在这里我们将在实数和复数空间里理解这种 Skalarprodukt 的结构， Skalarprodukt 在实数和复数空间里的处理方式是不同的。
+Euklidischer Vektorraum  Es sei $V$ ein reeller Vektorraum. Eine Bilinearform auf $V$ ist eine Abbildung $$F:V \times V \to \Bbb{R}\ \ \ \ \ \ (a,b)\mapsto F(a,b)$$ die in jedem Argument linear ist; d.h. $\forall x,y,z \in V \text{ und alle }\lambda\ \in \Bbb{K}$ gilt: $$ \begin{aligned} F(x&#43;y,z)= F(x,z)&#43;F(y,z) \newline F(x,y&#43;z)=F(x,z)&#43;F(y,z) \newline F(\lambda x,y) = \lambda F(x,y) \newline F(x,\lambda y) = \lambda F(x,y) \end{aligned} $$ Die Menge aller Bilinearformen auf $V$ bezeichnen wir mit $Bil(V)$.">
+
+
+<meta itemprop="datePublished" content="2019-11-08T16:06:25&#43;01:00" />
+<meta itemprop="dateModified" content="2019-11-08T16:06:25&#43;01:00" />
+<meta itemprop="wordCount" content="536">
+
+
+
+<meta itemprop="keywords" content="linear algebra,math," />
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://yzheng.me"/>
+
+<meta name="twitter:title" content="Skalarprodukte"/>
+<meta name="twitter:description" content="这章节的目的，是在实数和复数的向量空间里定义一些几何的概念譬如：长度，角度，垂直。 这里我们需要一种全新的结构，叫做 &ldquo;Skalarprodukt&rdquo;.
+Theorie 在这里我们将在实数和复数空间里理解这种 Skalarprodukt 的结构， Skalarprodukt 在实数和复数空间里的处理方式是不同的。
+Euklidischer Vektorraum  Es sei $V$ ein reeller Vektorraum. Eine Bilinearform auf $V$ ist eine Abbildung $$F:V \times V \to \Bbb{R}\ \ \ \ \ \ (a,b)\mapsto F(a,b)$$ die in jedem Argument linear ist; d.h. $\forall x,y,z \in V \text{ und alle }\lambda\ \in \Bbb{K}$ gilt: $$ \begin{aligned} F(x&#43;y,z)= F(x,z)&#43;F(y,z) \newline F(x,y&#43;z)=F(x,z)&#43;F(y,z) \newline F(\lambda x,y) = \lambda F(x,y) \newline F(x,\lambda y) = \lambda F(x,y) \end{aligned} $$ Die Menge aller Bilinearformen auf $V$ bezeichnen wir mit $Bil(V)$."/>
+
+
+
+
+<meta property="article:published_time" content="2019-11-08 16:06:25 &#43;0100 CET" />
+
+
+
+
+
+
+
+    </head>
+
+    <body class="">
+        <div class="container">
+            <header class="header">
+    <span class="header__inner">
+        <a href="/" style="text-decoration: none;">
+    <div class="logo">
+        
+            <span class="logo__mark">></span>
+            <span class="logo__text">cd /home</span>
+            <span class="logo__cursor" style=""></span>
+        
+    </div>
+</a>
+
+
+        <span class="header__right">
+            
+                <nav class="menu">
+    <ul class="menu__inner"><li><a href="https://yzheng.me/blogs">Blog</a></li><li><a href="https://yzheng.me/dejavu">Déjà vu</a></li><li><a href="https://yzheng.me/projects">Project</a></li><li><a href="https://yzheng.me/about">About</a></li>
+    </ul>
+</nav>
+
+                <span class="menu-trigger">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+                    </svg>
+                </span>
+            
+
+            <span class="theme-toggle unselectable"><svg class="theme-toggler" width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M22 41C32.4934 41 41 32.4934 41 22C41 11.5066 32.4934 3 22
+  3C11.5066 3 3 11.5066 3 22C3 32.4934 11.5066 41 22 41ZM7 22C7
+  13.7157 13.7157 7 22 7V37C13.7157 37 7 30.2843 7 22Z"/>
+</svg>
+</span>
+        </span>
+    </span>
+</header>
+
+
+            <div class="content">
+                
+    <main class="post">
+
+        <div class="post-info">
+            
+            </p>
+        </div>
+
+        <article>
+            <h2 class="post-title"><a href="https://yzheng.me/blogs/skalarprodukte/">Skalarprodukte</a></h2>
+
+            
+
+            <div class="post-content">
+                
+
+<p>这章节的目的，是在实数和复数的向量空间里定义一些几何的概念譬如：长度，角度，垂直。 这里我们需要一种全新的结构，叫做 &ldquo;Skalarprodukt&rdquo;.</p>
+
+<h2 id="theorie">Theorie</h2>
+
+<hr />
+
+<p>在这里我们将在实数和复数空间里理解这种 Skalarprodukt 的结构， Skalarprodukt 在实数和复数空间里的处理方式是不同的。</p>
+
+<h3 id="euklidischer-vektorraum">Euklidischer Vektorraum</h3>
+
+<ul>
+<li>Es sei $V$ ein <em>reeller</em> Vektorraum. Eine <strong>Bilinearform</strong> auf $V$ ist eine Abbildung $$F:V \times V \to \Bbb{R}\ \ \ \ \ \ (a,b)\mapsto F(a,b)$$ die in jedem Argument linear ist; d.h. $\forall x,y,z \in V \text{ und alle }\lambda\ \in \Bbb{K}$ gilt:
+$$
+\begin{aligned}
+F(x+y,z)= F(x,z)+F(y,z) \newline
+F(x,y+z)=F(x,z)+F(y,z) \newline
+F(\lambda x,y) = \lambda F(x,y) \newline
+F(x,\lambda y) = \lambda F(x,y)
+\end{aligned}
+$$
+Die Menge aller Bilinearformen auf $V$ bezeichnen wir mit $Bil(V)$.</li>
+</ul>
+
+<hr />
+
+<ul>
+<li><p>Eine Bilinearform $F$ heißt <strong>symmetrisch</strong>, wenn gilt: $$\forall a,b \in V: \ \ \ \ F(a,b)=F(b,a)$$</p></li>
+
+<li><p>Eine Bilinearform $F$ auf $V$ heißt <strong>positiv definit</strong>, wenn gilt: $$Skalarprodukte(Forts.)\ \forall a\in V: F(a,a) \ge 0\ \ \land\ \ F(a,a)=0 \Leftrightarrow a=0$$</p></li>
+
+<li><p>Eine Bilinearform $F$ heißt <strong>schiefsymmetrisch</strong>, falls $$\forall x,y \in V:\ \ \ \ F(x,y) = -F(y,x)$$</p></li>
+
+<li><p>Eine Bilieanrform $F$ heißt <strong>alternierend</strong>, falls
+$$
+\forall x \in V:\ \ \ \ F(x,x) = 0
+$$</p></li>
+</ul>
+
+<hr />
+
+<ul>
+<li><p>Ein <strong>Skalarprodukt</strong> auf einem reellen Vektorraum $V$ ist</p>
+
+<ol>
+<li>positiv definite</li>
+<li>symmetrische Bilinearform auf $V$</li>
+</ol></li>
+
+<li><p>Das <strong>Standardskalarprodukt</strong> zweier Vektoren
+$$
+x=\begin{pmatrix}
+x_1 \newline
+\ldots \newline
+x_n
+\end{pmatrix},
+y=\begin{pmatrix}
+y_1 \newline
+\ldots \newline
+y_n
+\end{pmatrix}
+$$
+ist definiert durch
+$$
+\begin{aligned}
+\langle x,y \rangle := x^\top \cdot y = x_1y_1 + x_2y_2+\ldots+x_ny_n \newline
+\text{ in $\Bbb{C}^n$ bzw. } = x^\top \cdot \overline{y} =x_1\overline{y_1}+x_2\overline{y_2} +\ldots+x_n\overline{y_n}
+\end{aligned}
+$$</p></li>
+
+<li><p>Ein Paar $(V,F)$ bestehend aus einem reellen Vektorraum und einem Skalarprodukt $F$ auf $V$ heißt <strong>euklidischer Vektorraum</strong>.</p></li>
+</ul>
+
+<h4 id="notation">NOTATION</h4>
+
+<p>Für ein Skalarprodukte $F$ in einem euklidischen oder unitären Vektorraum $V$ schreiben wir $$\langle a,b \rangle := F(a,b)\ \ \ \ (a,b\in V)$$</p>
+
+<hr />
+
+<h3 id="unitäre-vektorräume">Unitäre Vektorräume</h3>
+
+<ul>
+<li><p>Es sei $V$ ein <em>komplexer</em> Vektorraum. Eine Abbildung $$F: V \times V \to \Bbb{C}\ \ \ \ \ (a,b)\mapsto F(a,b)$$ heißt <strong>Sesquilinearform</strong> , wenn $\forall x,y,z \in V$ und $\forall \lambda \in \Bbb{C}$ gilt:
+$$
+\begin{aligned}
+F(x+y,z)&amp;=F(x,z)+F(y,z) \newline
+F(x,y+z) &amp;= F(x,y) + F(x,z) \newline
+F(\lambda x,y)&amp; = \lambda F(x,y) \newline
+F(x,\lambda y) &amp;= \overline{\lambda}F(x,y)
+\end{aligned}
+$$</p></li>
+
+<li><p>Eine Sesquilinearform $F$ heißt <strong>hermitesch</strong>, falls $\forall x,y \in V$ gilt
+$$
+F(x,y) = \overline{F(y,x)}
+$$</p></li>
+
+<li><p>Eine hermitesche Form $F$ in einem komplexen Vektorraum $V$ heißt <strong>positiv definit</strong>, wenn gilt: $$\forall a \in V : F(a,a) \ge 0\ \ \land \ \ F(a,a) = 0 \Leftrightarrow a= 0$$</p></li>
+
+<li><p>Ein <strong>unitäres Skalarprodukt</strong> ist eine positiv definite, hermitesche Form $F$. Ein Paar $(V,F)$ bestehend aus einem komplexen Vektorraum und einem Skalarprodukt $F$ heißt <strong>unitärer Vektorraum</strong>.</p></li>
+</ul>
+
+<hr />
+
+<ul>
+<li>Sei $s \in Sym(V)$ eine <strong>symmetrische</strong> Bilinearform. Die Menge
+$$
+rad(s):=\{v_0 \in V | s(v_0,w)=0 \forall w \in V\}
+$$
+heißt <strong>Radikal</strong> (oder auch <strong>Kern</strong>) von $s$. Weiter heißt $s$ <strong>ausgeartet</strong> falls
+$$
+rad(s)\neq \{0\}
+$$</li>
+</ul>
+
+<h3 id="satz-ohne-beweis">Satz (ohne Beweis)</h3>
+
+<h4 id="elementare-eigenschaften-einer-hermiteschen-form">Elementare Eigenschaften einer hermiteschen Form</h4>
+
+<p>Sei $F$ eine hermitesche Form auf einem komplexen Vektorraum $V$. $\forall a,b_1,b_2 \in V$ und $\forall \mu_1,\mu_2 \in \Bbb{C}$ gilts:</p>
+
+<ol>
+<li>$F(a,\mu_1b_1+\mu_2b_2) = \overline{\mu_1}F(a,b_1) + \overline{\mu_2}F(a,b_2)$</li>
+<li>$F(a,a)  \in \Bbb{R},\ \ \ \ F(0,0) = 0$</li>
+</ol>
+
+<h3 id="cauchy-schwarzsche-ungleichung">Cauchy-Schwarzsche Ungleichung</h3>
+
+<p>Ist $(V,\langle\rangle)$ ein euklidischer Vektorraum, so gilt $\forall x,y \in V$
+$$
+\langle x,y\rangle^2 \le \langle x,x\rangle \cdot\langle y,y\rangle
+$$
+Gleichheit gilt genau dann, wenn $x$ und $y$ linear abhängig sind.</p>
+
+<h3 id="bemerkung">Bemerkung</h3>
+
+<p>Eine Abbildung $s:V\times V \to K$ ist genau dann eine Bilinearform, wenn $\forall x\in V$ die Abbildungen $s(x,\cdot):V\to K$ und $s(\cdot,x):V\to K$ Linearformen sind.</p>
+
+<p>$Bil(V)$ ist Untervektorraum des $K$-Vektorraums $Abb(V\times V,K)$.</p>
+
+            </div>
+        </article>
+
+        <hr />
+
+        <div class="post-info">
+  				<p>
+  					<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag meta-icon"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7" y2="7"></line></svg><span class="tag"><a href="https://yzheng.me/tags/linear-algebra">linear algebra</a></span><span class="tag"><a href="https://yzheng.me/tags/math">math</a></span>
+  				</p>
+  			</div>
+
+        
+    </main>
+
+            </div>
+
+            
+                <footer class="footer">
+    <div class="footer__inner">
+        <div class="footer__content">
+            <span>&copy; 2019</span>
+        </div>
+    </div>
+    <div class="footer__inner">
+        <div class="footer__content">
+
+        </div>
+    </div>
+    <div class="footer__inner">
+        <div class="footer__content">
+            <span>It's nice to learn more.</a></span>
+        </div>
+    </div>
+</footer>
+
+<script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    displayMath: [['$$','$$'], ['\[','\]']],
+    processEscapes: true,
+    processEnvironments: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre','code'],
+    TeX: { equationNumbers: { autoNumber: "AMS" },
+         extensions: ["AMSmath.js", "AMSsymbols.js"] }
+  }
+});
+</script>
+
+            
+        </div>
+
+        
+
+
+
+
+<script type="text/javascript" src="/bundle.min.4c3fb12a087ceed4a52cb5d57068a9795c7069617a01ca70f788052ad66e1791779e6c72686e1dc0ca13dc03b0203204b6566bb0dd1ee80de2b7ff4d8fe53db2.js" integrity="sha512-TD&#43;xKgh87tSlLLXVcGipeVxwaWF6Acpw94gFKtZuF5F3nmxyaG4dwMoT3AOwIDIEtlZrsN0e6A3it/9Nj&#43;U9sg=="></script>
+
+
+
+    </body>
+</html>

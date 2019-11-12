@@ -6,10 +6,52 @@
     <description>Recent content in Blogs on Yange Zheng</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 03 Nov 2019 20:21:59 +0100</lastBuildDate>
+    <lastBuildDate>Sun, 10 Nov 2019 18:51:29 +0100</lastBuildDate>
     
 	<atom:link href="https://yzheng.me/blogs/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Orthogonalität</title>
+      <link>https://yzheng.me/blogs/orthogonalita%CC%88t/</link>
+      <pubDate>Sun, 10 Nov 2019 18:51:29 +0100</pubDate>
+      
+      <guid>https://yzheng.me/blogs/orthogonalita%CC%88t/</guid>
+      <description>在线性空间里定义 “正交”
+Theorie Definition  Zwei Vektoren $x,y\in V$ heißen orthogonal (oder senkrecht), falls $$ \langle x,y\rangle = 0 $$ gilt; in diesem Fall schreiben wir $x \bot y$.
+ Zwei Teilmengen $N,M \subset V$ heißen orthogonal, falls $x\bot y$ für alle $x\in N$ und alle $y\in M$; man schreibt dann $N\bot M$.Besteht $N$ nur aus einem Element $x$, so schreiben wir auch $x\bot M$ anstelle von $\{x\}\bot M$.</description>
+    </item>
+    
+    <item>
+      <title>Normen</title>
+      <link>https://yzheng.me/blogs/normen/</link>
+      <pubDate>Fri, 08 Nov 2019 23:24:22 +0100</pubDate>
+      
+      <guid>https://yzheng.me/blogs/normen/</guid>
+      <description>在线性空间里表示一个vektor 的范数，长度以及两个vektor 之间的角度。
+Theorie Definition Norm Sei $V$ ein reeller oder komplexer Vektorraum. Eine Norm auf $V$ ist eine Funktion $| |: V \to \Bbb{R},\ \ a \mapsto \parallel a\parallel$ mit folgenden Eigenschaften: $\forall \lambda \in \Bbb{R}$(oder $\Bbb{C}$) und: Skalarprodukte (Forts.) alle $a,b \in C$ gilt: $$ \begin{align} \parallel\lambda a \parallel = |\lambda|\parallel a \parallel \ \ &amp;amp; \text{(Homogenität)} \newline \parallel a +b\parallel \le \parallel a \parallel + \parallel b \parallel \ \ &amp;amp; \text{(Dreiecks-Ungleichung)} \newline \parallel a \parallel \ge 0 \ \ \ und\ \ \ \parallel a \parallel =0 \ \Leftrightarrow \ a = 0\ \ &amp;amp; \text{(Definitheit)} \end{align} $$ Ein Paar $(V,\parallel\parallel)$ bestehend aus einem Vektorraum und einer Norm heißt normierter Vektorraum</description>
+    </item>
+    
+    <item>
+      <title>Skalarprodukte und Matrizen</title>
+      <link>https://yzheng.me/blogs/skalarprodukte_und_matrizen/</link>
+      <pubDate>Fri, 08 Nov 2019 17:27:30 +0100</pubDate>
+      
+      <guid>https://yzheng.me/blogs/skalarprodukte_und_matrizen/</guid>
+      <description>在不同向量空间里的线性映射可以被 Matrix 表示，Skalarprodukte 也可以。
+Theorie Definition  Sei $V$ ein $n-$dimensionaler reeller bzw. komplexer Vektorraum und $\langle,\rangle$ ein Skalarprodukt auf $V$. Wir wählen eine geordnete Basis $B={b_1,\ldots,b_n}$ von $V$ und setzen $$g_{kj} := \langle b_k,b_j \rangle \ \ \ \ 1 \le k,j \le n$$ Die $n \times n$-Matrix $G := (g_{kj}) \in \Bbb{R}^{n \times n}$ bzw. $\Bbb{C}^{c \times c}$ heißt Matrix des Skalarproduktes $\langle,\rangle$ bezüglich der Basis $B$. Da $\langle b_j,b_k \rangle = \langle b_k,b_j \rangle$ bzw.</description>
+    </item>
+    
+    <item>
+      <title>Skalarprodukte</title>
+      <link>https://yzheng.me/blogs/skalarprodukte/</link>
+      <pubDate>Fri, 08 Nov 2019 16:06:25 +0100</pubDate>
+      
+      <guid>https://yzheng.me/blogs/skalarprodukte/</guid>
+      <description>这章节的目的，是在实数和复数的向量空间里定义一些几何的概念譬如：长度，角度，垂直。 这里我们需要一种全新的结构，叫做 &amp;ldquo;Skalarprodukt&amp;rdquo;.
+Theorie 在这里我们将在实数和复数空间里理解这种 Skalarprodukt 的结构， Skalarprodukt 在实数和复数空间里的处理方式是不同的。
+Euklidischer Vektorraum  Es sei $V$ ein reeller Vektorraum. Eine Bilinearform auf $V$ ist eine Abbildung $$F:V \times V \to \Bbb{R}\ \ \ \ \ \ (a,b)\mapsto F(a,b)$$ die in jedem Argument linear ist; d.h. $\forall x,y,z \in V \text{ und alle }\lambda\ \in \Bbb{K}$ gilt: $$ \begin{aligned} F(x+y,z)= F(x,z)+F(y,z) \newline F(x,y+z)=F(x,z)+F(y,z) \newline F(\lambda x,y) = \lambda F(x,y) \newline F(x,\lambda y) = \lambda F(x,y) \end{aligned} $$ Die Menge aller Bilinearformen auf $V$ bezeichnen wir mit $Bil(V)$.</description>
+    </item>
     
     <item>
       <title>Jordan Normalform</title>

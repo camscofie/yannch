@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="author"
+    content="Yange Zheng ">
+<meta name="description"
+    content="在不同向量空间里的线性映射可以被 Matrix 表示，Skalarprodukte 也可以。
+Theorie Definition  Sei $V$ ein $n-$dimensionaler reeller bzw. komplexer Vektorraum und $\langle,\rangle$ ein Skalarprodukt auf $V$. Wir wählen eine geordnete Basis $B={b_1,\ldots,b_n}$ von $V$ und setzen $$g_{kj} := \langle b_k,b_j \rangle \ \ \ \ 1 \le k,j \le n$$ Die $n \times n$-Matrix $G := (g_{kj}) \in \Bbb{R}^{n \times n}$ bzw. $\Bbb{C}^{c \times c}$ heißt Matrix des Skalarproduktes $\langle,\rangle$ bezüglich der Basis $B$. Da $\langle b_j,b_k \rangle = \langle b_k,b_j \rangle$ bzw." />
+<meta name="keywords" content="" />
+<meta name="robots" content="noodp" />
+<link rel="canonical" href="https://yzheng.me/blogs/skalarprodukte_und_matrizen/" />
+
+
+<title>
+    
+    Skalarprodukte und Matrizen :: Yange Zheng  — Yange&#39;s personal website
+    
+</title>
+
+
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.2.1/css/flag-icon.min.css" rel="stylesheet"
+    type="text/css">
+
+
+
+<link rel="stylesheet" href="/main.min.2f0d18b84270567c723bff340b09ab08db3a7634237cd9667d052eb6b14669b8.css">
+
+
+
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#252627">
+<link rel="shortcut icon" href="/favicon.ico">
+<meta name="theme-color" content="#252627"><meta itemprop="name" content="Skalarprodukte und Matrizen">
+<meta itemprop="description" content="在不同向量空间里的线性映射可以被 Matrix 表示，Skalarprodukte 也可以。
+Theorie Definition  Sei $V$ ein $n-$dimensionaler reeller bzw. komplexer Vektorraum und $\langle,\rangle$ ein Skalarprodukt auf $V$. Wir wählen eine geordnete Basis $B={b_1,\ldots,b_n}$ von $V$ und setzen $$g_{kj} := \langle b_k,b_j \rangle \ \ \ \ 1 \le k,j \le n$$ Die $n \times n$-Matrix $G := (g_{kj}) \in \Bbb{R}^{n \times n}$ bzw. $\Bbb{C}^{c \times c}$ heißt Matrix des Skalarproduktes $\langle,\rangle$ bezüglich der Basis $B$. Da $\langle b_j,b_k \rangle = \langle b_k,b_j \rangle$ bzw.">
+
+
+<meta itemprop="datePublished" content="2019-11-08T17:27:30&#43;01:00" />
+<meta itemprop="dateModified" content="2019-11-08T17:27:30&#43;01:00" />
+<meta itemprop="wordCount" content="662">
+
+
+
+<meta itemprop="keywords" content="" />
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://yzheng.me"/>
+
+<meta name="twitter:title" content="Skalarprodukte und Matrizen"/>
+<meta name="twitter:description" content="在不同向量空间里的线性映射可以被 Matrix 表示，Skalarprodukte 也可以。
+Theorie Definition  Sei $V$ ein $n-$dimensionaler reeller bzw. komplexer Vektorraum und $\langle,\rangle$ ein Skalarprodukt auf $V$. Wir wählen eine geordnete Basis $B={b_1,\ldots,b_n}$ von $V$ und setzen $$g_{kj} := \langle b_k,b_j \rangle \ \ \ \ 1 \le k,j \le n$$ Die $n \times n$-Matrix $G := (g_{kj}) \in \Bbb{R}^{n \times n}$ bzw. $\Bbb{C}^{c \times c}$ heißt Matrix des Skalarproduktes $\langle,\rangle$ bezüglich der Basis $B$. Da $\langle b_j,b_k \rangle = \langle b_k,b_j \rangle$ bzw."/>
+
+
+
+
+<meta property="article:published_time" content="2019-11-08 17:27:30 &#43;0100 CET" />
+
+
+
+
+
+
+
+    </head>
+
+    <body class="">
+        <div class="container">
+            <header class="header">
+    <span class="header__inner">
+        <a href="/" style="text-decoration: none;">
+    <div class="logo">
+        
+            <span class="logo__mark">></span>
+            <span class="logo__text">cd /home</span>
+            <span class="logo__cursor" style=""></span>
+        
+    </div>
+</a>
+
+
+        <span class="header__right">
+            
+                <nav class="menu">
+    <ul class="menu__inner"><li><a href="https://yzheng.me/blogs">Blog</a></li><li><a href="https://yzheng.me/dejavu">Déjà vu</a></li><li><a href="https://yzheng.me/projects">Project</a></li><li><a href="https://yzheng.me/about">About</a></li>
+    </ul>
+</nav>
+
+                <span class="menu-trigger">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+                    </svg>
+                </span>
+            
+
+            <span class="theme-toggle unselectable"><svg class="theme-toggler" width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M22 41C32.4934 41 41 32.4934 41 22C41 11.5066 32.4934 3 22
+  3C11.5066 3 3 11.5066 3 22C3 32.4934 11.5066 41 22 41ZM7 22C7
+  13.7157 13.7157 7 22 7V37C13.7157 37 7 30.2843 7 22Z"/>
+</svg>
+</span>
+        </span>
+    </span>
+</header>
+
+
+            <div class="content">
+                
+    <main class="post">
+
+        <div class="post-info">
+            
+            </p>
+        </div>
+
+        <article>
+            <h2 class="post-title"><a href="https://yzheng.me/blogs/skalarprodukte_und_matrizen/">Skalarprodukte und Matrizen</a></h2>
+
+            
+
+            <div class="post-content">
+                
+
+<p>在不同向量空间里的线性映射可以被 Matrix 表示，Skalarprodukte 也可以。</p>
+
+<h2 id="theorie">Theorie</h2>
+
+<h3 id="definition">Definition</h3>
+
+<ul>
+<li>Sei $V$ ein $n-$dimensionaler reeller bzw. komplexer Vektorraum und $\langle,\rangle$ ein Skalarprodukt auf $V$. Wir wählen eine geordnete Basis $B={b_1,\ldots,b_n}$ von $V$ und setzen $$g_{kj} := \langle b_k,b_j \rangle \ \ \ \ 1 \le k,j \le n$$ Die $n \times n$-Matrix $G := (g_{kj}) \in \Bbb{R}^{n \times n}$ bzw. $\Bbb{C}^{c \times c}$ heißt <strong>Matrix des Skalarproduktes</strong> $\langle,\rangle$ bezüglich der Basis $B$. Da $\langle b_j,b_k \rangle = \langle b_k,b_j \rangle$ bzw. $\langle b_j,b_k \rangle = \overline{\langle b_k,b_j \rangle}$ gilt $g_{jk} = g_{kj}$ bzw. $g_{jk} = \overline{g_{kj}}$. Für die Matrix eines Skalarprodukts gilt also $$G=G^\top$$ $$G=\overline{G}^\top$$ falls $V$ euklidisch oder unitär ist. Sei jetzt $V$ ein <em>unitärer Vektorraum</em> und $B={b_1,\ldots,b_n}$ eine Basis von $V$. Dann haben wir für $a=\sum^n_{n=1} a_kb_k$ und $b=\sum^n_{j=1} \beta_j b_j$.
+$$
+\langle a,b\rangle = \sum^n_{k=1}\sum^n_{j=1}\alpha_k\langle b_k,b_j \rangle \overline{\beta_j} = \sum^n_{k=1}\sum^n_{j=1}\alpha_k g_{kj} \overline{\beta_j}
+$$
+$$
+= (\alpha_1,\ldots,\alpha_n)
+\begin{pmatrix}
+g_{11} &amp; g_{12} &amp; \ldots &amp; g_{1n} \newline
+\ldots &amp; \ldots &amp; \ldots &amp; \ldots \newline
+g_{n1} &amp; g_{n2} &amp; \ldots &amp; g_{nn}
+\end{pmatrix}
+\begin{pmatrix}
+\overline{\beta_1} \newline
+\ldots \newline
+\overline{\beta_n}
+\end{pmatrix}
+$$
+Mit den Komponentenvektoren
+$$
+\Theta_B(a) =
+\begin{pmatrix}
+\alpha_1 \newline
+\ldots \newline
+\alpha_n
+\end{pmatrix}
+, \Theta_B(b) =
+\begin{pmatrix}
+\beta_1 \newline
+\ldots
+\beta_n
+\end{pmatrix}
+$$
+von $a$ und $b$ können wir also schreiben
+$$
+\langle a,b \rangle = \Theta_B(a)^\top G \overline{\Theta_B(b)};\ \ \ \ \ a,b \in V,\ \ \Theta_C(a),\Theta_C(b) \in \Bbb{C}^n
+$$
+Ganz analog erhalten wir für einen <em>euklidischen Vektorraum</em> die Formel
+$$
+\langle a,b \rangle = \Theta_B(a)^\top G \Theta_B(b);\ \ \ \ \ a,b \in V,\ \ \Theta_B(a),\Theta_B(b) \in \Bbb{R}^n
+$$
+Da Skalarprodukte positiv definit sind, ergibt sich als Konsequenz dieser Formel für die Matrix $G$ von $\langle,\rangle$:
+Im euklidischen Fall gilt für alle $x \in \Bbb{R}^n, x \neq 0,x^\top Gx \gt 0$, und im unitären Fall gilt $\forall z \in \Bbb{C}^n, z \neq 0,z^\top G \overline{z} \gt 0$.</li>
+</ul>
+
+<hr />
+
+<ul>
+<li><p>Ist $V$ ein endlich dimensionaler Vektorraum über einem Körper $K$, $B=(b_1,b_2,\ldots,b_n)$ eine geordnete Basis von $V$ und $s:V\times V \to K$ eine Bilinearform, so heißt die Matrix
+$$
+F_B(s):=\begin{pmatrix}
+s(b_1,b_1) &amp; \ldots &amp; s(b_1,b_n) \newline
+\ldots&amp;\ldots &amp;\ldots \newline
+s(b_n,b_1) &amp; \ldots &amp; s(b_n,b_n)
+\end{pmatrix} \in K^{n\times n}
+$$
+<strong>Fundamentalmatrix</strong> von $s$ bezüglich $B$.</p></li>
+
+<li><p>Eine Matrix $A \in \Bbb{R}^{n \times n}$ heißt <strong>symmetrisch</strong>, falls gilt $$A^\top = A$$</p></li>
+
+<li><p>Eine Matrix $A \in \Bbb{C}^{n \times n}$ heißt <strong>hermitesch</strong>, falls gilt $$\overline{A}^\top = A$$</p></li>
+
+<li><p>Eine symmetrische(bzw. hermitesche) Matrix $A$ für die gilt
+$$
+\{ x^\top Gx \gt 0\ |\ \forall x \in \Bbb{R}^n,x\neq 0\} \text{ bzw. }\{ z^\top G\overline{z} \gt 0\ |\ \forall z \in \Bbb{C}^n,z\neq 0\}
+$$
+heißt <strong>positiv definit</strong>.</p></li>
+</ul>
+
+<h3 id="satz-ohne-beweis">Satz (ohne Beweis)</h3>
+
+<h4 id="beschreibung-aller-skalarprodukte">Beschreibung aller Skalarprodukte</h4>
+
+<p>Es sei $V$ ein euklidischer bzw. unitärer Vektorraum und $B$ eine geordnete Basis von $V$. Dann ist $F$ genau dann ein Skalarprodukt, wenn eine positiv definite, symmetrische (bzw. hermitesche) Matrix $A \in \Bbb{R}^{n \times n}$ bzw. $A \in \Bbb{C}^{n \times n}$ existiert mit
+$$
+F(x,y) = \Theta_B(x)^\top A \Theta_B(y)\ \ bzw.\ \ F(x,y) = \Theta_B(x)^\top A \overline{\Theta_B(y)} \ \ \ \ (x,y \in V)
+$$</p>
+
+<h5 id="lemma">Lemma</h5>
+
+<p>Es sei $V$ endlich dimensional, $B$ eine geordnete Basis von $V$ und $s:V\times V\to K$ eine Bilinearform
+1. $s$ ist symmetrisch genau dann, wenn $F_B(s)$ eine symmetrische Matrix ist.
+2. $s$ ist schiefsymmetrisch genau dann, wenn $F_B(s)$ schiefsymmetrische Matrix ist (d.h. $F_B(s)^\top = -F_B(s)$)</p>
+
+<h4 id="basiswechsel">Basiswechsel</h4>
+
+<p>Ist $V$ ein endlich dimensionaler $K$-Vektorraum, und sind $B,C$ Basen von $V$, so gilt für jede Bilinearform $s:V\times V \to K$
+$$
+F_B(s)=(D_{CB}(id_V))^\top \cdot F_C(s) \cdot D_{CB}(id_V)
+$$
+Man beachte, dass im Allgemeinen
+$$
+(D_{CB}(id_V))^\top \neq (D_{CB}(id_V))^{-1}=D_{BC(id_V)}
+$$
+gilt. Der Basiswechsel für Bilinearformen ist also anders zu berechnen als der von Endomorphismen.</p>
+
+<h5 id="basiswechsel-im-unitärer-vektorraumes">Basiswechsel im Unitärer Vektorraumes</h5>
+
+<p>Sei V ein euklidischer bzw. unitärer Vektorraumes mit Basen $B$ und $\widetilde{B}$. Weiter sei $S$ die Matrix des Basiswechsels von $\widetilde{B}$ nach $B$. Dann gelten für die Matrizen des Skalarproduktes die Transformationsformeln
+$$
+\widetilde{G} = S^\top GS,\ \ \ \ S \in GL(n,\Bbb{R})\ \ \ (euklidischer\  Fall)
+$$
+$$
+\widetilde{G} = S^\top G\overline{S},\ \ \ \ S \in GL(n,\Bbb{C})\ \ \ (unitärer\  Fall)
+$$</p>
+
+            </div>
+        </article>
+
+        <hr />
+
+        <div class="post-info">
+  			</div>
+
+        
+    </main>
+
+            </div>
+
+            
+                <footer class="footer">
+    <div class="footer__inner">
+        <div class="footer__content">
+            <span>&copy; 2019</span>
+        </div>
+    </div>
+    <div class="footer__inner">
+        <div class="footer__content">
+
+        </div>
+    </div>
+    <div class="footer__inner">
+        <div class="footer__content">
+            <span>It's nice to learn more.</a></span>
+        </div>
+    </div>
+</footer>
+
+<script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    displayMath: [['$$','$$'], ['\[','\]']],
+    processEscapes: true,
+    processEnvironments: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre','code'],
+    TeX: { equationNumbers: { autoNumber: "AMS" },
+         extensions: ["AMSmath.js", "AMSsymbols.js"] }
+  }
+});
+</script>
+
+            
+        </div>
+
+        
+
+
+
+
+<script type="text/javascript" src="/bundle.min.4c3fb12a087ceed4a52cb5d57068a9795c7069617a01ca70f788052ad66e1791779e6c72686e1dc0ca13dc03b0203204b6566bb0dd1ee80de2b7ff4d8fe53db2.js" integrity="sha512-TD&#43;xKgh87tSlLLXVcGipeVxwaWF6Acpw94gFKtZuF5F3nmxyaG4dwMoT3AOwIDIEtlZrsN0e6A3it/9Nj&#43;U9sg=="></script>
+
+
+
+    </body>
+</html>
