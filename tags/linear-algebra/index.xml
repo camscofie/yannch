@@ -6,10 +6,40 @@
     <description>Recent content in linear algebra on Yange Zheng</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 12 Nov 2019 22:07:03 +0100</lastBuildDate>
+    <lastBuildDate>Wed, 13 Nov 2019 20:18:16 +0100</lastBuildDate>
     
 	<atom:link href="https://yzheng.me/tags/linear-algebra/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Linear Isometrien</title>
+      <link>https://yzheng.me/blogs/linear-isometrien/</link>
+      <pubDate>Wed, 13 Nov 2019 20:18:16 +0100</pubDate>
+      
+      <guid>https://yzheng.me/blogs/linear-isometrien/</guid>
+      <description>Theorie Definition  Es seien $(X,d_X)$ und $(Y,d_Y)$ zwei metrische Räume. Eine Abbildung $f:=X\to Y$ heißt Isometrie, falls $f$ Abstände erhält, falls also für alle $p,q\in X$ gilt $$ d_Y(f(p),f(q))=d_X(p,q) $$   Es seien $V,W$ entweder zwei euklidische oder zwei unitäre Vektoräume. Eine lineare Abbildung $\Phi:V\to W$ heißt lineare Isometrie, wenn für alle $x\in V$ gilt $$ \parallel\Phi(x)\parallel_W=\parallel x\parallel_V $$ d.h. wenn $\Phi$ die Länge jedes Vektors $x\in V$ invariant läßt.</description>
+    </item>
+    
+    <item>
+      <title>Selbstadjungierte Endomorphismen</title>
+      <link>https://yzheng.me/blogs/selbstadjungierte-endomorphismen/</link>
+      <pubDate>Wed, 13 Nov 2019 19:14:58 +0100</pubDate>
+      
+      <guid>https://yzheng.me/blogs/selbstadjungierte-endomorphismen/</guid>
+      <description>Theorie Definition Ein Endomorphismus $\Phi:V\to V$ eines endlich-dimensionalen Vektorraumes $V$ mit Skalarprodukt heißt selbstadjungiert, wenn $\Phi^\ast=\Phi$ ist, d.h. wenn für alle $x,y\in V$ gilt $$ \langle\Phi(x),y\rangle=\langle x,\Phi(y)\rangle $$
+Satz (ohne Beweis) Matrix eines s.a. Endomorphismus  Ein Endomorphismus $\Phi$ ist genau dann selbstadjungiert, wenn die Abbildungsmtraix $A$ von $\Phi$ bezüglich einer Orthonormalbasis im euklidischen Fall symmetrisch $(A^\top=A)$ und im unitären Fall hermitesch $(\overline{A}^\top=A)$ ist.   Es sei $V$ ein $n$-dimensionaler (reeller oder komplexer) Vektorraum mit Skalarprodukt und $\Phi:V\to V$ ein selbstadjungierter Endomorphismus.</description>
+    </item>
+    
+    <item>
+      <title>Adjungierte Abbildungen</title>
+      <link>https://yzheng.me/blogs/adjungierte-abbildungen/</link>
+      <pubDate>Wed, 13 Nov 2019 16:45:11 +0100</pubDate>
+      
+      <guid>https://yzheng.me/blogs/adjungierte-abbildungen/</guid>
+      <description>Theorie Definition Es seien $(V,\langle,\rangle_V)$ und $(W,\langle,\rangle_W)$ zwei Vektorräume mit Skalarprodukt und $\Phi: V \to W$ eine lineare Abbildung. Eine lineare Abbildung $\Phi^\ast:W\to V$ heißt zu $\Phi$ adjungierte lineare Abbildung, falls für alle $x\in V$ und alle $y\in W$ gilt: $$ \langle\Phi(x),y\rangle_W=\langle x,\Phi^\ast(y)\rangle_V $$
+NOTATION Für eine Matrix $A=(a_{ij})\in \Bbb{C}^{m\times n}$ definieren wir $$ A^\ast=(a^\ast_{ij}):=\overline{A}^\top=(\overline{a}_{ji})\in \Bbb{C}^{n\times m} $$
+Satz (ohne Beweis) Existenz und Matrixform vom $\ \Phi^\ast$ Es seien $V,W$ zwei euklidische bzw.</description>
+    </item>
     
     <item>
       <title>Orthogonal und unitäre Matrizen</title>

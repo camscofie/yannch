@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="author"
+    content="Yange Zheng ">
+<meta name="description"
+    content="Theorie Definition Es seien $(V,\langle,\rangle_V)$ und $(W,\langle,\rangle_W)$ zwei Vektorräume mit Skalarprodukt und $\Phi: V \to W$ eine lineare Abbildung. Eine lineare Abbildung $\Phi^\ast:W\to V$ heißt zu $\Phi$ adjungierte lineare Abbildung, falls für alle $x\in V$ und alle $y\in W$ gilt: $$ \langle\Phi(x),y\rangle_W=\langle x,\Phi^\ast(y)\rangle_V $$
+NOTATION Für eine Matrix $A=(a_{ij})\in \Bbb{C}^{m\times n}$ definieren wir $$ A^\ast=(a^\ast_{ij}):=\overline{A}^\top=(\overline{a}_{ji})\in \Bbb{C}^{n\times m} $$
+Satz (ohne Beweis) Existenz und Matrixform vom $\ \Phi^\ast$ Es seien $V,W$ zwei euklidische bzw." />
+<meta name="keywords" content="" />
+<meta name="robots" content="noodp" />
+<link rel="canonical" href="https://yzheng.me/blogs/adjungierte-abbildungen/" />
+
+
+<title>
+    
+    Adjungierte Abbildungen :: Yange Zheng  — Yange&#39;s personal website
+    
+</title>
+
+
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.2.1/css/flag-icon.min.css" rel="stylesheet"
+    type="text/css">
+
+
+
+<link rel="stylesheet" href="/main.min.2f0d18b84270567c723bff340b09ab08db3a7634237cd9667d052eb6b14669b8.css">
+
+
+
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#252627">
+<link rel="shortcut icon" href="/favicon.ico">
+<meta name="theme-color" content="#252627"><meta itemprop="name" content="Adjungierte Abbildungen">
+<meta itemprop="description" content="Theorie Definition Es seien $(V,\langle,\rangle_V)$ und $(W,\langle,\rangle_W)$ zwei Vektorräume mit Skalarprodukt und $\Phi: V \to W$ eine lineare Abbildung. Eine lineare Abbildung $\Phi^\ast:W\to V$ heißt zu $\Phi$ adjungierte lineare Abbildung, falls für alle $x\in V$ und alle $y\in W$ gilt: $$ \langle\Phi(x),y\rangle_W=\langle x,\Phi^\ast(y)\rangle_V $$
+NOTATION Für eine Matrix $A=(a_{ij})\in \Bbb{C}^{m\times n}$ definieren wir $$ A^\ast=(a^\ast_{ij}):=\overline{A}^\top=(\overline{a}_{ji})\in \Bbb{C}^{n\times m} $$
+Satz (ohne Beweis) Existenz und Matrixform vom $\ \Phi^\ast$ Es seien $V,W$ zwei euklidische bzw.">
+
+
+<meta itemprop="datePublished" content="2019-11-13T16:45:11&#43;01:00" />
+<meta itemprop="dateModified" content="2019-11-13T16:45:11&#43;01:00" />
+<meta itemprop="wordCount" content="193">
+
+
+
+<meta itemprop="keywords" content="linear algebra,math," />
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://yzheng.me"/>
+
+<meta name="twitter:title" content="Adjungierte Abbildungen"/>
+<meta name="twitter:description" content="Theorie Definition Es seien $(V,\langle,\rangle_V)$ und $(W,\langle,\rangle_W)$ zwei Vektorräume mit Skalarprodukt und $\Phi: V \to W$ eine lineare Abbildung. Eine lineare Abbildung $\Phi^\ast:W\to V$ heißt zu $\Phi$ adjungierte lineare Abbildung, falls für alle $x\in V$ und alle $y\in W$ gilt: $$ \langle\Phi(x),y\rangle_W=\langle x,\Phi^\ast(y)\rangle_V $$
+NOTATION Für eine Matrix $A=(a_{ij})\in \Bbb{C}^{m\times n}$ definieren wir $$ A^\ast=(a^\ast_{ij}):=\overline{A}^\top=(\overline{a}_{ji})\in \Bbb{C}^{n\times m} $$
+Satz (ohne Beweis) Existenz und Matrixform vom $\ \Phi^\ast$ Es seien $V,W$ zwei euklidische bzw."/>
+
+
+
+
+<meta property="article:published_time" content="2019-11-13 16:45:11 &#43;0100 CET" />
+
+
+
+
+
+
+
+    </head>
+
+    <body class="">
+        <div class="container">
+            <header class="header">
+    <span class="header__inner">
+        <a href="/" style="text-decoration: none;">
+    <div class="logo">
+        
+            <span class="logo__mark">></span>
+            <span class="logo__text">cd /home</span>
+            <span class="logo__cursor" style=""></span>
+        
+    </div>
+</a>
+
+
+        <span class="header__right">
+            
+                <nav class="menu">
+    <ul class="menu__inner"><li><a href="https://yzheng.me/blogs">Blog</a></li><li><a href="https://yzheng.me/dejavu">Déjà vu</a></li><li><a href="https://yzheng.me/projects">Project</a></li><li><a href="https://yzheng.me/about">About</a></li>
+    </ul>
+</nav>
+
+                <span class="menu-trigger">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+                    </svg>
+                </span>
+            
+
+            <span class="theme-toggle unselectable"><svg class="theme-toggler" width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M22 41C32.4934 41 41 32.4934 41 22C41 11.5066 32.4934 3 22
+  3C11.5066 3 3 11.5066 3 22C3 32.4934 11.5066 41 22 41ZM7 22C7
+  13.7157 13.7157 7 22 7V37C13.7157 37 7 30.2843 7 22Z"/>
+</svg>
+</span>
+        </span>
+    </span>
+</header>
+
+
+            <div class="content">
+                
+    <main class="post">
+
+        <div class="post-info">
+            
+            </p>
+        </div>
+
+        <article>
+            <h2 class="post-title"><a href="https://yzheng.me/blogs/adjungierte-abbildungen/">Adjungierte Abbildungen</a></h2>
+
+            
+
+            <div class="post-content">
+                
+
+<h2 id="theorie">Theorie</h2>
+
+<h3 id="definition">Definition</h3>
+
+<p>Es seien $(V,\langle,\rangle_V)$ und $(W,\langle,\rangle_W)$ zwei Vektorräume mit Skalarprodukt und $\Phi: V \to W$ eine lineare Abbildung. Eine lineare Abbildung $\Phi^\ast:W\to V$ heißt zu $\Phi$ <strong>adjungierte lineare Abbildung</strong>, falls für alle $x\in V$ und alle $y\in W$ gilt:
+$$
+\langle\Phi(x),y\rangle_W=\langle x,\Phi^\ast(y)\rangle_V
+$$</p>
+
+<h4 id="notation">NOTATION</h4>
+
+<p>Für eine Matrix $A=(a_{ij})\in \Bbb{C}^{m\times n}$ definieren wir
+$$
+A^\ast=(a^\ast_{ij}):=\overline{A}^\top=(\overline{a}_{ji})\in \Bbb{C}^{n\times m}
+$$</p>
+
+<h3 id="satz-ohne-beweis">Satz (ohne Beweis)</h3>
+
+<h4 id="existenz-und-matrixform-vom-phi-ast">Existenz und Matrixform vom $\ \Phi^\ast$</h4>
+
+<p>Es seien $V,W$ zwei euklidische bzw. zwei unitäre Vektorräume. Dann gilt:</p>
+
+<ol>
+<li><p>Ist $V$ endlich-dimensional, so existiert zu jeder linearen Abbildung $\Phi:V\to W$ genau eine Adjungierte $\Phi^\ast:W\to V$.</p></li>
+
+<li><p>Es seien $V$ und $W$ beide endlich-dimensional. Weiter sei $B=\{e_1,\ldots,e_n\}$ eine Orthonormalbasis von $V$ und $C = \{c_1,\ldots,c_m\}$ eine Orthonormalbasis von $W$. Ist dann $A$ die Abbildungsmatrix von $\Phi^\ast:W\to V$ bezüglich der Basen $C,B$. Also $A^\ast=A^\top\in\Bbb{R}^{n\times m}$ im euklidischen Fall und $A^\ast = \overline{A}^\top\in\Bbb{C}^{n\times m}$ im unitären Fall.</p></li>
+</ol>
+
+<h3 id="bemerkung">Bemerkung</h3>
+
+<p>Falls für die linearen Abbildungen $\Phi:U\to V$ und $\Psi:V\to W$ die Adjungierten $\Psi^\ast:V\to U,\Psi^\ast:W\to V$ existieren, so gelten folgende Beziehungen:
+$$
+\begin{aligned}
+(\Phi+\Psi)^\ast &amp; = \Phi^\ast+\Psi^\ast \newline
+(\lambda\Psi)^\ast &amp; = \overline{\lambda}\Phi^\ast\ (\lambda\in \Bbb{C}) \newline
+(\Psi \circ \Phi)^\ast &amp; = \Phi^\ast \circ \Psi^\ast\newline
+\Phi^{\ast\ast} &amp;=(\Phi^\ast)^\ast=\Phi \newline
+\ker \Phi^\ast &amp;=(\text{Bild}\Phi)^\bot<br />
+\end{aligned}
+$$</p>
+
+            </div>
+        </article>
+
+        <hr />
+
+        <div class="post-info">
+  				<p>
+  					<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag meta-icon"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7" y2="7"></line></svg><span class="tag"><a href="https://yzheng.me/tags/linear-algebra">linear algebra</a></span><span class="tag"><a href="https://yzheng.me/tags/math">math</a></span>
+  				</p>
+  			</div>
+
+        
+    </main>
+
+            </div>
+
+            
+                <footer class="footer">
+    <div class="footer__inner">
+        <div class="footer__content">
+            <span>&copy; 2019</span>
+        </div>
+    </div>
+    <div class="footer__inner">
+        <div class="footer__content">
+
+        </div>
+    </div>
+    <div class="footer__inner">
+        <div class="footer__content">
+            <span>It's nice to learn more.</a></span>
+        </div>
+    </div>
+</footer>
+
+<script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    displayMath: [['$$','$$'], ['\[','\]']],
+    processEscapes: true,
+    processEnvironments: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre','code'],
+    TeX: { equationNumbers: { autoNumber: "AMS" },
+         extensions: ["AMSmath.js", "AMSsymbols.js"] }
+  }
+});
+</script>
+
+            
+        </div>
+
+        
+
+
+
+
+<script type="text/javascript" src="/bundle.min.4c3fb12a087ceed4a52cb5d57068a9795c7069617a01ca70f788052ad66e1791779e6c72686e1dc0ca13dc03b0203204b6566bb0dd1ee80de2b7ff4d8fe53db2.js" integrity="sha512-TD&#43;xKgh87tSlLLXVcGipeVxwaWF6Acpw94gFKtZuF5F3nmxyaG4dwMoT3AOwIDIEtlZrsN0e6A3it/9Nj&#43;U9sg=="></script>
+
+
+
+    </body>
+</html>
