@@ -102,7 +102,7 @@ Theorie Definition  Sei $V$ ein $n-$dimensionaler reeller bzw. komplexer Vektorr
       <guid>https://yzheng.me/blogs/skalarprodukte/</guid>
       <description>这章节的目的，是在实数和复数的向量空间里定义一些几何的概念譬如：长度，角度，垂直。 这里我们需要一种全新的结构，叫做 &amp;ldquo;Skalarprodukt&amp;rdquo;.
 Theorie 在这里我们将在实数和复数空间里理解这种 Skalarprodukt 的结构， Skalarprodukt 在实数和复数空间里的处理方式是不同的。
-Euklidischer Vektorraum  Es sei $V$ ein reeller Vektorraum. Eine Bilinearform auf $V$ ist eine Abbildung $$F:V \times V \to \Bbb{R}\ \ \ \ \ \ (a,b)\mapsto F(a,b)$$ die in jedem Argument linear ist; d.h. $\forall x,y,z \in V \text{ und alle }\lambda\ \in \Bbb{K}$ gilt: $$ \begin{aligned} F(x+y,z)= F(x,z)+F(y,z) \newline F(x,y+z)=F(x,z)+F(y,z) \newline F(\lambda x,y) = \lambda F(x,y) \newline F(x,\lambda y) = \lambda F(x,y) \end{aligned} $$ Die Menge aller Bilinearformen auf $V$ bezeichnen wir mit $Bil(V)$.</description>
+Euklidischer Vektorraum  Es sei $V$ ein reeller Vektorraum. Eine Bilinearform auf $V$ ist eine Abbildung $$F:V \times V \to \Bbb{R}\ \ \ \ \ \ (a,b)\mapsto F(a,b)$$ die in jedem Argument linear ist; d.h. $\forall a,a_1,a_2,b,b_1,b_2 \in V \text{ und }\forall\lambda_1,\lambda_2,\mu_1,\mu_2\in \Bbb{R}$ gilt: $$ \begin{aligned} F(\lambda_1a_1+\lambda_2a_2,b)= \lambda_1F(a_1,b)+\lambda_2F(a_2,b) \newline F(a,\mu_1b_1+\mu_2b_2)=\mu_1F(a,b_1)+\mu_2F(a,b_2) \newline \end{aligned} $$ Die Menge aller Bilinearformen auf $V$ bezeichnen wir mit $Bil(V)$.</description>
     </item>
     
     <item>

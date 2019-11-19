@@ -9,7 +9,7 @@
 <meta name="description"
     content="这章节的目的，是在实数和复数的向量空间里定义一些几何的概念譬如：长度，角度，垂直。 这里我们需要一种全新的结构，叫做 &amp;ldquo;Skalarprodukt&amp;rdquo;.
 Theorie 在这里我们将在实数和复数空间里理解这种 Skalarprodukt 的结构， Skalarprodukt 在实数和复数空间里的处理方式是不同的。
-Euklidischer Vektorraum  Es sei $V$ ein reeller Vektorraum. Eine Bilinearform auf $V$ ist eine Abbildung $$F:V \times V \to \Bbb{R}\ \ \ \ \ \ (a,b)\mapsto F(a,b)$$ die in jedem Argument linear ist; d.h. $\forall x,y,z \in V \text{ und alle }\lambda\ \in \Bbb{K}$ gilt: $$ \begin{aligned} F(x&#43;y,z)= F(x,z)&#43;F(y,z) \newline F(x,y&#43;z)=F(x,z)&#43;F(y,z) \newline F(\lambda x,y) = \lambda F(x,y) \newline F(x,\lambda y) = \lambda F(x,y) \end{aligned} $$ Die Menge aller Bilinearformen auf $V$ bezeichnen wir mit $Bil(V)$." />
+Euklidischer Vektorraum  Es sei $V$ ein reeller Vektorraum. Eine Bilinearform auf $V$ ist eine Abbildung $$F:V \times V \to \Bbb{R}\ \ \ \ \ \ (a,b)\mapsto F(a,b)$$ die in jedem Argument linear ist; d.h. $\forall a,a_1,a_2,b,b_1,b_2 \in V \text{ und }\forall\lambda_1,\lambda_2,\mu_1,\mu_2\in \Bbb{R}$ gilt: $$ \begin{aligned} F(\lambda_1a_1&#43;\lambda_2a_2,b)= \lambda_1F(a_1,b)&#43;\lambda_2F(a_2,b) \newline F(a,\mu_1b_1&#43;\mu_2b_2)=\mu_1F(a,b_1)&#43;\mu_2F(a,b_2) \newline \end{aligned} $$ Die Menge aller Bilinearformen auf $V$ bezeichnen wir mit $Bil(V)$." />
 <meta name="keywords" content="" />
 <meta name="robots" content="noodp" />
 <link rel="canonical" href="https://yzheng.me/blogs/skalarprodukte/" />
@@ -41,12 +41,12 @@ Euklidischer Vektorraum  Es sei $V$ ein reeller Vektorraum. Eine Bilinearform au
 <meta name="theme-color" content="#252627"><meta itemprop="name" content="Skalarprodukte">
 <meta itemprop="description" content="这章节的目的，是在实数和复数的向量空间里定义一些几何的概念譬如：长度，角度，垂直。 这里我们需要一种全新的结构，叫做 &ldquo;Skalarprodukt&rdquo;.
 Theorie 在这里我们将在实数和复数空间里理解这种 Skalarprodukt 的结构， Skalarprodukt 在实数和复数空间里的处理方式是不同的。
-Euklidischer Vektorraum  Es sei $V$ ein reeller Vektorraum. Eine Bilinearform auf $V$ ist eine Abbildung $$F:V \times V \to \Bbb{R}\ \ \ \ \ \ (a,b)\mapsto F(a,b)$$ die in jedem Argument linear ist; d.h. $\forall x,y,z \in V \text{ und alle }\lambda\ \in \Bbb{K}$ gilt: $$ \begin{aligned} F(x&#43;y,z)= F(x,z)&#43;F(y,z) \newline F(x,y&#43;z)=F(x,z)&#43;F(y,z) \newline F(\lambda x,y) = \lambda F(x,y) \newline F(x,\lambda y) = \lambda F(x,y) \end{aligned} $$ Die Menge aller Bilinearformen auf $V$ bezeichnen wir mit $Bil(V)$.">
+Euklidischer Vektorraum  Es sei $V$ ein reeller Vektorraum. Eine Bilinearform auf $V$ ist eine Abbildung $$F:V \times V \to \Bbb{R}\ \ \ \ \ \ (a,b)\mapsto F(a,b)$$ die in jedem Argument linear ist; d.h. $\forall a,a_1,a_2,b,b_1,b_2 \in V \text{ und }\forall\lambda_1,\lambda_2,\mu_1,\mu_2\in \Bbb{R}$ gilt: $$ \begin{aligned} F(\lambda_1a_1&#43;\lambda_2a_2,b)= \lambda_1F(a_1,b)&#43;\lambda_2F(a_2,b) \newline F(a,\mu_1b_1&#43;\mu_2b_2)=\mu_1F(a,b_1)&#43;\mu_2F(a,b_2) \newline \end{aligned} $$ Die Menge aller Bilinearformen auf $V$ bezeichnen wir mit $Bil(V)$.">
 
 
 <meta itemprop="datePublished" content="2019-11-08T16:06:25&#43;01:00" />
 <meta itemprop="dateModified" content="2019-11-08T16:06:25&#43;01:00" />
-<meta itemprop="wordCount" content="560">
+<meta itemprop="wordCount" content="616">
 
 
 
@@ -57,7 +57,7 @@ Euklidischer Vektorraum  Es sei $V$ ein reeller Vektorraum. Eine Bilinearform au
 <meta name="twitter:title" content="Skalarprodukte"/>
 <meta name="twitter:description" content="这章节的目的，是在实数和复数的向量空间里定义一些几何的概念譬如：长度，角度，垂直。 这里我们需要一种全新的结构，叫做 &ldquo;Skalarprodukt&rdquo;.
 Theorie 在这里我们将在实数和复数空间里理解这种 Skalarprodukt 的结构， Skalarprodukt 在实数和复数空间里的处理方式是不同的。
-Euklidischer Vektorraum  Es sei $V$ ein reeller Vektorraum. Eine Bilinearform auf $V$ ist eine Abbildung $$F:V \times V \to \Bbb{R}\ \ \ \ \ \ (a,b)\mapsto F(a,b)$$ die in jedem Argument linear ist; d.h. $\forall x,y,z \in V \text{ und alle }\lambda\ \in \Bbb{K}$ gilt: $$ \begin{aligned} F(x&#43;y,z)= F(x,z)&#43;F(y,z) \newline F(x,y&#43;z)=F(x,z)&#43;F(y,z) \newline F(\lambda x,y) = \lambda F(x,y) \newline F(x,\lambda y) = \lambda F(x,y) \end{aligned} $$ Die Menge aller Bilinearformen auf $V$ bezeichnen wir mit $Bil(V)$."/>
+Euklidischer Vektorraum  Es sei $V$ ein reeller Vektorraum. Eine Bilinearform auf $V$ ist eine Abbildung $$F:V \times V \to \Bbb{R}\ \ \ \ \ \ (a,b)\mapsto F(a,b)$$ die in jedem Argument linear ist; d.h. $\forall a,a_1,a_2,b,b_1,b_2 \in V \text{ und }\forall\lambda_1,\lambda_2,\mu_1,\mu_2\in \Bbb{R}$ gilt: $$ \begin{aligned} F(\lambda_1a_1&#43;\lambda_2a_2,b)= \lambda_1F(a_1,b)&#43;\lambda_2F(a_2,b) \newline F(a,\mu_1b_1&#43;\mu_2b_2)=\mu_1F(a,b_1)&#43;\mu_2F(a,b_2) \newline \end{aligned} $$ Die Menge aller Bilinearformen auf $V$ bezeichnen wir mit $Bil(V)$."/>
 
 
 
@@ -141,13 +141,11 @@ Euklidischer Vektorraum  Es sei $V$ ein reeller Vektorraum. Eine Bilinearform au
 <h3 id="euklidischer-vektorraum">Euklidischer Vektorraum</h3>
 
 <ul>
-<li>Es sei $V$ ein <em>reeller</em> Vektorraum. Eine <strong>Bilinearform</strong> auf $V$ ist eine Abbildung $$F:V \times V \to \Bbb{R}\ \ \ \ \ \ (a,b)\mapsto F(a,b)$$ die in jedem Argument linear ist; d.h. $\forall x,y,z \in V \text{ und alle }\lambda\ \in \Bbb{K}$ gilt:
+<li>Es sei $V$ ein <em>reeller</em> Vektorraum. Eine <strong>Bilinearform</strong> auf $V$ ist eine Abbildung $$F:V \times V \to \Bbb{R}\ \ \ \ \ \ (a,b)\mapsto F(a,b)$$ die in jedem Argument linear ist; d.h. $\forall a,a_1,a_2,b,b_1,b_2 \in V \text{ und }\forall\lambda_1,\lambda_2,\mu_1,\mu_2\in \Bbb{R}$ gilt:
 $$
 \begin{aligned}
-F(x+y,z)= F(x,z)+F(y,z) \newline
-F(x,y+z)=F(x,z)+F(y,z) \newline
-F(\lambda x,y) = \lambda F(x,y) \newline
-F(x,\lambda y) = \lambda F(x,y)
+F(\lambda_1a_1+\lambda_2a_2,b)= \lambda_1F(a_1,b)+\lambda_2F(a_2,b) \newline
+F(a,\mu_1b_1+\mu_2b_2)=\mu_1F(a,b_1)+\mu_2F(a,b_2) \newline
 \end{aligned}
 $$
 Die Menge aller Bilinearformen auf $V$ bezeichnen wir mit $Bil(V)$.</li>
@@ -270,6 +268,29 @@ $$
 \langle x,y\rangle^2 \le \langle x,x\rangle \cdot\langle y,y\rangle
 $$
 Gleichheit gilt genau dann, wenn $x$ und $y$ linear abhängig sind.</p>
+
+<h4 id="ein-kriterium-für-positiv-deﬁnit">Ein Kriterium für “positiv deﬁnit”</h4>
+
+<p>Eine reelle, symmetrische Matrix A ist genau dann positiv deﬁnit, wenn alle Eigenwerte von A positiv sind.</p>
+
+<h4 id="jocobi-hurwitz">Jocobi-Hurwitz</h4>
+
+<p>Für eine symmetrische Matrix $A=(a_{ij})\in \Bbb{R}^{n\times n}$ sind folgende Aussagen äquivalent:</p>
+
+<ol>
+<li><p>$A$ ist positiv definit.</p></li>
+
+<li><p>Die Determinanten aller <strong>Hauptminoren</strong> von $A$ sind positiv, d.h. für $k=1,\ldots,n$ gilt:
+$$
+det\begin{pmatrix}
+a_{11}&amp;\ldots&amp;a_{1k}\newline
+\ldots&amp;&amp;\ldots \newline
+a_{k1}&amp;\ldots&amp;a_{kk}
+\end{pmatrix}\gt 0
+$$</p></li>
+
+<li><p>Es gibt eine obere Dreiecksmatrix $B\in GL(n,\Bbb{R})$ mit $A=B^\top B$.</p></li>
+</ol>
 
 <h3 id="bemerkung">Bemerkung</h3>
 

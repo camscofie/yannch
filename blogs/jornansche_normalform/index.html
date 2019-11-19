@@ -48,7 +48,7 @@ Theorie Definition  Für einen Eigenwert $\lambda$ von $\Phi$ und $j\in \Bbb{N}_
 
 <meta itemprop="datePublished" content="2019-11-03T20:21:59&#43;01:00" />
 <meta itemprop="dateModified" content="2019-11-03T20:21:59&#43;01:00" />
-<meta itemprop="wordCount" content="1377">
+<meta itemprop="wordCount" content="1411">
 
 
 
@@ -185,14 +185,22 @@ $$</p>
 <li>Die Abbildungsmatrix von $\Phi$, die man erhält, wenn man in der Blockmatrix für jeden Eigenwert $\lambda_i$ den entsprechenden Jordanblock $A_{\lambda_i}$ einsetzt, heißt <strong>Jordansche Normalform</strong> von $\Phi$. Die zugehörige Basis von $V$ heißt <strong>Jordanbasis</strong>.</li>
 </ul>
 
+<p><strong>言辞</strong>：包含整组Eigenwert 的一个大方框 叫Jordanblock，Jordanblock 里的每一个小方框叫Jordankästchen。</p>
+
 <h4 id="weitere-eigenschaften-der-jordanschen-normalform">Weitere Eigenschaften der Jordanschen Normalform</h4>
 
 <ul>
 <li>Die Anzahl der Kästechen in einem zum Eigenwert $\lambda_j$ gehörigen Jordanblock ist die Dimension des Eigenraums $K_1^j = Kern(\Phi-\lambda_jid_V)$.</li>
 <li>Die Anzahl $\sigma_h^j$ der $(h \times h)$-Kästchen in einem zum Eigenwert $\lambda_j$ gehörigen Jordan-Block ist gegeben durch $$\sigma_h^j = \tau^j_{h-1} - 2\tau^j_h + \tau^j_{h+1}$$, wobei $j=1,2,\ldots,k$; $h=1,2,\ldots,q_j$.</li>
-
-<li><h4 id="jordansche-normalform">Jordansche Normalform</h4></li>
 </ul>
+
+<p><strong>言辞</strong>：$\sigma_h^j$ 是指Eigenwert $\lambda_j$ 的Block 里 $(n\times n)$ 的Kästchen 的数量。而$\tau^j_h$ 是等于 $Rang(\Phi-\lambda_jE)^h$。注意 $Rang(\Phi-\lambda_jE)^0$ 是满Rang。</p>
+
+<ul>
+<li>（待确认） Die länge des längstmöglichen Jordankästchens durch das kleinste $k\in \Bbb{N}$ gegeben, sodass $M^k=0$.(from 2010ss Aufgabe 1)</li>
+</ul>
+
+<h4 id="jordansche-normalform">Jordansche Normalform</h4>
 
 <p>Ist V ein endlich dimensionaler Vektorraums über $\Bbb{C}$, und $\Phi \in End(V)$, so gibt es eine Basis von V bezuuglich der die darstellende Matrix von $\Phi$ die Jordansche Normalform von $\Phi$ ist. <em>Die Jordansche Normalform ist bis auf die Reihenfolge der Jordanblöcke eindeutig bestiemmt</em>.</p>
 
