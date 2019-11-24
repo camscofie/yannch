@@ -42,7 +42,7 @@
 
 <meta itemprop="datePublished" content="2019-11-13T20:18:16&#43;01:00" />
 <meta itemprop="dateModified" content="2019-11-13T20:18:16&#43;01:00" />
-<meta itemprop="wordCount" content="341">
+<meta itemprop="wordCount" content="549">
 
 
 
@@ -160,6 +160,78 @@ d(u,v):=\parallel u-v\parallel=\sqrt{\langle u-v,u-v\rangle}
 $$
 Eine lineare Isometrie ist also auch eine Isometrie im allgemeinen Sinn (für die durch die Skalarprodukte induzierten Metriken).</p></li>
 </ol>
+
+<hr />
+
+<h4 id="beispiel">Beispiel</h4>
+
+<h5 id="drehungen">Drehungen:</h5>
+
+<p>Wir vesehen $\Bbb{R}^2$ mit dem Standard-Skalarprodukt und betrachten Polarkoordinaten
+$$
+\Bbb{R}^2 \ni x=\begin{pmatrix}
+    x_1 \newline
+    x_2
+\end{pmatrix}=\begin{pmatrix}
+    r\cos\alpha \newline
+    r\sin\alpha
+\end{pmatrix}
+$$
+Dann haben wir (mit den Additionstheoremen für Sinus und Cosinus)
+$$
+D_\omega(x):=\begin{pmatrix}
+    \cos\omega&amp;-\sin\omega \newline
+    \sin\omega&amp;\cos\omega
+\end{pmatrix}\begin{pmatrix}
+    r\cos\alpha\newline
+    r\sin\alpha
+\end{pmatrix}=\begin{pmatrix}
+    r\cos(\alpha+\omega)\newline
+    r\sin(\alpha+\omega)
+\end{pmatrix}
+$$
+Für die lineare Abbildung $D_\omega$ gilt
+$$
+\parallel D_\omega(x)\parallel^2=r^2(\cos^2(\alpha+\omega)+\sin^2(\alpha+\omega))=r^2=\parallel x\parallel^2
+$$
+also ist $D_\omega$ eine lineare Isometrie von $\Bbb{R}^2$.</p>
+
+<p>Geometrisch ist $D_\omega$ eine Drehung (im Uhrzeigersinn) um den Ursprung von $\Bbb{R}^2$ mit dem Drehwinkel $\omega$.</p>
+
+<p><img src="/postImage/LineareIsometrien/Drehung.png" alt="pythagoras" width="300" class="center" /></p>
+
+<p>Entsprechend ist $D_{-w}$ eine Drehung (im Gegen-Uhrzeigersinn) um den Ursprung von $\Bbb{R}^2$ mit dem Drehwinkel $\omega$. Es ist $\det D_\omega=\det D_{-\omega} = 1$. Als Spezialfälle haben wir für $\omega=0,\pi:$
+$$
+D_0=\begin{pmatrix}
+    1&amp;0\newline
+    0&amp;1
+\end{pmatrix}\text{ und }D_\pi=D_{-\pi}=\begin{pmatrix}
+    -1&amp;0\newline
+    0&amp;-1
+\end{pmatrix}
+$$</p>
+
+<p>also die Identität und die Punktspiegelung am Ursprung $(0,0)$.</p>
+
+<h5 id="verallgemeinerung">Verallgemeinerung:</h5>
+
+<p>Sei $A\in\Bbb{R}^{n\times n}$ eine orthogonale Matrix, also $A^\top A=E$, dann ist die lineare Abbildung $\Phi:\Bbb{R}^n\to\Bbb{R}^n,\ x\mapsto Ax$ eine lineare Isometrie:
+$$
+\parallel Ax\parallel^2=(Ax)^\top Ax=x^\top A^\top Ax=x^\top x=\parallel x\parallel^2
+$$</p>
+
+<h5 id="translationen">Translationen:</h5>
+
+<p>Translationen Sind nicht-lineare Isometrien. Es sei $V$ ein Vektorraum mit Skalarprodukt. Für $a\in V$ ist
+$$
+T_a:V\to V;\ x\mapsto x+a
+$$
+die Translation um den Vektor $a$. Dann ist $T_a$ (für $a\neq 0$) keine lineare Abbildung, aber eine Isometrie im allgemeinen Sinn:
+$$
+d(T_a(x),T_a(y))=\parallel(x+a)-(y+a)\parallel=\parallel x-y\parallel=d(x,y)
+$$</p>
+
+<hr />
 
 <h3 id="satz-ohne-beweis">Satz(ohne Beweis)</h3>
 

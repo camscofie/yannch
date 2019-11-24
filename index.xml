@@ -6,10 +6,21 @@
     <description>Recent content on Yange Zheng</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 13 Nov 2019 20:18:16 +0100</lastBuildDate>
+    <lastBuildDate>Sun, 24 Nov 2019 01:30:27 +0100</lastBuildDate>
     
 	<atom:link href="https://yzheng.me/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Normalformen von linearen Isometrien</title>
+      <link>https://yzheng.me/blogs/normalformen-von-linearen-isometrien/</link>
+      <pubDate>Sun, 24 Nov 2019 01:30:27 +0100</pubDate>
+      
+      <guid>https://yzheng.me/blogs/normalformen-von-linearen-isometrien/</guid>
+      <description>本章的目的是对所给出的 lineare Isometrie 找出一组Basis，这样我们能有一个相对容易的针对这组Basis 的Abbildungsmatrix。
+Theorie Satz (ohne Beweis) Diagonalisierbarkeit Sei $V$ ein endlich-dimensionaler unitärer Vektorraum und $\Phi:V\to V$ eine lineare Isometrie. Dann ist $\Phi$ diagonalisierbar. Genauer: Es existiert eine Orthonormalbasis von $V$, die aus Eigenvektoren von $\Phi$ besteht.
+Die Diagonalmatrix heißt die (unitäre) Normalform der linearen Isometrie $\Phi$. Sie ist bis auf die Reihenfolge der Eigenwerte $\lambda_k$ durch $\Phi$ eindeutig festgelegt. Damit ist auch eine Klassifikation der linearen Isometrien eines unitären Vektorraumes gegeben: Zur selben Klasse gehören alle linearen Isometrien mit derselben Normalform (einschließlich permutierter Diagonalelemente).</description>
+    </item>
     
     <item>
       <title>Linear Isometrien</title>

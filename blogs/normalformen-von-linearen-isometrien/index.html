@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="author"
+    content="Yange Zheng ">
+<meta name="description"
+    content="本章的目的是对所给出的 lineare Isometrie 找出一组Basis，这样我们能有一个相对容易的针对这组Basis 的Abbildungsmatrix。
+Theorie Satz (ohne Beweis) Diagonalisierbarkeit Sei $V$ ein endlich-dimensionaler unitärer Vektorraum und $\Phi:V\to V$ eine lineare Isometrie. Dann ist $\Phi$ diagonalisierbar. Genauer: Es existiert eine Orthonormalbasis von $V$, die aus Eigenvektoren von $\Phi$ besteht.
+Die Diagonalmatrix heißt die (unitäre) Normalform der linearen Isometrie $\Phi$. Sie ist bis auf die Reihenfolge der Eigenwerte $\lambda_k$ durch $\Phi$ eindeutig festgelegt. Damit ist auch eine Klassifikation der linearen Isometrien eines unitären Vektorraumes gegeben: Zur selben Klasse gehören alle linearen Isometrien mit derselben Normalform (einschließlich permutierter Diagonalelemente)." />
+<meta name="keywords" content="" />
+<meta name="robots" content="noodp" />
+<link rel="canonical" href="https://yzheng.me/blogs/normalformen-von-linearen-isometrien/" />
+
+
+<title>
+    
+    Normalformen von linearen Isometrien :: Yange Zheng  — Yange&#39;s personal website
+    
+</title>
+
+
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.2.1/css/flag-icon.min.css" rel="stylesheet"
+    type="text/css">
+
+
+
+<link rel="stylesheet" href="/main.min.2f0d18b84270567c723bff340b09ab08db3a7634237cd9667d052eb6b14669b8.css">
+
+
+
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#252627">
+<link rel="shortcut icon" href="/favicon.ico">
+<meta name="theme-color" content="#252627"><meta itemprop="name" content="Normalformen von linearen Isometrien">
+<meta itemprop="description" content="本章的目的是对所给出的 lineare Isometrie 找出一组Basis，这样我们能有一个相对容易的针对这组Basis 的Abbildungsmatrix。
+Theorie Satz (ohne Beweis) Diagonalisierbarkeit Sei $V$ ein endlich-dimensionaler unitärer Vektorraum und $\Phi:V\to V$ eine lineare Isometrie. Dann ist $\Phi$ diagonalisierbar. Genauer: Es existiert eine Orthonormalbasis von $V$, die aus Eigenvektoren von $\Phi$ besteht.
+Die Diagonalmatrix heißt die (unitäre) Normalform der linearen Isometrie $\Phi$. Sie ist bis auf die Reihenfolge der Eigenwerte $\lambda_k$ durch $\Phi$ eindeutig festgelegt. Damit ist auch eine Klassifikation der linearen Isometrien eines unitären Vektorraumes gegeben: Zur selben Klasse gehören alle linearen Isometrien mit derselben Normalform (einschließlich permutierter Diagonalelemente).">
+
+
+<meta itemprop="datePublished" content="2019-11-24T01:30:27&#43;01:00" />
+<meta itemprop="dateModified" content="2019-11-24T01:30:27&#43;01:00" />
+<meta itemprop="wordCount" content="717">
+
+
+
+<meta itemprop="keywords" content="linear algebra,math," />
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://yzheng.me"/>
+
+<meta name="twitter:title" content="Normalformen von linearen Isometrien"/>
+<meta name="twitter:description" content="本章的目的是对所给出的 lineare Isometrie 找出一组Basis，这样我们能有一个相对容易的针对这组Basis 的Abbildungsmatrix。
+Theorie Satz (ohne Beweis) Diagonalisierbarkeit Sei $V$ ein endlich-dimensionaler unitärer Vektorraum und $\Phi:V\to V$ eine lineare Isometrie. Dann ist $\Phi$ diagonalisierbar. Genauer: Es existiert eine Orthonormalbasis von $V$, die aus Eigenvektoren von $\Phi$ besteht.
+Die Diagonalmatrix heißt die (unitäre) Normalform der linearen Isometrie $\Phi$. Sie ist bis auf die Reihenfolge der Eigenwerte $\lambda_k$ durch $\Phi$ eindeutig festgelegt. Damit ist auch eine Klassifikation der linearen Isometrien eines unitären Vektorraumes gegeben: Zur selben Klasse gehören alle linearen Isometrien mit derselben Normalform (einschließlich permutierter Diagonalelemente)."/>
+
+
+
+
+<meta property="article:published_time" content="2019-11-24 01:30:27 &#43;0100 CET" />
+
+
+
+
+
+
+
+    </head>
+
+    <body class="">
+        <div class="container">
+            <header class="header">
+    <span class="header__inner">
+        <a href="/" style="text-decoration: none;">
+    <div class="logo">
+        
+            <span class="logo__mark">></span>
+            <span class="logo__text">cd /home</span>
+            <span class="logo__cursor" style=""></span>
+        
+    </div>
+</a>
+
+
+        <span class="header__right">
+            
+                <nav class="menu">
+    <ul class="menu__inner"><li><a href="https://yzheng.me/blogs">Blog</a></li><li><a href="https://yzheng.me/dejavu">Déjà vu</a></li><li><a href="https://yzheng.me/projects">Project</a></li><li><a href="https://yzheng.me/about">About</a></li>
+    </ul>
+</nav>
+
+                <span class="menu-trigger">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+                    </svg>
+                </span>
+            
+
+            <span class="theme-toggle unselectable"><svg class="theme-toggler" width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M22 41C32.4934 41 41 32.4934 41 22C41 11.5066 32.4934 3 22
+  3C11.5066 3 3 11.5066 3 22C3 32.4934 11.5066 41 22 41ZM7 22C7
+  13.7157 13.7157 7 22 7V37C13.7157 37 7 30.2843 7 22Z"/>
+</svg>
+</span>
+        </span>
+    </span>
+</header>
+
+
+            <div class="content">
+                
+    <main class="post">
+
+        <div class="post-info">
+            
+            </p>
+        </div>
+
+        <article>
+            <h2 class="post-title"><a href="https://yzheng.me/blogs/normalformen-von-linearen-isometrien/">Normalformen von linearen Isometrien</a></h2>
+
+            
+
+            <div class="post-content">
+                
+
+<p>本章的目的是对所给出的 lineare Isometrie 找出一组Basis，这样我们能有一个相对容易的针对这组Basis 的Abbildungsmatrix。</p>
+
+<h2 id="theorie">Theorie</h2>
+
+<h3 id="satz-ohne-beweis">Satz (ohne Beweis)</h3>
+
+<h4 id="diagonalisierbarkeit">Diagonalisierbarkeit</h4>
+
+<p>Sei $V$ ein endlich-dimensionaler unitärer Vektorraum und $\Phi:V\to V$ eine lineare Isometrie. Dann ist $\Phi$ diagonalisierbar. Genauer: Es existiert eine Orthonormalbasis von $V$, die aus Eigenvektoren von $\Phi$ besteht.</p>
+
+<p>Die Diagonalmatrix heißt die <strong>(unitäre) Normalform der linearen Isometrie</strong> $\Phi$. Sie ist bis auf die Reihenfolge der Eigenwerte $\lambda_k$ durch $\Phi$ eindeutig festgelegt. Damit ist auch eine <strong>Klassifikation der linearen Isometrien</strong> eines unitären Vektorraumes gegeben: Zur selben Klasse gehören alle linearen Isometrien mit derselben Normalform (einschließlich permutierter Diagonalelemente).</p>
+
+<h5 id="folgerung-unitäre-normalform-ist-diagonal">Folgerung (Unitäre Normalform ist diagonal)</h5>
+
+<p>Ist $A$ eine unitäre $n\times n$-Matrix, so existiert eine unitäre Matrix $T$ mit
+$$
+T^\ast AT=\begin{pmatrix}
+    \lambda_1&amp;&amp;0\newline
+    &amp;\ldots&amp;\newline
+    0&amp;&amp;\lambda_n
+\end{pmatrix}
+$$
+dabei sind die $\lambda_k$ die Eigenwerte von $A$ und es gilt $|\lambda_k|=1\ \ \ (k=1,\ldots,n)$</p>
+
+<hr />
+
+<h4 id="euklidische-normalform-dreh-kästchen">euklidische Normalform: Dreh-Kästchen</h4>
+
+<p>Ist $\Phi$ eine lineare Isometrie eines $n$-dimensionalen euklidschen Vektorraumes $V$, so existiert eine Orthonormalbasis von $V$, bezüglich der die Abbvildungsmatrix von $\Phi$ die folgende Form hat:
+$$
+\begin{pmatrix}
+1&amp;&amp;0&amp;&amp;&amp;&amp;&amp;&amp;&amp; \newline
+&amp;\ldots &amp;&amp;&amp;&amp;&amp;&amp;0&amp;&amp; \newline
+0&amp;&amp;1&amp;&amp;&amp;&amp;&amp;&amp;&amp; \newline
+&amp;&amp;&amp;-1&amp;&amp;0&amp;&amp;&amp;&amp; \newline
+&amp;&amp;&amp;&amp;\ldots&amp;&amp;&amp;&amp;&amp; \newline
+&amp;&amp;&amp;0&amp;&amp;-1&amp;&amp;&amp;&amp; \newline
+&amp;&amp;&amp;&amp;&amp;&amp;\cos \omega_1&amp;-\sin\omega_1&amp;&amp;&amp; \newline
+&amp;&amp;&amp;&amp;&amp;&amp;\sin\omega_1&amp;\cos\omega_1&amp;&amp;&amp;\newline
+&amp;&amp;&amp;&amp;&amp;&amp;&amp;\ldots&amp;&amp;\newline
+&amp;0&amp;&amp;&amp;&amp;&amp;&amp;&amp;\cos\omega_r&amp;\sin\omega_r\newline
+&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;\sin\omega_r&amp;\cos\omega_r
+\end{pmatrix}
+$$
+mit $0\lt\omega_j\lt\pi;j=1,\ldots,r$. Die Matrix ist bis auf die Reihenfolge der Kästchen durch $\Phi$ eindeutig bestimmt und heißt die <strong>euklidische Normalform der linearen Isometrie</strong> $\Phi$.</p>
+
+<h5 id="bemerkung">Bemerkung</h5>
+
+<ol>
+<li><p>Der Kästchenform entspricht eine Zerlegung des Vektorraumes $V$:
+$$
+V=E_1\oplus E_{-1}\oplus W_1\oplus\ldots\oplus W_r
+$$
+dabei sind $E_1,E_{-1}$ die Eigenräume zum Eigenwert $1,-1$ (die auch fehlen können), und die $W_j$ sind $2$-dimensionale $\Phi$-invariante Untervektorräume (die ebenfalls fehlen können).</p></li>
+
+<li><p>Eine lineare Isometrie eines euklidische Vektorraumes ist also durch die geometrischen Vielfachheiten $p$ und $q$ der Eigenwerte $+1$ und $-1$ und die $r$ Winkel $\omega_j$ charakterisiert (wobei $p+q+2r=\dim V$ ist).</p></li>
+</ol>
+
+<hr />
+
+<h5 id="bemerkung-1">Bemerkung</h5>
+
+<ol>
+<li><p>In der Literatur wird manchmal auch eine andere Maltrix als Normalform bezeichnet. Sie unterscheidet sich von der obigen Form dadurch, dass die Zweierkästchen die transponierte Form
+$$
+\begin{matrix}
+\cos\omega &amp;\sin\omega\newline
+-\sin\omega&amp;\cos\omega
+\end{matrix}
+$$
+besitzen. Jede der Normalformen geht aus der anderen dadurch hervor, dass bei jedem Zweierkuastchen jeweils die Reihenfolge der zugehörigen orthonormalen Basisvektoren $x,y$ vertauscht wird oder dass $y$ durch $-y$ ersetzt wird.</p></li>
+
+<li><p>Ist $A\in \Bbb{R}^{n\times n}$ orthogonal, so liefert das obige Beweisverfahren, angewandt auf die symmetrische Hilfsmatrix $B:=A=A^\top$, eine orthogonale Matrix $S\in\Bbb{R}^{n\times n}$, sodass $S^\top AS$ obige Normalform besitzt.</p></li>
+</ol>
+
+<hr />
+
+<h4 id="satz-ohne-name">Satz ohne Name</h4>
+
+<p>Zu jeder orthogonalen Matrix $A$ gibt es eine orthogonale Matrix $S$, so daß
+$$
+B=S^\top AS
+$$
+gilt, wobei $B$ die Gestalt vom Satz &ldquo;euklidische Normalform: Dreh-Kästchen&rdquo; hat.</p>
+
+<p>Diesen Satz kann man auffassen als eine <strong>Klassifikation der linearen Isometrien</strong> eines $n$-dimensionalen euklidischen Vektorraumes, wobei alle linearen Isometrien mit derselben Normalform - einschließlich der verschiedenen Diagonalordnungen - zur selben Klasse zählen.</p>
+
+<p>Aus Satz &ldquo;euklidische Normalform: Dreh-Kästchen&rdquo; ergibt sich die folgende geometrische Beschreibung einer lineare Isometrie $\Phi:V\to V$. Es gibt eine Orthogonalzerlegung
+$$
+V=U_1\oplus U_2\oplus W_1\oplus\ldots\oplus W_k
+$$
+so dass</p>
+
+<ul>
+<li><p>$\Phi|_{U_1}=id_{U_1}$ ist, also $U_1$ Fixunterraum ist</p></li>
+
+<li><p>dass weiter $\Phi|_{U_2}:x\mapsto -x$ gilt, $\Phi$ also die Vektoren aus $U_2$ an $U_2^\bot = U_1\oplus U_2\oplus W_1\oplus\ldots\oplus W_k$ spiegelt</p></li>
+
+<li><p>und so dass $\Phi|_{W_i}$ für $i=1,\ldots,k$ Drehungen in den zweidimensionalen Untervektorräumen $W_i$ darstellen.</p></li>
+</ul>
+
+<p>Ist die Dimensionen von $V$ speziell $2$ oder $3$, so haben wir:</p>
+
+<ul>
+<li><p>$n=2$: Satz &ldquo;Nach euklidische Normalform: Dreh-Kästchen&rdquo; treten $4$ Klassen von linearen Isometrien auf. Diese lassen sich durch die Normalformen
+$$
+B_1=\begin{pmatrix}
+1&amp;0\newline
+0&amp;1\newline
+\end{pmatrix},
+B_2=\begin{pmatrix}
+1&amp;0\newline
+0&amp;-1\newline
+\end{pmatrix},
+B_3=\begin{pmatrix}
+-1&amp;0\newline
+0&amp;-1\newline
+\end{pmatrix},
+B_4=\begin{pmatrix}
+\cos\omega&amp;-\sin\omega\newline
+\sin\omega&amp;\cos\omega\newline
+\end{pmatrix}
+$$
+mit $0\lt\omega\lt\pi$ beschreiben. Die entsprechenden linearen Isometrien sind der Reihe nach die Identität, eine (Geraden-)Spiegelung, die Spiegelung an 0 und eine Drehung um $0$ mit Drehwinkel $\omega$.</p></li>
+
+<li><p>$n=3$: Ist $\det\Phi=1$, so gibt es einen Vektor $v\neq 0$, der Fixvektor ist. Im Orthogonalraum $[v]^\bot$ ist $\Phi$ eine Drehung. $\Phi$  heißt dann <strong>Drehung</strong> des Vektorraums $V$ mit der <strong>Drehachse</strong> $[v]$ und der Drehebene $[v]^\bot$.</p></li>
+</ul>
+
+<p>Ist $\det\Phi=-1$, so gibt es ein $v\neq 0$ mit $\Phi(v)=-v$. Im Orthogonalraum $[v]^\bot$ ist $\Phi$ eine Drehung. $\Phi$ ist dann Produkt einer Drehung um die Achse $[v]$ mit einer Speigelung an der Drehebene $[v]^\bot$ und heißt deswegen <strong>Drehspiegelung</strong> von $V$.</p>
+
+<h5 id="bemerkung-2">Bemerkung</h5>
+
+<p>Eine Klasse von Endomorphismen, die lineare Isometrien und selbstadjungierte lineare Abbildungen verallgemeinert sind die sogenannten normalen Selbstabbildungen. Ein Endomorphismus $\Phi:V\to V$ eines $n$-dimensionalen euklidischen oder unitären Vektorraumes $V$ heißt <strong>normal</strong>, wenn gilt
+$$
+\Phi \circ \Phi^\ast=\Phi^\ast \circ \Phi
+$$
+Übersetzt in die Matrizensprache haben wir die folgende Definition. Eine Matrix $A\in\Bbb{C}^{n\times n}$ bzw. $\Bbb{R}^{n\times n}$ heißt <strong>normal</strong>, falls gilt
+$$
+AA^\ast=A^\ast A \ \ \ \ bzw.\ \ AA^\top=A^\top A
+$$</p>
+
+            </div>
+        </article>
+
+        <hr />
+
+        <div class="post-info">
+  				<p>
+  					<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag meta-icon"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7" y2="7"></line></svg><span class="tag"><a href="https://yzheng.me/tags/linear-algebra">linear algebra</a></span><span class="tag"><a href="https://yzheng.me/tags/math">math</a></span>
+  				</p>
+  			</div>
+
+        
+    </main>
+
+            </div>
+
+            
+                <footer class="footer">
+    <div class="footer__inner">
+        <div class="footer__content">
+            <span>&copy; 2019</span>
+        </div>
+    </div>
+    <div class="footer__inner">
+        <div class="footer__content">
+
+        </div>
+    </div>
+    <div class="footer__inner">
+        <div class="footer__content">
+            <span>It's nice to learn more.</a></span>
+        </div>
+    </div>
+</footer>
+
+<script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    displayMath: [['$$','$$'], ['\[','\]']],
+    processEscapes: true,
+    processEnvironments: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre','code'],
+    TeX: { equationNumbers: { autoNumber: "AMS" },
+         extensions: ["AMSmath.js", "AMSsymbols.js"] }
+  }
+});
+</script>
+
+            
+        </div>
+
+        
+
+
+
+
+<script type="text/javascript" src="/bundle.min.4c3fb12a087ceed4a52cb5d57068a9795c7069617a01ca70f788052ad66e1791779e6c72686e1dc0ca13dc03b0203204b6566bb0dd1ee80de2b7ff4d8fe53db2.js" integrity="sha512-TD&#43;xKgh87tSlLLXVcGipeVxwaWF6Acpw94gFKtZuF5F3nmxyaG4dwMoT3AOwIDIEtlZrsN0e6A3it/9Nj&#43;U9sg=="></script>
+
+
+
+    </body>
+</html>
