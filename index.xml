@@ -6,13 +6,27 @@
     <description>Recent content on Yange Zheng</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 24 Nov 2019 23:36:07 +0100</lastBuildDate>
+    <lastBuildDate>Sun, 01 Dec 2019 02:46:36 +0100</lastBuildDate>
     
 	<atom:link href="https://yzheng.me/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>BWL_PM Marketing</title>
+      <title>Betriebswirtschaftslehre - Produktionswirtschaft</title>
+      <link>https://yzheng.me/blogs/bwl_pm-produktionswirtschaft/</link>
+      <pubDate>Sun, 01 Dec 2019 02:46:36 +0100</pubDate>
+      
+      <guid>https://yzheng.me/blogs/bwl_pm-produktionswirtschaft/</guid>
+      <description>Industrielle Produktion - Motivation &amp;ldquo;Unter Produktion sei die Kombination von Gütern (Input, Produktionsfaktoren) zur Erstellung anderer Güter (Output, betriebliche Leistungen) verstanden.&amp;rdquo;
+制造是两种货物间 $f(x)=y$ 的关系。
+Entscheidungsprobleme in der Produktion
+ Welche Produkte sollen gefertigt werden? Welche Technologie(n) soll(en) dafür verwendet werden? Welche Produktionsfaktoren werden dafür benötigt?  Grundbegriffe und Grundzusammenhänge Funktionale BWL:
+ Beschaffungswirtschaft &amp;amp; Logistik Produktionswirtschaft Absatzwirtschaft &amp;amp; Marketing Rechnungswesen &amp;amp; Controlling $\cdots$  Institutionelle BWL:
+ Bankbetriebslehre BWL öffentlicher Unternehmen Handelsbetriebslehre Industriebetriebslehre $\cdots$  Unternehmenskreislauf Produktion Wichtige Teilgebiete:</description>
+    </item>
+    
+    <item>
+      <title>Betriebswirtschaftslehre - Marketing</title>
       <link>https://yzheng.me/blogs/bwl_pm-marketing/</link>
       <pubDate>Sun, 24 Nov 2019 23:36:07 +0100</pubDate>
       
