@@ -6,10 +6,22 @@
     <description>Recent content on Yange Zheng</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 01 Dec 2019 02:46:36 +0100</lastBuildDate>
+    <lastBuildDate>Fri, 31 Jan 2020 19:28:11 +0100</lastBuildDate>
     
 	<atom:link href="https://yzheng.me/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>How to Read a Paper</title>
+      <link>https://yzheng.me/blogs/howtoreadapaper/</link>
+      <pubDate>Fri, 31 Jan 2020 19:28:11 +0100</pubDate>
+      
+      <guid>https://yzheng.me/blogs/howtoreadapaper/</guid>
+      <description>Reading paper sentence by sentence means to me normally low-effciency, expecially when you don&amp;rsquo;t get the ideas yet but try to understand the section with lots of details.
+Therefore I read a paper from S.keshav, &amp;ldquo;How to Read a Paper&amp;rdquo; to learn how to read a paper.
+This blog is my own words summarize the key points of the paper.
+Abstract This artical introduces a 3-step methods to read a paper, to improve the efficiency.</description>
+    </item>
     
     <item>
       <title>Betriebswirtschaftslehre - Produktionswirtschaft</title>
@@ -184,10 +196,10 @@ Theorie Definition  Für einen Eigenwert $\lambda$ von $\Phi$ und $j\in \Bbb{N}_
     
     <item>
       <title>Komplexitätstheorie</title>
-      <link>https://yzheng.me/blogs/komplexita%CC%88tstheorie/</link>
+      <link>https://yzheng.me/blogs/komplexit%C3%A4tstheorie/</link>
       <pubDate>Sun, 11 Aug 2019 22:41:21 +0200</pubDate>
       
-      <guid>https://yzheng.me/blogs/komplexita%CC%88tstheorie/</guid>
+      <guid>https://yzheng.me/blogs/komplexit%C3%A4tstheorie/</guid>
       <description>Deﬁnition: Problem Ein Problem Π ist gegeben durch: + eine allgemeine Beschreibung aller vorkommenden Parameter + eine genaue Beschreibung der Eigenschaften, die die Lösung haben soll Ein Problembeispiel /(Instanz) von Π erhalten wir, indem wir die Parameter von Π festlegen.
 Deﬁnition: Kodierungsschema  Ein Kodierungsschema s ordnet jedem Problembeispiel eines Problems eine Zeichenkette oder Kodierung über einem Alphabet Σ zu. Die Inputlänge eines Problembeispiels ist die Anzahl des Symbole seiner Kodierung.</description>
     </item>
