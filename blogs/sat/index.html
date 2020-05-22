@@ -46,7 +46,7 @@ Dann ist SAT wie folgt definiert:  Gegeben: Menge $U$ von Variablen. Menge $C$ v
 
 <meta itemprop="datePublished" content="2020-05-22T02:08:20&#43;02:00" />
 <meta itemprop="dateModified" content="2020-05-22T02:08:20&#43;02:00" />
-<meta itemprop="wordCount" content="171">
+<meta itemprop="wordCount" content="244">
 
 
 
@@ -158,8 +158,13 @@ $$</p>
 <ol>
 <li><p>SAT $\in \mathcal{NP}$ ist offensichtlich erfüllt, denn für ein Beispiel $I$ von SAT (mit $n$ Klauseln und $m$ Variablen) und einer Wahrheitsbelegung $t$ kann in $O(m\cdot n)$ überprüft werden, ob $t$ alle Klauseln erfüllt, d.h. ob $I$ ein Ja-Beispiel ist.</p></li>
 
-<li><p>Wir müssen zeigen, dass für jede Sprache $L\in\mathcal{NP}$</p></li>
+<li><p>Wir müssen zeigen, dass für jede Sprache $L\in\mathcal{NP}$ gilt: $L\propto L_{\text{SAT}}$, wobei $L_{SAT} = L[SAT,s]$ für ein geeignetes Kodierungsschema $s$ ist. Dazu muss für alle Sprachen $S \in \mathcal{NP}$ eine polynomiale Transformation $f_{L}$ angegeben werden, für die gilt, dass für alle $x\in \sum^*$ gilt
+$$
+x\in \Leftrightarrow f_{L}(x)\in L_{SAT}
+$$</p></li>
 </ol>
+
+<p>Wir beötigen eine Konstruktion von $f_{L}$, die zeigt, wie man die Überprüfung, ob eine nichtdeterministische Turing-Maschine $M$ zu $L$ ein Wort $x\in \sum^*$ akzeptiert, durch die Angabe von Klauseln simulieren kann.</p>
 
             </div>
         </article>
