@@ -17,7 +17,9 @@
       <pubDate>Fri, 22 May 2020 02:08:20 +0200</pubDate>
       
       <guid>https://yzheng.me/blogs/sat/</guid>
-      <description>Definition von SAT Sei $U = {u_1,\dots,u_m}$ eine Menge von booleschen Variablen. ($u_i,\overline{u_i}$ heißen Literale). Eine Wahrheitsbelegung für $U$ ist eine Funktion $t:U\to {\text{wahr, falsch}}.$ Eine Klausel ist ein Boole&amp;rsquo;scher Ausdruck der Form $$ y_1 \vee \dots \vee y_s \text{ mit } y_i \in {u_1,\dots,u_m } \cup {\overline{u_1},\dots,\overline{u_m}}\cup{\text{wahr, falsch}} $$</description>
+      <description>Definition von SAT Sei $U = \{u_1,\dots,u_m\}$ eine Menge von booleschen Variablen. ($u_i,\overline{u_i}$ heißen Literale). Eine Wahrheitsbelegung für $U$ ist eine Funktion $t:U\to \{\text{wahr, falsch}\}.$ Eine Klausel ist ein Boole&amp;rsquo;scher Ausdruck der Form $$ y_1 \vee \dots \vee y_s \text{ mit } y_i \in \underbrace{\{u_1,\dots,u_m \} \cup \{\overline{u_1},\dots,\overline{u_m}\}}_{\text{Literalmenge}}\cup\{\text{wahr, falsch}\} $$
+Dann ist SAT wie folgt definiert:  Gegeben: Menge $U$ von Variablen. Menge $C$ von Klauseln über $U$
+ Frage: Existiert eine Wahrheitsbelegung von $U$, so dass $C$ erfüllt wird, d.</description>
     </item>
     
     <item>
