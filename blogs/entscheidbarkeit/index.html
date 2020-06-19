@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="author"
+    content="Yange Zheng ">
+<meta name="description"
+    content="图灵机 一个deterministische Turing-Maschine ((D)TM) besteht aus:
+ $Q$, einer endlicher Zustandsmenge
+ $\Sigma$, einem endlichen Eingabealphabet,
+ $\sqcup$, einem Blanksymbol mit $\sqcup \notin\Sigma$
+ $\Gamma$, einem endlichen Bandalphabet mit $\Sigma\cup\{\sqcup\}\subseteq\Gamma$
+ $s\in Q$, einem Startzustand
+ $\delta: Q \times \Gamma \rightarrow Q \times \Gamma \times \{L,R,N\}$, einer Übergangsfunktion
+ $F \subseteq Q$, einer Menge von Endzuständen.(Die Menge der Endzustände kann auch entfallen)
+  Entscheidbarkeit  一个图灵机 akzeptiert 一个 Eingabe $w \in \Sigma^*$, 当TM $M$ 读取$w$ 后停在一个 $z \in F$ 的位置。" />
+<meta name="keywords" content="" />
+<meta name="robots" content="noodp" />
+<link rel="canonical" href="https://yzheng.me/blogs/entscheidbarkeit/" />
+
+
+<title>
+    
+    Entscheidbarkeit :: Yange Zheng  — Yange&#39;s personal website
+    
+</title>
+
+
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.2.1/css/flag-icon.min.css" rel="stylesheet"
+    type="text/css">
+
+
+
+<link rel="stylesheet" href="/main.min.2f0d18b84270567c723bff340b09ab08db3a7634237cd9667d052eb6b14669b8.css">
+
+
+
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#252627">
+<link rel="shortcut icon" href="/favicon.ico">
+<meta name="theme-color" content="#252627"><meta itemprop="name" content="Entscheidbarkeit">
+<meta itemprop="description" content="图灵机 一个deterministische Turing-Maschine ((D)TM) besteht aus:
+ $Q$, einer endlicher Zustandsmenge
+ $\Sigma$, einem endlichen Eingabealphabet,
+ $\sqcup$, einem Blanksymbol mit $\sqcup \notin\Sigma$
+ $\Gamma$, einem endlichen Bandalphabet mit $\Sigma\cup\{\sqcup\}\subseteq\Gamma$
+ $s\in Q$, einem Startzustand
+ $\delta: Q \times \Gamma \rightarrow Q \times \Gamma \times \{L,R,N\}$, einer Übergangsfunktion
+ $F \subseteq Q$, einer Menge von Endzuständen.(Die Menge der Endzustände kann auch entfallen)
+  Entscheidbarkeit  一个图灵机 akzeptiert 一个 Eingabe $w \in \Sigma^*$, 当TM $M$ 读取$w$ 后停在一个 $z \in F$ 的位置。">
+
+
+<meta itemprop="datePublished" content="2020-06-19T19:07:55&#43;02:00" />
+<meta itemprop="dateModified" content="2020-06-19T19:07:55&#43;02:00" />
+<meta itemprop="wordCount" content="286">
+
+
+
+<meta itemprop="keywords" content="TGI," />
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://yzheng.me"/>
+
+<meta name="twitter:title" content="Entscheidbarkeit"/>
+<meta name="twitter:description" content="图灵机 一个deterministische Turing-Maschine ((D)TM) besteht aus:
+ $Q$, einer endlicher Zustandsmenge
+ $\Sigma$, einem endlichen Eingabealphabet,
+ $\sqcup$, einem Blanksymbol mit $\sqcup \notin\Sigma$
+ $\Gamma$, einem endlichen Bandalphabet mit $\Sigma\cup\{\sqcup\}\subseteq\Gamma$
+ $s\in Q$, einem Startzustand
+ $\delta: Q \times \Gamma \rightarrow Q \times \Gamma \times \{L,R,N\}$, einer Übergangsfunktion
+ $F \subseteq Q$, einer Menge von Endzuständen.(Die Menge der Endzustände kann auch entfallen)
+  Entscheidbarkeit  一个图灵机 akzeptiert 一个 Eingabe $w \in \Sigma^*$, 当TM $M$ 读取$w$ 后停在一个 $z \in F$ 的位置。"/>
+
+
+
+
+<meta property="article:published_time" content="2020-06-19 19:07:55 &#43;0200 CEST" />
+
+
+
+
+
+
+
+    </head>
+
+    <body class="">
+        <div class="container">
+            <header class="header">
+    <span class="header__inner">
+        <a href="/" style="text-decoration: none;">
+    <div class="logo">
+        
+            <span class="logo__mark">></span>
+            <span class="logo__text">cd /home</span>
+            <span class="logo__cursor" style=""></span>
+        
+    </div>
+</a>
+
+
+        <span class="header__right">
+            
+                <nav class="menu">
+    <ul class="menu__inner"><li><a href="https://yzheng.me/blogs">Blog</a></li><li><a href="https://yzheng.me/dejavu">Déjà vu</a></li><li><a href="https://yzheng.me/projects">Project</a></li><li><a href="https://yzheng.me/about">About</a></li>
+    </ul>
+</nav>
+
+                <span class="menu-trigger">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+                    </svg>
+                </span>
+            
+
+            <span class="theme-toggle unselectable"><svg class="theme-toggler" width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M22 41C32.4934 41 41 32.4934 41 22C41 11.5066 32.4934 3 22
+  3C11.5066 3 3 11.5066 3 22C3 32.4934 11.5066 41 22 41ZM7 22C7
+  13.7157 13.7157 7 22 7V37C13.7157 37 7 30.2843 7 22Z"/>
+</svg>
+</span>
+        </span>
+    </span>
+</header>
+
+
+            <div class="content">
+                
+    <main class="post">
+
+        <div class="post-info">
+            
+            </p>
+        </div>
+
+        <article>
+            <h2 class="post-title"><a href="https://yzheng.me/blogs/entscheidbarkeit/">Entscheidbarkeit</a></h2>
+
+            
+
+            <div class="post-content">
+                
+
+<h2 id="图灵机">图灵机</h2>
+
+<p>一个deterministische Turing-Maschine ((D)TM) besteht aus:</p>
+
+<ul>
+<li><p>$Q$, einer endlicher Zustandsmenge</p></li>
+
+<li><p>$\Sigma$, einem endlichen Eingabealphabet,</p></li>
+
+<li><p>$\sqcup$, einem Blanksymbol mit $\sqcup \notin\Sigma$</p></li>
+
+<li><p>$\Gamma$, einem endlichen Bandalphabet mit $\Sigma\cup\{\sqcup\}\subseteq\Gamma$</p></li>
+
+<li><p>$s\in Q$, einem Startzustand</p></li>
+
+<li><p>$\delta: Q \times \Gamma \rightarrow Q \times \Gamma \times \{L,R,N\}$, einer Übergangsfunktion</p></li>
+
+<li><p>$F \subseteq Q$, einer Menge von Endzuständen.(Die Menge der Endzustände kann auch entfallen)</p></li>
+</ul>
+
+<h2 id="entscheidbarkeit">Entscheidbarkeit</h2>
+
+<ul>
+<li><p>一个图灵机 <strong>akzeptiert</strong> 一个 Eingabe $w \in \Sigma^*$, 当TM $M$ 读取$w$ 后停在一个 $z \in F$ 的位置。</p></li>
+
+<li><p>一个图灵机刚好 <strong>akzeptiert</strong> 一个Sprache $L$， 当每个$w\in L$ 被该图灵机akzeptieren.</p></li>
+</ul>
+
+<h3 id="需要背诵">需要背诵</h3>
+
+<ol>
+<li><p>一个语言 $L \subseteq \Sigma^*$ 叫做 <strong>rekursiv</strong> 或者 __entscheidbar, 当存在一个为Sprache $L$ 设计的图灵机，该图灵机读取任何一个input 的时候都会停机，且会停在一个$z\in F$位置，当input $w\in L$.</p></li>
+
+<li><p>一个语言 $L \subseteq \Sigma^*$ 叫做 <strong>rekursiv-aufzählbar</strong> 或者 <strong>semi-entscheidbar</strong>， 这个图灵机和上面一样会akzeptiert 任何 $w\in L$ 的input。但是当$w\notin L$时会不会停，会停在哪儿却都是未知的。</p></li>
+</ol>
+
+<p>Gödelnummer 什么就是把整个TM 用二进制表示出来，细节就不说了，wiki 哪里都有。</p>
+
+<h3 id="需要背诵的sprache">需要背诵的Sprache</h3>
+
+<h4 id="das-post-sche-korrespondezproblem">Das Post&rsquo;sche Korrespondezproblem</h4>
+
+<p>这家伙不entscheidbar</p>
+
+<h4 id="diagonalsprache">DiagonalSprache</h4>
+
+<p>$$
+L_d \rightleftharpoons \{w_i | M_i \text{  akzeptiert  }w_i\text{  nicht}\}
+$$</p>
+
+<p>Diagonalsprache 是不entscheidbar 的。 证明别看了，全是抽象废话。</p>
+
+<h4 id="haltproblem-和-universelle-sprache">Haltproblem 和 universelle Sprache</h4>
+
+<p>我也不知道两个是不是一个问题，我觉得是一个问题。
+$$
+H \leftrightharpoons \{wv| T_w\text{hält auf der Eingabe  } v\}
+$$
+$$
+L_u \leftrightharpoons \{wv| v\in L(T_w)\}
+$$</p>
+
+<p>显而易见都不是entscheidbar，又都是semi-entscheidbar.</p>
+
+<h4 id="xxx-sprache-是不是entscheidbar">“xxx-Sprache 是不是entscheidbar”</h4>
+
+<p>证是entscheidbar 就靠智商了，证不是entscheidbar 全靠套路。套路很简单，把上面的一个不entscheidbar 的语言套进去，让xxx-Sprache 去entscheiden 一个由为不entsccheidbar 语言构成的图灵机伪装成的一个wort。一顿抽象废话操作，到最后绕出来就成了。</p>
+
+<h5 id="问题一">问题一</h5>
+
+<p>Zeige: $L= \{(u,v)\}|w\in L(T_u) \Leftrightarrow w^R\in L(T_v)\}$ nicht entscheidbar.</p>
+
+<p><strong>思路</strong>: 这种定义看着都烦，啥都别管，这语言不是说能分辨$w\in L(T_U)$ 吗。这就够了，直接把Haltproblem 的图灵机的Instance 藏进去。</p>
+
+<ol>
+<li><p>设$L$ 是entscheidbar，那就存在一个图灵机 $M_L$ 可以akzeptiert $L$.</p></li>
+
+<li><p>把$M_L$ 拿来entscheiden Haltproblem.</p>
+
+<ol>
+<li>给一个Haltproblem 的Instance $\langle w,v\rangle$</li>
+<li>把这个instance 伪装一下做成一个$M_{WV}$:
+
+<ol>
+<li>$M_{WV}$ 给啥input 都不管，直接模拟$\langle w,v\rangle$ 时的Haltproblem</li>
+<li>$M_{WV}$ akzeptiert 这个input，当里面的Haltproblem 停机了</li>
+<li>$L(M_{WV}) = \Sigma^*$ 当$M_{WV}$ 停机，反之则 $L(M_{WV}) = \emptyset$</li>
+</ol></li>
+<li>设计一个啥input 都akzeptiert 的 TM $M_*$</li>
+<li>那么这里$(\langle M_{WV}\rangle,\langle M_*\rangle)\in L \Leftrightarrow\langle w,v\rangle\in H$</li>
+</ol></li>
+
+<li><p>$M_L$ 来simulate Haltproblem, 一直haltproblem 是不entscheidbar 的，所以不存在这样一个图灵机$M_L$.</p></li>
+</ol>
+
+<h5 id="问题二">问题二</h5>
+
+<p>这里是关于 Postschen Korrespondenzproblem (PKP)，其中的Instance 为$I \subset \Sigma^* \times \Sigma^*$。 $\mathbb{G}$ 是所有kontextfreien Grammatiken 的集合。
+$$
+L = \{\langle G\rangle|G\in \mathbb{G}, \exists w\in L(G): w = w^R\}
+$$
+证 $L$ 不是entscheidbar.</p>
+
+<p><strong>思路</strong>：$w=w^R$ 的模式，套PKP。</p>
+
+<p>设 $I=\{(x_1,y_1),(x_2,y_2)&hellip;\}$ 是一个PKP instance。我们建立一个Grammatik $G$ 有
+$$
+R=\{S\rightarrow x_i S y_i^R | x_i\sqcup y_i^R| i=1,2,&hellip;\}
+$$</p>
+
+<p>这个就很直接了。设$L$ 是entscheidbar ，那么有$M_L$ entscheidet $L$. 那么我们建立一个$M_G$，可以entscheidet PKP。。。。各种各种。。哦了</p>
+
+            </div>
+        </article>
+
+        <hr />
+
+        <div class="post-info">
+  				<p>
+  					<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag meta-icon"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7" y2="7"></line></svg><span class="tag"><a href="https://yzheng.me/tags/tgi">TGI</a></span>
+  				</p>
+  			</div>
+
+        
+    </main>
+
+            </div>
+
+            
+                <footer class="footer">
+    <div class="footer__inner">
+        <div class="footer__content">
+            <span>&copy; 2020</span>
+        </div>
+    </div>
+    <div class="footer__inner">
+        <div class="footer__content">
+
+        </div>
+    </div>
+    <div class="footer__inner">
+        <div class="footer__content">
+            <span>It's nice to learn more.</a></span>
+        </div>
+    </div>
+</footer>
+
+<script type="text/javascript" async
+
+src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-MML-AM_CHTML">	
+
+</script>	
+
+<script type="text/x-mathjax-config">	
+    MathJax.Hub.Config({	
+        tex2jax: {	
+          inlineMath: [['$','$'], ['\\(','\\)']],	
+          displayMath: [['$$','$$'], ['\[','\]']],	
+          processEscapes: true,	
+          processEnvironments: true,	
+          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre','code'],	
+          TeX: { equationNumbers: { autoNumber: "AMS" },	
+               extensions: ["AMSmath.js", "AMSsymbols.js"] }	
+        }	
+      });	
+      </script>
+
+            
+        </div>
+
+        
+
+
+
+
+<script type="text/javascript" src="/bundle.min.4c3fb12a087ceed4a52cb5d57068a9795c7069617a01ca70f788052ad66e1791779e6c72686e1dc0ca13dc03b0203204b6566bb0dd1ee80de2b7ff4d8fe53db2.js" integrity="sha512-TD&#43;xKgh87tSlLLXVcGipeVxwaWF6Acpw94gFKtZuF5F3nmxyaG4dwMoT3AOwIDIEtlZrsN0e6A3it/9Nj&#43;U9sg=="></script>
+
+
+
+    </body>
+</html>

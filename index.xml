@@ -6,10 +6,43 @@
     <description>Recent content on Yange Zheng</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 25 May 2020 15:59:05 +0200</lastBuildDate>
+    <lastBuildDate>Fri, 19 Jun 2020 19:07:55 +0200</lastBuildDate>
     
 	<atom:link href="https://yzheng.me/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Entscheidbarkeit</title>
+      <link>https://yzheng.me/blogs/entscheidbarkeit/</link>
+      <pubDate>Fri, 19 Jun 2020 19:07:55 +0200</pubDate>
+      
+      <guid>https://yzheng.me/blogs/entscheidbarkeit/</guid>
+      <description>图灵机 一个deterministische Turing-Maschine ((D)TM) besteht aus:
+ $Q$, einer endlicher Zustandsmenge
+ $\Sigma$, einem endlichen Eingabealphabet,
+ $\sqcup$, einem Blanksymbol mit $\sqcup \notin\Sigma$
+ $\Gamma$, einem endlichen Bandalphabet mit $\Sigma\cup\{\sqcup\}\subseteq\Gamma$
+ $s\in Q$, einem Startzustand
+ $\delta: Q \times \Gamma \rightarrow Q \times \Gamma \times \{L,R,N\}$, einer Übergangsfunktion
+ $F \subseteq Q$, einer Menge von Endzuständen.(Die Menge der Endzustände kann auch entfallen)
+  Entscheidbarkeit  一个图灵机 akzeptiert 一个 Eingabe $w \in \Sigma^*$, 当TM $M$ 读取$w$ 后停在一个 $z \in F$ 的位置。</description>
+    </item>
+    
+    <item>
+      <title>Polynomial-time Reduction</title>
+      <link>https://yzheng.me/blogs/polynomial-timereduction/</link>
+      <pubDate>Fri, 19 Jun 2020 13:45:23 +0200</pubDate>
+      
+      <guid>https://yzheng.me/blogs/polynomial-timereduction/</guid>
+      <description>给出一个问题，问这个问题是不是$NP-vollständig$ 的？
+证明思路 1. 证这个问题是属于$NP$ 的：  eine potentielle Lösung der BBB-Problem können wir in einem polynomialen Algorithm prüfen.
+ Das BBB liegt in $NP$.
+  2. 建立一个Reduktion: Ruduktion von AAA auf BBB-Problem:  Gegeben sei eine AAA-Instanz, wir konstruieren eine BBB-Instanz
+ Die Reduktion ist polynomiell
+ sodass die beiden Instanzen lösbarkeitsäquivalent sind.
+  3. 证明 AAA $\Rightarrow$ BBB 给出一个AAA 的正确答案，那么正确答案被Reduktion 后也就是一个BBB 的正确答案
+4. 证明 BBB $\Rightarrow$ AAA 如上</description>
+    </item>
     
     <item>
       <title>Pseudopolynomiale Algorithmen</title>
