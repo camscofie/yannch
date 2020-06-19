@@ -3,12 +3,22 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://yzheng.me/blogs/sat-cooklevin-theorem/</loc>
-    <lastmod>2020-05-22T02:08:20+02:00</lastmod>
+    <loc>https://yzheng.me/blogs/</loc>
+    <lastmod>2020-05-25T15:59:05+02:00</lastmod>
   </url>
   
   <url>
-    <loc>https://yzheng.me/blogs/</loc>
+    <loc>https://yzheng.me/blogs/pseudopolynomialealgorithmen/</loc>
+    <lastmod>2020-05-25T15:59:05+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://yzheng.me/</loc>
+    <lastmod>2020-05-25T15:59:05+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://yzheng.me/blogs/sat-cooklevin-theorem/</loc>
     <lastmod>2020-05-22T02:08:20+02:00</lastmod>
   </url>
   
@@ -19,11 +29,6 @@
   
   <url>
     <loc>https://yzheng.me/tags/tgi/</loc>
-    <lastmod>2020-05-22T02:08:20+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://yzheng.me/</loc>
     <lastmod>2020-05-22T02:08:20+02:00</lastmod>
   </url>
   
@@ -138,7 +143,7 @@
   </url>
   
   <url>
-    <loc>https://yzheng.me/blogs/komplexit%C3%A4tstheorie/</loc>
+    <loc>https://yzheng.me/blogs/komplexita%CC%88tstheorie/</loc>
     <lastmod>2019-08-11T22:41:21+02:00</lastmod>
   </url>
   

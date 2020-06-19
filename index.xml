@@ -6,10 +6,23 @@
     <description>Recent content on Yange Zheng</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 22 May 2020 02:08:20 +0200</lastBuildDate>
+    <lastBuildDate>Mon, 25 May 2020 15:59:05 +0200</lastBuildDate>
     
 	<atom:link href="https://yzheng.me/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Pseudopolynomiale Algorithmen</title>
+      <link>https://yzheng.me/blogs/pseudopolynomialealgorithmen/</link>
+      <pubDate>Mon, 25 May 2020 15:59:05 +0200</pubDate>
+      
+      <guid>https://yzheng.me/blogs/pseudopolynomialealgorithmen/</guid>
+      <description>Definiton In der Komplexitätstheorie wird ein Algorithmus pseudopolynomiell genannt, wenn seine Laufzeit ein Polynom im numerischen Wert der Eingabe ist.
+解释 一个Algo 时间复杂度，一般是指给一个input，然后运算时间是这个input 的几倍/平方或者怎么怎么样。
+然而这种说法是不严谨的，准确的形容一个algo的时间复杂度，应该是以input 的length 为单位来说明与runtime 的关系的。想一想，比较两个数，$5$ 是不是等于 $8$，计算机并不会去比较这两个数是不是相等，而是会去比较这两个数的二进制的每个bit 是不是相等。
+Pseudopolynomiale Algorithmus Algo: 给出一个数 $n$, 请找随便这个数的两个因数，这眨眼一看时间复杂度好像是$O(n)$，因为从$2$开始遍历被$n$ 除就好。实际上这个algo 的时间复杂度并不是polynomial 的。
+这个algo 的runtime 先看成是 $O(n)$。数$n$ 被计算机表示所需长度是 $O(\log n)$ bits. 用$x$ 来表示所需的bits 的位数即: $x = \log n \Rightarrow n = 2^x$。那我们algo 的runtime 也就上升到了$O(2^n)$，显而易见是一个exponential 已经不是polynomial 了，所以该algo 是一个Pseudopolynomiale Algorithmus!</description>
+    </item>
     
     <item>
       <title>(SAT) Boolean satisfiability problem - Cook Levin theorem</title>
@@ -207,10 +220,10 @@ Theorie Definition  Für einen Eigenwert $\lambda$ von $\Phi$ und $j\in \Bbb{N}_
     
     <item>
       <title>Komplexitätstheorie</title>
-      <link>https://yzheng.me/blogs/komplexit%C3%A4tstheorie/</link>
+      <link>https://yzheng.me/blogs/komplexita%CC%88tstheorie/</link>
       <pubDate>Sun, 11 Aug 2019 22:41:21 +0200</pubDate>
       
-      <guid>https://yzheng.me/blogs/komplexit%C3%A4tstheorie/</guid>
+      <guid>https://yzheng.me/blogs/komplexita%CC%88tstheorie/</guid>
       <description>Deﬁnition: Problem Ein Problem Π ist gegeben durch: + eine allgemeine Beschreibung aller vorkommenden Parameter + eine genaue Beschreibung der Eigenschaften, die die Lösung haben soll Ein Problembeispiel /(Instanz) von Π erhalten wir, indem wir die Parameter von Π festlegen.
 Deﬁnition: Kodierungsschema  Ein Kodierungsschema s ordnet jedem Problembeispiel eines Problems eine Zeichenkette oder Kodierung über einem Alphabet Σ zu. Die Inputlänge eines Problembeispiels ist die Anzahl des Symbole seiner Kodierung.</description>
     </item>

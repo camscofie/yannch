@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="author"
+    content="Yange Zheng ">
+<meta name="description"
+    content="Definiton In der Komplexitätstheorie wird ein Algorithmus pseudopolynomiell genannt, wenn seine Laufzeit ein Polynom im numerischen Wert der Eingabe ist.
+解释 一个Algo 时间复杂度，一般是指给一个input，然后运算时间是这个input 的几倍/平方或者怎么怎么样。
+然而这种说法是不严谨的，准确的形容一个algo的时间复杂度，应该是以input 的length 为单位来说明与runtime 的关系的。想一想，比较两个数，$5$ 是不是等于 $8$，计算机并不会去比较这两个数是不是相等，而是会去比较这两个数的二进制的每个bit 是不是相等。
+Pseudopolynomiale Algorithmus Algo: 给出一个数 $n$, 请找随便这个数的两个因数，这眨眼一看时间复杂度好像是$O(n)$，因为从$2$开始遍历被$n$ 除就好。实际上这个algo 的时间复杂度并不是polynomial 的。
+这个algo 的runtime 先看成是 $O(n)$。数$n$ 被计算机表示所需长度是 $O(\log n)$ bits. 用$x$ 来表示所需的bits 的位数即: $x = \log n \Rightarrow n = 2^x$。那我们algo 的runtime 也就上升到了$O(2^n)$，显而易见是一个exponential 已经不是polynomial 了，所以该algo 是一个Pseudopolynomiale Algorithmus!" />
+<meta name="keywords" content="" />
+<meta name="robots" content="noodp" />
+<link rel="canonical" href="https://yzheng.me/blogs/pseudopolynomialealgorithmen/" />
+
+
+<title>
+    
+    Pseudopolynomiale Algorithmen :: Yange Zheng  — Yange&#39;s personal website
+    
+</title>
+
+
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.2.1/css/flag-icon.min.css" rel="stylesheet"
+    type="text/css">
+
+
+
+<link rel="stylesheet" href="/main.min.2f0d18b84270567c723bff340b09ab08db3a7634237cd9667d052eb6b14669b8.css">
+
+
+
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#252627">
+<link rel="shortcut icon" href="/favicon.ico">
+<meta name="theme-color" content="#252627"><meta itemprop="name" content="Pseudopolynomiale Algorithmen">
+<meta itemprop="description" content="Definiton In der Komplexitätstheorie wird ein Algorithmus pseudopolynomiell genannt, wenn seine Laufzeit ein Polynom im numerischen Wert der Eingabe ist.
+解释 一个Algo 时间复杂度，一般是指给一个input，然后运算时间是这个input 的几倍/平方或者怎么怎么样。
+然而这种说法是不严谨的，准确的形容一个algo的时间复杂度，应该是以input 的length 为单位来说明与runtime 的关系的。想一想，比较两个数，$5$ 是不是等于 $8$，计算机并不会去比较这两个数是不是相等，而是会去比较这两个数的二进制的每个bit 是不是相等。
+Pseudopolynomiale Algorithmus Algo: 给出一个数 $n$, 请找随便这个数的两个因数，这眨眼一看时间复杂度好像是$O(n)$，因为从$2$开始遍历被$n$ 除就好。实际上这个algo 的时间复杂度并不是polynomial 的。
+这个algo 的runtime 先看成是 $O(n)$。数$n$ 被计算机表示所需长度是 $O(\log n)$ bits. 用$x$ 来表示所需的bits 的位数即: $x = \log n \Rightarrow n = 2^x$。那我们algo 的runtime 也就上升到了$O(2^n)$，显而易见是一个exponential 已经不是polynomial 了，所以该algo 是一个Pseudopolynomiale Algorithmus!">
+
+
+<meta itemprop="datePublished" content="2020-05-25T15:59:05&#43;02:00" />
+<meta itemprop="dateModified" content="2020-05-25T15:59:05&#43;02:00" />
+<meta itemprop="wordCount" content="65">
+
+
+
+<meta itemprop="keywords" content="" />
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://yzheng.me"/>
+
+<meta name="twitter:title" content="Pseudopolynomiale Algorithmen"/>
+<meta name="twitter:description" content="Definiton In der Komplexitätstheorie wird ein Algorithmus pseudopolynomiell genannt, wenn seine Laufzeit ein Polynom im numerischen Wert der Eingabe ist.
+解释 一个Algo 时间复杂度，一般是指给一个input，然后运算时间是这个input 的几倍/平方或者怎么怎么样。
+然而这种说法是不严谨的，准确的形容一个algo的时间复杂度，应该是以input 的length 为单位来说明与runtime 的关系的。想一想，比较两个数，$5$ 是不是等于 $8$，计算机并不会去比较这两个数是不是相等，而是会去比较这两个数的二进制的每个bit 是不是相等。
+Pseudopolynomiale Algorithmus Algo: 给出一个数 $n$, 请找随便这个数的两个因数，这眨眼一看时间复杂度好像是$O(n)$，因为从$2$开始遍历被$n$ 除就好。实际上这个algo 的时间复杂度并不是polynomial 的。
+这个algo 的runtime 先看成是 $O(n)$。数$n$ 被计算机表示所需长度是 $O(\log n)$ bits. 用$x$ 来表示所需的bits 的位数即: $x = \log n \Rightarrow n = 2^x$。那我们algo 的runtime 也就上升到了$O(2^n)$，显而易见是一个exponential 已经不是polynomial 了，所以该algo 是一个Pseudopolynomiale Algorithmus!"/>
+
+
+
+
+<meta property="article:published_time" content="2020-05-25 15:59:05 &#43;0200 CEST" />
+
+
+
+
+
+
+
+    </head>
+
+    <body class="">
+        <div class="container">
+            <header class="header">
+    <span class="header__inner">
+        <a href="/" style="text-decoration: none;">
+    <div class="logo">
+        
+            <span class="logo__mark">></span>
+            <span class="logo__text">cd /home</span>
+            <span class="logo__cursor" style=""></span>
+        
+    </div>
+</a>
+
+
+        <span class="header__right">
+            
+                <nav class="menu">
+    <ul class="menu__inner"><li><a href="https://yzheng.me/blogs">Blog</a></li><li><a href="https://yzheng.me/dejavu">Déjà vu</a></li><li><a href="https://yzheng.me/projects">Project</a></li><li><a href="https://yzheng.me/about">About</a></li>
+    </ul>
+</nav>
+
+                <span class="menu-trigger">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+                    </svg>
+                </span>
+            
+
+            <span class="theme-toggle unselectable"><svg class="theme-toggler" width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M22 41C32.4934 41 41 32.4934 41 22C41 11.5066 32.4934 3 22
+  3C11.5066 3 3 11.5066 3 22C3 32.4934 11.5066 41 22 41ZM7 22C7
+  13.7157 13.7157 7 22 7V37C13.7157 37 7 30.2843 7 22Z"/>
+</svg>
+</span>
+        </span>
+    </span>
+</header>
+
+
+            <div class="content">
+                
+    <main class="post">
+
+        <div class="post-info">
+            
+            </p>
+        </div>
+
+        <article>
+            <h2 class="post-title"><a href="https://yzheng.me/blogs/pseudopolynomialealgorithmen/">Pseudopolynomiale Algorithmen</a></h2>
+
+            
+
+            <div class="post-content">
+                
+
+<h2 id="definiton">Definiton</h2>
+
+<p>In der Komplexitätstheorie wird ein Algorithmus pseudopolynomiell genannt, wenn seine Laufzeit ein Polynom im numerischen Wert der Eingabe ist.</p>
+
+<h3 id="解释">解释</h3>
+
+<p>一个Algo 时间复杂度，一般是指给一个input，然后运算时间是这个input 的几倍/平方或者怎么怎么样。</p>
+
+<p>然而这种说法是不严谨的，准确的形容一个algo的时间复杂度，应该是以input 的length 为单位来说明与runtime 的关系的。想一想，比较两个数，$5$ 是不是等于 $8$，计算机并不会去比较这两个数是不是相等，而是会去比较这两个数的二进制的每个bit 是不是相等。</p>
+
+<h4 id="pseudopolynomiale-algorithmus">Pseudopolynomiale Algorithmus</h4>
+
+<p>Algo: 给出一个数 $n$, 请找随便这个数的两个因数，这眨眼一看时间复杂度好像是$O(n)$，因为从$2$开始遍历被$n$ 除就好。实际上这个algo 的时间复杂度并不是polynomial 的。</p>
+
+<p>这个algo 的runtime 先看成是 $O(n)$。数$n$ 被计算机表示所需长度是 $O(\log n)$ bits. 用$x$ 来表示所需的bits 的位数即: $x = \log n \Rightarrow n = 2^x$。那我们algo 的runtime 也就上升到了$O(2^n)$，显而易见是一个exponential 已经不是polynomial 了，所以该algo 是一个Pseudopolynomiale Algorithmus!</p>
+
+            </div>
+        </article>
+
+        <hr />
+
+        <div class="post-info">
+  			</div>
+
+        
+    </main>
+
+            </div>
+
+            
+                <footer class="footer">
+    <div class="footer__inner">
+        <div class="footer__content">
+            <span>&copy; 2020</span>
+        </div>
+    </div>
+    <div class="footer__inner">
+        <div class="footer__content">
+
+        </div>
+    </div>
+    <div class="footer__inner">
+        <div class="footer__content">
+            <span>It's nice to learn more.</a></span>
+        </div>
+    </div>
+</footer>
+
+<script type="text/javascript" async
+
+src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-MML-AM_CHTML">	
+
+</script>	
+
+<script type="text/x-mathjax-config">	
+    MathJax.Hub.Config({	
+        tex2jax: {	
+          inlineMath: [['$','$'], ['\\(','\\)']],	
+          displayMath: [['$$','$$'], ['\[','\]']],	
+          processEscapes: true,	
+          processEnvironments: true,	
+          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre','code'],	
+          TeX: { equationNumbers: { autoNumber: "AMS" },	
+               extensions: ["AMSmath.js", "AMSsymbols.js"] }	
+        }	
+      });	
+      </script>
+
+            
+        </div>
+
+        
+
+
+
+
+<script type="text/javascript" src="/bundle.min.4c3fb12a087ceed4a52cb5d57068a9795c7069617a01ca70f788052ad66e1791779e6c72686e1dc0ca13dc03b0203204b6566bb0dd1ee80de2b7ff4d8fe53db2.js" integrity="sha512-TD&#43;xKgh87tSlLLXVcGipeVxwaWF6Acpw94gFKtZuF5F3nmxyaG4dwMoT3AOwIDIEtlZrsN0e6A3it/9Nj&#43;U9sg=="></script>
+
+
+
+    </body>
+</html>
