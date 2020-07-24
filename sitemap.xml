@@ -3,8 +3,28 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://yzheng.me/blogs/bwl_rechnungswesen/</loc>
+    <lastmod>2020-07-23T16:22:29+02:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://yzheng.me/blogs/</loc>
-    <lastmod>2020-06-19T19:07:55+02:00</lastmod>
+    <lastmod>2020-07-23T16:22:29+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://yzheng.me/tags/bwl/</loc>
+    <lastmod>2020-07-23T16:22:29+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://yzheng.me/tags/</loc>
+    <lastmod>2020-07-23T16:22:29+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://yzheng.me/</loc>
+    <lastmod>2020-07-23T16:22:29+02:00</lastmod>
   </url>
   
   <url>
@@ -13,17 +33,7 @@
   </url>
   
   <url>
-    <loc>https://yzheng.me/tags/</loc>
-    <lastmod>2020-06-19T19:07:55+02:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://yzheng.me/tags/tgi/</loc>
-    <lastmod>2020-06-19T19:07:55+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://yzheng.me/</loc>
     <lastmod>2020-06-19T19:07:55+02:00</lastmod>
   </url>
   
@@ -54,11 +64,6 @@
   
   <url>
     <loc>https://yzheng.me/blogs/bwl_pm-produktionswirtschaft/</loc>
-    <lastmod>2019-12-01T02:46:36+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://yzheng.me/tags/bwl/</loc>
     <lastmod>2019-12-01T02:46:36+01:00</lastmod>
   </url>
   

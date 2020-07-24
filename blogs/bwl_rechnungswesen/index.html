@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="author"
+    content="Yange Zheng ">
+<meta name="description"
+    content="这门课的目标：
+nach Deutschland gültigen Rechnungslegungsstandards IFRS 和HGB 里实现BWL-FR 里介绍的Principal 和 Mehthods.
+1. Einführung in Rechnungslegungstandards Reinvermögen zum Zeitpunkt $t_0 :=R_{t_0} =$ Wert der Vermögensgegenstände zum Zeitpunkt $t_0 -$ Wert der Schulden zum Zeitpunkt $t_0$
+Erfolg der Periode $i := R_{t_i} - R_{t_{i-1}}$
+Gewinn des Rechnungswesens $=$ Erträge $-$ Aufwendungen
+Aufbau des IFRS Rechnungslegungssystem:
+Realisationsprinzip: 什么时候才实现了Umsätze(Erträge)？ -&amp;gt; 当交易所绑定的风险从A方转移到B方，例：完成了送货。
+Matching Prinziple: 什么时候把交易产生的Aufwendung 记上账？ -&amp;gt; 和Gewinnberechnung 同时记。
+2. Bewertung von Vermögensgegenständen Fair Value 公允价值: 黑话就是市价，如果确定市价？ -&amp;gt;" />
+<meta name="keywords" content="" />
+<meta name="robots" content="noodp" />
+<link rel="canonical" href="https://yzheng.me/blogs/bwl_rechnungswesen/" />
+
+
+<title>
+    
+    Betriebswirtschaftslehre - Rechnungswesen :: Yange Zheng  — Yange&#39;s personal website
+    
+</title>
+
+
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.2.1/css/flag-icon.min.css" rel="stylesheet"
+    type="text/css">
+
+
+
+<link rel="stylesheet" href="/main.min.2f0d18b84270567c723bff340b09ab08db3a7634237cd9667d052eb6b14669b8.css">
+
+
+
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#252627">
+<link rel="shortcut icon" href="/favicon.ico">
+<meta name="theme-color" content="#252627"><meta itemprop="name" content="Betriebswirtschaftslehre - Rechnungswesen">
+<meta itemprop="description" content="这门课的目标：
+nach Deutschland gültigen Rechnungslegungsstandards IFRS 和HGB 里实现BWL-FR 里介绍的Principal 和 Mehthods.
+1. Einführung in Rechnungslegungstandards Reinvermögen zum Zeitpunkt $t_0 :=R_{t_0} =$ Wert der Vermögensgegenstände zum Zeitpunkt $t_0 -$ Wert der Schulden zum Zeitpunkt $t_0$
+Erfolg der Periode $i := R_{t_i} - R_{t_{i-1}}$
+Gewinn des Rechnungswesens $=$ Erträge $-$ Aufwendungen
+Aufbau des IFRS Rechnungslegungssystem:
+Realisationsprinzip: 什么时候才实现了Umsätze(Erträge)？ -&gt; 当交易所绑定的风险从A方转移到B方，例：完成了送货。
+Matching Prinziple: 什么时候把交易产生的Aufwendung 记上账？ -&gt; 和Gewinnberechnung 同时记。
+2. Bewertung von Vermögensgegenständen Fair Value 公允价值: 黑话就是市价，如果确定市价？ -&gt;">
+
+
+<meta itemprop="datePublished" content="2020-07-23T16:22:29&#43;02:00" />
+<meta itemprop="dateModified" content="2020-07-23T16:22:29&#43;02:00" />
+<meta itemprop="wordCount" content="466">
+
+
+
+<meta itemprop="keywords" content="BWL," />
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://yzheng.me"/>
+
+<meta name="twitter:title" content="Betriebswirtschaftslehre - Rechnungswesen"/>
+<meta name="twitter:description" content="这门课的目标：
+nach Deutschland gültigen Rechnungslegungsstandards IFRS 和HGB 里实现BWL-FR 里介绍的Principal 和 Mehthods.
+1. Einführung in Rechnungslegungstandards Reinvermögen zum Zeitpunkt $t_0 :=R_{t_0} =$ Wert der Vermögensgegenstände zum Zeitpunkt $t_0 -$ Wert der Schulden zum Zeitpunkt $t_0$
+Erfolg der Periode $i := R_{t_i} - R_{t_{i-1}}$
+Gewinn des Rechnungswesens $=$ Erträge $-$ Aufwendungen
+Aufbau des IFRS Rechnungslegungssystem:
+Realisationsprinzip: 什么时候才实现了Umsätze(Erträge)？ -&gt; 当交易所绑定的风险从A方转移到B方，例：完成了送货。
+Matching Prinziple: 什么时候把交易产生的Aufwendung 记上账？ -&gt; 和Gewinnberechnung 同时记。
+2. Bewertung von Vermögensgegenständen Fair Value 公允价值: 黑话就是市价，如果确定市价？ -&gt;"/>
+
+
+
+
+<meta property="article:published_time" content="2020-07-23 16:22:29 &#43;0200 CEST" />
+
+
+
+
+
+
+
+    </head>
+
+    <body class="">
+        <div class="container">
+            <header class="header">
+    <span class="header__inner">
+        <a href="/" style="text-decoration: none;">
+    <div class="logo">
+        
+            <span class="logo__mark">></span>
+            <span class="logo__text">cd /home</span>
+            <span class="logo__cursor" style=""></span>
+        
+    </div>
+</a>
+
+
+        <span class="header__right">
+            
+                <nav class="menu">
+    <ul class="menu__inner"><li><a href="https://yzheng.me/blogs">Blog</a></li><li><a href="https://yzheng.me/dejavu">Déjà vu</a></li><li><a href="https://yzheng.me/projects">Project</a></li><li><a href="https://yzheng.me/about">About</a></li>
+    </ul>
+</nav>
+
+                <span class="menu-trigger">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+                    </svg>
+                </span>
+            
+
+            <span class="theme-toggle unselectable"><svg class="theme-toggler" width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M22 41C32.4934 41 41 32.4934 41 22C41 11.5066 32.4934 3 22
+  3C11.5066 3 3 11.5066 3 22C3 32.4934 11.5066 41 22 41ZM7 22C7
+  13.7157 13.7157 7 22 7V37C13.7157 37 7 30.2843 7 22Z"/>
+</svg>
+</span>
+        </span>
+    </span>
+</header>
+
+
+            <div class="content">
+                
+    <main class="post">
+
+        <div class="post-info">
+            
+            </p>
+        </div>
+
+        <article>
+            <h2 class="post-title"><a href="https://yzheng.me/blogs/bwl_rechnungswesen/">Betriebswirtschaftslehre - Rechnungswesen</a></h2>
+
+            
+
+            <div class="post-content">
+                
+
+<p>这门课的目标：</p>
+
+<p>nach Deutschland gültigen Rechnungslegungsstandards IFRS 和HGB 里实现BWL-FR 里介绍的Principal 和 Mehthods.</p>
+
+<hr />
+
+<h2 id="1-einführung-in-rechnungslegungstandards">1. Einführung in Rechnungslegungstandards</h2>
+
+<p><strong>Reinvermögen</strong> zum Zeitpunkt $t_0 :=R_{t_0} =$ Wert der Vermögensgegenstände zum Zeitpunkt $t_0 -$ Wert der Schulden zum Zeitpunkt $t_0$</p>
+
+<p><strong>Erfolg</strong> der Periode $i := R_{t_i} - R_{t_{i-1}}$</p>
+
+<p><strong>Gewinn</strong> des Rechnungswesens $=$ Erträge $-$ Aufwendungen</p>
+
+<p>Aufbau des IFRS Rechnungslegungssystem:</p>
+
+<p><img src="/postImage/Rechnungswesen/IFRS.png" alt="IFRS Rechnungslegungssystem" width="500" class="center" /></p>
+
+<p><strong>Realisationsprinzip</strong>: 什么时候才实现了Umsätze(Erträge)？ -&gt; 当交易所绑定的风险从A方转移到B方，例：完成了送货。</p>
+
+<p><strong>Matching Prinziple</strong>: 什么时候把交易产生的Aufwendung 记上账？ -&gt; 和Gewinnberechnung 同时记。</p>
+
+<hr />
+
+<h2 id="2-bewertung-von-vermögensgegenständen">2. Bewertung von Vermögensgegenständen</h2>
+
+<p><strong>Fair Value 公允价值</strong>: 黑话就是市价，如果确定市价？ -&gt;</p>
+
+<ol>
+<li>如果有的话，参照和本交易相同的Transaktion 的Marktpreis - mark-to-market。例：一栋楼的另一套房的交易金额。</li>
+<li>不行的话，参照和本交易大致相同且可比较的Transation，如两年钱的历史交易金额。</li>
+<li>Parameter orientierend。</li>
+</ol>
+
+<p><strong>Impairment Test 减值测试</strong>
+当市场存在该资产存在Wertminderungen 时，就是做减值测试的时候了。减值测试做出后的两个结果分别是：</p>
+
+<ol>
+<li><strong>erzielbare Betrag (recoverable amount 可回收金额)</strong>： 使用改资产能带来的收益</li>
+<li><strong>Buchwert (carrying amount)</strong>：直接出售该资产能带来的收益。</li>
+</ol>
+
+<p><strong>Goodwill 商誉</strong>： 商誉是收购一个公司会凭空产生的价值，换而言之就是信仰。例：一个公司把里面的门和电脑拆了能卖50块钱，那如果想收购这家公司就肯定不止花50元了，不然为啥不拆了卖？如果公司拆了卖值50元，那收购花了80 元，这其中多出了30元就为信仰充值了，所谓商誉+30。反过来就是Badwill</p>
+
+<p>做完减值测试后，减值先虚后实，先从goodwill 开始减值。</p>
+
+<p><img src="/postImage/Rechnungswesen/ImpairmentTest.png" alt="Impairment Test" width="500" class="center" /></p>
+
+<h4 id="langfristige-fertigungsaufträge-长期建造合同">Langfristige Fertigungsaufträge 长期建造合同</h4>
+
+<p>当建造合同需要多年才能实现，那该如何才能记账？ -&gt;</p>
+
+<ol>
+<li><strong>percentage of completion- Method</strong>: Periodengewinnanteil = Leistungsfortschritt der Periode x erwarteter Auftragsgewinn:= 已知整个Projekt 的Gesamtertrag 和每个Periode 的Aufwand， 那么每个Periode Erlös 就是 Gesamtertrag/总Aufwand x 当前aufwand 占总aufwand 的比重。</li>
+<li><strong>modifizierten completed contract-Methode</strong> 在项目结束前，每个Periode 的Erlös 最高只能是Aufwand 的高度。</li>
+</ol>
+
+<hr />
+
+<h2 id="3-jahresabschluss-财务表表">3. Jahresabschluss 财务表表</h2>
+
+<h4 id="lagebericht">Lagebericht</h4>
+
+<p>根据 HGB, Lagebericht 有以下的报表组成：</p>
+
+<ul>
+<li>Wirtschaftsbericht 经济报表</li>
+<li>Risiko- und Prognosebericht 风险和预测报表</li>
+<li>Nachtragsbericht 补充报表</li>
+<li>Bericht über die Finanzrisiken</li>
+<li>Forschungs- und Entwicklungsbericht</li>
+<li>Zweigniederlassungsberecht 分公司报表</li>
+<li>Vergütungsbericht 保持报表</li>
+<li>Bericht über die Übernahmesituation 收购情况报表</li>
+<li>Bericht über das interne Kontroll- und Risikomanagement</li>
+</ul>
+
+<p>Komponenten des Eigenkapitals:
+<img src="/postImage/Rechnungswesen/EK.png" alt="EK" width="500" class="center" /></p>
+
+<p>资本增加：</p>
+
+<p>例：curraxit 公司发行 100股股票，每股市值12元，而股票面值Nennwert(par value) 1元。那么股票一经发行 curraxit 就收的流动资金(Liquide Mittel) 1200元，其中已Gezeichnetes Kapital(发行股本) +100元，Kapitalrücklage(资本储备)+1100元。</p>
+
+<hr />
+
+<h2 id="4-jahresabschlussanalyse-liquidität-偿付能力">4. Jahresabschlussanalyse: Liquidität (偿付能力)</h2>
+
+<h4 id="working-capital-requirement-运营资本需求">Working Capital Requirement 运营资本需求</h4>
+
+<p><strong>WCR</strong> $=$ <strong>Oprative Vermögenswerte</strong> $-$ <strong>Operative Verbindlichkeiten</strong></p>
+
+<p><strong>Operative Vermögenswerte</strong> 运营资本 = Forderungen aus Lieferungen und Leistungen + Vorräte + gezahlte Anzahlung + Aktive Rechnungsabgrenzungsposten</p>
+
+<p><strong>Operative Verbindlichkeiten</strong> 运营债务 = Verbindlichkeiten aus Lieferungen und Leistungen + Sonstige Verbindlichkeiten für das operative Geschäft + erhaltene Anzahlung + Passive Rechnungsabgrenzungsposten</p>
+
+<p><strong>Investiertes Kapital</strong> （投入资本）(Aktiva) = Zahlungsmittel + WCR + langfristige Vermögensgegenstände (+ ggf. nicht operative kurzfristige Vermögensgegenstände)</p>
+
+<p><strong>Capital Employed(eingesetztes Kapital)</strong> （运用资本） (Passiva) = kurzfristige nicht operative Schulden + langfristige Schulden + Eigenkapital</p>
+
+<h4 id="mathcing-stragie-für-das-wcr">Mathcing Stragie für das WCR</h4>
+
+<p>在Matching strategy 看来，permanente WCR （永久性运营资本）应作为长期投资来看，且应被长期资本支持。反过来 saisonale WCR（临时性运营资本）应被短期资本支持。 如果刚好这样做，叫做 Konservative Strategie，如果用更多的短期资本来支持长期WCR，就是Aggressive Strategie。</p>
+
+<p><img src="/postImage/Rechnungswesen/WCR.png" alt="WCR" width="500" class="center" /></p>
+
+<p><strong>Net long-term Financing(NLF)</strong> = long-term Financing - langfristige Vermögenswerte = langfristige Schulden + EK - langfristige Vermögenswerte</p>
+
+<p><strong>Net short-term Financing(NSF)</strong> = kurzfristige nicht operative Shulden - ZM</p>
+
+<p><strong>Luquidity Ratio</strong> = (long-term Financing - langfristige Vermögenswerte)/WCR = NLF/WCR</p>
+
+<p>总结： WCR - NLF = NSF</p>
+
+<h4 id="如何增加liquidität">如何增加Liquidität?</h4>
+
+<p>-&gt; 增加Liquidity Ratio</p>
+
+<ul>
+<li>增加long-term Financing</li>
+<li>降低langfristigen Vermögenswerte</li>
+<li>降低WCR</li>
+</ul>
+
+<p>决定WCR 的因素有:</p>
+
+<ul>
+<li>分公司的性质</li>
+<li>operative Zykus 的Effizienz</li>
+<li>Umsatz 的增长率</li>
+</ul>
+
+<h4 id="effizienz">Effizienz</h4>
+
+<p><strong>WCR-to-Sales Ratio</strong> = WCR/Umsatz</p>
+
+<p><strong>Umschlagshäufigkeit des Vorrats &ldquo;Fertige Erzeugnisse und Waren(FE)&ldquo;（库存周转率）</strong> = Abgang in der Periode/Bestand des Vorrats FE am Ende der Jahrespeiode</p>
+
+<ul>
+<li>Abgang in der Periode 以Umsatzkosten 来算</li>
+</ul>
+
+<p>Umschlagsdauer des Vorrats FE = 365Tage/Umschlagshäufigkeit des Vorrats FE</p>
+
+<p>库存周转率越高，那么给vorrats 和WCR 的投入就越低，那么Operative Effizienz 就高。</p>
+
+<p><strong>Lieferantenziel</strong> = (Verbindlichkeiten aus Lieferung und Leistungen am Ende der Jahresperiode x 365Tage)/Wareeingang</p>
+
+<p><strong>Wareneingang</strong> = Endbestand an Vorräten -  Anfangsbestand an Vorräten + Umsatzkosten - Fertigungskosten</p>
+
+<p><img src="/postImage/Rechnungswesen/cash-to-cash.png" alt="cash-to-cash" width="500" class="center" /></p>
+
+<h4 id="traditionelle-liquiditätsmaße">Traditionelle Liquiditätsmaße</h4>
+
+<ul>
+<li><strong>Net Working Capital</strong> = Umlaufvermögen - kurzfristige Schulden</li>
+<li><strong>Liquidität 1. Grades (Barliquidität)</strong> = ZM/kurzfristige Schulden</li>
+<li><strong>Liquidität 2. Grades (Liquidität auf kurze Sicht)</strong> = monetäres Umlaufvermögen/kurzfristige Schulden</li>
+<li><strong>Liquidität 3. Grades (Liquidität auf mittlere Sicht)</strong> =(monetäres Umlauf vermögen + Vorräte)/kurzfristige Schulden</li>
+</ul>
+
+<hr />
+
+<h2 id="5-jahresabschlussanalyse-rentabilität-盈利能力">5. Jahresabschlussanalyse: Rentabilität （盈利能力）</h2>
+
+            </div>
+        </article>
+
+        <hr />
+
+        <div class="post-info">
+  				<p>
+  					<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag meta-icon"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7" y2="7"></line></svg><span class="tag"><a href="https://yzheng.me/tags/bwl">BWL</a></span>
+  				</p>
+  			</div>
+
+        
+    </main>
+
+            </div>
+
+            
+                <footer class="footer">
+    <div class="footer__inner">
+        <div class="footer__content">
+            <span>&copy; 2020</span>
+        </div>
+    </div>
+    <div class="footer__inner">
+        <div class="footer__content">
+
+        </div>
+    </div>
+    <div class="footer__inner">
+        <div class="footer__content">
+            <span>It's nice to learn more.</a></span>
+        </div>
+    </div>
+</footer>
+
+<script type="text/javascript" async
+
+src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-MML-AM_CHTML">	
+
+</script>	
+
+<script type="text/x-mathjax-config">	
+    MathJax.Hub.Config({	
+        tex2jax: {	
+          inlineMath: [['$','$'], ['\\(','\\)']],	
+          displayMath: [['$$','$$'], ['\[','\]']],	
+          processEscapes: true,	
+          processEnvironments: true,	
+          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre','code'],	
+          TeX: { equationNumbers: { autoNumber: "AMS" },	
+               extensions: ["AMSmath.js", "AMSsymbols.js"] }	
+        }	
+      });	
+      </script>
+
+            
+        </div>
+
+        
+
+
+
+
+<script type="text/javascript" src="/bundle.min.4c3fb12a087ceed4a52cb5d57068a9795c7069617a01ca70f788052ad66e1791779e6c72686e1dc0ca13dc03b0203204b6566bb0dd1ee80de2b7ff4d8fe53db2.js" integrity="sha512-TD&#43;xKgh87tSlLLXVcGipeVxwaWF6Acpw94gFKtZuF5F3nmxyaG4dwMoT3AOwIDIEtlZrsN0e6A3it/9Nj&#43;U9sg=="></script>
+
+
+
+    </body>
+</html>

@@ -6,10 +6,27 @@
     <description>Recent content in BWL on Yange Zheng</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 01 Dec 2019 02:46:36 +0100</lastBuildDate>
+    <lastBuildDate>Thu, 23 Jul 2020 16:22:29 +0200</lastBuildDate>
     
 	<atom:link href="https://yzheng.me/tags/bwl/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Betriebswirtschaftslehre - Rechnungswesen</title>
+      <link>https://yzheng.me/blogs/bwl_rechnungswesen/</link>
+      <pubDate>Thu, 23 Jul 2020 16:22:29 +0200</pubDate>
+      
+      <guid>https://yzheng.me/blogs/bwl_rechnungswesen/</guid>
+      <description>这门课的目标：
+nach Deutschland gültigen Rechnungslegungsstandards IFRS 和HGB 里实现BWL-FR 里介绍的Principal 和 Mehthods.
+1. Einführung in Rechnungslegungstandards Reinvermögen zum Zeitpunkt $t_0 :=R_{t_0} =$ Wert der Vermögensgegenstände zum Zeitpunkt $t_0 -$ Wert der Schulden zum Zeitpunkt $t_0$
+Erfolg der Periode $i := R_{t_i} - R_{t_{i-1}}$
+Gewinn des Rechnungswesens $=$ Erträge $-$ Aufwendungen
+Aufbau des IFRS Rechnungslegungssystem:
+Realisationsprinzip: 什么时候才实现了Umsätze(Erträge)？ -&amp;gt; 当交易所绑定的风险从A方转移到B方，例：完成了送货。
+Matching Prinziple: 什么时候把交易产生的Aufwendung 记上账？ -&amp;gt; 和Gewinnberechnung 同时记。
+2. Bewertung von Vermögensgegenständen Fair Value 公允价值: 黑话就是市价，如果确定市价？ -&amp;gt;</description>
+    </item>
     
     <item>
       <title>Betriebswirtschaftslehre - Produktionswirtschaft</title>
