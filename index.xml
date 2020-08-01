@@ -6,10 +6,28 @@
     <description>Recent content on Yange Zheng</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 23 Jul 2020 16:22:29 +0200</lastBuildDate>
+    <lastBuildDate>Sat, 01 Aug 2020 17:10:55 +0200</lastBuildDate>
     
 	<atom:link href="https://yzheng.me/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Betriebswirtschaftslehre - Finanzwirtschaft und Rechnungswesen</title>
+      <link>https://yzheng.me/blogs/bwl_fr/</link>
+      <pubDate>Sat, 01 Aug 2020 17:10:55 +0200</pubDate>
+      
+      <guid>https://yzheng.me/blogs/bwl_fr/</guid>
+      <description>1. Einführung in die Finanzwirtschaft 2. Bewertung von Zahlungsströmen: Anleihen Einperiodige Verzinsung EW (Endwert, Future Value) $= C_0(1+r)$
+BW (Barwert, Present Value) $=\frac{C_1}{1+r}$
+$C_0$ bezeichnet die Zahlung im Zeitpunkt 0 und $r$ den Zinssatz.
+Mehrperiodige Verzinsung EW $=C_0 \times (1+r)^T$
+BW $=\frac{C_T}{(1+r)^T}$
+Unterjährige Verzinsung EJZ (Effektiver Jahreszinssatz): $EW = 1\times(1+\frac{r}{m})^m \Leftrightarrow rC_0\times(1+EJZ)^T$
+EJZ $= \frac{EW}{1} - 1$
+Ewige Rente BW $=\frac{C}{r}$
+Endliche Rente BW $=\frac{C}{r}(1-\frac{1}{(1+r)^T})$
+Ewige Rente mit konstantem Wachstum BW $=\frac{C}{r-g}$ , mit der Rate $g$</description>
+    </item>
     
     <item>
       <title>Betriebswirtschaftslehre - Rechnungswesen</title>
