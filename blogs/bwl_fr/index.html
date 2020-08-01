@@ -12,7 +12,7 @@ BW (Barwert, Present Value) $=\frac{C_1}{1&#43;r}$
 $C_0$ bezeichnet die Zahlung im Zeitpunkt 0 und $r$ den Zinssatz.
 Mehrperiodige Verzinsung EW $=C_0 \times (1&#43;r)^T$
 BW $=\frac{C_T}{(1&#43;r)^T}$
-Unterjährige Verzinsung EJZ (Effektiver Jahreszinssatz): $EW = 1\times(1&#43;\frac{r}{m})^m \Leftrightarrow rC_0\times(1&#43;EJZ)^T$
+Unterjährige Verzinsung EJZ (Effektiver Jahreszinssatz): $EW = 1\times(1&#43;\frac{r}{m})^m \Leftrightarrow C_0\times(1&#43;EJZ)^T$
 EJZ $= \frac{EW}{1} - 1$
 Ewige Rente BW $=\frac{C}{r}$
 Endliche Rente BW $=\frac{C}{r}(1-\frac{1}{(1&#43;r)^T})$
@@ -51,7 +51,7 @@ BW (Barwert, Present Value) $=\frac{C_1}{1&#43;r}$
 $C_0$ bezeichnet die Zahlung im Zeitpunkt 0 und $r$ den Zinssatz.
 Mehrperiodige Verzinsung EW $=C_0 \times (1&#43;r)^T$
 BW $=\frac{C_T}{(1&#43;r)^T}$
-Unterjährige Verzinsung EJZ (Effektiver Jahreszinssatz): $EW = 1\times(1&#43;\frac{r}{m})^m \Leftrightarrow rC_0\times(1&#43;EJZ)^T$
+Unterjährige Verzinsung EJZ (Effektiver Jahreszinssatz): $EW = 1\times(1&#43;\frac{r}{m})^m \Leftrightarrow C_0\times(1&#43;EJZ)^T$
 EJZ $= \frac{EW}{1} - 1$
 Ewige Rente BW $=\frac{C}{r}$
 Endliche Rente BW $=\frac{C}{r}(1-\frac{1}{(1&#43;r)^T})$
@@ -60,7 +60,7 @@ Ewige Rente mit konstantem Wachstum BW $=\frac{C}{r-g}$ , mit der Rate $g$">
 
 <meta itemprop="datePublished" content="2020-08-01T17:10:55&#43;02:00" />
 <meta itemprop="dateModified" content="2020-08-01T17:10:55&#43;02:00" />
-<meta itemprop="wordCount" content="144">
+<meta itemprop="wordCount" content="273">
 
 
 
@@ -74,7 +74,7 @@ BW (Barwert, Present Value) $=\frac{C_1}{1&#43;r}$
 $C_0$ bezeichnet die Zahlung im Zeitpunkt 0 und $r$ den Zinssatz.
 Mehrperiodige Verzinsung EW $=C_0 \times (1&#43;r)^T$
 BW $=\frac{C_T}{(1&#43;r)^T}$
-Unterjährige Verzinsung EJZ (Effektiver Jahreszinssatz): $EW = 1\times(1&#43;\frac{r}{m})^m \Leftrightarrow rC_0\times(1&#43;EJZ)^T$
+Unterjährige Verzinsung EJZ (Effektiver Jahreszinssatz): $EW = 1\times(1&#43;\frac{r}{m})^m \Leftrightarrow C_0\times(1&#43;EJZ)^T$
 EJZ $= \frac{EW}{1} - 1$
 Ewige Rente BW $=\frac{C}{r}$
 Endliche Rente BW $=\frac{C}{r}(1-\frac{1}{(1&#43;r)^T})$
@@ -153,6 +153,8 @@ Ewige Rente mit konstantem Wachstum BW $=\frac{C}{r-g}$ , mit der Rate $g$"/>
 
 <h2 id="1-einführung-in-die-finanzwirtschaft">1. Einführung in die Finanzwirtschaft</h2>
 
+<hr />
+
 <h2 id="2-bewertung-von-zahlungsströmen-anleihen">2. Bewertung von Zahlungsströmen: Anleihen</h2>
 
 <h4 id="einperiodige-verzinsung">Einperiodige Verzinsung</h4>
@@ -171,7 +173,7 @@ Ewige Rente mit konstantem Wachstum BW $=\frac{C}{r-g}$ , mit der Rate $g$"/>
 
 <h4 id="unterjährige-verzinsung">Unterjährige Verzinsung</h4>
 
-<p><strong>EJZ</strong> (Effektiver Jahreszinssatz): $EW = 1\times(1+\frac{r}{m})^m \Leftrightarrow rC_0\times(1+EJZ)^T$</p>
+<p><strong>EJZ</strong> (Effektiver Jahreszinssatz): $EW = 1\times(1+\frac{r}{m})^m \Leftrightarrow C_0\times(1+EJZ)^T$</p>
 
 <p><strong>EJZ</strong> $= \frac{EW}{1} - 1$</p>
 
@@ -199,21 +201,89 @@ Ewige Rente mit konstantem Wachstum BW $=\frac{C}{r-g}$ , mit der Rate $g$"/>
 
 <p>Bei Kuponbonds fallen außer der Rückzahlung des Nennwertes zwischenzeitliche Zinszhalungen(Kupons) an.</p>
 
+<hr />
+
 <h2 id="3-methoden-der-investitionsentscheidung">3. Methoden der Investitionsentscheidung</h2>
+
+<p><strong>KW</strong> (Kapitalwert) $= - Anfangsauszhalung + BW_{Zahlungen}$</p>
+
+<p><strong>KWR</strong> (Kapitalwertrate, Profitability Index) $=\frac{BW_{Zahlungen}}{Anfangsauszahlung}$</p>
+
+<h4 id="amortisationsrechnung-payback-method">Amortisationsrechnung (Payback Method)</h4>
+
+<p>Entscheidungsregel: Führe die Investitionsprojekte durch, die eine bestimmte maximale Amortisationsdauer aufweisen.</p>
+
+<h4 id="interne-zinssatzmethode">Interne Zinssatzmethode</h4>
+
+<p>Entscheidungsregel der internen Zinssatzmethode (IZSM) bei einem Investitionsprojekt: Investiere in ein Investitionsprojekt, wenn dessen interner Zinssatz größer als der geforderte Zinssatz ist.</p>
+
+<hr />
 
 <h2 id="4-aktien">4. Aktien</h2>
 
+<hr />
+
 <h2 id="5-7-portefeuilletheorie">5-7. Portefeuilletheorie</h2>
+
+<h4 id="renditen">Renditen</h4>
+
+<p><strong>Absolute Rendite</strong> = Dividende + Kursveränderung</p>
+
+<p><strong>Aktienrendite</strong> $= \frac{Dividende+Kursveränderung}{anfänglicher.Vermögenswert}$</p>
+
+<h4 id="halteperiode-rendite">Halteperiode Rendite</h4>
+
+<p>Halteperiod de Rendite $=(1+r_1)\times(1+r_2)\times\dots(1+r_n)-1$</p>
+
+<p>$r_g$ (Geometrisch durchschnittliche Rendite) $=(1+r_1)\times(1+r_2)\times\dots(1+r_n)$</p>
+
+<p>$r_a$ (Arithmetisch durchschnittliche Rendite) $= \frac{(r_1 + r_2 + \dots +r_n)}{n}$</p>
+
+<h4 id="portefeuilles-erwartungswert-der-portefeuillerendite">Portefeuilles: Erwartungswert der Portefeuillerendite</h4>
+
+<p>$\widetilde{r_w}=w_1\widetilde{r_1}+w_2\widetilde{r_2}$</p>
+
+<p>$\mu_w = E(w_1\widetilde{r_1}+w_2\widetilde{r_2}) = w_1\mu_1 + w_2\mu_2$</p>
+
+<p>$\sigma_w^2 = \sigma^2(w_1\widetilde{r_1}+w_2\widetilde{r_2})=w_1^2\sigma_1^2+w_2^2\sigma_2^2+2w_1w_2\times cov(\widetilde{r_1},\widetilde{r_2})$</p>
+
+<p>$cov(\widetilde{r_1},\widetilde{r_2})=\sigma_1\sigma_2\rho_{12}$</p>
+
+<h4 id="die-wertpapiermarktlinie-einzelne-wertpapiere-im-gleichgewicht">Die Wertpapiermarktlinie: einzelne Wertpapiere im Gleichgewicht</h4>
+
+<p>$\mu_j=r+\frac{\mu_M-r}{cov(\widetilde{r_M},\widetilde{r_M})}\times cov(\widetilde{r_j},\widetilde{r_M})$</p>
+
+<p>$\beta_j := \frac{cov(\widetilde{r_j},\widetilde{r_M})}{cov(\widetilde{r_M},\widetilde{r_M})}$</p>
+
+<p>$\mu_j = r+(\mu_M-r)\times\beta$</p>
+
+<hr />
 
 <h2 id="8-grundlagen-des-externen-rechnungswesens">8. Grundlagen des externen Rechnungswesens</h2>
 
+<p>$V_0$ (Vermögensgegenständen) = Summe der Barwerte</p>
+
+<p>$RV_0$ (Reinvermögen) $= V_0 - S_0$</p>
+
+<h4 id="realisationsprinzip-matching-principle-vorsichtsprinzip">Realisationsprinzip, Matching Principle, Vorsichtsprinzip</h4>
+
+<hr />
+
 <h2 id="9-10-bilanz-und-guv-im-accounting-equation-approach">9-10. Bilanz und GuV im Accounting Equation Approach</h2>
+
+<hr />
 
 <h2 id="11-mehrdeutigkeit-im-externen-rechnungswesen">11. Mehrdeutigkeit im externen Rechnungswesen</h2>
 
+<hr />
+
 <h2 id="12-grundlagen-des-internen-rechnungswesens">12. Grundlagen des internen Rechnungswesens</h2>
 
+<hr />
+
 <h2 id="13-kostenstellenrechnung">13. Kostenstellenrechnung</h2>
+
+<hr />
 
 <h2 id="14-kostenträgerrechnung">14. Kostenträgerrechnung</h2>
 

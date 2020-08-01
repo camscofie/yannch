@@ -22,7 +22,7 @@ BW (Barwert, Present Value) $=\frac{C_1}{1+r}$
 $C_0$ bezeichnet die Zahlung im Zeitpunkt 0 und $r$ den Zinssatz.
 Mehrperiodige Verzinsung EW $=C_0 \times (1+r)^T$
 BW $=\frac{C_T}{(1+r)^T}$
-Unterjährige Verzinsung EJZ (Effektiver Jahreszinssatz): $EW = 1\times(1+\frac{r}{m})^m \Leftrightarrow rC_0\times(1+EJZ)^T$
+Unterjährige Verzinsung EJZ (Effektiver Jahreszinssatz): $EW = 1\times(1+\frac{r}{m})^m \Leftrightarrow C_0\times(1+EJZ)^T$
 EJZ $= \frac{EW}{1} - 1$
 Ewige Rente BW $=\frac{C}{r}$
 Endliche Rente BW $=\frac{C}{r}(1-\frac{1}{(1+r)^T})$
